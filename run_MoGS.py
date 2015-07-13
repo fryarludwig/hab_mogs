@@ -1,3 +1,9 @@
+""""
+Changelog:
+07/13/15 - KFL: Initial commit - committed all of previous work
+"""
+
+
 from __future__ import print_function
 
 import sys
@@ -5,7 +11,7 @@ import serial
 import datetime
 from time import sleep
 from PyQt4 import QtGui, QtCore
-from PyQt4.QtWebKit import *
+from PyQt4.QtWebKit import QWebView
 from PyQt4.Qt import QWidget
 from collections import OrderedDict
 
@@ -13,7 +19,7 @@ TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
 RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 
-TEST_MODE = True
+TEST_MODE = False
 
 """
 Handles GUI operations, as well as all user input. 
@@ -24,6 +30,7 @@ TODO: Add offline mode
 TODO: Add radio verification
 TODO: Add heartbeats
 TODO: Add command response updating
+TODO: Add unit tests
 """
 class mogsMainWindow(QtGui.QWidget):
 	"""
@@ -36,7 +43,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.dataTelemetryList = []
 		self.messagingListView = QtGui.QListView()
 		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
-		self.sendMessageBox = QtGui.QLineEdit()
+		self.sendMessageEntryBox = QtGui.QLineEdit()
 		
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
@@ -61,7 +68,7 @@ class mogsMainWindow(QtGui.QWidget):
 		
 		self.radioHandler = radioThread()
 		self.radioHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
-		self.radioHandler.invalidSerialPort.connect(self.setPort)
+		self.radioHandler.invalidSerialPort.connect(self.changeSettings)
 		# add the other handlers here
 		self.radioHandler.start()
 		self.initUI()
@@ -145,11 +152,12 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView.setMinimumSize(300, 300)
 		self.messagingListView.setFlow(QtGui.QListView.LeftToRight)
 		
-		self.sendMessageBox.setMaxLength(256)
+		self.sendMessageEntryBox.setMaxLength(256)
+		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
 		
 		layout.addWidget(messagingLabel, 0, 0, 1, 9)
 		layout.addWidget(self.messagingListView, 1, 0, 5, 9)
-		layout.addWidget(self.sendMessageBox, 6, 0, 1, 8)
+		layout.addWidget(self.sendMessageEntryBox, 6, 0, 1, 8)
 		layout.addWidget(sendMessageButton, 6, 8)
 		
 		return widget
@@ -171,8 +179,8 @@ class mogsMainWindow(QtGui.QWidget):
 		self.commandStatusLabel.setAlignment(QtCore.Qt.AlignHCenter)
 		
 		# Set up buttons for GUI window
-		comPortButton = QtGui.QPushButton('COM Port', self)
-		comPortButton.clicked.connect(self.setPort)
+		comPortButton = QtGui.QPushButton('Settings', self)
+		comPortButton.clicked.connect(self.changeSettings)
 		
 		streetMapButton = QtGui.QPushButton('Street Map', self)
 		streetMapButton.clicked[bool].connect(self.setMapToStreet)
@@ -195,8 +203,8 @@ class mogsMainWindow(QtGui.QWidget):
 		layout.addWidget(comPortButton, 2, 2)
 		layout.addWidget(resizeMapButton, 2, 1)
 		layout.addWidget(streetMapButton, 2, 0)
-		layout.addWidget(balloonReleaseButton, 3, 2)
-		layout.addWidget(audioLinkButton, 3, 1)
+		layout.addWidget(balloonReleaseButton, 3, 1)
+		layout.addWidget(audioLinkButton, 3, 2)
 		layout.addWidget(satelliteViewButton, 3, 0)
 		
 		return widget
@@ -364,45 +372,61 @@ class mogsMainWindow(QtGui.QWidget):
 	TODO: Actually send the message out over the radio (implement radio handler)
 	"""
 	def sendMessage(self):
-		userMessage = self.sendMessageBox.text().replace("\n", "")
+		userMessage = str(self.sendMessageEntryBox.text()).replace("\n", "")
 		itemToAdd = QtGui.QStandardItem(self.radioHandler.RADIO_CALLSIGN + ": " + userMessage)
 		self.messagingListViewModel.insertRow(0, itemToAdd)
 		self.messagingListView.setModel(self.messagingListViewModel)
 		self.messagingListView.show()
-		self.sendMessageBox.clear()
+		self.radioHandler.userMessagesToSend.append(userMessage)
+		self.sendMessageEntryBox.clear()
 	
 	"""
 	Opens a dialog to edit the current COM port in use. Sets the self.SERIAL_PORT to 
 	user-entered text.
 	"""
-	def setPort(self):
-		confirmStatement = "Enter the COM port you would like to use"
-		exampleStatement = "Example: COM4"
+	def changeSettings(self):
 		windowLayout = QtGui.QGridLayout()
 		popupWidget = QtGui.QDialog()
 		
 		portTextBox = QtGui.QLineEdit()
-		promptLabel = QtGui.QLabel(confirmStatement)
-		exampleLabel= QtGui.QLabel(exampleStatement)
-		selectButton = QtGui.QPushButton("Select", self)
+		portTextBox.setText(self.radioHandler.SERIAL_PORT)
+		comPortPromptLabel = QtGui.QLabel("COM Port")
+		
+		selectCallsignLabel = QtGui.QLabel("Callsign")
+		selectCallsignComboBox = QtGui.QComboBox()
+		selectCallsignComboBox.addItem(self.radioHandler.RADIO_CALLSIGN)
+		if not (self.radioHandler.RADIO_CALLSIGN == "nps"):
+			selectCallsignComboBox.addItem("nps")
+		if not (self.radioHandler.RADIO_CALLSIGN == "chase1"):
+			selectCallsignComboBox.addItem("chase1")
+		if not (self.radioHandler.RADIO_CALLSIGN == "chase2"):
+			selectCallsignComboBox.addItem("chase2")
+		if not (self.radioHandler.RADIO_CALLSIGN == "chase3"):
+			selectCallsignComboBox.addItem("chase3")
+		
+		selectButton = QtGui.QPushButton("Save Settings", self)
 		selectButton.clicked.connect(popupWidget.accept)
 		cancelButton = QtGui.QPushButton("Cancel", self)
 		cancelButton.clicked.connect(popupWidget.reject)
 		
-		windowLayout.addWidget(promptLabel, 0, 0, 1, 2)
-		windowLayout.addWidget(exampleLabel, 1, 0, 1, 2)
-		windowLayout.addWidget(portTextBox, 2, 0, 1, 2)
-		windowLayout.addWidget(selectButton, 3, 0)
-		windowLayout.addWidget(cancelButton, 3, 1)
+		windowLayout.addWidget(comPortPromptLabel, 1, 0)
+		windowLayout.addWidget(portTextBox, 1, 1, 1, 2)
+		windowLayout.addWidget(selectCallsignLabel, 3, 0)
+		windowLayout.addWidget(selectCallsignComboBox, 3, 1, 1, 2)
+		
+		windowLayout.addWidget(selectButton, 4, 1)
+		windowLayout.addWidget(cancelButton, 4, 2)
 		
 		popupWidget.setLayout(windowLayout)
-		popupWidget.setWindowTitle("Port Selection")
+		popupWidget.setWindowTitle("Settings")
 		
 		if (popupWidget.exec_()):
 			if (len(portTextBox.text()) > 0):
 				self.radioHandler.SERIAL_PORT = str(portTextBox.text().replace("\n", ""))
+			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
+				self.radioHandler.RADIO_CALLSIGN = str(selectCallsignComboBox.currentText())
 				
-		self.radioHandler.serialPortWindowAlreadyOpened = False
+		self.radioHandler.settingsWindowOpen = False
 		
 	
 	def setMapToSatellite(self):
@@ -442,14 +466,16 @@ class radioThread(QtCore.QThread):
 		self.balloonAlive = False
 		
 		self.releaseBalloonFlag = False
-		self.serialPortWindowAlreadyOpened = False
+		self.settingsWindowOpen = False
+		
+		self.userMessagesToSend = []
 		
 	
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
 		
 		if (TEST_MODE):
-			sleep(2)
+			sleep(1)
 			while (True):
 				for line in self.inputTestFile:
 					sleep(1)
@@ -459,6 +485,10 @@ class radioThread(QtCore.QThread):
 			if (self.releaseBalloonFlag):
 				self.sendReleaseCommand()
 				self.releaseBalloonFlag = False
+			
+			while (len(self.userMessagesToSend) > 0):
+				self.radioSerialOutput("chat," + self.userMessagesToSend[0])
+				self.userMessagesToSend.pop()
 			
 			#self.verifyRadioConnection()
 			
@@ -532,8 +562,8 @@ class radioThread(QtCore.QThread):
 		
 	# Sends a "heartbeat" signal to other radios to verify radio is currently
 	# active on the network
-	def sendHeartbeat(self, callsign):
-		self.radioSerialOutput(callsign + "=alive\n")
+	def sendHeartbeat(self):
+		self.radioSerialOutput("alive")
 
 	# Returns True if any other nodes are active on the network
 	# Returns False if no other nodes have been discovered yet
@@ -552,15 +582,16 @@ class radioThread(QtCore.QThread):
 		while (counter > 0):
 			print("Attempt " + str(counter))
 			counter -= 1
-			self.radioSerialOutput("releaseBalloonNow\n")
+			self.radioSerialOutput("releaseBalloonNow")
 			sleep(0.1)
 			response = self.radioSerialInput()
-			if ("HAB:released" in response):
+			if ("HAB,released" in response):
+				print("Confirmed - HAB Released!")
 				break
 		return None
 	
-	def populateMap(self, position):
-		self.balloonDataSignalReceived.emit(position)
+	def passTelemetryToGui(self, telemetryLine):
+		self.balloonDataSignalReceived.emit(telemetryLine)
 
 	def radioSerialInput(self):
 		serialInput = "NO_INPUT\n"
@@ -572,44 +603,31 @@ class radioThread(QtCore.QThread):
 			logRadio("Serial Input: " + serialInput)
 			ser.close()
 		except:
-			if (self.serialPortWindowAlreadyOpened):
-				sleep(2)
+			if (self.settingsWindowOpen):
+				sleep(1)
 			else:
-				sleep(3)
 				self.invalidSerialPort.emit("Please enter a valid serial port")
-				self.serialPortWindowAlreadyOpened = True
+				self.settingsWindowOpen = True
+			logRadio("Unable to write to serial port on " + self.SERIAL_PORT)
 			print("Unable to open serial port for input on " + self.SERIAL_PORT)
-		
-		try:
-			ser.close()
 			
-		except:
-			sleep(1)
-			
-		return serialInput[:-1]
+		return serialInput[:-1]                   # Truncate the newline character
 	
 	def radioSerialOutput(self, line):
 		ser = None
 		
 		try:
 			ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
-			line = ser.write(line)
+			line = ser.write(self.RADIO_CALLSIGN + "," + line + "\n")
 			ser.close()
 		except:
-			if (self.serialPortWindowAlreadyOpened):
-				sleep(2)
+			if (self.settingsWindowOpen):
+				sleep(1)
 			else:
-				sleep(3)
 				self.invalidSerialPort.emit("Please enter a valid serial port")
-				self.serialPortWindowAlreadyOpened = True
-			logRadio("Unable to write to serial port")
+				self.settingsWindowOpen = True
+			logRadio("Unable to write to serial port on " + self.SERIAL_PORT)
 			print("Unable to write to serial port on " + self.SERIAL_PORT)
-		
-		try:
-			ser.close()
-			
-		except:
-			sleep(1)
 
 def logTelemetry(line):
 	try:
