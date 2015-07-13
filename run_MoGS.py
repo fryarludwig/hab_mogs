@@ -69,6 +69,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.radioHandler = radioThread()
 		self.radioHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
 		self.radioHandler.invalidSerialPort.connect(self.changeSettings)
+		self.radioHandler.chatMessageReceived.connect(self.updateChat)
 		# add the other handlers here
 		self.radioHandler.start()
 		self.initUI()
@@ -368,8 +369,6 @@ class mogsMainWindow(QtGui.QWidget):
 	"""
 	Reads in text from the input box, and sends it out over the radio. Populates
 	the QListView with the sent message as well.
-	
-	TODO: Actually send the message out over the radio (implement radio handler)
 	"""
 	def sendMessage(self):
 		userMessage = str(self.sendMessageEntryBox.text()).replace("\n", "")
@@ -378,6 +377,16 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView.setModel(self.messagingListViewModel)
 		self.messagingListView.show()
 		self.radioHandler.userMessagesToSend.append(userMessage)
+		self.sendMessageEntryBox.clear()
+		
+	"""
+	Populates the chat box with the messages we've received
+	"""
+	def updateChat(self, message):
+		itemToAdd = QtGui.QStandardItem(message)
+		self.messagingListViewModel.insertRow(0, itemToAdd)
+		self.messagingListView.setModel(self.messagingListViewModel)
+		self.messagingListView.show()
 		self.sendMessageEntryBox.clear()
 	
 	"""
@@ -445,6 +454,7 @@ TX/RX operations, as well as RaspPi interfacing occurs below
 class radioThread(QtCore.QThread):
 	balloonDataSignalReceived = QtCore.pyqtSignal(object)
 	invalidSerialPort = QtCore.pyqtSignal(object)
+	chatMessageReceived = QtCore.pyqtSignal(object)
 	
 	def __init__(self):
 		if (TEST_MODE):
@@ -499,7 +509,7 @@ class radioThread(QtCore.QThread):
 			
 			if (counter == 0):
 				self.sendingSerialMessage = True
-				self.sendHeartbeat(self.RADIO_CALLSIGN)
+				self.sendHeartbeat()
 				self.sendingSerialMessage = False
 				counter = self.HEARTBEAT_INTERVAL
 			else:
@@ -510,13 +520,15 @@ class radioThread(QtCore.QThread):
 	# Performs an action based on the message sent to it
 	# Returns True or False based on the success of that action
 	def handleMessage(self, message):
-		if (len(message) > 0):
-			if (message[:3] == "HAB"):
-				self.receivedHeartbeat("balloon")
-				if (message[4:8] == "data"):
-					self.balloonDataSignalReceived.emit(message[4:-1])
-					
-		logRadio("Handling message: " + message)
+		for line in message.split('\n'):
+			if (len(line) > 0):
+				if (line[:3] == "HAB"):
+					self.receivedHeartbeat("balloon")
+					if (line[4:8] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-1])
+				elif ("chat" in line):
+					self.chatMessageReceived.emit(line)
+			logRadio("Handling message: " + line)
 
 	# Determines if the current radio is connected to the network. If no nodes
 	# are active, attempts to reconnect radio to network
@@ -531,7 +543,7 @@ class radioThread(QtCore.QThread):
 			
 			if (not radioConnectionVerified):
 				retries = 10
-				self.sendHeartbeat(self.RADIO_CALLSIGN)
+				self.sendHeartbeat()
 				while not (self.networkConnected() and retries >= 0):
 					sleep(self.SHORT_SLEEP_DURATION)
 			
@@ -594,12 +606,16 @@ class radioThread(QtCore.QThread):
 		self.balloonDataSignalReceived.emit(telemetryLine)
 
 	def radioSerialInput(self):
-		serialInput = "NO_INPUT\n"
+		serialInput = ""
 		
 		ser = None
 		try:
 			ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
-			serialInput = ser.readline()
+			if not (ser.inWaiting()):
+				sleep(1)
+			while(ser.inWaiting()):
+				serialInput += ser.readline()
+				print (serialInput)
 			logRadio("Serial Input: " + serialInput)
 			ser.close()
 		except:
@@ -611,7 +627,7 @@ class radioThread(QtCore.QThread):
 			logRadio("Unable to write to serial port on " + self.SERIAL_PORT)
 			print("Unable to open serial port for input on " + self.SERIAL_PORT)
 			
-		return serialInput[:-1]                   # Truncate the newline character
+		return serialInput
 	
 	def radioSerialOutput(self, line):
 		ser = None

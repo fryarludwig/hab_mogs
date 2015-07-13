@@ -2635,3 +2635,23 @@ Starting telemetry log
 
 Starting telemetry log
 
+2015-07-13 15:59:18: 
+
+Starting telemetry log
+
+2015-07-13 16:02:46: 
+
+Starting telemetry log
+
+2015-07-13 16:24:09: 
+
+Starting telemetry log
+
+2015-07-13 16:26:22: 
+
+Starting telemetry log
+
+2015-07-13 16:30:41: 
+
+Starting telemetry log
+
