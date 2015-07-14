@@ -5,14 +5,18 @@ Changelog:
 				Refactored serial input to capture (almost) all messages
 				Implemented and verified chat functionality
 07/14/15 - KFL: Added option to silence serial port error popups
+				Added ability to set precision
+				Implemented speed and ascent calculation
+				Added icons to maps
+				Added chase mapping ability for all chase cars
 """
-
 
 from __future__ import print_function
 
 import sys
 import serial
 import datetime
+import math
 from time import sleep
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtWebKit import QWebView
@@ -23,7 +27,7 @@ TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
 RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 
-TEST_MODE = False
+TEST_MODE = True  # Test mode pulls telemetry from file instead of radios
 
 """
 Handles GUI operations, as well as all user input. 
@@ -44,11 +48,12 @@ class mogsMainWindow(QtGui.QWidget):
 		self.VERTICAL_SPACING = 25
 		self.positionTelemetryList = []
 		self.dataTelemetryList = []
+		self.telemetryValuesToInclude = 5
 		self.messagingListView = QtGui.QListView()
 		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
 		self.sendMessageEntryBox = QtGui.QLineEdit()
 		self.notifyOnSerialError = True
-		
+
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
 		self.statusLabelList = {"balloon" : QtGui.QLabel("Balloon", self),
@@ -56,7 +61,7 @@ class mogsMainWindow(QtGui.QWidget):
 								"chase2" : QtGui.QLabel("Chase 2", self),
 								"chase3" : QtGui.QLabel("Chase 3", self),
 								"nps" : QtGui.QLabel("  NPS  ", self)}
-		
+
 		self.telemetryLabelDictionary = OrderedDict()
 		self.telemetryLabelDictionary["timestamp"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["altitude"] = QtGui.QLabel("None", self)
@@ -67,9 +72,9 @@ class mogsMainWindow(QtGui.QWidget):
 		self.telemetryLabelDictionary["tempInside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempOutside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["gps"] = QtGui.QLabel("None", self)
-		
+
 		self.palette = QtGui.QPalette()
-		
+
 		self.radioHandler = radioThread()
 		self.radioHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
 		self.radioHandler.invalidSerialPort.connect(self.serialFailure)
@@ -78,7 +83,7 @@ class mogsMainWindow(QtGui.QWidget):
 		# add the other handlers here
 		self.radioHandler.start()
 		self.initUI()
-		
+
 	"""
 	Populates the widgets and the main GUI window.
 	"""
@@ -89,12 +94,12 @@ class mogsMainWindow(QtGui.QWidget):
 		self.col = QtGui.QColor(0, 0, 0)
 		self.vLayout = QtGui.QGridLayout()
 		self.hLayout = QtGui.QHBoxLayout()
-		
+
 		self.vLayout.setSpacing(0)
 		self.vLayout.setMargin(0)
 		self.hLayout.setSpacing(0)
 		self.hLayout.setMargin(0)
-		
+
 		mapWidget = QWidget()
 		self.mapView = QWebView(mapWidget)
 		self.mapView.setMinimumSize(window_x - 250, window_y)
@@ -102,27 +107,27 @@ class mogsMainWindow(QtGui.QWidget):
 		self.theMap = self.mapView.page().mainFrame()
 		self.theMap.addToJavaScriptWindowObject('self', self)
 		self.mapView.setHtml(googleMapsHtml)
-		
+
 		telemetryWidget = self.createTelemetryWidget()
 		messagingWidget = self.createMessagingWidget()
 		commandWidget = self.createCommandWidget()
 		networkWidget = self.createNetworkWidget()
-		
+
 		self.vLayout.addWidget(telemetryWidget, 0, 0, 5, 1)
 		self.vLayout.addWidget(messagingWidget, 5, 0, 5, 1)
 		self.vLayout.addWidget(commandWidget, 11, 0, 3, 1)
 		self.vLayout.addWidget(networkWidget, 14, 0, 1, 1)
-		
+
 		self.hLayout.addWidget(mapWidget, 1)
 		self.hLayout.addLayout(self.vLayout, 0)
-		
+
 		self.setGeometry(150, 150, window_x, window_y)
 		self.setWindowTitle('Mobile Ground Station (MoGS)')
 		self.setLayout(self.hLayout)
 		self.show()
-		
+
 		logGui("GUI created.")
-	
+
 	"""
 	Resizes the MapView widget to fill the box.
 	No return value.
@@ -134,7 +139,7 @@ class mogsMainWindow(QtGui.QWidget):
 		minY = self.vLayout.geometry().height()
 		self.mapView.setMinimumSize(minX + 20, minY + 10)
 		self.mapView.setMaximumSize(minX + 20, minY + 10)
-	
+
 	"""
 	Populates a "Messaging" widget.
 	Returns the widget, which is then added to the layout
@@ -143,30 +148,30 @@ class mogsMainWindow(QtGui.QWidget):
 		widget = QWidget()
 		layout = QtGui.QGridLayout(widget)
 		layout.setSpacing(0)
-		
+
 		# Set up labels
 		messagingLabel = QtGui.QLabel("Latest Messages:", self)
-		messagingLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		messagingLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		sendMessageButton = QtGui.QPushButton("Send", self)
 		sendMessageButton.clicked[bool].connect(self.sendMessage)
-		
+
 		self.messagingListView.setWrapping(True)
 		self.messagingListView.setWordWrap(True)
 		self.messagingListView.setSpacing(1)
 		self.messagingListView.setMinimumSize(300, 300)
 		self.messagingListView.setFlow(QtGui.QListView.LeftToRight)
-		
+
 		self.sendMessageEntryBox.setMaxLength(256)
 		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
-		
+
 		layout.addWidget(messagingLabel, 0, 0, 1, 9)
 		layout.addWidget(self.messagingListView, 1, 0, 5, 9)
 		layout.addWidget(self.sendMessageEntryBox, 6, 0, 1, 8)
 		layout.addWidget(sendMessageButton, 6, 8)
-		
+
 		return widget
-		
+
 	"""
 	Populates the "Command" section of the GUI.
 	Returns the widget, which is then added to the layout
@@ -175,28 +180,28 @@ class mogsMainWindow(QtGui.QWidget):
 		widget = QWidget()
 		layout = QtGui.QGridLayout(widget)
 		layout.setSpacing(3)
-		
+
 		# Set up labels
 		commandLabel = QtGui.QLabel("Command Response:", self)
-		commandLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		commandLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		self.commandStatusLabel = QtGui.QLabel("No Commands have been sent", self)
-		self.commandStatusLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		self.commandStatusLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		# Set up buttons for GUI window
 		comPortButton = QtGui.QPushButton('Settings', self)
 		comPortButton.clicked.connect(self.changeSettings)
-		
+
 		streetMapButton = QtGui.QPushButton('Street Map', self)
 		streetMapButton.clicked[bool].connect(self.setMapToStreet)
 
 		resizeMapButton = QtGui.QPushButton('Resize Map', self)
 		resizeMapButton.clicked[bool].connect(self.onResize)
-		
+
 		balloonReleaseButton = QtGui.QPushButton('Release Balloon', self)
 		balloonReleaseButton.setStyleSheet("background-color: Salmon")
 		balloonReleaseButton.clicked[bool].connect(self.confirmAndReleaseBalloon)
-		
+
 		satelliteViewButton = QtGui.QPushButton('Satellite View', self)
 		satelliteViewButton.clicked[bool].connect(self.setMapToSatellite)
 
@@ -211,9 +216,9 @@ class mogsMainWindow(QtGui.QWidget):
 		layout.addWidget(balloonReleaseButton, 3, 1)
 		layout.addWidget(audioLinkButton, 3, 2)
 		layout.addWidget(satelliteViewButton, 3, 0)
-		
+
 		return widget
-		
+
 	"""
 	Populates the "Telemetry" section of the GUI.
 	Returns the widget, which is then added to the layout
@@ -223,14 +228,14 @@ class mogsMainWindow(QtGui.QWidget):
 		layout = QtGui.QGridLayout(widget)
 		layout.setSpacing(3)
 		staticTelemetryLabels = []
-			
+
 		# Set up constant labels
 		layoutLabel = QtGui.QLabel("Latest Telemetry")
-		layoutLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		layoutLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		rawGpsLabel = QtGui.QLabel("Latest Raw GPS")
-		rawGpsLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		rawGpsLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		staticTelemetryLabels.append(QtGui.QLabel("UTC Time", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Altitude", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Speed", self))
@@ -239,29 +244,29 @@ class mogsMainWindow(QtGui.QWidget):
 		staticTelemetryLabels.append(QtGui.QLabel("Battery Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Internal Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("External Temp", self))
-		
+
 		layout.addWidget(layoutLabel, 0, 0, 1, 2)
 		layout.addWidget(rawGpsLabel, 9, 0, 1, 2)
-		
+
 		# Populate the static labels in the GUI
 		counter = 1
 		for label in staticTelemetryLabels:
 			layout.addWidget(label, counter, 0)
-			label.setAlignment(QtCore.Qt.AlignHCenter)
+			label.setAlignment(QtCore.Qt.AlignCenter)
 			counter += 1
-		
+
 		# Populate the labels that will be updated with telemetry
 		counter = 1
 		for key, value in self.telemetryLabelDictionary.iteritems():
-			value.setAlignment(QtCore.Qt.AlignHCenter)
+			value.setAlignment(QtCore.Qt.AlignCenter)
 			if (key == "gps"):
 				layout.addWidget(value, 10, 0, 1, 2)
 			else:
 				layout.addWidget(value, counter, 1)
 			counter += 1
-			
+
 		return widget
-	
+
 	"""
 	Populates the "Network" section of the GUI.
 	Returns the widget, which is then added to the layout
@@ -271,48 +276,45 @@ class mogsMainWindow(QtGui.QWidget):
 		networkFont = QtGui.QFont()
 		networkFont.setPointSize(11)
 		networkFont.setBold(True)
-		
+
 		layout = QtGui.QGridLayout(widget)
-		
+
 		# Set up constant labels
 		layoutLabel = QtGui.QLabel("Network Status")
-		layoutLabel.setAlignment(QtCore.Qt.AlignHCenter)
-		
+		layoutLabel.setAlignment(QtCore.Qt.AlignCenter)
+
 		# Set all to show that there is no connection yet
 		for key, statusLabel in self.statusLabelList.items():
-			statusLabel.setAlignment(QtCore.Qt.AlignHCenter)
+			statusLabel.setAlignment(QtCore.Qt.AlignCenter)
 			statusLabel.setFont(networkFont)
 			statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
-		
+
 		layout.addWidget(layoutLabel, 0, 0, 1, 3)
 		layout.addWidget(self.statusLabelList["balloon"], 1, 0, 1, 2)
 		layout.addWidget(self.statusLabelList["nps"], 1, 2)
 		layout.addWidget(self.statusLabelList["chase1"], 2, 0)
 		layout.addWidget(self.statusLabelList["chase2"], 2, 1)
 		layout.addWidget(self.statusLabelList["chase3"], 2, 2)
-		
+
 		self.updateActiveNetwork()
-		
+
 		return widget
-	
+
 	"""
 	Logs and parses the telemetry string passed from the Radio class, then
 	updates the GUI to display the values. On invalid packet the data is logged
 	but the GUI is not updated.
 	No return value
-	
-	TODO: Calculate ground speed
-	TODO: Calculate ascent rate
 	"""
 	def updateBalloonDataTelemetry(self, data):
 		logTelemetry(data)
 		data.replace("\n", "")
-		
+
 		self.statusLabelList["balloon"].setStyleSheet("QFrame { background-color: Green }")
-		
-		if (len(self.dataTelemetryList) > 25):
-			self.dataTelemetryList.pop()
-			
+
+		while (len(self.dataTelemetryList) > self.telemetryValuesToInclude):
+			self.dataTelemetryList.pop(0)
+
 		try:
 			splitMessage = data.split(",")
 			timestamp = splitMessage[1]
@@ -329,28 +331,31 @@ class mogsMainWindow(QtGui.QWidget):
 			innerTemp = splitMessage[6]
 			outerTemp = splitMessage[7]
 			batteryTemp = splitMessage[8]
-			
+
+			groundSpeed, ascentRate = self.calculateRates()
+
 			self.telemetryLabelDictionary["timestamp"].setText(timestamp)
 			self.telemetryLabelDictionary["altitude"].setText(altitude)
-			self.telemetryLabelDictionary["speed"].setText("CalculateSpeed")
-			self.telemetryLabelDictionary["ascent"].setText("CalulateAscent")
+			self.telemetryLabelDictionary["speed"].setText(groundSpeed)
+			self.telemetryLabelDictionary["ascent"].setText(ascentRate)
 			self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
 			self.telemetryLabelDictionary["voltage"].setText(voltage)
 			self.telemetryLabelDictionary["tempInside"].setText(innerTemp)
 			self.telemetryLabelDictionary["tempOutside"].setText(outerTemp)
 			self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp)
-			
+
 			# Update the map to show new waypoint
 			javascriptCommand = "addBalloonWaypoint({}, {});".format(
 								latitude,
 								longitude)
 			self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
-			
-			self.dataTelemetryList.append(data)
-		
+
+			self.dataTelemetryList.append([timestamp, altitude, latitude, longitude,
+											voltage, innerTemp, outerTemp, batteryTemp])
+
 		except:
 			logTelemetry("Invalid data packet - data was not processed.")
-	
+
 	"""
 	Shows popup window that confirms the release of the balloon.
 	If not confirmed, does not release the balloon.
@@ -359,16 +364,16 @@ class mogsMainWindow(QtGui.QWidget):
 	"""
 	def confirmAndReleaseBalloon(self):
 		confirmStatement = "Would you like to activate the balloon release mechanism?"
-		response = QtGui.QMessageBox.question(self, 'Confirmation', 
+		response = QtGui.QMessageBox.question(self, 'Confirmation',
 				confirmStatement, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
-		
+
 		if (response == QtGui.QMessageBox.Yes):
 			self.radioHandler.releaseBalloonFlag = True
 			self.commandStatusLabel.setText("Commanding balloon release. Waiting for confirmation...")
 		else:
 			print("Negative response - Not releasing balloon")
 			self.commandStatusLabel.setText("Negative response - No command issued")
-	
+
 	"""
 	Reads in text from the input box, and sends it out over the radio. Populates
 	the QListView with the sent message as well.
@@ -377,7 +382,7 @@ class mogsMainWindow(QtGui.QWidget):
 		userMessage = str(self.sendMessageEntryBox.text())
 		self.radioHandler.userMessagesToSend.append(userMessage)
 		self.sendMessageEntryBox.clear()
-		
+
 	"""
 	Populates the chat box with the messages we've received
 	"""
@@ -387,12 +392,21 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView.setModel(self.messagingListViewModel)
 		self.messagingListView.show()
 		self.sendMessageEntryBox.clear()
-	
+
 	def serialFailure(self, message):
 		if (self.notifyOnSerialError):
 			QtGui.QMessageBox.question(self, "Error", message, QtGui.QMessageBox.Ok)
 			self.changeSettings()
-	
+
+	def precisionSpinBoxHelp(self):
+		helpString = ("To calculate the ascent rate and ground speed\n" +
+						"we need to use at least two data points.\n\n" +
+						"More data points gives a longer-running average.\n\n" +
+						"Fewer data points gives us a more instantaneous\n" +
+						"perspective.\n\n" +
+						"Default setting is 5 data points, full range is 2-25")
+		QtGui.QMessageBox.information(self, "Help", helpString, QtGui.QMessageBox.Ok)
+
 	"""
 	Opens a dialog to edit the current COM port in use. Sets the self.SERIAL_PORT to 
 	user-entered text.
@@ -400,11 +414,7 @@ class mogsMainWindow(QtGui.QWidget):
 	def changeSettings(self):
 		windowLayout = QtGui.QGridLayout()
 		popupWidget = QtGui.QDialog()
-		
-		portTextBox = QtGui.QLineEdit()
-		portTextBox.setText(self.radioHandler.SERIAL_PORT)
-		comPortPromptLabel = QtGui.QLabel("COM Port")
-		
+
 		selectCallsignLabel = QtGui.QLabel("Callsign")
 		selectCallsignComboBox = QtGui.QComboBox()
 		selectCallsignComboBox.addItem(self.radioHandler.RADIO_CALLSIGN)
@@ -416,28 +426,46 @@ class mogsMainWindow(QtGui.QWidget):
 			selectCallsignComboBox.addItem("chase2")
 		if not (self.radioHandler.RADIO_CALLSIGN == "chase3"):
 			selectCallsignComboBox.addItem("chase3")
-			
+
+		portTextBox = QtGui.QLineEdit()
+		portTextBox.setText(self.radioHandler.SERIAL_PORT)
+		comPortPromptLabel = QtGui.QLabel("COM Port")
+
+		precisionSpinBoxLabel = QtGui.QLabel("Rate Sensitivity")
+		precisionSpinBoxHelpButton = QtGui.QPushButton("?")
+		precisionSpinBoxHelpButton.clicked.connect(self.precisionSpinBoxHelp)
+
+		precisionSpinBox = QtGui.QSpinBox()
+		precisionSpinBox.setValue(self.telemetryValuesToInclude)
+		precisionSpinBox.setRange(2, 25)
+		precisionSpinBox.setMinimumSize(20, 20)
+		precisionSpinBox.setAlignment(QtCore.Qt.AlignCenter)
+
 		openDialogOnFailureCheckBox = QtGui.QCheckBox("Notify on serial failure")
 		if (self.notifyOnSerialError):
 			openDialogOnFailureCheckBox.setChecked(True)
-		
+
 		selectButton = QtGui.QPushButton("Save Settings", self)
+		selectButton.setDefault(True)
 		selectButton.clicked.connect(popupWidget.accept)
 		cancelButton = QtGui.QPushButton("Cancel", self)
 		cancelButton.clicked.connect(popupWidget.reject)
-		
+
 		windowLayout.addWidget(selectCallsignLabel, 1, 0)
 		windowLayout.addWidget(selectCallsignComboBox, 1, 1, 1, 2)
+		windowLayout.addWidget(precisionSpinBoxLabel, 2, 0, 1, 1)
+		windowLayout.addWidget(precisionSpinBox, 2, 1)
+		windowLayout.addWidget(precisionSpinBoxHelpButton, 2, 2)
 		windowLayout.addWidget(comPortPromptLabel, 3, 0)
 		windowLayout.addWidget(portTextBox, 3, 1, 1, 2)
 		windowLayout.addWidget(openDialogOnFailureCheckBox, 4, 1, 1, 2)
-		
+
 		windowLayout.addWidget(selectButton, 5, 1)
 		windowLayout.addWidget(cancelButton, 5, 2)
-		
+
 		popupWidget.setLayout(windowLayout)
 		popupWidget.setWindowTitle("Settings")
-		
+
 		if (popupWidget.exec_()):
 			if (len(portTextBox.text()) > 0 and str(portTextBox.text()) != self.radioHandler.SERIAL_PORT):
 				self.radioHandler.SERIAL_PORT = str(portTextBox.text().replace("\n", ""))
@@ -450,26 +478,78 @@ class mogsMainWindow(QtGui.QWidget):
 				self.notifyOnSerialError = True
 			else:
 				self.notifyOnSerialError = False
-				
+			self.telemetryValuesToInclude = int(precisionSpinBox.value())
+
 		self.radioHandler.settingsWindowOpen = False
-		
+
 	def updateActiveNetwork(self):
 		self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = True
-		
+
 		for callsign, label in self.statusLabelList.items():
 			if (self.radioHandler.activeNodes[callsign]):
 				label.setStyleSheet("QFrame { background-color: Green }")
 			else:
 				label.setStyleSheet("QFrame { background-color: Salmon }")
-	
+
 	def setMapToSatellite(self):
 		javascriptCommand = "switchToSatelliteView()"
 		self.theMap.evaluateJavaScript(javascriptCommand)
-		
+
 	def setMapToStreet(self):
 		javascriptCommand = "switchToStreetView()"
 		self.theMap.evaluateJavaScript(javascriptCommand)
 
+	def calculateRates(self):
+		groundSpeed = "NONE"
+		ascentRate = "NONE"
+
+		if (len(self.dataTelemetryList) > 1):
+			time1 = self.dataTelemetryList[0][0].split(":")
+			time2 = self.dataTelemetryList[-1][0].split(":")
+
+			alt1 = float(self.dataTelemetryList[0][1])
+			alt2 = float(self.dataTelemetryList[-1][1])
+
+			lat1 = float(self.dataTelemetryList[0][2])
+			lat2 = float(self.dataTelemetryList[-1][2])
+
+			long1 = float(self.dataTelemetryList[0][3])
+			long2 = float(self.dataTelemetryList[-1][3])
+
+			time1InSeconds = int(time1[0]) * 3600 + int(time1[1]) * 60 + int(time1[2])
+			time2InSeconds = int(time2[0]) * 3600 + int(time2[1]) * 60 + int(time2[2])
+
+			secondsTaken = time2InSeconds - time1InSeconds
+			distanceTraveled = self.distance_on_unit_sphere(lat1, long1, lat2, long2)
+			altitudeDifference = alt2 - alt1
+
+			groundSpeed = "{:.2f}".format(distanceTraveled / secondsTaken)
+			ascentRate = "{:.2f}".format(altitudeDifference / secondsTaken)
+
+		return groundSpeed, ascentRate
+
+	"""
+	Found online at http://www.johndcook.com/blog/python_longitude_latitude/
+	"""
+	def distance_on_unit_sphere(self, lat1, long1, lat2, long2):
+		# Convert latitude and longitude to spherical coordinates in radians.
+		degrees_to_radians = math.pi / 180.0
+
+		# phi = 90 - latitude
+		phi1 = (90.0 - lat1) * degrees_to_radians
+		phi2 = (90.0 - lat2) * degrees_to_radians
+
+		# theta = longitude
+		theta1 = long1 * degrees_to_radians
+		theta2 = long2 * degrees_to_radians
+
+		# Compute spherical distance from spherical coordinates.
+		cos = (math.sin(phi1) * math.sin(phi2) * math.cos(theta1 - theta2) +
+				 math.cos(phi1) * math.cos(phi2))
+		arc = math.acos(cos)
+
+		# Multiple arc by radius of earth in miles
+		return arc * 6378100
 
 """
 Below is the radio handler
@@ -480,74 +560,73 @@ class radioThread(QtCore.QThread):
 	invalidSerialPort = QtCore.pyqtSignal(object)
 	chatMessageReceived = QtCore.pyqtSignal(object)
 	heartbeatReceivedSignal = QtCore.pyqtSignal()
-	
+
 	def __init__(self):
 		if (TEST_MODE):
 			self.inputTestFile = open("test_telemetry.txt")
 		QtCore.QThread.__init__(self)
-		
+
 		self.HEARTBEAT_INTERVAL = 30
 		self.SERIAL_PORT = "COM4"
 		self.RADIO_CALLSIGN = "chase1"
 		self.BAUDRATE = 9600
-		
+
 		# Set up semaphore-like variables
 		self.sendingSerialMessage = False
 		self.validHeartbeatReceived = False
-		
+
 		self.activeNodes = {}
 		self.activeNodes["chase1"] = False
 		self.activeNodes["chase2"] = False
 		self.activeNodes["chase3"] = False
 		self.activeNodes["balloon"] = False
 		self.activeNodes["nps"] = False
-		
+
 		self.releaseBalloonFlag = False
 		self.settingsWindowOpen = False
 		self.serialPortChanged = False
-		
+
 		self.userMessagesToSend = []
-	
+
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
-		
+
 		if (TEST_MODE):
 			sleep(1)
-			while (True):
-				for line in self.inputTestFile:
-					sleep(1)
-					self.handleMessage(line)
-		
+			for line in self.inputTestFile:
+				sleep(1)
+				self.handleMessage(line)
+
 		self.openSerialPort()
 		self.sendHeartbeat()
-				
+
 		while(True):
 			if (self.serialPortChanged):
 				self.openSerialPort()
-				
+
 			if (self.releaseBalloonFlag):
 				self.sendReleaseCommand()
 				self.releaseBalloonFlag = False
-			
+
 			while (len(self.userMessagesToSend) > 0):
 				formattedMessage = "chat," + self.userMessagesToSend[0]
 				self.radioSerialOutput(formattedMessage)
 				self.handleMessage(self.RADIO_CALLSIGN + "," + formattedMessage)
-				self.userMessagesToSend.pop()
-			
-			#self.verifyRadioConnection()
-			
+				self.userMessagesToSend.pop(0)
+
+			# self.verifyRadioConnection()
+
 			messageReceived = self.radioSerialInput()
-			
+
 			if (len(messageReceived) > 0):
 				self.handleMessage(messageReceived)
-			
+
 			if (counter == 0):
 				self.sendHeartbeat()
 				counter = self.HEARTBEAT_INTERVAL
 			else:
 				counter -= 1
-			
+
 			logRadio(messageReceived + "\n")
 
 	# Performs an action based on the message sent to it
@@ -567,34 +646,40 @@ class radioThread(QtCore.QThread):
 					self.receivedHeartbeat("chase1")
 					if (line[7:11] == "chat"):
 						self.chatMessageReceived.emit("Chase 1: " + line[11:])
+					elif (line[4:8] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-1])
 				elif (line[:6] == "chase2"):
 					self.receivedHeartbeat("chase2")
 					if (line[7:11] == "chat"):
 						self.chatMessageReceived.emit("Chase 2: " + line[11:])
+					elif (line[4:8] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-1])
 				elif (line[:6] == "chase3"):
 					self.receivedHeartbeat("chase3")
 					if (line[7:11] == "chat"):
 						self.chatMessageReceived.emit("Chase 3: " + line[11:])
-				
+					elif (line[4:8] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-1])
+
 			logRadio("Handling message: " + line)
 
 	# Determines if the current radio is connected to the network. If no nodes
 	# are active, attempts to reconnect radio to network
 	def verifyRadioConnection(self):
 		radioConnectionVerified = self.networkConnected()
-		
+
 		if not (radioConnectionVerified):
 			logRadio("Unable to verify network connectivity")
-			
+
 			if (self.validHeartbeatReceived):
 				radioConnectionVerified = True
-			
+
 			if (not radioConnectionVerified):
 				retries = 10
 				self.sendHeartbeat()
 				while not (self.networkConnected() and retries >= 0):
 					sleep(self.SHORT_SLEEP_DURATION)
-			
+
 		return radioConnectionVerified
 
 	# Takes a heartbeat signal and determines which node sent it out. That node
@@ -603,28 +688,19 @@ class radioThread(QtCore.QThread):
 		for key, value in self.activeNodes.items():
 			if (heartbeatSignalReceived == key):
 				self.activeNodes[key] = True
-	
+
 		self.heartbeatReceivedSignal.emit()
-		
+
 	# Sends a "heartbeat" signal to other radios to verify radio is currently
 	# active on the network
 	def sendHeartbeat(self):
 		self.radioSerialOutput("alive")
 
-	# Returns True if any other nodes are active on the network
-	# Returns False if no other nodes have been discovered yet
-	def networkConnected(self):
-		return (self.balloonAlive or
-				self.npsAlive or
-				self.chase1Alive or
-				self.chase2Alive or
-				self.chase3Alive)
-		
 	def sendReleaseCommand(self):
 		print("Releasing balloon")
 		response = "No Response"
 		counter = 10
-		
+
 		while (counter > 0):
 			print("Attempt " + str(counter))
 			counter -= 1
@@ -635,13 +711,10 @@ class radioThread(QtCore.QThread):
 				print("Confirmed - HAB Released!")
 				break
 		return None
-	
-	def passTelemetryToGui(self, telemetryLine):
-		self.balloonDataSignalReceived.emit(telemetryLine)
 
 	def radioSerialInput(self):
 		serialInput = ""
-		
+
 		try:
 			if not (self.ser.inWaiting()):
 				sleep(1)
@@ -656,9 +729,9 @@ class radioThread(QtCore.QThread):
 				self.settingsWindowOpen = True
 			logRadio("Unable to write to serial port on " + self.SERIAL_PORT)
 			print("Unable to open serial port for input on " + self.SERIAL_PORT)
-			
+
 		return serialInput
-	
+
 	def radioSerialOutput(self, line):
 		try:
 			line = self.ser.write(self.RADIO_CALLSIGN + "," + line + "\n")
@@ -676,9 +749,9 @@ class radioThread(QtCore.QThread):
 			self.serialPortChanged = False
 		except:
 			logRadio("Unable to close serial port " + self.SERIAL_PORT)
-		
+
 		try:
-			self.ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
+			self.ser = serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -713,63 +786,152 @@ def logRadio(line):
 googleMapsHtml = """
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>
-    <script>
-      var map;
-      var myCenter = new google.maps.LatLng(36.8623, -121.0413);
-      var balloonWaypointArray = [];
-    
-      function initialize() 
-      {
-        var mapOptions = 
-        {
-          center: myCenter,
-          zoom: 11,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
+	<head>
+	<style>
+		html, body, #map-canvas {
+		height: 100%;
+		margin: 0px;
+		padding: 0px
+		}
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>
+	<script>
+		var map;
+		var myCenter = new google.maps.LatLng(36.8623, -121.0413);
+		var balloonWaypointArray = [];
+		var chase1WaypointArray = [];
+		var chase2WaypointArray = [];
+		var chase3WaypointArray = [];
+		
+		var iconBase = "http://fryarludwig.com/wp-content/uploads/2015/07/"
+		
+		var balloonMarker = new google.maps.Marker({position:myCenter});
+		var chase1Marker = new google.maps.Marker({position:myCenter});
+		var chase2Marker = new google.maps.Marker({position:myCenter});
+		var chase3Marker = new google.maps.Marker({position:myCenter});
+	
+		function initialize() 
+		{
+			var mapOptions = 
+			{
+				center: myCenter,
+				zoom: 11,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+	
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		}
+			
+		function addBalloonWaypoint(lat, lng)
+		{
+			var balloonPosition = new google.maps.LatLng(lat, lng);
+			balloonWaypointArray.push(balloonPosition);
+			
+			balloonMarker.setMap(null);
+			
+			balloonMarker = new google.maps.Marker({position:balloonPosition,
+												icon: iconBase + 'balloon.png',
+												map:map});
+												
+			balloonMarker.setMap(map);
+			
+			var line = new google.maps.Polyline
+			({
+				path:balloonWaypointArray,
+				strokeColor:"#FF0000",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				map:map
+			});
+		}
+			
+		function addChase1Waypoint(lat, lng)
+		{
+			var chase1Position = new google.maps.LatLng(lat, lng);
+			chase1WaypointArray.push(chase1Position);
+			
+			chase1Marker.setMap(null);
+			
+			chase1Marker = new google.maps.Marker({position:chase1Position,
+												icon: iconBase + 'purple.png',
+												map:map});
+			
+			chase1Marker.setMap(map);
+			
+			
+			var line = new google.maps.Polyline
+			({
+				path:chase1WaypointArray,
+				strokeColor:"#7F00FF",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				map:map
+			});
+		}
+			
+		function addChase2Waypoint(lat, lng)
+		{
+			var chase2Position = new google.maps.LatLng(lat, lng);
+			chase2WaypointArray.push(chase2Position);
+			
+			chase2Marker.setMap(null);
+			
+			chase2Marker = new google.maps.Marker({position:chase2Position,
+												icon: iconBase + 'blue.png',
+												map:map});
+			
+			chase2Marker.setMap(map);
+			
+			var line = new google.maps.Polyline
+			({
+				path:chase2WaypointArray,
+				strokeColor:"#007FFF",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				map:map
+			});
+		}
+			
+		function addChase3Waypoint(lat, lng)
+		{
+			var chase3Position = new google.maps.LatLng(lat, lng);
+			chase3WaypointArray.push(chase3Position);
+			
+			chase3Marker.setMap(null);
+			
+			chase3Marker = new google.maps.Marker({position:chase3Position,
+												icon: iconBase + 'green.png',
+												map:map});
+			
+			chase3Marker.setMap(map);
+			
+			var line = new google.maps.Polyline
+			({
+				path:chase3WaypointArray,
+				strokeColor:"#006600",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				map:map
+			});
+		}
+		
+		function switchToSatelliteView()
+		{
+		 map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+		}
+		
+		function switchToStreetView()
+		{
+		 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);
 
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-      }
-          
-      function addBalloonWaypoint(lat, lng)
-      {
-      	balloonWaypointArray.push(new google.maps.LatLng(lat, lng))
-      	
-		var line = new google.maps.Polyline
-		({
-		  path:balloonWaypointArray,
-		  strokeColor:"#0000FF",
-		  strokeOpacity:0.8,
-		  strokeWeight:2,
-		  map:map
-		});
-      }
-      
-      function switchToSatelliteView()
-      {
-	   map.setMapTypeId(google.maps.MapTypeId.HYBRID);
-      }
-      
-      function switchToStreetView()
-      {
-	   map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-      }
-      
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
-  </head>
-  <body>
-    <div id="map-canvas"></div>
-  </body>
+	</script>
+	</head>
+	<body>
+	<div id="map-canvas"></div>
+	</body>
 </html>
 """
 
@@ -780,4 +942,3 @@ if __name__ == '__main__':
 	app = QtGui.QApplication(sys.argv)
 	ex = mogsMainWindow()
 	sys.exit(app.exec_())
-
