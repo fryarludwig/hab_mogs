@@ -12251,3 +12251,6572 @@ Serial Input:
 Serial Input: 
 
 
+
+
+Starting Radio log
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,this 
+
+Handling message: nps,chat,this 
+Handling message: 
+nps,chat,this 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,work
+
+Handling message: nps,chat,work
+Handling message: 
+nps,chat,work
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,technology
+
+Handling message: nps,chat,technology
+Handling message: 
+nps,chat,technology
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,is
+nps,chat,is
+
+Handling message: nps,chat,is
+Handling message: nps,chat,is
+Handling message: 
+nps,chat,is
+nps,chat,is
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,working
+
+Handling message: nps,chat,working
+Handling message: 
+nps,chat,working
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,for
+
+Handling message: nps,chat,for
+Handling message: 
+nps,chat,for
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,us
+
+Handling message: nps,chat,us
+Handling message: 
+nps,chat,us
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,"the 
+
+Handling message: nps,chat,"the 
+Handling message: 
+nps,chat,"the 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,cow
+
+Handling message: nps,chat,cow
+Handling message: 
+nps,chat,cow
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,jumped
+
+Handling message: nps,chat,jumped
+Handling message: 
+nps,chat,jumped
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,over
+
+Handling message: nps,chat,over
+Handling message: 
+nps,chat,over
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,the
+
+Handling message: nps,chat,the
+Handling message: 
+nps,chat,the
+
+
+Serial Input: 
+
+
+Serial Input: nps,chat,moon"
+
+Handling message: nps,chat,moon"
+Handling message: 
+nps,chat,moon"
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Sending some message
+
+Handling message: chase2,chat,Sending some message
+Handling message: 
+chase2,chat,Sending some message
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,I hope you get this!
+
+Handling message: chase2,chat,I hope you get this!
+Handling message: 
+chase2,chat,I hope you get this!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,No messages :(
+
+Handling message: chase2,chat,No messages :(
+Handling message: 
+chase2,chat,No messages :(
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Starting Radio log
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port after change
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Message!
+
+Handling message: chase2,chat,Message!
+Handling message: 
+chase2,chat,Message!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,You're not getting it :(
+
+Handling message: chase2,chat,You're not getting it :(
+Handling message: 
+chase2,chat,You're not getting it :(
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Me
+
+Handling message: chase2,chat,Me
+Handling message: 
+chase2,chat,Me
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,chat,Something?
+
+Handling message: chase2,chat,Something?
+
+
+Handling message: 
+chase2,chat,Something?
+
+
+Serial Input: 
+
+
+al Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Nothing :(
+
+Handling message: chase2,chat,Nothing :(
+Handling message: 
+chase2,chat,Nothing :(
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Soemthing!
+
+Handling message: chase2,chat,Soemthing!
+Handling message: 
+chase2,chat,Soemthing!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Anything?
+
+Handling message: chase2,chat,Anything?
+Handling message: 
+chase2,chat,Anything?
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Ntohing at all
+
+Handling message: chase2,chat,Ntohing at all
+Handling message: 
+chase2,chat,Ntohing at all
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,lsdkf
+chase2,chat,lsdkf
+chase2,chat,lsdkf
+chase2,chat,lsdkf
+
+Handling message: chase2,chat,lsdkf
+Handling message: chase2,chat,lsdkf
+Handling message: chase2,chat,lsdkf
+Handling message: chase2,chat,lsdkf
+Handling message: 
+chase2,chat,lsdkf
+chase2,chat,lsdkf
+chase2,chat,lsdkf
+chase2,chat,lsdkf
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Something?
+
+Handling message: chase2,chat,Something?
+Handling message: 
+chase2,chat,Something?
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+
+
+Starting Radio log
+
+Serial Input: 
+
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+Unable to write to serial port on COM6
+
+
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+Serial Input: 
+
+
+
+
+le to close serial port COM6
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Somebody!
+
+Handling message: chase2,chat,Somebody!
+Handling message: 
+chase2,chat,Somebody!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Anybody?
+
+Handling message: chase2,chat,Anybody?
+Handling message: 
+chase2,chat,Anybody?
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Message!
+
+Handling message: chase2,chat,Message!
+Handling message: 
+chase2,chat,Message!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,I'm sending stuff!
+
+Handling message: chase2,chat,I'm sending stuff!
+Handling message: 
+chase2,chat,I'm sending stuff!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,No one is listening
+
+Handling message: chase2,chat,No one is listening
+Handling message: 
+chase2,chat,No one is listening
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Message!
+
+Handling message: chase2,chat,Message!
+Handling message: 
+chase2,chat,Message!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,I've sent something
+
+Handling message: chase2,chat,I've sent something
+Handling message: 
+chase2,chat,I've sent something
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,More results!
+
+Handling message: chase2,chat,More results!
+Handling message: 
+chase2,chat,More results!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Better, right?
+
+Handling message: chase2,chat,Better, right?
+Handling message: 
+chase2,chat,Better, right?
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Oh, this is great!
+
+Handling message: chase2,chat,Oh, this is great!
+Handling message: 
+chase2,chat,Oh, this is great!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,This
+
+Handling message: chase2,chat,This
+Handling message: 
+chase2,chat,This
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,is 
+
+Handling message: chase2,chat,is 
+Handling message: 
+chase2,chat,is 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,a 
+
+Handling message: chase2,chat,a 
+Handling message: 
+chase2,chat,a 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,message
+
+Handling message: chase2,chat,message
+Handling message: 
+chase2,chat,message
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,Message!
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase1,chat,Message!
+
+Handling message: chase1,chat,Message!
+Handling message: 
+chase1,chat,Message!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,That shoud have updated
+
+Handling message: chase2,chat,That shoud have updated
+Handling message: 
+chase2,chat,That shoud have updated
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,MEssage!
+
+Handling message: chase2,chat,MEssage!
+Handling message: 
+chase2,chat,MEssage!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Serial Input: 
+
+
+le to close serial port COM6
+Serial Input: 
+Unable to write to serial port on COM6
+
+
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Serial Input: 
+
+
+le to close serial port COM6
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,Item!
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,Message!
+Serial Input: chase2,chat,Message!
+
+Handling message: chase2,chat,Message!
+Handling message: 
+chase2,chat,Message!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: nps,chat,NPS!
+Serial Input: nps,chat,NPS!
+
+Handling message: nps,chat,NPS!
+Handling message: 
+nps,chat,NPS!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: nps,chat,Ntohing at all?
+Serial Input: nps,chat,Ntohing at all?
+
+Handling message: nps,chat,Ntohing at all?
+Handling message: 
+nps,chat,Ntohing at all?
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,MEssage
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,dsf
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: nps,chat,Hey!
+Serial Input: nps,chat,Hey!
+
+Handling message: nps,chat,Hey!
+Handling message: 
+nps,chat,Hey!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase2,chat,Value!
+Serial Input: 
+Serial Input: chase2,chat,Value!
+
+
+
+Handling message: chase2,chat,Value!
+Handling message: 
+chase2,chat,Value!
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Handling message: nps,chat,Talking back...
+Serial Input: nps,chat,Talking back...
+
+Serial Input: 
+
+
+Handling message: nps,chat,Talking back...
+Handling message: 
+nps,chat,Talking back...
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase1,alive
+
+Handling message: chase1,alive
+Handling message: 
+chase1,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase1,alive
+
+Handling message: chase1,alive
+Handling message: 
+chase1,alive
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase3,alive
+
+Handling message: chase3,alive
+Handling message: 
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: chase3,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase3,alive
+
+
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: chase3,alive
+
+Serial Input: chase2,alive
+
+Handling message: chase3,alive
+Handling message: chase2,alive
+Handling message: 
+Handling message: 
+chase2,alive
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+ling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: chase2,alive
+
+
+
+ling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Serial Input: 
+
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,alive
+
+Handling message: chase2,alive
+Handling message: 
+chase2,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: nps,alive
+
+Handling message: nps,alive
+Handling message: 
+nps,alive
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+

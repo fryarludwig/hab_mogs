@@ -1,6 +1,9 @@
 """"
 Changelog:
 07/13/15 - KFL: Initial commit - committed all of previous work
+				Added functionality for network status
+				Refactored serial input to capture (almost) all messages
+				Implemented and verified chat functionality
 """
 
 
@@ -28,7 +31,6 @@ TODO: Add temperature graph
 TODO: Add speed graph
 TODO: Add offline mode
 TODO: Add radio verification
-TODO: Add heartbeats
 TODO: Add command response updating
 TODO: Add unit tests
 """
@@ -70,6 +72,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.radioHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
 		self.radioHandler.invalidSerialPort.connect(self.changeSettings)
 		self.radioHandler.chatMessageReceived.connect(self.updateChat)
+		self.radioHandler.heartbeatReceivedSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
 		self.radioHandler.start()
 		self.initUI()
@@ -278,10 +281,7 @@ class mogsMainWindow(QtGui.QWidget):
 		for key, statusLabel in self.statusLabelList.items():
 			statusLabel.setAlignment(QtCore.Qt.AlignHCenter)
 			statusLabel.setFont(networkFont)
-			if (key == self.radioHandler.RADIO_CALLSIGN):
-				statusLabel.setStyleSheet("QFrame { background-color: Green }")
-			else:
-				statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
+			statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
 		
 		layout.addWidget(layoutLabel, 0, 0, 1, 3)
 		layout.addWidget(self.statusLabelList["balloon"], 1, 0, 1, 2)
@@ -289,6 +289,8 @@ class mogsMainWindow(QtGui.QWidget):
 		layout.addWidget(self.statusLabelList["chase1"], 2, 0)
 		layout.addWidget(self.statusLabelList["chase2"], 2, 1)
 		layout.addWidget(self.statusLabelList["chase3"], 2, 2)
+		
+		self.updateActiveNetwork()
 		
 		return widget
 	
@@ -371,11 +373,7 @@ class mogsMainWindow(QtGui.QWidget):
 	the QListView with the sent message as well.
 	"""
 	def sendMessage(self):
-		userMessage = str(self.sendMessageEntryBox.text()).replace("\n", "")
-		itemToAdd = QtGui.QStandardItem(self.radioHandler.RADIO_CALLSIGN + ": " + userMessage)
-		self.messagingListViewModel.insertRow(0, itemToAdd)
-		self.messagingListView.setModel(self.messagingListViewModel)
-		self.messagingListView.show()
+		userMessage = str(self.sendMessageEntryBox.text())
 		self.radioHandler.userMessagesToSend.append(userMessage)
 		self.sendMessageEntryBox.clear()
 		
@@ -432,11 +430,22 @@ class mogsMainWindow(QtGui.QWidget):
 		if (popupWidget.exec_()):
 			if (len(portTextBox.text()) > 0):
 				self.radioHandler.SERIAL_PORT = str(portTextBox.text().replace("\n", ""))
+				self.radioHandler.serialPortChanged = True
 			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
+				self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = False
 				self.radioHandler.RADIO_CALLSIGN = str(selectCallsignComboBox.currentText())
+				self.updateActiveNetwork()
 				
 		self.radioHandler.settingsWindowOpen = False
 		
+	def updateActiveNetwork(self):
+		self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = True
+		
+		for callsign, label in self.statusLabelList.items():
+			if (self.radioHandler.activeNodes[callsign]):
+				label.setStyleSheet("QFrame { background-color: Green }")
+			else:
+				label.setStyleSheet("QFrame { background-color: Salmon }")
 	
 	def setMapToSatellite(self):
 		javascriptCommand = "switchToSatelliteView()"
@@ -455,13 +464,14 @@ class radioThread(QtCore.QThread):
 	balloonDataSignalReceived = QtCore.pyqtSignal(object)
 	invalidSerialPort = QtCore.pyqtSignal(object)
 	chatMessageReceived = QtCore.pyqtSignal(object)
+	heartbeatReceivedSignal = QtCore.pyqtSignal()
 	
 	def __init__(self):
 		if (TEST_MODE):
 			self.inputTestFile = open("test_telemetry.txt")
 		QtCore.QThread.__init__(self)
 		
-		self.HEARTBEAT_INTERVAL = 100
+		self.HEARTBEAT_INTERVAL = 30
 		self.SERIAL_PORT = "COM4"
 		self.RADIO_CALLSIGN = "chase2"
 		self.BAUDRATE = 9600
@@ -469,17 +479,19 @@ class radioThread(QtCore.QThread):
 		# Set up semaphore-like variables
 		self.sendingSerialMessage = False
 		self.validHeartbeatReceived = False
-		self.chase1Alive = False
-		self.chase2Alive = False
-		self.chase3Alive = False
-		self.npsAlive = False
-		self.balloonAlive = False
+		
+		self.activeNodes = {}
+		self.activeNodes["chase1"] = False
+		self.activeNodes["chase2"] = False
+		self.activeNodes["chase3"] = False
+		self.activeNodes["balloon"] = False
+		self.activeNodes["nps"] = False
 		
 		self.releaseBalloonFlag = False
 		self.settingsWindowOpen = False
+		self.serialPortChanged = False
 		
 		self.userMessagesToSend = []
-		
 	
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
@@ -491,13 +503,21 @@ class radioThread(QtCore.QThread):
 					sleep(1)
 					self.handleMessage(line)
 		
+		self.openSerialPort()
+		self.sendHeartbeat()
+				
 		while(True):
+			if (self.serialPortChanged):
+				self.openSerialPort()
+				
 			if (self.releaseBalloonFlag):
 				self.sendReleaseCommand()
 				self.releaseBalloonFlag = False
 			
 			while (len(self.userMessagesToSend) > 0):
-				self.radioSerialOutput("chat," + self.userMessagesToSend[0])
+				formattedMessage = "chat," + self.userMessagesToSend[0]
+				self.radioSerialOutput(formattedMessage)
+				self.handleMessage(self.RADIO_CALLSIGN + "," + formattedMessage)
 				self.userMessagesToSend.pop()
 			
 			#self.verifyRadioConnection()
@@ -508,9 +528,7 @@ class radioThread(QtCore.QThread):
 				self.handleMessage(messageReceived)
 			
 			if (counter == 0):
-				self.sendingSerialMessage = True
 				self.sendHeartbeat()
-				self.sendingSerialMessage = False
 				counter = self.HEARTBEAT_INTERVAL
 			else:
 				counter -= 1
@@ -526,8 +544,23 @@ class radioThread(QtCore.QThread):
 					self.receivedHeartbeat("balloon")
 					if (line[4:8] == "data"):
 						self.balloonDataSignalReceived.emit(line[4:-1])
-				elif ("chat" in line):
-					self.chatMessageReceived.emit(line)
+				elif (line[:3] == "nps"):
+					self.receivedHeartbeat("nps")
+					if (line[4:8] == "chat"):
+						self.chatMessageReceived.emit("NPS: " + line[9:])
+				elif (line[:6] == "chase1"):
+					self.receivedHeartbeat("chase1")
+					if (line[7:11] == "chat"):
+						self.chatMessageReceived.emit("Chase 1: " + line[11:])
+				elif (line[:6] == "chase2"):
+					self.receivedHeartbeat("chase2")
+					if (line[7:11] == "chat"):
+						self.chatMessageReceived.emit("Chase 2: " + line[11:])
+				elif (line[:6] == "chase3"):
+					self.receivedHeartbeat("chase3")
+					if (line[7:11] == "chat"):
+						self.chatMessageReceived.emit("Chase 3: " + line[11:])
+				
 			logRadio("Handling message: " + line)
 
 	# Determines if the current radio is connected to the network. If no nodes
@@ -552,25 +585,11 @@ class radioThread(QtCore.QThread):
 	# Takes a heartbeat signal and determines which node sent it out. That node
 	# is set as currently active on the network
 	def receivedHeartbeat(self, heartbeatSignalReceived):
-		validHeartbeatCallsign = True
-		
-		if (heartbeatSignalReceived == "balloon"):
-			self.balloonAlive = True
-		elif (heartbeatSignalReceived == "nps"):
-			self.npsAlive = True
-		elif (heartbeatSignalReceived == "chase1"):
-			self.chase1Alive = True
-		elif (heartbeatSignalReceived == "chase2"):
-			self.chase2Alive = True
-		elif (heartbeatSignalReceived == "chase3"):
-			self.chase3Alive = True
-		else:
-			validHeartbeatCallsign = False
-		
-		if not (validHeartbeatCallsign):
-			logTelemetry("Invalid heartbeat received. LOGGING ERROR")
-		else:
-			self.validHeartbeatReceived = True
+		for key, value in self.activeNodes.items():
+			if (heartbeatSignalReceived == key):
+				self.activeNodes[key] = True
+	
+		self.heartbeatReceivedSignal.emit()
 		
 	# Sends a "heartbeat" signal to other radios to verify radio is currently
 	# active on the network
@@ -608,16 +627,12 @@ class radioThread(QtCore.QThread):
 	def radioSerialInput(self):
 		serialInput = ""
 		
-		ser = None
 		try:
-			ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
-			if not (ser.inWaiting()):
+			if not (self.ser.inWaiting()):
 				sleep(1)
-			while(ser.inWaiting()):
-				serialInput += ser.readline()
-				print (serialInput)
+			while(self.ser.inWaiting()):
+				serialInput += self.ser.readline()
 			logRadio("Serial Input: " + serialInput)
-			ser.close()
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -630,12 +645,8 @@ class radioThread(QtCore.QThread):
 		return serialInput
 	
 	def radioSerialOutput(self, line):
-		ser = None
-		
 		try:
-			ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
-			line = ser.write(self.RADIO_CALLSIGN + "," + line + "\n")
-			ser.close()
+			line = self.ser.write(self.RADIO_CALLSIGN + "," + line + "\n")
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -643,7 +654,22 @@ class radioThread(QtCore.QThread):
 				self.invalidSerialPort.emit("Please enter a valid serial port")
 				self.settingsWindowOpen = True
 			logRadio("Unable to write to serial port on " + self.SERIAL_PORT)
-			print("Unable to write to serial port on " + self.SERIAL_PORT)
+
+	def openSerialPort(self):
+		try:
+			self.ser.close()
+			self.serialPortChanged = False
+		except:
+			logRadio("Unable to close serial port " + self.SERIAL_PORT)
+		
+		try:
+			self.ser=serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
+		except:
+			if (self.settingsWindowOpen):
+				sleep(1)
+			else:
+				self.invalidSerialPort.emit("Please enter a valid serial port")
+				self.settingsWindowOpen = True
 
 def logTelemetry(line):
 	try:
