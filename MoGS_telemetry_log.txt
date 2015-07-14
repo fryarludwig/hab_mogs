@@ -2843,3 +2843,43 @@ Starting telemetry log
 
 Starting telemetry log
 
+2015-07-14 10:03:46: 
+
+Starting telemetry log
+
+2015-07-14 10:16:37: 
+
+Starting telemetry log
+
+2015-07-14 10:17:58: 
+
+Starting telemetry log
+
+2015-07-14 10:18:29: 
+
+Starting telemetry log
+
+2015-07-14 10:18:58: 
+
+Starting telemetry log
+
+2015-07-14 10:19:42: 
+
+Starting telemetry log
+
+2015-07-14 10:20:02: 
+
+Starting telemetry log
+
+2015-07-14 10:20:54: 
+
+Starting telemetry log
+
+2015-07-14 10:21:32: 
+
+Starting telemetry log
+
+2015-07-14 10:25:00: 
+
+Starting telemetry log
+

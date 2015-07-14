@@ -4,6 +4,7 @@ Changelog:
 				Added functionality for network status
 				Refactored serial input to capture (almost) all messages
 				Implemented and verified chat functionality
+07/14/15 - KFL: Added option to silence serial port error popups
 """
 
 
@@ -26,11 +27,11 @@ TEST_MODE = False
 
 """
 Handles GUI operations, as well as all user input. 
+TODO: Add tracking for chase cars
+TODO: Add offline mode
 TODO: Add altitude graph
 TODO: Add temperature graph
 TODO: Add speed graph
-TODO: Add offline mode
-TODO: Add radio verification
 TODO: Add command response updating
 TODO: Add unit tests
 """
@@ -46,6 +47,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView = QtGui.QListView()
 		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
 		self.sendMessageEntryBox = QtGui.QLineEdit()
+		self.notifyOnSerialError = True
 		
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
@@ -70,7 +72,7 @@ class mogsMainWindow(QtGui.QWidget):
 		
 		self.radioHandler = radioThread()
 		self.radioHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
-		self.radioHandler.invalidSerialPort.connect(self.changeSettings)
+		self.radioHandler.invalidSerialPort.connect(self.serialFailure)
 		self.radioHandler.chatMessageReceived.connect(self.updateChat)
 		self.radioHandler.heartbeatReceivedSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
@@ -136,7 +138,6 @@ class mogsMainWindow(QtGui.QWidget):
 	"""
 	Populates a "Messaging" widget.
 	Returns the widget, which is then added to the layout
-	
 	"""
 	def createMessagingWidget(self):
 		widget = QWidget()
@@ -387,6 +388,11 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView.show()
 		self.sendMessageEntryBox.clear()
 	
+	def serialFailure(self, message):
+		if (self.notifyOnSerialError):
+			QtGui.QMessageBox.question(self, "Error", message, QtGui.QMessageBox.Ok)
+			self.changeSettings()
+	
 	"""
 	Opens a dialog to edit the current COM port in use. Sets the self.SERIAL_PORT to 
 	user-entered text.
@@ -410,31 +416,40 @@ class mogsMainWindow(QtGui.QWidget):
 			selectCallsignComboBox.addItem("chase2")
 		if not (self.radioHandler.RADIO_CALLSIGN == "chase3"):
 			selectCallsignComboBox.addItem("chase3")
+			
+		openDialogOnFailureCheckBox = QtGui.QCheckBox("Notify on serial failure")
+		if (self.notifyOnSerialError):
+			openDialogOnFailureCheckBox.setChecked(True)
 		
 		selectButton = QtGui.QPushButton("Save Settings", self)
 		selectButton.clicked.connect(popupWidget.accept)
 		cancelButton = QtGui.QPushButton("Cancel", self)
 		cancelButton.clicked.connect(popupWidget.reject)
 		
-		windowLayout.addWidget(comPortPromptLabel, 1, 0)
-		windowLayout.addWidget(portTextBox, 1, 1, 1, 2)
-		windowLayout.addWidget(selectCallsignLabel, 3, 0)
-		windowLayout.addWidget(selectCallsignComboBox, 3, 1, 1, 2)
+		windowLayout.addWidget(selectCallsignLabel, 1, 0)
+		windowLayout.addWidget(selectCallsignComboBox, 1, 1, 1, 2)
+		windowLayout.addWidget(comPortPromptLabel, 3, 0)
+		windowLayout.addWidget(portTextBox, 3, 1, 1, 2)
+		windowLayout.addWidget(openDialogOnFailureCheckBox, 4, 1, 1, 2)
 		
-		windowLayout.addWidget(selectButton, 4, 1)
-		windowLayout.addWidget(cancelButton, 4, 2)
+		windowLayout.addWidget(selectButton, 5, 1)
+		windowLayout.addWidget(cancelButton, 5, 2)
 		
 		popupWidget.setLayout(windowLayout)
 		popupWidget.setWindowTitle("Settings")
 		
 		if (popupWidget.exec_()):
-			if (len(portTextBox.text()) > 0):
+			if (len(portTextBox.text()) > 0 and str(portTextBox.text()) != self.radioHandler.SERIAL_PORT):
 				self.radioHandler.SERIAL_PORT = str(portTextBox.text().replace("\n", ""))
 				self.radioHandler.serialPortChanged = True
 			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
 				self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = False
 				self.radioHandler.RADIO_CALLSIGN = str(selectCallsignComboBox.currentText())
 				self.updateActiveNetwork()
+			if (openDialogOnFailureCheckBox.isChecked()):
+				self.notifyOnSerialError = True
+			else:
+				self.notifyOnSerialError = False
 				
 		self.radioHandler.settingsWindowOpen = False
 		
@@ -473,7 +488,7 @@ class radioThread(QtCore.QThread):
 		
 		self.HEARTBEAT_INTERVAL = 30
 		self.SERIAL_PORT = "COM4"
-		self.RADIO_CALLSIGN = "chase2"
+		self.RADIO_CALLSIGN = "chase1"
 		self.BAUDRATE = 9600
 		
 		# Set up semaphore-like variables
