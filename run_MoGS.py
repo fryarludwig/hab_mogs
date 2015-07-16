@@ -27,10 +27,11 @@ TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
 RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 
-TEST_MODE = True  # Test mode pulls telemetry from file instead of radios
+TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 """
 Handles GUI operations, as well as all user input. 
+
 TODO: Add tracking for chase cars
 TODO: Add offline mode
 TODO: Add altitude graph
@@ -38,6 +39,16 @@ TODO: Add temperature graph
 TODO: Add speed graph
 TODO: Add command response updating
 TODO: Add unit tests
+TODO: Text messaging GPS, Altitude
+TODO: Additional logging
+TODO: Failsafe operations
+TODO: Audio link mode
+TODO: Higher baud rate
+TODO: Image transfer
+TODO: Test Thursday
+TODO: Max out radios
+TODO: Add GPS plotting (predictions) (automated?)
+TODO: AZ/EL plotting
 """
 class mogsMainWindow(QtGui.QWidget):
 	"""
@@ -53,6 +64,9 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
 		self.sendMessageEntryBox = QtGui.QLineEdit()
 		self.notifyOnSerialError = True
+
+		self.sendImageDialogWidget = QtGui.QDialog()
+		self.imageToSendFileName = ""
 
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
@@ -102,8 +116,8 @@ class mogsMainWindow(QtGui.QWidget):
 
 		mapWidget = QWidget()
 		self.mapView = QWebView(mapWidget)
-		self.mapView.setMinimumSize(window_x - 250, window_y)
-		self.mapView.setMaximumSize(window_x - 250, window_y)
+		self.mapView.setMinimumSize(window_x - 317, window_y)
+		self.mapView.setMaximumSize(window_x, window_y)
 		self.theMap = self.mapView.page().mainFrame()
 		self.theMap.addToJavaScriptWindowObject('self', self)
 		self.mapView.setHtml(googleMapsHtml)
@@ -137,8 +151,8 @@ class mogsMainWindow(QtGui.QWidget):
 	def onResize(self):
 		minX = self.vLayout.geometry().x()
 		minY = self.vLayout.geometry().height()
-		self.mapView.setMinimumSize(minX + 20, minY + 10)
-		self.mapView.setMaximumSize(minX + 20, minY + 10)
+		self.mapView.setMinimumSize(minX , minY)
+		self.mapView.setMaximumSize(minX, minY)
 
 	"""
 	Populates a "Messaging" widget.
@@ -192,8 +206,8 @@ class mogsMainWindow(QtGui.QWidget):
 		comPortButton = QtGui.QPushButton('Settings', self)
 		comPortButton.clicked.connect(self.changeSettings)
 
-		streetMapButton = QtGui.QPushButton('Street Map', self)
-		streetMapButton.clicked[bool].connect(self.setMapToStreet)
+		streetMapButton = QtGui.QPushButton('Send Image', self)
+		streetMapButton.clicked[bool].connect(self.sendImageDialog)
 
 		resizeMapButton = QtGui.QPushButton('Resize Map', self)
 		resizeMapButton.clicked[bool].connect(self.onResize)
@@ -202,8 +216,8 @@ class mogsMainWindow(QtGui.QWidget):
 		balloonReleaseButton.setStyleSheet("background-color: Salmon")
 		balloonReleaseButton.clicked[bool].connect(self.confirmAndReleaseBalloon)
 
-		satelliteViewButton = QtGui.QPushButton('Satellite View', self)
-		satelliteViewButton.clicked[bool].connect(self.setMapToSatellite)
+		satelliteViewButton = QtGui.QPushButton('Update Prediction', self)
+		satelliteViewButton.clicked[bool].connect(self.requestPayloadImage)
 
 		audioLinkButton = QtGui.QPushButton('Audio Link mode', self)
 		audioLinkButton.setCheckable(True)
@@ -407,6 +421,60 @@ class mogsMainWindow(QtGui.QWidget):
 						"Default setting is 5 data points, full range is 2-25")
 		QtGui.QMessageBox.information(self, "Help", helpString, QtGui.QMessageBox.Ok)
 
+	def selectImageFileBrowser(self):
+		self.imageToSendFileName = QtGui.QFileDialog.getOpenFileName(self)
+		self.sendImageDialogWidget.raise_()
+		self.sendImageDialogWidget.activateWindow()
+
+	def sendImageDialog(self):
+		windowLayout = QtGui.QGridLayout()
+		self.sendImageDialogWidget = QtGui.QDialog()
+
+		selectButton = QtGui.QPushButton("Send Image", self)
+		selectButton.setDefault(True)
+		selectButton.clicked.connect(self.sendImageDialogWidget.accept)
+		cancelButton = QtGui.QPushButton("Cancel", self)
+		cancelButton.clicked.connect(self.sendImageDialogWidget.reject)
+
+		imageNameLabel = QtGui.QLabel("Image Name")
+		imageSelectButton = QtGui.QPushButton("Select")
+		imageSelectButton.clicked.connect(self.selectImageFileBrowser)
+
+		windowLayout.addWidget(imageNameLabel, 2, 0)
+		windowLayout.addWidget(imageSelectButton, 2, 1, 1, 2)
+		windowLayout.addWidget(selectButton, 10, 1)
+		windowLayout.addWidget(cancelButton, 10, 2)
+
+		self.sendImageDialogWidget.setLayout(windowLayout)
+		self.sendImageDialogWidget.setWindowTitle("Send Image")
+
+		if (self.sendImageDialogWidget.exec_()):
+			if (len(self.imageToSendFileName) > 0):
+				try:
+					imageFile = open(self.imageToSendFileName, "rb")
+					self.radioHandler.imageToSend = (imageFile.read())
+					self.radioHandler.imageReadyToSend = True
+				except:
+					QtGui.QMessageBox.information(self, "Error", "Could not open image",
+												 QtGui.QMessageBox.Ok)
+			else:
+				QtGui.QMessageBox.information(self, "Error", "No Image Selected",
+											 QtGui.QMessageBox.Ok)
+
+	def displayReceivedImage(self, fileName):
+		windowLayout = QtGui.QGridLayout()
+		popupWidget = QtGui.QDialog()
+
+		popupWidget.setLayout(windowLayout)
+		popupWidget.show()
+		return None
+
+	def plotGpsCoordinates(self):
+		return None
+
+	def requestPayloadImage(self):
+		return None
+
 	"""
 	Opens a dialog to edit the current COM port in use. Sets the self.SERIAL_PORT to 
 	user-entered text.
@@ -417,19 +485,30 @@ class mogsMainWindow(QtGui.QWidget):
 
 		selectCallsignLabel = QtGui.QLabel("Callsign")
 		selectCallsignComboBox = QtGui.QComboBox()
-		selectCallsignComboBox.addItem(self.radioHandler.RADIO_CALLSIGN)
-		if not (self.radioHandler.RADIO_CALLSIGN == "nps"):
-			selectCallsignComboBox.addItem("nps")
-		if not (self.radioHandler.RADIO_CALLSIGN == "chase1"):
-			selectCallsignComboBox.addItem("chase1")
-		if not (self.radioHandler.RADIO_CALLSIGN == "chase2"):
-			selectCallsignComboBox.addItem("chase2")
-		if not (self.radioHandler.RADIO_CALLSIGN == "chase3"):
-			selectCallsignComboBox.addItem("chase3")
+		selectCallsignComboBox.addItem("nps")
+		selectCallsignComboBox.addItem("chase1")
+		selectCallsignComboBox.addItem("chase2")
+		selectCallsignComboBox.addItem("chase3")
+
+		index = selectCallsignComboBox.findText(self.radioHandler.RADIO_CALLSIGN)
+		selectCallsignComboBox.setCurrentIndex(index)
 
 		portTextBox = QtGui.QLineEdit()
 		portTextBox.setText(self.radioHandler.SERIAL_PORT)
 		comPortPromptLabel = QtGui.QLabel("COM Port")
+		baudrateLabel = QtGui.QLabel("Baudrate")
+		baudrateComboBox = QtGui.QComboBox()
+		baudrateComboBox.addItem("230400")
+		baudrateComboBox.addItem("115200")
+		baudrateComboBox.addItem("57600")
+		baudrateComboBox.addItem("38400")
+		baudrateComboBox.addItem("28800")
+		baudrateComboBox.addItem("19200")
+		baudrateComboBox.addItem("14400")
+		baudrateComboBox.addItem("9600")
+
+		index = baudrateComboBox.findText(str(self.radioHandler.BAUDRATE))
+		baudrateComboBox.setCurrentIndex(index)
 
 		precisionSpinBoxLabel = QtGui.QLabel("Rate Sensitivity")
 		precisionSpinBoxHelpButton = QtGui.QPushButton("?")
@@ -458,17 +537,21 @@ class mogsMainWindow(QtGui.QWidget):
 		windowLayout.addWidget(precisionSpinBoxHelpButton, 2, 2)
 		windowLayout.addWidget(comPortPromptLabel, 3, 0)
 		windowLayout.addWidget(portTextBox, 3, 1, 1, 2)
-		windowLayout.addWidget(openDialogOnFailureCheckBox, 4, 1, 1, 2)
+		windowLayout.addWidget(baudrateLabel, 4, 0)
+		windowLayout.addWidget(baudrateComboBox, 4, 1, 1, 2)
+		windowLayout.addWidget(openDialogOnFailureCheckBox, 5, 1, 1, 2)
 
-		windowLayout.addWidget(selectButton, 5, 1)
-		windowLayout.addWidget(cancelButton, 5, 2)
+		windowLayout.addWidget(selectButton, 6, 1)
+		windowLayout.addWidget(cancelButton, 6, 2)
 
 		popupWidget.setLayout(windowLayout)
 		popupWidget.setWindowTitle("Settings")
 
 		if (popupWidget.exec_()):
-			if (len(portTextBox.text()) > 0 and str(portTextBox.text()) != self.radioHandler.SERIAL_PORT):
+			if (len(portTextBox.text()) > 0 and str(portTextBox.text()) != self.radioHandler.SERIAL_PORT
+				or (int(baudrateComboBox.currentText()) != self.radioHandler.BAUDRATE)):
 				self.radioHandler.SERIAL_PORT = str(portTextBox.text().replace("\n", ""))
+				self.radioHandler.BAUDRATE = int(baudrateComboBox.currentText())
 				self.radioHandler.serialPortChanged = True
 			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
 				self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = False
@@ -490,14 +573,6 @@ class mogsMainWindow(QtGui.QWidget):
 				label.setStyleSheet("QFrame { background-color: Green }")
 			else:
 				label.setStyleSheet("QFrame { background-color: Salmon }")
-
-	def setMapToSatellite(self):
-		javascriptCommand = "switchToSatelliteView()"
-		self.theMap.evaluateJavaScript(javascriptCommand)
-
-	def setMapToStreet(self):
-		javascriptCommand = "switchToStreetView()"
-		self.theMap.evaluateJavaScript(javascriptCommand)
 
 	def calculateRates(self):
 		groundSpeed = "NONE"
@@ -569,7 +644,7 @@ class radioThread(QtCore.QThread):
 		self.HEARTBEAT_INTERVAL = 30
 		self.SERIAL_PORT = "COM4"
 		self.RADIO_CALLSIGN = "chase1"
-		self.BAUDRATE = 9600
+		self.BAUDRATE = 230400
 
 		# Set up semaphore-like variables
 		self.sendingSerialMessage = False
@@ -585,8 +660,12 @@ class radioThread(QtCore.QThread):
 		self.releaseBalloonFlag = False
 		self.settingsWindowOpen = False
 		self.serialPortChanged = False
+		self.serialBaudrateChanged = False
 
 		self.userMessagesToSend = []
+		self.imageToSend = ""
+		self.imageReadyToSend = False
+		self.imageOutputCounter = 0
 
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
@@ -607,6 +686,10 @@ class radioThread(QtCore.QThread):
 			if (self.releaseBalloonFlag):
 				self.sendReleaseCommand()
 				self.releaseBalloonFlag = False
+
+			if (self.imageReadyToSend):
+				self.sendImage()
+				self.imageToSend = ""
 
 			while (len(self.userMessagesToSend) > 0):
 				formattedMessage = "chat," + self.userMessagesToSend[0]
@@ -629,58 +712,85 @@ class radioThread(QtCore.QThread):
 
 			logRadio(messageReceived + "\n")
 
+	"""
+	TODO: Refactor handleMessage to be more concise and clean
+	"""
 	# Performs an action based on the message sent to it
 	# Returns True or False based on the success of that action
 	def handleMessage(self, message):
-		for line in message.split('\n'):
+		for line in message.split('END_TX\n'):
 			if (len(line) > 0):
 				if (line[:3] == "HAB"):
 					self.receivedHeartbeat("balloon")
 					if (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[4:-1])
+						self.balloonDataSignalReceived.emit(line[4:-7])
+					elif(line[4:9] == "image"):
+						self.decommutateImage(line[10:-7])
+
 				elif (line[:3] == "nps"):
 					self.receivedHeartbeat("nps")
 					if (line[4:8] == "chat"):
 						self.chatMessageReceived.emit("NPS: " + line[9:])
+					elif(line[4:9] == "image"):
+						self.decommutateImage(line[10:-7])
+
 				elif (line[:6] == "chase1"):
 					self.receivedHeartbeat("chase1")
 					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 1: " + line[11:])
-					elif (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[4:-1])
+						self.chatMessageReceived.emit("Chase 1: " + line[12:])
+						print(line[11:12])
+					elif (line[7:11] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-7])
+					elif(line[7:12] == "image"):
+						print("Received image!")
+						self.decommutateImage(message[13:-7])
+
 				elif (line[:6] == "chase2"):
 					self.receivedHeartbeat("chase2")
 					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 2: " + line[11:])
-					elif (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[4:-1])
+						self.chatMessageReceived.emit("Chase 2: " + line[12:])
+					elif (line[7:11] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-7])
+					elif(line[7:12] == "image"):
+						print("Received image!")
+						self.decommutateImage(message[13:-7])
+
 				elif (line[:6] == "chase3"):
 					self.receivedHeartbeat("chase3")
 					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 3: " + line[11:])
-					elif (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[4:-1])
+						self.chatMessageReceived.emit("Chase 3: " + line[12:])
+					elif (line[7:11] == "data"):
+						self.balloonDataSignalReceived.emit(line[4:-7])
+					elif(line[7:12] == "image"):
+						print("Received image!")
+						self.decommutateImage(message[13:-7])
 
 			logRadio("Handling message: " + line)
 
-	# Determines if the current radio is connected to the network. If no nodes
-	# are active, attempts to reconnect radio to network
-	def verifyRadioConnection(self):
-		radioConnectionVerified = self.networkConnected()
+	def sendImage(self):
+		numPackets = len(self.imageToSend) / 1000
+		currIndex = 0
 
-		if not (radioConnectionVerified):
-			logRadio("Unable to verify network connectivity")
+		while(currIndex < numPackets):
+			packet = self.imageToSend[currIndex * 1000 : (currIndex + 1) * 1000]
+			self.radioSerialOutput("image," + packet)
+			currIndex += 1
 
-			if (self.validHeartbeatReceived):
-				radioConnectionVerified = True
+		self.radioSerialOutput("image,{}".format(self.imageToSend[numPackets * 1000 :-1]))
 
-			if (not radioConnectionVerified):
-				retries = 10
-				self.sendHeartbeat()
-				while not (self.networkConnected() and retries >= 0):
-					sleep(self.SHORT_SLEEP_DURATION)
+		self.imageReadyToSend = False
 
-		return radioConnectionVerified
+	def decommutateImage(self, imageValues):
+		print("Decommutating...")
+		outputImage = None
+		try:
+			outputImage = open("output{}.png".format(self.imageOutputCounter), "ab")
+		except:
+			outputImage = open("output{}.png".format(self.imageOutputCounter), "wb")
+
+		outputImage.write(imageValues)
+
+		outputImage.close()
 
 	# Takes a heartbeat signal and determines which node sent it out. That node
 	# is set as currently active on the network
@@ -734,7 +844,7 @@ class radioThread(QtCore.QThread):
 
 	def radioSerialOutput(self, line):
 		try:
-			line = self.ser.write(self.RADIO_CALLSIGN + "," + line + "\n")
+			line = self.ser.write(self.RADIO_CALLSIGN + "," + line + "END_TX\n")
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -751,7 +861,7 @@ class radioThread(QtCore.QThread):
 			logRadio("Unable to close serial port " + self.SERIAL_PORT)
 
 		try:
-			self.ser = serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 2)
+			self.ser = serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 20)
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -913,16 +1023,6 @@ googleMapsHtml = """
 				strokeWeight:2,
 				map:map
 			});
-		}
-		
-		function switchToSatelliteView()
-		{
-		 map.setMapTypeId(google.maps.MapTypeId.HYBRID);
-		}
-		
-		function switchToStreetView()
-		{
-		 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
 		}
 		
 		google.maps.event.addDomListener(window, 'load', initialize);
