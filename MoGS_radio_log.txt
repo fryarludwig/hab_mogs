@@ -63542,3 +63542,15055 @@ Serial Input:
 Serial Input: 
 
 
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,Can you see this message?
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,+++
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,an you see what I'm sending you?
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,EVA!
+Handling message: chase1,chat,EVA!
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,Do you see this?
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,I canEND_TX
+
+Handling message: chase2,chat,I can
+Handling message: 
+chase2,chat,I canEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,It doesn't seem likeit's showingEND_TX
+
+Handling message: chase2,chat,It doesn't seem likeit's showing
+Handling message: 
+chase2,chat,It doesn't seem likeit's showingEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,chat,NevermindEND_TX
+
+Handling message: chase2,chat,Nevermind
+Handling message: 
+chase2,chat,NevermindEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: chase2,aliveEND_TX
+
+Handling message: chase2,alive
+Handling message: 
+chase2,aliveEND_TX
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,test
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,a
+Serial Input: 
+
+
+Handling message: chase1,chat,dfaskljdsaf
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Handling message: chase1,chat,a
+Serial Input: 
+
+
+Handling message: chase1,chat,b
+Handling message: chase1,chat,c
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,e
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,g
+Serial Input: 
+
+
+Handling message: chase1,chat,h
+Serial Input: 
+
+
+Handling message: chase1,chat,i
+Handling message: chase1,chat,j
+Serial Input: 
+
+
+Handling message: chase1,chat,k
+Serial Input: 
+
+
+Handling message: chase1,chat,l
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,n
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,p
+Serial Input: 
+
+
+Handling message: chase1,chat,q
+Serial Input: 
+
+
+Handling message: chase1,chat,r
+Handling message: chase1,chat,s
+Serial Input: 
+
+
+Handling message: chase1,chat,t
+Serial Input: 
+
+
+Handling message: chase1,chat,u
+Handling message: chase1,chat,v
+Serial Input: 
+
+
+Handling message: chase1,chat,w
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,1
+Serial Input: 
+
+
+Handling message: chase1,chat,2
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Handling message: chase1,chat,4
+Serial Input: 
+
+
+Handling message: chase1,chat,5
+Serial Input: 
+
+
+Handling message: chase1,chat,
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM6
+
+
+Unable to close serial port COM6
+Unable to write to serial port on COM7
+
+
+Unable to close serial port COM7
+Unable to write to serial port on COM7
+
+
+Unable to close serial port COM7
+Unable to write to serial port on COM5
+
+
+Unable to close serial port COM5
+Unable to write to serial port on COM5
+
+
+Unable to close serial port COM5
+Unable to write to serial port on COM5
+
+
+Unable to close serial port COM5
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM3
+
+
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to write to serial port on COM4
+
+
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Unable to write to serial port on COM4
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+

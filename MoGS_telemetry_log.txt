@@ -5176,3 +5176,179 @@ Starting telemetry log
 
 Starting telemetry log
 
+2015-07-16 14:32:44: 
+
+Starting telemetry log
+
+2015-07-16 18:04:18: 
+
+Starting telemetry log
+
+2015-07-16 18:07:09: 
+
+Starting telemetry log
+
+2015-07-16 18:27:17: 
+
+Starting telemetry log
+
+2015-07-16 18:48:41: 
+
+Starting telemetry log
+
+2015-07-16 18:52:56: 
+
+Starting telemetry log
+
+2015-07-16 18:53:39: 
+
+Starting telemetry log
+
+2015-07-16 18:54:52: 
+
+Starting telemetry log
+
+2015-07-16 18:55:46: 
+
+Starting telemetry log
+
+2015-07-16 18:56:33: 
+
+Starting telemetry log
+
+2015-07-16 18:59:13: 
+
+Starting telemetry log
+
+2015-07-16 18:59:44: 
+
+Starting telemetry log
+
+2015-07-16 18:59:55: 
+
+Starting telemetry log
+
+2015-07-16 19:01:46: 
+
+Starting telemetry log
+
+2015-07-16 19:02:16: 
+
+Starting telemetry log
+
+2015-07-16 19:04:23: 
+
+Starting telemetry log
+
+2015-07-16 19:04:45: 
+
+Starting telemetry log
+
+2015-07-16 19:07:24: 
+
+Starting telemetry log
+
+2015-07-16 19:08:11: 
+
+Starting telemetry log
+
+2015-07-16 19:10:54: 
+
+Starting telemetry log
+
+2015-07-16 19:11:53: 
+
+Starting telemetry log
+
+2015-07-16 19:12:58: 
+
+Starting telemetry log
+
+2015-07-16 19:13:20: 
+
+Starting telemetry log
+
+2015-07-16 19:14:01: 
+
+Starting telemetry log
+
+2015-07-16 19:19:26: 
+
+Starting telemetry log
+
+2015-07-16 19:20:09: 
+
+Starting telemetry log
+
+2015-07-16 19:20:29: 
+
+Starting telemetry log
+
+2015-07-16 19:20:41: 
+
+Starting telemetry log
+
+2015-07-16 19:21:10: 
+
+Starting telemetry log
+
+2015-07-16 19:22:04: 
+
+Starting telemetry log
+
+2015-07-16 19:22:31: 
+
+Starting telemetry log
+
+2015-07-16 19:23:17: 
+
+Starting telemetry log
+
+2015-07-16 19:24:16: 
+
+Starting telemetry log
+
+2015-07-16 19:24:26: 
+
+Starting telemetry log
+
+2015-07-16 19:24:57: 
+
+Starting telemetry log
+
+2015-07-16 19:25:36: 
+
+Starting telemetry log
+
+2015-07-16 19:26:48: 
+
+Starting telemetry log
+
+2015-07-16 19:27:09: 
+
+Starting telemetry log
+
+2015-07-16 19:27:29: 
+
+Starting telemetry log
+
+2015-07-16 19:27:57: 
+
+Starting telemetry log
+
+2015-07-16 19:28:45: 
+
+Starting telemetry log
+
+2015-07-16 19:31:36: 
+
+Starting telemetry log
+
+2015-07-16 19:31:52: 
+
+Starting telemetry log
+
+2015-07-16 19:32:13: 
+
+Starting telemetry log
+

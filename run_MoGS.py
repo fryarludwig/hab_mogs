@@ -17,38 +17,42 @@ import sys
 import serial
 import datetime
 import math
+import xml.etree.ElementTree as ET
 from time import sleep
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtWebKit import QWebView
 from PyQt4.Qt import QWidget
 from collections import OrderedDict
+from _elementtree import ElementTree
 
 TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
 RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
+SPOT = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
 TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 """
+PRIORITIES:
+
+TODO: Integrate with SPOT API
+TODO: Plot SPOT XML data
+TODO: Add tracking for chase cars
+TODO: Altitude graph (Speed, Temp too?)
+TODO: Offline Mode
+TODO: Lower the serial baudrate
+TODO: Add prediction plotting
+TODO: Additional logging
+"""
+
+"""
 Handles GUI operations, as well as all user input. 
 
-TODO: Add tracking for chase cars
-TODO: Add offline mode
-TODO: Add altitude graph
-TODO: Add temperature graph
-TODO: Add speed graph
-TODO: Add command response updating
-TODO: Add unit tests
-TODO: Text messaging GPS, Altitude
-TODO: Additional logging
-TODO: Failsafe operations
-TODO: Audio link mode
-TODO: Higher baud rate
-TODO: Image transfer
-TODO: Test Thursday
-TODO: Max out radios
-TODO: Add GPS plotting (predictions) (automated?)
 TODO: AZ/EL plotting
+TODO: Text messaging GPS, Altitude
+TODO: Add command response updating
+TODO: Audio link mode
+TODO: Image transfer
 """
 class mogsMainWindow(QtGui.QWidget):
 	"""
@@ -102,8 +106,8 @@ class mogsMainWindow(QtGui.QWidget):
 	Populates the widgets and the main GUI window.
 	"""
 	def initUI(self):
-		window_x = 1400
-		window_y = 800
+		window_x = 1200
+		window_y = 700
 
 		self.col = QtGui.QColor(0, 0, 0)
 		self.vLayout = QtGui.QGridLayout()
@@ -216,8 +220,8 @@ class mogsMainWindow(QtGui.QWidget):
 		balloonReleaseButton.setStyleSheet("background-color: Salmon")
 		balloonReleaseButton.clicked[bool].connect(self.confirmAndReleaseBalloon)
 
-		satelliteViewButton = QtGui.QPushButton('Update Prediction', self)
-		satelliteViewButton.clicked[bool].connect(self.requestPayloadImage)
+		satelliteViewButton = QtGui.QPushButton('Update SPOT', self)
+		satelliteViewButton.clicked[bool].connect(self.updateSpotPositions)
 
 		audioLinkButton = QtGui.QPushButton('Audio Link mode', self)
 		audioLinkButton.setCheckable(True)
@@ -520,7 +524,7 @@ class mogsMainWindow(QtGui.QWidget):
 		precisionSpinBox.setMinimumSize(20, 20)
 		precisionSpinBox.setAlignment(QtCore.Qt.AlignCenter)
 
-		openDialogOnFailureCheckBox = QtGui.QCheckBox("Notify on serial failure")
+		openDialogOnFailureCheckBox = QtGui.QCheckBox("Notify on serial error")
 		if (self.notifyOnSerialError):
 			openDialogOnFailureCheckBox.setChecked(True)
 
@@ -573,6 +577,21 @@ class mogsMainWindow(QtGui.QWidget):
 				label.setStyleSheet("QFrame { background-color: Green }")
 			else:
 				label.setStyleSheet("QFrame { background-color: Salmon }")
+
+	def updateSpotPositions(self):
+		spotData = ET.fromstring(test_spot_api_xml)
+		for message in spotData.iter("message"):
+			name = message.find("messengerName").text
+			lat = message.find("latitude").text
+			long = message.find("longitude").text
+			time = message.find("dateTime").text
+
+			# Update the map to show new waypoint
+			javascriptCommand = "addChase1Marker({}, {});".format(
+								lat,
+								long)
+			print (javascriptCommand)
+			self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
 	def calculateRates(self):
 		groundSpeed = "NONE"
@@ -864,7 +883,7 @@ class radioThread(QtCore.QThread):
 			self.ser = serial.Serial(port = self.SERIAL_PORT, baudrate = self.BAUDRATE, timeout = 20)
 		except:
 			if (self.settingsWindowOpen):
-				sleep(1)
+				sleep(3)
 			else:
 				self.invalidSerialPort.emit("Please enter a valid serial port")
 				self.settingsWindowOpen = True
@@ -919,6 +938,11 @@ googleMapsHtml = """
 		var chase1Marker = new google.maps.Marker({position:myCenter});
 		var chase2Marker = new google.maps.Marker({position:myCenter});
 		var chase3Marker = new google.maps.Marker({position:myCenter});
+		
+		var balloonSpotMarker = new google.maps.Marker({position:myCenter});
+		var chase1SpotMarker = new google.maps.Marker({position:myCenter});
+		var chase2SpotMarker = new google.maps.Marker({position:myCenter});
+		var chase3SpotMarker = new google.maps.Marker({position:myCenter});
 	
 		function initialize() 
 		{
@@ -978,7 +1002,17 @@ googleMapsHtml = """
 				map:map
 			});
 		}
+					
+		function addChase1Marker(lat, lng)
+		{
+			var chase1Position = new google.maps.LatLng(lat, lng);
 			
+			chase1SpotMarker = new google.maps.Marker({position:chase1Position,
+												map:map});
+			
+			chase1SpotMarker.setMap(map);
+		}
+		
 		function addChase2Waypoint(lat, lng)
 		{
 			var chase2Position = new google.maps.LatLng(lat, lng);
@@ -1033,6 +1067,82 @@ googleMapsHtml = """
 	<div id="map-canvas"></div>
 	</body>
 </html>
+"""
+
+test_spot_api_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<feedMessageResponse>
+		<count>10</count>
+		<feed>
+			<id>03XHH0sPyTiYUsYD2TVJ4q7CzEH89HBhG</id>
+			<name>OneAtATime</name>
+			<description>OneAtATime</description>
+			<status>ACTIVE</status>
+			<usage>0</usage>
+			<daysRange>7</daysRange>
+			<detailedMessageShown>true</detailedMessageShown>
+		</feed>
+		<totalCount>10</totalCount>
+		<activityCount>0</activityCount>
+		<messages>
+			<message clientUnixTime="0">
+				<id>4937064</id>
+				<messengerId>0-8356068</messengerId>
+				<messengerName>Spot2</messengerName>
+				<unixTime>1364909283</unixTime>
+				<messageType>HELP</messageType>
+				<latitude>36.8623</latitude>
+				<longitude>-121.0413</longitude>
+				<modelId>SPOT2</modelId>
+				<showCustomMsg>Y</showCustomMsg>
+				<dateTime>2013-04-02T06:28:03-0700</dateTime>
+				<hidden>0</hidden>
+				<messageContent>This is the default HELP message. Please update.</messageContent>
+			</message>
+			<message clientUnixTime="0">
+				<id>4937060</id>
+				<messengerId>0-8356068</messengerId>
+				<messengerName>Spot2</messengerName>
+				<unixTime>1364908774</unixTime>
+				<messageType>CUSTOM</messageType>
+				<latitude>45.42249</latitude>
+				<longitude>-111.68832</longitude>
+				<modelId>SPOT2</modelId>
+				<showCustomMsg>Y</showCustomMsg>
+				<dateTime>2013-04-02T06:19:34-0700</dateTime>
+				<hidden>0</hidden>
+				<messageContent>This is a custom message</messageContent>
+			</message>
+			<message clientUnixTime="0">
+				<id>4937059</id>
+				<messengerId>0-8356068</messengerId>
+				<messengerName>Spot2</messengerName>
+				<unixTime>1364908765</unixTime>
+				<messageType>OK</messageType>
+				<latitude>45.42249</latitude>
+				<longitude>-111.68832</longitude>
+				<modelId>SPOT2</modelId>
+				<showCustomMsg>Y</showCustomMsg>
+				<dateTime>2013-04-02T06:19:25-0700</dateTime>
+				<hidden>0</hidden>
+				<messageContent>This is the default SPOT Check-in/OK message. Please update.</messageContent>
+			</message>
+			<message clientUnixTime="0">
+				<id>4937057</id>
+				<messengerId>0-8356068</messengerId>
+				<messengerName>Spot2</messengerName>
+				<unixTime>1364908512</unixTime>
+				<messageType>TRACK</messageType>
+				<latitude>45.42249</latitude>
+				<longitude>-111.68832</longitude>
+				<modelId>SPOT2</modelId>
+				<showCustomMsg>Y</showCustomMsg>
+				<dateTime>2013-04-02T06:15:12-0700</dateTime>
+				<hidden>0</hidden>
+			</message>
+		</messages>
+	</feedMessageResponse>
+</response>
 """
 
 if __name__ == '__main__':
