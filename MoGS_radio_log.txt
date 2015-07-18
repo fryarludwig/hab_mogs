@@ -78594,3 +78594,3571 @@ Serial Input:
 Serial Input: 
 
 
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25
+
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28
+
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29
+
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30
+
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30
+
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29
+
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25
+
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28
+
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29
+
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30
+
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30
+
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,END_TXHAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,END_TXHAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,END_TXHAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,END_TXHAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,END_TXHAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,END_TXHAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,END_TXHAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,END_TXHAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,END_TXHAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,END_TXHAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,END_TXHAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,END_TXHAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,END_TXHAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,END_TXHAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,END_TXHAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,END_TXHAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,END_TXHAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,END_TXHAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,END_TXHAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,END_TXHAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,END_TXHAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,END_TXHAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,END_TXHAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,END_TXHAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,END_TXHAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,END_TXHAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,END_TXHAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,END_TXHAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,END_TXHAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,END_TXHAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,END_TXHAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,END_TXHAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,END_TXHAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,END_TXHAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,END_TXHAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,END_TXHAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,END_TXHAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,END_TXHAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,END_TXHAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,END_TXHAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,END_TXHAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,END_TXHAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,END_TXHAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,END_TXHAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,END_TXHAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,END_TXHAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,END_TXHAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,END_TXHAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,END_TXHAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,END_TXHAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,END_TXHAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,END_TXHAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,END_TXHAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,END_TXHAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,END_TXHAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,END_TXHAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,END_TXHAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,END_TXHAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,END_TXHAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,END_TXHAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,END_TXHAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,END_TXHAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,END_TXHAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,END_TXHAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,END_TXHAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,END_TXHAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,END_TXHAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,END_TXHAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,END_TXHAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,END_TXHAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,END_TX
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,END_TX
+Unable to close serial port COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+
+
+Starting Radio log
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase1,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase1,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase1,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase1,data,100534.000,36.9003,-121.3422,
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase1,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase1,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase1,data,095933.000,36.9127,-121.3553,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase1,data,095334.000,36.9152,-121.3593,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase1,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase1,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase1,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase1,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase1,data,100734.000,36.8970,-121.3383,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase1,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase1,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase1,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100135.000,36.9105,-121.3518,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: 
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: 
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: 
+
+Unable to close serial port COM4
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: 
+
+Unable to close serial port COM4
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,102133.000,36.9205,-121.1913,10350.1,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102333.000,36.9217,-121.1560,11086.2,11.36,3.650,-29.9,10,
+Handling message: 
+Handling message: HAB,data,102533.000,36.9212,-121.1178,11899.1,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,103336.000,36.9123,-120.9713,15384.8,11.36,-9.34,-21.1,16,
+Handling message: 
+Handling message: HAB,data,104335.000,36.9220,-120.9468,20182.6,11.36,-11.3,-12.2,09,
+Handling message: 
+Handling message: HAB,data,105133.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105134.000,36.9210,-120.8683,12269.1,11.39,-10.4,-6.25,11,
+Handling message: 
+Handling message: HAB,data,105335.000,36.9193,-120.8312,10823.1,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110330.000,36.9322,-120.7367,4730.5,11.39,-8.18,0.050,16,
+Handling message: 
+Handling message: HAB,data,110530.000,36.9305,-120.7342,3748.7,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110732.000,36.9295,-120.7293,2818.8,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: HAB,data,110932.000,36.9262,-120.7273,1973.6,11.39,-4.62,7.020,23,
+Handling message: 
+Handling message: 
+
+Unable to close serial port COM5
+Unable to close serial port COM3
+Unable to write to serial port on COM5
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+Unable to write to serial port on COM5
+
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602,
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593,
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568,
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553,
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455,
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422,
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518,
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383,
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340,
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240,
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097,
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773,
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517,
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235,
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913,
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560,
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178,
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713,
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468,
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683,
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312,
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367,
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342,
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293,
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273,
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25,
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28,
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29,
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30,
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30,
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29,
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28,
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28,
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26,
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24,
+Handling message: 
+Handling message: HAB,data,101533.000,36.9122,-121.2773,8146.4,11.39,15.55,-9.43,21,
+Handling message: 
+Handling message: HAB,data,101733.000,36.9138,-121.2517,8879.4,11.39,11.81,-16.8,18,
+Handling message: 
+Handling message: HAB,data,101933.000,36.9177,-121.2235,9625.3,11.39,11.81,-16.8,18,
+Handling message: 
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124225,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124227,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124229,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124231,3706.0542,12100.8352,
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124257,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124258,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124259,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124300,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124321,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124322,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124323,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124324,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,124325,3706.0542,12100.8352,
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124421,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124422,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124423,3706.0542,12100.8352,
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124424,3706.0542,12100.8352,
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124459,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124500,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124501,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124502,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124606,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124607,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,124608,3706.0542,12100.8352
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,0,0,0,0
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125450,37.060542,-121.008352
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125458,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125459,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125500,37.060542,-121.008352
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125602,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125603,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125604,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125605,37.060542,-121.008352
+Handling message: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,125703,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,130701,37.060542,-121.008352
+Handling message: 
+
+
+Serial Input: 
+
+
+Serial Input: 
+Handling message: chase1,data,130702,37.060542,-121.008352
+Handling message: 
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Handling message: chase1,data,045426,36.59520,-121.87631
+Handling message: 
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Handling message: chase1,data,045427,36.59520,-121.87631
+Handling message: 
+Unable to write to serial port on COM4
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Handling message: chase1,data,094736.000,36.9145,-121.3602
+Handling message: 
+Handling message: chase2,data,095334.000,36.9152,-121.3593
+Handling message: 
+Handling message: chase3,data,095738.000,36.9137,-121.3568
+Handling message: 
+Handling message: chase4,data,095933.000,36.9127,-121.3553
+Handling message: 
+Handling message: chase1,data,100333.000,36.9060,-121.3455
+Handling message: 
+Handling message: chase2,data,100534.000,36.9003,-121.3422
+Handling message: 
+Handling message: chase3,data,100135.000,36.9105,-121.3518
+Handling message: 
+Handling message: chase4,data,100734.000,36.8970,-121.3383
+Handling message: 
+Handling message: chase1,data,100934.000,36.8977,-121.3340
+Handling message: 
+Handling message: chase2,data,101133.000,36.9030,-121.3240
+Handling message: 
+Handling message: chase3,data,101136.000,36.9080,-121.3097
+Handling message: 
+Handling message: chase4,data,101533.000,36.9122,-121.2773
+Handling message: 
+Handling message: chase1,data,101733.000,36.9138,-121.2517
+Handling message: 
+Handling message: chase2,data,101933.000,36.9177,-121.2235
+Handling message: 
+Handling message: chase3,data,102133.000,36.9205,-121.1913
+Handling message: 
+Handling message: chase4,data,102333.000,36.9217,-121.1560
+Handling message: 
+Handling message: chase1,data,102533.000,36.9212,-121.1178
+Handling message: 
+Handling message: chase2,data,103336.000,36.9123,-120.9713
+Handling message: 
+Handling message: chase3,data,104335.000,36.9220,-120.9468
+Handling message: 
+Handling message: chase4,data,105133.000,36.9210,-120.8683
+Handling message: 
+Handling message: chase1,data,105134.000,36.9210,-120.8683
+Handling message: 
+Handling message: chase2,data,105335.000,36.9193,-120.8312
+Handling message: 
+Handling message: chase3,data,110330.000,36.9322,-120.7367
+Handling message: 
+Handling message: chase4,data,110530.000,36.9305,-120.7342
+Handling message: 
+Handling message: chase1,data,110732.000,36.9295,-120.7293
+Handling message: 
+Handling message: chase2,data,110932.000,36.9262,-120.7273
+Handling message: 
+Handling message: 
+
+Handling message: HAB,data,094736.000,36.9145,-121.3602,58.8,11.54,24.70,25.47,25
+Handling message: 
+Handling message: HAB,data,095334.000,36.9152,-121.3593,634.9,11.51,25.02,25.70,28
+Handling message: 
+Handling message: HAB,data,095738.000,36.9137,-121.3568,1263.7,11.51,25.39,24.87,29
+Handling message: 
+Handling message: HAB,data,095933.000,36.9127,-121.3553,1910.8,11.51,25.63,25.57,30
+Handling message: 
+Handling message: HAB,data,100135.000,36.9105,-121.3518,2556.7,11.48,25.63,22.30,30
+Handling message: 
+Handling message: HAB,data,100333.000,36.9060,-121.3455,3201.6,11.48,24.95,17.17,29
+Handling message: 
+Handling message: HAB,data,100534.000,36.9003,-121.3422,3891.7,11.48,23.55,11.43,28
+Handling message: 
+Handling message: HAB,data,100734.000,36.8970,-121.3383,4580.5,11.48,23.55,11.43,28
+Handling message: 
+Handling message: HAB,data,100934.000,36.8977,-121.3340,5266.6,11.45,23.11,9.960,28
+Handling message: 
+Handling message: HAB,data,101133.000,36.9030,-121.3240,5961.6,11.45,21.43,5.160,26
+Handling message: 
+Handling message: HAB,data,101136.000,36.9080,-121.3097,6693.4,11.45,18.77,-2.05,24
+Handling message: 
