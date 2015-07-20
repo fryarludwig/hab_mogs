@@ -48,3 +48,104 @@ Unable to write to serial port on COM4
 Unable to write to serial port on COM4
 
 
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Handling message: chase1,data,INVALID DATA
+Handling message: 
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Handling message: chase1,data,INVALID DATA
+Handling message: 
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+
+
+Starting Radio log
+
+Unable to close serial port COM4
+Unable to close serial port COM3
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+Handling message: chase1,data,INVALID DATA
+Handling message: 
+Unable to write to serial port on COM4
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+
+Unable to write to serial port on COM4
+
+

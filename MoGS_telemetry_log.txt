@@ -23,3 +23,17 @@ Starting telemetry log
 
 2015-07-20 14:40:10: chase1,INVALID DATA
 2015-07-20 14:40:10: Invalid data packet - data was not processed.
+2015-07-20 14:46:40: 
+
+Starting telemetry log
+
+2015-07-20 14:46:50: chase1,INVALID DATA
+2015-07-20 14:46:50: Invalid data packet - data was not processed.
+2015-07-20 14:46:56: chase1,INVALID DATA
+2015-07-20 14:46:56: Invalid data packet - data was not processed.
+2015-07-20 14:49:34: 
+
+Starting telemetry log
+
+2015-07-20 14:49:43: chase1,INVALID DATA
+2015-07-20 14:49:43: Invalid data packet - data was not processed.

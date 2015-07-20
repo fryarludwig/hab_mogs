@@ -541,6 +541,9 @@ class mogsMainWindow(QtGui.QWidget):
 		gpsPortTextBox = QtGui.QLineEdit()
 		gpsPortTextBox.setText(self.radioHandler.GPS_SERIAL_PORT)
 
+		gpsRatePromptLabel = QtGui.QLabel("GPS Rate (s)")
+		gpsRateLineEdit = QtGui.QLineEdit(str(self.radioHandler.HEARTBEAT_INTERVAL))
+
 		precisionSpinBoxLabel = QtGui.QLabel("Rate Sensitivity")
 		precisionSpinBoxHelpButton = QtGui.QPushButton("?")
 		precisionSpinBoxHelpButton.clicked.connect(self.precisionSpinBoxHelp)
@@ -568,12 +571,14 @@ class mogsMainWindow(QtGui.QWidget):
 		windowLayout.addWidget(precisionSpinBoxHelpButton, 2, 2)
 		windowLayout.addWidget(radioPortPromptLabel, 3, 0)
 		windowLayout.addWidget(radioPortTextBox, 3, 1, 1, 2)
-		windowLayout.addWidget(gpsPortPromptLabel, 4, 0)
-		windowLayout.addWidget(gpsPortTextBox, 4, 1, 1, 2)
-		windowLayout.addWidget(openDialogOnFailureCheckBox, 5, 1, 1, 2)
+		windowLayout.addWidget(gpsRatePromptLabel, 4, 0)
+		windowLayout.addWidget(gpsRateLineEdit, 4, 1, 1, 2)
+		windowLayout.addWidget(gpsPortPromptLabel, 5, 0)
+		windowLayout.addWidget(gpsPortTextBox, 5, 1, 1, 2)
+		windowLayout.addWidget(openDialogOnFailureCheckBox, 6, 1, 1, 2)
 
-		windowLayout.addWidget(selectButton, 6, 1)
-		windowLayout.addWidget(cancelButton, 6, 2)
+		windowLayout.addWidget(selectButton, 10, 1)
+		windowLayout.addWidget(cancelButton, 10, 2)
 
 		popupWidget.setLayout(windowLayout)
 		popupWidget.setWindowTitle("Settings")
@@ -587,6 +592,9 @@ class mogsMainWindow(QtGui.QWidget):
 				str(gpsPortTextBox.text()) != self.radioHandler.GPS_SERIAL_PORT):
 				self.radioHandler.GPS_SERIAL_PORT = str(gpsPortTextBox.text().replace("\n", ""))
 				self.radioHandler.gpsSerialPortChanged = True
+			if (len(gpsRateLineEdit.text()) > 0 and
+				str(gpsRateLineEdit.text()) != self.radioHandler.HEARTBEAT_INTERVAL):
+				self.radioHandler.HEARTBEAT_INTERVAL = str(gpsRateLineEdit.text().replace("\n", ""))
 			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
 				self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = False
 				self.radioHandler.RADIO_CALLSIGN = str(selectCallsignComboBox.currentText())
@@ -706,7 +714,7 @@ class serialHandlerThread(QtCore.QThread):
 		QtCore.QThread.__init__(self)
 
 		# self.HEARTBEAT_INTERVAL = 60
-		self.HEARTBEAT_INTERVAL = 1
+		self.HEARTBEAT_INTERVAL = 5
 		self.RADIO_SERIAL_PORT = "COM4"
 		self.RADIO_CALLSIGN = "chase1"
 		self.RADIO_BAUDRATE = 9600
