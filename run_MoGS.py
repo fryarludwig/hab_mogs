@@ -30,17 +30,13 @@ RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 SPOT_API_URL = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
-TEST_MODE = True  # Test mode pulls telemetry from file instead of radios
+TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 """
 PRIORITIES:
 
-TODO: Integrate with SPOT API
-TODO: Plot SPOT XML data
-TODO: Add tracking for chase cars
-TODO: Altitude graph (Speed, Temp too?)
-TODO: Offline Mode
 TODO: Lower the serial baudrate
+TODO: Altitude graph (Speed, Temp too?)
 TODO: Add prediction plotting
 TODO: Additional logging
 """
@@ -196,7 +192,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.messagingListView.setMinimumSize(300, 300)
 		self.messagingListView.setFlow(QtGui.QListView.LeftToRight)
 
-		self.sendMessageEntryBox.setMaxLength(256)
+		self.sendMessageEntryBox.setMaxLength(160)
 		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
 
 		layout.addWidget(messagingLabel, 0, 0, 1, 9)
@@ -226,8 +222,8 @@ class mogsMainWindow(QtGui.QWidget):
 		comPortButton = QtGui.QPushButton('Settings', self)
 		comPortButton.clicked.connect(self.changeSettings)
 
-		streetMapButton = QtGui.QPushButton('Send Image', self)
-		streetMapButton.clicked[bool].connect(self.sendImageDialog)
+		streetMapButton = QtGui.QPushButton('Predictions', self)
+		streetMapButton.clicked[bool].connect(self.openPredictionsDialog)
 
 		resizeMapButton = QtGui.QPushButton('Resize Map', self)
 		resizeMapButton.clicked[bool].connect(self.onResize)
@@ -464,12 +460,12 @@ class mogsMainWindow(QtGui.QWidget):
 						"Default setting is 5 data points, full range is 2-25")
 		QtGui.QMessageBox.information(self, "Help", helpString, QtGui.QMessageBox.Ok)
 
-	def selectImageFileBrowser(self):
+	def selectPredictionFileBrowser(self):
 		self.imageToSendFileName = QtGui.QFileDialog.getOpenFileName(self)
 		self.sendImageDialogWidget.raise_()
 		self.sendImageDialogWidget.activateWindow()
 
-	def sendImageDialog(self):
+	def openPredictionsDialog(self):
 		windowLayout = QtGui.QGridLayout()
 		self.sendImageDialogWidget = QtGui.QDialog()
 
@@ -481,7 +477,8 @@ class mogsMainWindow(QtGui.QWidget):
 
 		imageNameLabel = QtGui.QLabel("Image Name")
 		imageSelectButton = QtGui.QPushButton("Select")
-		imageSelectButton.clicked.connect(self.selectImageFileBrowser)
+
+		imageSelectButton.clicked.connect(self.selectPredictionFileBrowser)
 
 		windowLayout.addWidget(imageNameLabel, 2, 0)
 		windowLayout.addWidget(imageSelectButton, 2, 1, 1, 2)
@@ -712,7 +709,7 @@ class serialHandlerThread(QtCore.QThread):
 		self.HEARTBEAT_INTERVAL = 1
 		self.RADIO_SERIAL_PORT = "COM4"
 		self.RADIO_CALLSIGN = "chase1"
-		self.RADIO_BAUDRATE = 230400
+		self.RADIO_BAUDRATE = 9600
 		self.radioSerial = None
 
 		self.GPS_SERIAL_PORT = "COM3"
@@ -804,14 +801,14 @@ class serialHandlerThread(QtCore.QThread):
 					if (line[4:8] == "data"):
 						self.balloonDataSignalReceived.emit(line[9:-1])
 					elif(line[4:9] == "image"):
-						self.decommutateImage(line[10:])
+						self.parsePredictionMessage(line[10:])
 
 				elif (line[:3] == "nps"):
 					self.receivedHeartbeat("nps")
 					if (line[4:8] == "chat"):
 						self.chatMessageReceived.emit("NPS: " + line[9:])
 					elif(line[4:9] == "image"):
-						self.decommutateImage(line[10:])
+						self.parsePredictionMessage(line[10:])
 
 				elif (line[:6] == "chase1"):
 					self.receivedHeartbeat("chase1")
@@ -822,7 +819,7 @@ class serialHandlerThread(QtCore.QThread):
 						self.vehicleDataReceived.emit("chase1," + line[12:])
 					elif(line[7:12] == "image"):
 						print("Received image!")
-						self.decommutateImage(message[13:])
+						self.parsePredictionMessage(message[13:])
 
 				elif (line[:6] == "chase2"):
 					self.receivedHeartbeat("chase2")
@@ -832,7 +829,7 @@ class serialHandlerThread(QtCore.QThread):
 						self.vehicleDataReceived.emit("chase2," + line[12:])
 					elif(line[7:12] == "image"):
 						print("Received image!")
-						self.decommutateImage(message[13:])
+						self.parsePredictionMessage(message[13:])
 
 				elif (line[:6] == "chase3"):
 					self.receivedHeartbeat("chase3")
@@ -842,7 +839,7 @@ class serialHandlerThread(QtCore.QThread):
 						self.vehicleDataReceived.emit("chase3," + line[12:])
 					elif(line[7:12] == "image"):
 						print("Received image!")
-						self.decommutateImage(message[13:])
+						self.parsePredictionMessage(message[13:])
 
 				elif (line[:6] == "chase4"):
 					self.receivedHeartbeat("chase4")
@@ -852,7 +849,7 @@ class serialHandlerThread(QtCore.QThread):
 						self.vehicleDataReceived.emit("chase4," + line[12:])
 					elif(line[7:12] == "image"):
 						print("Received image!")
-						self.decommutateImage(message[13:])
+						self.parsePredictionMessage(message[13:])
 
 			logRadio("Handling message: " + line)
 
@@ -877,17 +874,17 @@ class serialHandlerThread(QtCore.QThread):
 
 		self.imageReadyToSend = False
 
-	def decommutateImage(self, imageValues):
+	def parsePredictionMessage(self, rawMessage):
 		print("Decommutating...")
-		outputImage = None
+		parsedMessage = None
 		try:
-			outputImage = open("output{}.png".format(self.imageOutputCounter), "ab")
+			parsedMessage = open("output{}.png".format(self.imageOutputCounter), "ab")
 		except:
-			outputImage = open("output{}.png".format(self.imageOutputCounter), "wb")
+			parsedMessage = open("output{}.png".format(self.imageOutputCounter), "wb")
 
-		outputImage.write(imageValues)
+		parsedMessage.write(rawMessage)
 
-		outputImage.close()
+		parsedMessage.close()
 
 	# Takes a heartbeat signal and determines which node sent it out. That node
 	# is set as currently active on the network
