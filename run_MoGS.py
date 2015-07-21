@@ -70,7 +70,7 @@ class mogsMainWindow(QtGui.QWidget):
 
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
-		self.statusLabelList = {"balloon" : QtGui.QLabel("Balloon", self),
+		self.statusLabelList = {"hab" : QtGui.QLabel("Balloon", self),
 								"chase1" : QtGui.QLabel("Chase 1", self),
 								"chase2" : QtGui.QLabel("Chase 2", self),
 								"chase3" : QtGui.QLabel("Chase 3", self),
@@ -88,14 +88,14 @@ class mogsMainWindow(QtGui.QWidget):
 		self.telemetryLabelDictionary["tempOutside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["gps"] = QtGui.QLabel("None", self)
 
-		self.javaArrayPosition = {"balloon" : 0,
+		self.javaArrayPosition = {"hab" : 0,
 								"chase1" : 1,
 								"chase2" : 2,
 								"chase3" : 3,
 								"chase4" : 4,
 								"nps" : 5}
 
-		self.spotToVehicleDictionary = {"SSAGSpot1" : "balloon",
+		self.spotToVehicleDictionary = {"SSAGSpot1" : "hab",
 										"SSAGSpot2" : "chase1",
 										"SSAGSpot3" : "chase2",
 										"SSAGSpot4" : "chase3",
@@ -109,7 +109,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.radioHandler.vehicleDataReceived.connect(self.updateChaseVehicleTelemetry)
 		self.radioHandler.invalidSerialPort.connect(self.serialFailureDisplay)
 		self.radioHandler.chatMessageReceived.connect(self.updateChat)
-		self.radioHandler.heartbeatReceivedSignal.connect(self.updateActiveNetwork)
+		self.radioHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
 		self.radioHandler.start()
 		self.initUI()
@@ -320,7 +320,7 @@ class mogsMainWindow(QtGui.QWidget):
 			statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
 
 		layout.addWidget(layoutLabel, 0, 0, 1, 4)
-		layout.addWidget(self.statusLabelList["balloon"], 1, 0, 1, 2)
+		layout.addWidget(self.statusLabelList["hab"], 1, 0, 1, 2)
 		layout.addWidget(self.statusLabelList["nps"], 1, 2, 1, 2)
 		layout.addWidget(self.statusLabelList["chase1"], 2, 0)
 		layout.addWidget(self.statusLabelList["chase2"], 2, 1)
@@ -339,7 +339,7 @@ class mogsMainWindow(QtGui.QWidget):
 	"""
 	def updateBalloonDataTelemetry(self, data):
 		logTelemetry(data)
-		self.statusLabelList["balloon"].setStyleSheet("QFrame { background-color: Green }")
+		self.statusLabelList["hab"].setStyleSheet("QFrame { background-color: Green }")
 
 		while (len(self.dataTelemetryList) > self.telemetryValuesToInclude):
 			self.dataTelemetryList.pop(0)
@@ -371,7 +371,7 @@ class mogsMainWindow(QtGui.QWidget):
 
 			# Update the map to show new waypoint
 			javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
-								self.javaArrayPosition["balloon"],
+								self.javaArrayPosition["hab"],
 								latitude,
 								longitude)
 			print(javascriptCommand)
@@ -525,10 +525,12 @@ class mogsMainWindow(QtGui.QWidget):
 
 		selectCallsignLabel = QtGui.QLabel("Callsign")
 		selectCallsignComboBox = QtGui.QComboBox()
+		selectCallsignComboBox.addItem("hab")
 		selectCallsignComboBox.addItem("nps")
 		selectCallsignComboBox.addItem("chase1")
 		selectCallsignComboBox.addItem("chase2")
 		selectCallsignComboBox.addItem("chase3")
+		selectCallsignComboBox.addItem("chase4")
 
 		index = selectCallsignComboBox.findText(self.radioHandler.RADIO_CALLSIGN)
 		selectCallsignComboBox.setCurrentIndex(index)
@@ -571,10 +573,10 @@ class mogsMainWindow(QtGui.QWidget):
 		windowLayout.addWidget(precisionSpinBoxHelpButton, 2, 2)
 		windowLayout.addWidget(radioPortPromptLabel, 3, 0)
 		windowLayout.addWidget(radioPortTextBox, 3, 1, 1, 2)
-		windowLayout.addWidget(gpsRatePromptLabel, 4, 0)
-		windowLayout.addWidget(gpsRateLineEdit, 4, 1, 1, 2)
-		windowLayout.addWidget(gpsPortPromptLabel, 5, 0)
-		windowLayout.addWidget(gpsPortTextBox, 5, 1, 1, 2)
+		windowLayout.addWidget(gpsPortPromptLabel, 4, 0)
+		windowLayout.addWidget(gpsPortTextBox, 4, 1, 1, 2)
+		windowLayout.addWidget(gpsRatePromptLabel, 5, 0)
+		windowLayout.addWidget(gpsRateLineEdit, 5, 1, 1, 2)
 		windowLayout.addWidget(openDialogOnFailureCheckBox, 6, 1, 1, 2)
 
 		windowLayout.addWidget(selectButton, 10, 1)
@@ -594,7 +596,7 @@ class mogsMainWindow(QtGui.QWidget):
 				self.radioHandler.gpsSerialPortChanged = True
 			if (len(gpsRateLineEdit.text()) > 0 and
 				str(gpsRateLineEdit.text()) != self.radioHandler.HEARTBEAT_INTERVAL):
-				self.radioHandler.HEARTBEAT_INTERVAL = str(gpsRateLineEdit.text().replace("\n", ""))
+				self.radioHandler.HEARTBEAT_INTERVAL = int(gpsRateLineEdit.text().replace("\n", ""))
 			if not (str(selectCallsignComboBox.currentText()) == self.radioHandler.RADIO_CALLSIGN):
 				self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = False
 				self.radioHandler.RADIO_CALLSIGN = str(selectCallsignComboBox.currentText())
@@ -611,7 +613,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.radioHandler.activeNodes[self.radioHandler.RADIO_CALLSIGN] = True
 
 		for callsign, label in self.statusLabelList.items():
-			if (self.radioHandler.activeNodes[callsign]):
+			if (self.radioHandler.activeNodes[callsign] > 1):
 				label.setStyleSheet("QFrame { background-color: Green }")
 			else:
 				label.setStyleSheet("QFrame { background-color: Salmon }")
@@ -706,7 +708,7 @@ class serialHandlerThread(QtCore.QThread):
 	vehicleDataReceived = QtCore.pyqtSignal(object)
 	invalidSerialPort = QtCore.pyqtSignal(object)
 	chatMessageReceived = QtCore.pyqtSignal(object)
-	heartbeatReceivedSignal = QtCore.pyqtSignal()
+	updateNetworkStatusSignal = QtCore.pyqtSignal()
 
 	def __init__(self):
 		if (TEST_MODE):
@@ -714,13 +716,13 @@ class serialHandlerThread(QtCore.QThread):
 		QtCore.QThread.__init__(self)
 
 		# self.HEARTBEAT_INTERVAL = 60
-		self.HEARTBEAT_INTERVAL = 5
-		self.RADIO_SERIAL_PORT = "COM4"
+		self.HEARTBEAT_INTERVAL = 30
+		self.RADIO_SERIAL_PORT = "COM3"
 		self.RADIO_CALLSIGN = "chase1"
 		self.RADIO_BAUDRATE = 9600
 		self.radioSerial = None
 
-		self.GPS_SERIAL_PORT = "COM3"
+		self.GPS_SERIAL_PORT = "COM8"
 		self.GPS_BAUDRATE = 4800
 		self.gpsSerial = None
 
@@ -729,12 +731,12 @@ class serialHandlerThread(QtCore.QThread):
 		self.validHeartbeatReceived = False
 
 		self.activeNodes = {}
-		self.activeNodes["chase1"] = False
-		self.activeNodes["chase2"] = False
-		self.activeNodes["chase3"] = False
-		self.activeNodes["chase4"] = False
-		self.activeNodes["balloon"] = False
-		self.activeNodes["nps"] = False
+		self.activeNodes["chase1"] = 0
+		self.activeNodes["chase2"] = 0
+		self.activeNodes["chase3"] = 0
+		self.activeNodes["chase4"] = 0
+		self.activeNodes["hab"] = 0
+		self.activeNodes["nps"] = 0
 
 		self.releaseBalloonFlag = False
 		self.settingsWindowOpen = False
@@ -779,7 +781,7 @@ class serialHandlerThread(QtCore.QThread):
 
 			while (len(self.userMessagesToSend) > 0):
 				formattedMessage = "chat," + self.userMessagesToSend[0]
-				self.radioSerialOutput(formattedMessage)
+				self.radioSerialOutput(formattedMessage, True)
 				self.userMessagesToSend.pop(0)
 
 			messageReceived = self.radioSerialInput()
@@ -788,6 +790,11 @@ class serialHandlerThread(QtCore.QThread):
 				self.handleMessage(messageReceived)
 
 			if (counter == 0):
+				for key, value in self.activeNodes.items():
+					self.activeNodes[key] -= 1
+					if (self.activeNodes[key] <= 0):
+						self.updateNetworkStatusSignal.emit()
+
 				self.sendCurrentPosition()
 				self.sendHeartbeat()
 				counter = self.HEARTBEAT_INTERVAL
@@ -804,8 +811,10 @@ class serialHandlerThread(QtCore.QThread):
 	def handleMessage(self, message):
 		for line in message.split(',END_TX\n'):
 			if (len(line) > 0):
-				if (line[:3] == "HAB"):
-					self.receivedHeartbeat("balloon")
+				if (line[:3] == "hab"):
+					self.receivedHeartbeat("hab")
+					if (line[4:8] == "chat"):
+						self.chatMessageReceived.emit("HAB: " + line[9:])
 					if (line[4:8] == "data"):
 						self.balloonDataSignalReceived.emit(line[9:-1])
 					elif(line[4:9] == "image"):
@@ -899,9 +908,9 @@ class serialHandlerThread(QtCore.QThread):
 	def receivedHeartbeat(self, heartbeatSignalReceived):
 		for key, value in self.activeNodes.items():
 			if (heartbeatSignalReceived == key):
-				self.activeNodes[key] = True
+				self.activeNodes[key] = 3
 
-		self.heartbeatReceivedSignal.emit()
+		self.updateNetworkStatusSignal.emit()
 
 	# Sends a "heartbeat" signal to other radios to verify radio is currently
 	# active on the network
@@ -919,7 +928,6 @@ class serialHandlerThread(QtCore.QThread):
 			sleep(0.1)
 			self.radioSerialOutput("BRMconfirmed")
 			sleep(0.1)
-
 
 	def radioSerialInput(self):
 		serialInput = ""
@@ -1000,6 +1008,8 @@ class serialHandlerThread(QtCore.QThread):
 		finalDataString = "INVALID DATA"
 		rawGpsString = self.gpsSerialInput()
 
+		logTelemetry(self.RADIO_CALLSIGN + rawGpsString)
+
 		if (rawGpsString != "NO_GPS_DATA\n"):
 			try:
 				gpsSplit = rawGpsString.split(",")
@@ -1026,9 +1036,7 @@ class serialHandlerThread(QtCore.QThread):
 			except:
 				formattedGpsString = "0,0,0"
 
-			if (formattedGpsString == "0,0,0"):
-				print ("INVALID DATA STRINGS GIVEN")
-			else:
+			if (formattedGpsString != "0,0,0"):
 				finalDataString = formattedGpsString
 
 		return finalDataString
