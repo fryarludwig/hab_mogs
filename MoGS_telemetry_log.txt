@@ -5948,3 +5948,826 @@ Starting telemetry log
 2015-07-20 18:57:31: INVALID DAT
 2015-07-20 18:57:31: Invalid data packet - data was not processed.
 2015-07-20 18:57:56: chase1,015753,36.59501,-121.87478
+2015-07-20 18:58:02: chase1,015754,36.59501,-121.87478
+2015-07-20 18:58:02: hab
+2015-07-20 18:58:02: chase1,INVALID DATA
+2015-07-20 18:58:02: Invalid data packet - data was not processed.
+2015-07-20 18:58:02: INVALID DAT
+2015-07-20 18:58:02: Invalid data packet - data was not processed.
+2015-07-20 18:58:08: chase1,015755,36.59501,-121.87478
+2015-07-20 18:58:14: chase1,015756,36.59501,-121.87478
+2015-07-20 18:58:21: chase1,015757,36.59501,-121.87478
+2015-07-20 18:58:26: chase1,015758,36.59501,-121.87478
+2015-07-20 18:58:32: chase1,015759,36.59501,-121.87478
+2015-07-20 18:58:34: hab
+2015-07-20 18:58:34: INVALID DAT
+2015-07-20 18:58:34: Invalid data packet - data was not processed.
+2015-07-20 18:58:38: chase1,015800,36.59501,-121.87478
+2015-07-20 18:58:44: chase1,015801,36.59501,-121.87478
+2015-07-20 18:58:50: chase1,015802,36.59501,-121.87478
+2015-07-20 18:58:57: chase1,015803,36.59501,-121.87478
+2015-07-20 18:59:03: chase1,015804,36.59501,-121.87478
+2015-07-20 18:59:06: hab
+2015-07-20 18:59:06: INVALID DAT
+2015-07-20 18:59:06: Invalid data packet - data was not processed.
+2015-07-20 18:59:09: chase1,015805,36.59501,-121.87478
+2015-07-20 18:59:14: chase1,015806,36.59501,-121.87478
+2015-07-20 18:59:20: chase1,015807,36.59501,-121.87478
+2015-07-20 18:59:27: chase1,015808,36.59501,-121.87478
+2015-07-20 18:59:33: chase1,015809,36.59501,-121.87478
+2015-07-20 18:59:37: hab
+2015-07-20 18:59:37: INVALID DAT
+2015-07-20 18:59:37: Invalid data packet - data was not processed.
+2015-07-20 18:59:39: chase1,015810,36.59501,-121.87478
+2015-07-20 18:59:45: chase1,015811,36.59501,-121.87478
+2015-07-20 19:00:09: hab
+2015-07-20 19:00:09: INVALID DAT
+2015-07-20 19:00:09: Invalid data packet - data was not processed.
+2015-07-20 19:00:41: hab
+2015-07-20 19:00:41: INVALID DAT
+2015-07-20 19:00:41: Invalid data packet - data was not processed.
+2015-07-20 19:01:12: hab
+2015-07-20 19:01:13: INVALID DAT
+2015-07-20 19:01:13: Invalid data packet - data was not processed.
+2015-07-20 23:28:55: 
+
+Starting telemetry log
+
+2015-07-20 23:28:58: chase1,094736.000,36.9145,-121.3602
+2015-07-20 23:28:59: chase2,095334.000,36.9152,-121.3593
+2015-07-20 23:29:01: chase3,095738.000,36.9137,-121.3568
+2015-07-20 23:29:02: chase4,095933.000,36.9127,-121.3553
+2015-07-20 23:29:04: chase1,100333.000,36.9060,-121.3455
+2015-07-20 23:31:55: 
+
+Starting telemetry log
+
+2015-07-20 23:32:22: 
+
+Starting telemetry log
+
+2015-07-20 23:32:56: chase1
+2015-07-20 23:32:56: chase1,INVALID DATA
+2015-07-20 23:32:56: Invalid data packet - data was not processed.
+2015-07-20 23:33:41: 
+
+Starting telemetry log
+
+2015-07-20 23:34:18: 
+
+Starting telemetry log
+
+2015-07-20 23:39:41: 
+
+Starting telemetry log
+
+2015-07-20 23:40:06: 
+
+Starting telemetry log
+
+2015-07-20 23:46:51: 
+
+Starting telemetry log
+
+2015-07-20 23:48:47: 
+
+Starting telemetry log
+
+2015-07-20 23:49:59: 
+
+Starting telemetry log
+
+2015-07-20 23:50:24: 
+
+Starting telemetry log
+
+2015-07-20 23:50:52: 
+
+Starting telemetry log
+
+2015-07-20 23:51:03: 
+
+Starting telemetry log
+
+2015-07-20 23:51:28: 
+
+Starting telemetry log
+
+2015-07-20 23:51:36: 
+
+Starting telemetry log
+
+2015-07-20 23:52:11: hab
+2015-07-20 23:52:11: INVALID DAT
+2015-07-20 23:52:11: Invalid data packet - data was not processed.
+2015-07-20 23:52:39: 
+
+Starting telemetry log
+
+2015-07-20 23:52:50: 
+
+Starting telemetry log
+
+2015-07-20 23:53:17: 
+
+Starting telemetry log
+
+2015-07-20 23:53:27: 
+
+Starting telemetry log
+
+2015-07-20 23:53:52: 
+
+Starting telemetry log
+
+2015-07-20 23:54:02: 
+
+Starting telemetry log
+
+2015-07-20 23:56:12: 
+
+Starting telemetry log
+
+2015-07-20 23:56:55: 
+
+Starting telemetry log
+
+2015-07-20 23:57:46: 
+
+Starting telemetry log
+
+2015-07-20 23:58:12: 
+
+Starting telemetry log
+
+2015-07-21 00:00:12: 
+
+Starting telemetry log
+
+2015-07-21 00:05:02: 
+
+Starting telemetry log
+
+2015-07-21 00:06:27: 
+
+Starting telemetry log
+
+2015-07-21 00:13:16: 
+
+Starting telemetry log
+
+2015-07-21 00:15:09: 
+
+Starting telemetry log
+
+2015-07-21 00:15:36: 
+
+Starting telemetry log
+
+2015-07-21 00:16:49: 
+
+Starting telemetry log
+
+2015-07-21 00:18:23: 
+
+Starting telemetry log
+
+2015-07-21 00:19:27: 
+
+Starting telemetry log
+
+2015-07-21 00:21:09: 
+
+Starting telemetry log
+
+2015-07-21 00:21:44: chase1
+2015-07-21 00:21:44: chase1,INVALID DATA
+2015-07-21 00:21:44: Invalid data packet - data was not processed.
+2015-07-21 00:29:07: 
+
+Starting telemetry log
+
+2015-07-21 00:29:31: 
+
+Starting telemetry log
+
+2015-07-21 00:34:33: 
+
+Starting telemetry log
+
+2015-07-21 00:34:52: 
+
+Starting telemetry log
+
+2015-07-21 00:35:09: 
+
+Starting telemetry log
+
+2015-07-21 00:36:03: 
+
+Starting telemetry log
+
+2015-07-21 00:36:31: 
+
+Starting telemetry log
+
+2015-07-21 00:40:15: 
+
+Starting telemetry log
+
+2015-07-21 00:40:17: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:40:19: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:40:20: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:40:22: chase4,095933.000,36.9127,-121.3553
+2015-07-21 00:40:22: Invalid data packet - data was not processed.
+2015-07-21 00:40:24: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:40:25: chase2,100534.000,36.9003,-121.3422
+2015-07-21 00:40:27: chase3,100135.000,36.9105,-121.3518
+2015-07-21 00:41:53: 
+
+Starting telemetry log
+
+2015-07-21 00:41:55: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:41:57: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:42:17: 
+
+Starting telemetry log
+
+2015-07-21 00:42:19: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:42:21: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:42:22: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:42:24: chase4,095933.000,36.9127,-121.3553
+2015-07-21 00:42:24: Invalid data packet - data was not processed.
+2015-07-21 00:42:25: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:42:27: chase2,100534.000,36.9003,-121.3422
+2015-07-21 00:42:28: chase3,100135.000,36.9105,-121.3518
+2015-07-21 00:42:30: chase4,100734.000,36.8970,-121.3383
+2015-07-21 00:42:30: Invalid data packet - data was not processed.
+2015-07-21 00:49:13: 
+
+Starting telemetry log
+
+2015-07-21 00:49:15: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:49:17: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:49:18: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:49:20: chase4,095933.000,36.9127,-121.3553
+2015-07-21 00:49:20: Invalid data packet - data was not processed.
+2015-07-21 00:49:21: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:49:29: 
+
+Starting telemetry log
+
+2015-07-21 00:49:32: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:49:37: 
+
+Starting telemetry log
+
+2015-07-21 00:49:39: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:49:41: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:49:53: 
+
+Starting telemetry log
+
+2015-07-21 00:49:55: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:49:57: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:50:13: 
+
+Starting telemetry log
+
+2015-07-21 00:50:16: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:50:17: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:50:22: 
+
+Starting telemetry log
+
+2015-07-21 00:50:24: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:50:26: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:50:27: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:50:29: chase4,095933.000,36.9127,-121.3553
+2015-07-21 00:50:29: Invalid data packet - data was not processed.
+2015-07-21 00:50:31: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:50:32: chase2,100534.000,36.9003,-121.3422
+2015-07-21 00:50:34: chase3,100135.000,36.9105,-121.3518
+2015-07-21 00:50:35: chase4,100734.000,36.8970,-121.3383
+2015-07-21 00:50:35: Invalid data packet - data was not processed.
+2015-07-21 00:50:37: chase1,100934.000,36.8977,-121.3340
+2015-07-21 00:50:38: chase2,101133.000,36.9030,-121.3240
+2015-07-21 00:50:40: chase3,101136.000,36.9080,-121.3097
+2015-07-21 00:50:41: chase4,101533.000,36.9122,-121.2773
+2015-07-21 00:50:41: Invalid data packet - data was not processed.
+2015-07-21 00:52:47: 
+
+Starting telemetry log
+
+2015-07-21 00:52:50: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:52:51: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:52:53: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:52:56: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:53:21: 
+
+Starting telemetry log
+
+2015-07-21 00:53:23: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:53:25: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:53:26: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:53:30: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:53:31: chase2,100534.000,36.9003,-121.3422
+2015-07-21 00:53:33: chase3,100135.000,36.9105,-121.3518
+2015-07-21 00:53:36: chase1,100934.000,36.8977,-121.3340
+2015-07-21 00:53:37: chase2,101133.000,36.9030,-121.3240
+2015-07-21 00:53:39: chase3,101136.000,36.9080,-121.3097
+2015-07-21 00:54:30: 
+
+Starting telemetry log
+
+2015-07-21 00:54:33: chase1,094736.000,36.9145,-121.3602
+2015-07-21 00:54:34: chase2,095334.000,36.9152,-121.3593
+2015-07-21 00:54:36: chase3,095738.000,36.9137,-121.3568
+2015-07-21 00:54:39: chase1,100333.000,36.9060,-121.3455
+2015-07-21 00:54:40: chase2,100534.000,36.9003,-121.3422
+2015-07-21 00:54:42: chase3,100135.000,36.9105,-121.3518
+2015-07-21 00:54:45: chase1,100934.000,36.8977,-121.3340
+2015-07-21 00:54:46: chase2,101133.000,36.9030,-121.3240
+2015-07-21 00:54:48: chase3,101136.000,36.9080,-121.3097
+2015-07-21 00:54:51: chase1,101733.000,36.9138,-121.2517
+2015-07-21 00:54:53: chase2,101933.000,36.91770,-121.22350
+2015-07-21 00:54:54: chase3,102133.000,36.92050,-121.19130
+2015-07-21 05:24:47: 
+
+Starting telemetry log
+
+2015-07-21 05:24:49: chase1,094736.000,36.9145,-121.3602
+2015-07-21 05:24:51: chase2,095334.000,36.9152,-121.3593
+2015-07-21 05:24:52: chase3,095738.000,36.9137,-121.3568
+2015-07-21 05:24:55: chase1,100333.000,36.9060,-121.3455
+2015-07-21 05:24:57: chase2,100534.000,36.9003,-121.3422
+2015-07-21 05:24:58: chase3,100135.000,36.9105,-121.3518
+2015-07-21 05:25:31: 
+
+Starting telemetry log
+
+2015-07-21 05:25:34: chase1,094736.000,36.9145,-121.3602
+2015-07-21 05:25:35: chase2,095334.000,36.9152,-121.3593
+2015-07-21 05:25:37: chase3,095738.000,36.9137,-121.3568
+2015-07-21 05:25:40: chase1,100333.000,36.9060,-121.3455
+2015-07-21 05:25:41: chase2,100534.000,36.9003,-121.3422
+2015-07-21 05:25:43: chase3,100135.000,36.9105,-121.3518
+2015-07-21 05:25:46: chase1,100934.000,36.8977,-121.3340
+2015-07-21 05:25:47: chase2,101133.000,36.9030,-121.3240
+2015-07-21 05:29:42: 
+
+Starting telemetry log
+
+2015-07-21 05:29:45: chase1,094736.000,36.9145,-121.3602
+2015-07-21 05:29:46: chase2,095334.000,36.9152,-121.3593
+2015-07-21 05:29:48: chase3,095738.000,36.9137,-121.3568
+2015-07-21 05:31:07: 
+
+Starting telemetry log
+
+2015-07-21 05:31:10: chase1,094736.000,36.9145,-121.3602
+2015-07-21 05:31:11: chase2,095334.000,36.9152,-121.3593
+2015-07-21 05:31:13: chase3,095738.000,36.9137,-121.3568
+2015-07-21 05:31:16: chase1,100333.000,36.9060,-121.3455
+2015-07-21 05:31:17: chase2,100534.000,36.9003,-121.3422
+2015-07-21 05:31:19: chase3,100135.000,36.9105,-121.3518
+2015-07-21 05:31:22: chase1,100934.000,36.8977,-121.3340
+2015-07-21 05:31:23: chase2,101133.000,36.9030,-121.3240
+2015-07-21 05:31:25: chase3,101136.000,36.9080,-121.3097
+2015-07-21 05:31:34: 
+
+Starting telemetry log
+
+2015-07-21 05:32:09: chase1
+2015-07-21 05:32:09: chase1,INVALID DATA
+2015-07-21 05:32:09: Invalid data packet - data was not processed.
+2015-07-21 05:32:40: chase1
+2015-07-21 05:32:40: chase1,INVALID DATA
+2015-07-21 05:32:40: Invalid data packet - data was not processed.
+2015-07-21 05:33:12: chase1
+2015-07-21 05:33:12: chase1,INVALID DATA
+2015-07-21 05:33:12: Invalid data packet - data was not processed.
+2015-07-21 05:33:43: chase1
+2015-07-21 05:33:43: chase1,INVALID DATA
+2015-07-21 05:33:43: Invalid data packet - data was not processed.
+2015-07-21 05:34:14: chase1
+2015-07-21 05:34:14: chase1,INVALID DATA
+2015-07-21 05:34:14: Invalid data packet - data was not processed.
+2015-07-21 05:34:45: chase1
+2015-07-21 05:34:45: chase1,INVALID DATA
+2015-07-21 05:34:45: Invalid data packet - data was not processed.
+2015-07-21 05:36:25: 
+
+Starting telemetry log
+
+2015-07-21 05:36:58: chase1
+2015-07-21 05:36:58: chase1,INVALID DATA
+2015-07-21 05:36:58: Invalid data packet - data was not processed.
+2015-07-21 05:37:30: chase1
+2015-07-21 05:37:30: chase1,INVALID DATA
+2015-07-21 05:37:30: Invalid data packet - data was not processed.
+2015-07-21 05:38:01: chase1
+2015-07-21 05:38:01: chase1,INVALID DATA
+2015-07-21 05:38:01: Invalid data packet - data was not processed.
+2015-07-21 05:41:16: 
+
+Starting telemetry log
+
+2015-07-21 05:42:32: 
+
+Starting telemetry log
+
+2015-07-21 05:43:30: chase1
+2015-07-21 05:43:30: chase1,INVALID DATA
+2015-07-21 05:43:30: Invalid data packet - data was not processed.
+2015-07-21 05:43:59: 
+
+Starting telemetry log
+
+2015-07-21 05:44:03: 
+
+Starting telemetry log
+
+2015-07-21 05:46:02: 
+
+Starting telemetry log
+
+2015-07-21 05:46:51: chase1
+2015-07-21 05:46:51: chase1,INVALID DATA
+2015-07-21 05:46:51: Invalid data packet - data was not processed.
+2015-07-21 05:47:11: 
+
+Starting telemetry log
+
+2015-07-21 05:48:06: chase1
+2015-07-21 05:48:06: chase1,INVALID DATA
+2015-07-21 05:48:06: Invalid data packet - data was not processed.
+2015-07-21 05:48:38: chase1
+2015-07-21 05:48:38: chase1,INVALID DATA
+2015-07-21 05:48:38: Invalid data packet - data was not processed.
+2015-07-21 05:49:09: chase1
+2015-07-21 05:49:09: chase1,INVALID DATA
+2015-07-21 05:49:09: Invalid data packet - data was not processed.
+2015-07-21 05:49:40: chase1
+2015-07-21 05:49:40: chase1,INVALID DATA
+2015-07-21 05:49:40: Invalid data packet - data was not processed.
+2015-07-21 05:50:11: chase1
+2015-07-21 05:50:11: chase1,INVALID DATA
+2015-07-21 05:50:11: Invalid data packet - data was not processed.
+2015-07-21 05:50:42: chase1
+2015-07-21 05:50:42: chase1,INVALID DATA
+2015-07-21 05:50:42: Invalid data packet - data was not processed.
+2015-07-21 05:51:12: 
+
+Starting telemetry log
+
+2015-07-21 05:52:07: chase1
+2015-07-21 05:52:07: chase1,INVALID DATA
+2015-07-21 05:52:07: Invalid data packet - data was not processed.
+2015-07-21 05:52:39: chase1
+2015-07-21 05:52:39: chase1,INVALID DATA
+2015-07-21 05:52:39: Invalid data packet - data was not processed.
+2015-07-21 05:53:10: chase1
+2015-07-21 05:53:10: chase1,INVALID DATA
+2015-07-21 05:53:10: Invalid data packet - data was not processed.
+2015-07-21 05:53:42: chase1
+2015-07-21 05:53:42: chase1,INVALID DATA
+2015-07-21 05:53:42: Invalid data packet - data was not processed.
+2015-07-21 05:54:13: chase1
+2015-07-21 05:54:13: chase1,INVALID DATA
+2015-07-21 05:54:13: Invalid data packet - data was not processed.
+2015-07-21 05:54:44: chase1
+2015-07-21 05:54:44: chase1,INVALID DATA
+2015-07-21 05:54:44: Invalid data packet - data was not processed.
+2015-07-21 05:55:15: chase1
+2015-07-21 05:55:15: chase1,INVALID DATA
+2015-07-21 05:55:15: Invalid data packet - data was not processed.
+2015-07-21 05:55:46: chase1
+2015-07-21 05:55:47: chase1,INVALID DATA
+2015-07-21 05:55:47: Invalid data packet - data was not processed.
+2015-07-21 05:56:18: chase1
+2015-07-21 05:56:18: chase1,INVALID DATA
+2015-07-21 05:56:18: Invalid data packet - data was not processed.
+2015-07-21 05:56:49: chase1
+2015-07-21 05:56:49: chase1,INVALID DATA
+2015-07-21 05:56:49: Invalid data packet - data was not processed.
+2015-07-21 05:57:20: chase1
+2015-07-21 05:57:20: chase1,INVALID DATA
+2015-07-21 05:57:20: Invalid data packet - data was not processed.
+2015-07-21 05:57:51: chase1
+2015-07-21 05:57:51: chase1,INVALID DATA
+2015-07-21 05:57:51: Invalid data packet - data was not processed.
+2015-07-21 05:58:23: chase1
+2015-07-21 05:58:23: chase1,INVALID DATA
+2015-07-21 05:58:23: Invalid data packet - data was not processed.
+2015-07-21 05:58:54: chase1
+2015-07-21 05:58:54: chase1,INVALID DATA
+2015-07-21 05:58:54: Invalid data packet - data was not processed.
+2015-07-21 05:59:25: chase1
+2015-07-21 05:59:25: chase1,INVALID DATA
+2015-07-21 05:59:25: Invalid data packet - data was not processed.
+2015-07-21 05:59:56: chase1
+2015-07-21 05:59:56: chase1,INVALID DATA
+2015-07-21 05:59:56: Invalid data packet - data was not processed.
+2015-07-21 06:00:28: chase1
+2015-07-21 06:00:28: chase1,INVALID DATA
+2015-07-21 06:00:28: Invalid data packet - data was not processed.
+2015-07-21 06:00:59: chase1
+2015-07-21 06:00:59: chase1,INVALID DATA
+2015-07-21 06:00:59: Invalid data packet - data was not processed.
+2015-07-21 06:01:30: chase1
+2015-07-21 06:01:30: chase1,INVALID DATA
+2015-07-21 06:01:30: Invalid data packet - data was not processed.
+2015-07-21 06:02:01: chase1
+2015-07-21 06:02:01: chase1,INVALID DATA
+2015-07-21 06:02:01: Invalid data packet - data was not processed.
+2015-07-21 06:02:32: chase1
+2015-07-21 06:02:32: chase1,INVALID DATA
+2015-07-21 06:02:32: Invalid data packet - data was not processed.
+2015-07-21 06:03:04: chase1
+2015-07-21 06:03:04: chase1,INVALID DATA
+2015-07-21 06:03:04: Invalid data packet - data was not processed.
+2015-07-21 06:03:35: chase1
+2015-07-21 06:03:35: chase1,INVALID DATA
+2015-07-21 06:03:35: Invalid data packet - data was not processed.
+2015-07-21 06:04:06: chase1
+2015-07-21 06:04:06: chase1,INVALID DATA
+2015-07-21 06:04:06: Invalid data packet - data was not processed.
+2015-07-21 06:04:37: chase1
+2015-07-21 06:04:37: chase1,INVALID DATA
+2015-07-21 06:04:37: Invalid data packet - data was not processed.
+2015-07-21 06:05:09: chase1
+2015-07-21 06:05:09: chase1,INVALID DATA
+2015-07-21 06:05:09: Invalid data packet - data was not processed.
+2015-07-21 06:05:40: chase1
+2015-07-21 06:05:40: chase1,INVALID DATA
+2015-07-21 06:05:40: Invalid data packet - data was not processed.
+2015-07-21 06:06:11: chase1
+2015-07-21 06:06:11: chase1,INVALID DATA
+2015-07-21 06:06:11: Invalid data packet - data was not processed.
+2015-07-21 06:06:42: chase1
+2015-07-21 06:06:42: chase1,INVALID DATA
+2015-07-21 06:06:42: Invalid data packet - data was not processed.
+2015-07-21 06:07:13: chase1
+2015-07-21 06:07:13: chase1,INVALID DATA
+2015-07-21 06:07:13: Invalid data packet - data was not processed.
+2015-07-21 06:07:45: chase1
+2015-07-21 06:07:45: chase1,INVALID DATA
+2015-07-21 06:07:45: Invalid data packet - data was not processed.
+2015-07-21 06:08:16: chase1
+2015-07-21 06:08:16: chase1,INVALID DATA
+2015-07-21 06:08:16: Invalid data packet - data was not processed.
+2015-07-21 06:08:47: chase1
+2015-07-21 06:08:47: chase1,INVALID DATA
+2015-07-21 06:08:47: Invalid data packet - data was not processed.
+2015-07-21 06:09:18: chase1
+2015-07-21 06:09:18: chase1,INVALID DATA
+2015-07-21 06:09:18: Invalid data packet - data was not processed.
+2015-07-21 06:09:50: chase1
+2015-07-21 06:09:50: chase1,INVALID DATA
+2015-07-21 06:09:50: Invalid data packet - data was not processed.
+2015-07-21 06:10:21: chase1
+2015-07-21 06:10:21: chase1,INVALID DATA
+2015-07-21 06:10:21: Invalid data packet - data was not processed.
+2015-07-21 06:10:52: chase1
+2015-07-21 06:10:52: chase1,INVALID DATA
+2015-07-21 06:10:52: Invalid data packet - data was not processed.
+2015-07-21 06:11:23: chase1
+2015-07-21 06:11:23: chase1,INVALID DATA
+2015-07-21 06:11:23: Invalid data packet - data was not processed.
+2015-07-21 06:11:55: chase1
+2015-07-21 06:11:55: chase1,INVALID DATA
+2015-07-21 06:11:55: Invalid data packet - data was not processed.
+2015-07-21 06:12:26: chase1
+2015-07-21 06:12:26: chase1,INVALID DATA
+2015-07-21 06:12:26: Invalid data packet - data was not processed.
+2015-07-21 06:12:57: chase1
+2015-07-21 06:12:57: chase1,INVALID DATA
+2015-07-21 06:12:57: Invalid data packet - data was not processed.
+2015-07-21 06:13:28: chase1
+2015-07-21 06:13:28: chase1,INVALID DATA
+2015-07-21 06:13:28: Invalid data packet - data was not processed.
+2015-07-21 06:13:59: chase1
+2015-07-21 06:13:59: chase1,INVALID DATA
+2015-07-21 06:13:59: Invalid data packet - data was not processed.
+2015-07-21 06:14:31: chase1
+2015-07-21 06:14:31: chase1,INVALID DATA
+2015-07-21 06:14:31: Invalid data packet - data was not processed.
+2015-07-21 06:15:02: chase1
+2015-07-21 06:15:02: chase1,INVALID DATA
+2015-07-21 06:15:02: Invalid data packet - data was not processed.
+2015-07-21 06:15:33: chase1
+2015-07-21 06:15:33: chase1,INVALID DATA
+2015-07-21 06:15:33: Invalid data packet - data was not processed.
+2015-07-21 06:16:04: chase1
+2015-07-21 06:16:04: chase1,INVALID DATA
+2015-07-21 06:16:04: Invalid data packet - data was not processed.
+2015-07-21 06:16:36: chase1
+2015-07-21 06:16:36: chase1,INVALID DATA
+2015-07-21 06:16:36: Invalid data packet - data was not processed.
+2015-07-21 06:17:07: chase1
+2015-07-21 06:17:07: chase1,INVALID DATA
+2015-07-21 06:17:07: Invalid data packet - data was not processed.
+2015-07-21 06:17:38: chase1
+2015-07-21 06:17:38: chase1,INVALID DATA
+2015-07-21 06:17:38: Invalid data packet - data was not processed.
+2015-07-21 06:18:09: chase1
+2015-07-21 06:18:09: chase1,INVALID DATA
+2015-07-21 06:18:09: Invalid data packet - data was not processed.
+2015-07-21 06:18:41: chase1
+2015-07-21 06:18:41: chase1,INVALID DATA
+2015-07-21 06:18:41: Invalid data packet - data was not processed.
+2015-07-21 06:19:12: chase1
+2015-07-21 06:19:12: chase1,INVALID DATA
+2015-07-21 06:19:12: Invalid data packet - data was not processed.
+2015-07-21 06:19:43: chase1
+2015-07-21 06:19:43: chase1,INVALID DATA
+2015-07-21 06:19:43: Invalid data packet - data was not processed.
+2015-07-21 06:20:14: chase1
+2015-07-21 06:20:14: chase1,INVALID DATA
+2015-07-21 06:20:14: Invalid data packet - data was not processed.
+2015-07-21 06:20:45: chase1
+2015-07-21 06:20:45: chase1,INVALID DATA
+2015-07-21 06:20:45: Invalid data packet - data was not processed.
+2015-07-21 06:21:17: chase1
+2015-07-21 06:21:17: chase1,INVALID DATA
+2015-07-21 06:21:17: Invalid data packet - data was not processed.
+2015-07-21 06:21:48: chase1
+2015-07-21 06:21:48: chase1,INVALID DATA
+2015-07-21 06:21:48: Invalid data packet - data was not processed.
+2015-07-21 06:22:19: chase1
+2015-07-21 06:22:19: chase1,INVALID DATA
+2015-07-21 06:22:19: Invalid data packet - data was not processed.
+2015-07-21 06:22:50: chase1
+2015-07-21 06:22:50: chase1,INVALID DATA
+2015-07-21 06:22:50: Invalid data packet - data was not processed.
+2015-07-21 06:23:22: chase1
+2015-07-21 06:23:22: chase1,INVALID DATA
+2015-07-21 06:23:22: Invalid data packet - data was not processed.
+2015-07-21 06:23:53: chase1
+2015-07-21 06:23:53: chase1,INVALID DATA
+2015-07-21 06:23:53: Invalid data packet - data was not processed.
+2015-07-21 06:26:37: 
+
+Starting telemetry log
+
+2015-07-21 06:27:50: 
+
+Starting telemetry log
+
+2015-07-21 06:34:07: 
+
+Starting telemetry log
+
+2015-07-21 06:36:42: 
+
+Starting telemetry log
+
+2015-07-21 06:37:18: chase1
+2015-07-21 06:37:18: chase1,INVALID DATA
+2015-07-21 06:37:18: Invalid data packet - data was not processed.
+2015-07-21 06:37:49: chase1
+2015-07-21 06:37:49: chase1,INVALID DATA
+2015-07-21 06:37:49: Invalid data packet - data was not processed.
+2015-07-21 06:38:20: chase1
+2015-07-21 06:38:20: chase1,INVALID DATA
+2015-07-21 06:38:20: Invalid data packet - data was not processed.
+2015-07-21 06:39:10: chase1
+2015-07-21 06:39:10: chase1,INVALID DATA
+2015-07-21 06:39:10: Invalid data packet - data was not processed.
+2015-07-21 06:39:42: chase1
+2015-07-21 06:39:42: chase1,INVALID DATA
+2015-07-21 06:39:42: Invalid data packet - data was not processed.
+2015-07-21 06:40:13: chase1
+2015-07-21 06:40:13: chase1,INVALID DATA
+2015-07-21 06:40:13: Invalid data packet - data was not processed.
+2015-07-21 06:40:44: chase1
+2015-07-21 06:40:44: chase1,INVALID DATA
+2015-07-21 06:40:44: Invalid data packet - data was not processed.
+2015-07-21 06:41:15: chase1
+2015-07-21 06:41:15: chase1,INVALID DATA
+2015-07-21 06:41:15: Invalid data packet - data was not processed.
+2015-07-21 06:41:47: chase1
+2015-07-21 06:41:47: chase1,INVALID DATA
+2015-07-21 06:41:47: Invalid data packet - data was not processed.
+2015-07-21 06:42:18: chase1
+2015-07-21 06:42:18: chase1,INVALID DATA
+2015-07-21 06:42:18: Invalid data packet - data was not processed.
+2015-07-21 06:42:49: chase1
+2015-07-21 06:42:49: chase1,INVALID DATA
+2015-07-21 06:42:49: Invalid data packet - data was not processed.
+2015-07-21 06:43:21: chase1
+2015-07-21 06:43:21: chase1,INVALID DATA
+2015-07-21 06:43:21: Invalid data packet - data was not processed.
+2015-07-21 06:43:52: chase1
+2015-07-21 06:43:52: chase1,INVALID DATA
+2015-07-21 06:43:52: Invalid data packet - data was not processed.
+2015-07-21 06:44:23: chase1
+2015-07-21 06:44:23: chase1,INVALID DATA
+2015-07-21 06:44:23: Invalid data packet - data was not processed.
+2015-07-21 06:44:54: chase1
+2015-07-21 06:44:54: chase1,INVALID DATA
+2015-07-21 06:44:54: Invalid data packet - data was not processed.
+2015-07-21 06:45:26: chase1
+2015-07-21 06:45:26: chase1,INVALID DATA
+2015-07-21 06:45:26: Invalid data packet - data was not processed.
+2015-07-21 06:45:57: chase1
+2015-07-21 06:45:57: chase1,INVALID DATA
+2015-07-21 06:45:57: Invalid data packet - data was not processed.
+2015-07-21 06:46:28: chase1
+2015-07-21 06:46:28: chase1,INVALID DATA
+2015-07-21 06:46:28: Invalid data packet - data was not processed.
+2015-07-21 06:46:59: chase1
+2015-07-21 06:46:59: chase1,INVALID DATA
+2015-07-21 06:46:59: Invalid data packet - data was not processed.
+2015-07-21 06:47:31: chase1
+2015-07-21 06:47:31: chase1,INVALID DATA
+2015-07-21 06:47:31: Invalid data packet - data was not processed.
+2015-07-21 06:48:02: chase1
+2015-07-21 06:48:02: chase1,INVALID DATA
+2015-07-21 06:48:02: Invalid data packet - data was not processed.
+2015-07-21 06:48:33: chase1
+2015-07-21 06:48:33: chase1,INVALID DATA
+2015-07-21 06:48:33: Invalid data packet - data was not processed.
+2015-07-21 06:49:05: chase1
+2015-07-21 06:49:05: chase1,INVALID DATA
+2015-07-21 06:49:05: Invalid data packet - data was not processed.
+2015-07-21 06:49:23: 
+
+Starting telemetry log
+
+2015-07-21 06:51:38: 
+
+Starting telemetry log
+
+2015-07-21 06:51:49: chase1
+2015-07-21 06:51:49: chase1,INVALID DATA
+2015-07-21 06:51:49: Invalid data packet - data was not processed.
+2015-07-21 06:51:57: chase1
+2015-07-21 06:51:57: chase1,INVALID DATA
+2015-07-21 06:51:57: Invalid data packet - data was not processed.
+2015-07-21 06:52:03: chase1
+2015-07-21 06:52:03: chase1,INVALID DATA
+2015-07-21 06:52:03: Invalid data packet - data was not processed.
+2015-07-21 06:52:09: chase1
+2015-07-21 06:52:09: chase1,INVALID DATA
+2015-07-21 06:52:09: Invalid data packet - data was not processed.
+2015-07-21 06:52:15: chase1
+2015-07-21 06:52:15: chase1,INVALID DATA
+2015-07-21 06:52:15: Invalid data packet - data was not processed.
+2015-07-21 06:52:21: chase1
+2015-07-21 06:52:21: chase1,INVALID DATA
+2015-07-21 06:52:21: Invalid data packet - data was not processed.
+2015-07-21 06:52:27: chase1
+2015-07-21 06:52:27: chase1,INVALID DATA
+2015-07-21 06:52:27: Invalid data packet - data was not processed.
+2015-07-21 06:52:33: chase1
+2015-07-21 06:52:33: chase1,INVALID DATA
+2015-07-21 06:52:33: Invalid data packet - data was not processed.
+2015-07-21 06:53:08: chase1
+2015-07-21 06:53:08: chase1,INVALID DATA
+2015-07-21 06:53:08: Invalid data packet - data was not processed.
+2015-07-21 06:53:14: chase1
+2015-07-21 06:53:14: chase1,INVALID DATA
+2015-07-21 06:53:14: Invalid data packet - data was not processed.
+2015-07-21 06:55:17: 
+
+Starting telemetry log
+
+2015-07-21 06:55:27: chase1
+2015-07-21 06:55:27: chase1,INVALID DATA
+2015-07-21 06:55:27: Invalid data packet - data was not processed.
+2015-07-21 06:55:33: chase1
+2015-07-21 06:55:33: chase1,INVALID DATA
+2015-07-21 06:55:33: Invalid data packet - data was not processed.
+2015-07-21 06:55:39: chase1
+2015-07-21 06:55:39: chase1,INVALID DATA
+2015-07-21 06:55:39: Invalid data packet - data was not processed.
+2015-07-21 06:55:45: chase1
+2015-07-21 06:55:45: chase1,INVALID DATA
+2015-07-21 06:55:45: Invalid data packet - data was not processed.
+2015-07-21 06:56:03: chase1
+2015-07-21 06:56:03: chase1,INVALID DATA
+2015-07-21 06:56:03: Invalid data packet - data was not processed.
+2015-07-21 06:56:09: chase1
+2015-07-21 06:56:09: chase1,INVALID DATA
+2015-07-21 06:56:09: Invalid data packet - data was not processed.
+2015-07-21 06:56:15: chase1
+2015-07-21 06:56:15: chase1,INVALID DATA
+2015-07-21 06:56:15: Invalid data packet - data was not processed.
+2015-07-21 06:57:14: 
+
+Starting telemetry log
+
+2015-07-21 06:57:24: chase1
+2015-07-21 06:57:24: chase1,INVALID DATA
+2015-07-21 06:57:24: Invalid data packet - data was not processed.
+2015-07-21 06:57:30: chase1
+2015-07-21 06:57:30: chase1,INVALID DATA
+2015-07-21 06:57:30: Invalid data packet - data was not processed.
+2015-07-21 06:57:48: chase1
+2015-07-21 06:57:48: chase1,INVALID DATA
+2015-07-21 06:57:48: Invalid data packet - data was not processed.
+2015-07-21 06:57:54: chase1
+2015-07-21 06:57:54: chase1,INVALID DATA
+2015-07-21 06:57:54: Invalid data packet - data was not processed.
