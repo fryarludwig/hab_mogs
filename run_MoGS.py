@@ -40,7 +40,7 @@ if DISH:
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	sock.connect((DISH_ADDRESS, DISH_PORT))
 
-TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
+TEST_MODE = True  # Test mode pulls telemetry from file instead of radios
 
 """
 PRIORITIES:
@@ -64,22 +64,26 @@ class mogsMainWindow(QtGui.QWidget):
 	Creates the class variables and starts the GUI window
 	"""
 	def __init__(self):
-		self.currentLabelPosition = 0
-		self.VERTICAL_SPACING = 25
-		self.positionTelemetryList = []
+		super(mogsMainWindow, self).__init__()
+		self.commandStatusLabel = QtGui.QLabel()
+
 		self.dataTelemetryList = []
 		self.telemetryValuesToInclude = 5
+		self.selectPrecisionDialogWidget = QtGui.QDialog()
+		self.predictionFileName = ""
+
 		self.messagingListView = QtGui.QListView()
 		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
 		self.sendMessageCallsign = QtGui.QLabel()
 		self.sendMessageEntryBox = QtGui.QLineEdit()
 		self.notifyOnSerialError = True
 
-		self.selectPrecisionDialogWidget = QtGui.QDialog()
-		self.predictionFileName = ""
-
-		super(mogsMainWindow, self).__init__()
-		self.commandStatusLabel = QtGui.QLabel()
+		self.radioConsoleWidget = QtGui.QWidget()
+		self.radioConsoleListView = QtGui.QListView()
+		self.radioConsoleListViewModel = QtGui.QStandardItemModel(self.radioConsoleListView)
+		self.viewRadioConsoleButton = QtGui.QPushButton()
+		self.radioConsoleIsOpen = False
+		self.radioConsoleNumItems = 300
 
 		self.callsignToString = {"hab"   : "Balloon",
 								"chase1" : "Chase 1",
@@ -103,7 +107,7 @@ class mogsMainWindow(QtGui.QWidget):
 										"SSAGSpot2" : "chase1",
 										"SSAGSpot3" : "chase2",
 										"SSAGSpot4" : "chase3",
-										"NONE" : "nps"}
+										"SSAGSpot5" : "nps"}
 
 		self.telemetryLabelDictionary = OrderedDict()
 		self.telemetryLabelDictionary["timestamp"] = QtGui.QLabel("None", self)
@@ -134,11 +138,13 @@ class mogsMainWindow(QtGui.QWidget):
 		self.serialHandler.vehicleDataReceived.connect(self.updateChaseVehicleTelemetry)
 		self.serialHandler.invalidSerialPort.connect(self.serialFailureDisplay)
 		self.serialHandler.chatMessageReceived.connect(self.updateChat)
+		self.serialHandler.radioConsoleUpdateSignal.connect(self.updateRadioConsole)
 		self.serialHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
 		self.serialHandler.start()
 
 		self.dishHandler = dishHandlerThread()
+		# self.dishHandler.start()
 
 		self.initUI()
 
@@ -151,7 +157,7 @@ class mogsMainWindow(QtGui.QWidget):
 		window_y = 700
 
 		self.col = QtGui.QColor(0, 0, 0)
-		self.vLayout = QtGui.QGridLayout()
+		self.vLayout = QtGui.QVBoxLayout()
 		self.hLayout = QtGui.QHBoxLayout()
 
 		self.vLayout.setSpacing(0)
@@ -167,15 +173,17 @@ class mogsMainWindow(QtGui.QWidget):
 		self.theMap.addToJavaScriptWindowObject('self', self)
 		self.mapView.setHtml(googleMapsHtml)
 
+		self.createRadioConsole()
+
 		telemetryWidget = self.createTelemetryWidget()
 		messagingWidget = self.createMessagingWidget()
 		commandWidget = self.createCommandWidget()
 		networkWidget = self.createNetworkWidget()
 
-		self.vLayout.addWidget(telemetryWidget, 0, 0, 5, 1)
-		self.vLayout.addWidget(messagingWidget, 5, 0, 5, 1)
-		self.vLayout.addWidget(commandWidget, 11, 0, 3, 1)
-		self.vLayout.addWidget(networkWidget, 14, 0, 1, 1)
+		self.vLayout.addWidget(telemetryWidget, 1)
+		self.vLayout.addWidget(messagingWidget, 10)
+		self.vLayout.addWidget(commandWidget, 1)
+		self.vLayout.addWidget(networkWidget, 1)
 
 		self.hLayout.addWidget(mapWidget, 1)
 		self.hLayout.addLayout(self.vLayout, 0)
@@ -214,8 +222,9 @@ class mogsMainWindow(QtGui.QWidget):
 
 		self.messagingListView.setWrapping(True)
 		self.messagingListView.setWordWrap(True)
-		self.messagingListView.setSpacing(1)
+		self.messagingListView.setSpacing(0)
 		self.messagingListView.setMinimumSize(400, 300)
+		self.messagingListView.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
 
 		self.sendMessageEntryBox.setMaxLength(180)
 		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
@@ -240,9 +249,6 @@ class mogsMainWindow(QtGui.QWidget):
 		layout.setSpacing(3)
 
 		# Set up labels
-		commandLabel = QtGui.QLabel("Command Response:", self)
-		commandLabel.setAlignment(QtCore.Qt.AlignCenter)
-
 		self.commandStatusLabel = QtGui.QLabel("No Commands have been sent", self)
 		self.commandStatusLabel.setAlignment(QtCore.Qt.AlignCenter)
 
@@ -267,7 +273,6 @@ class mogsMainWindow(QtGui.QWidget):
 		satelliteViewButton = QtGui.QPushButton('Update SPOT', self)
 		satelliteViewButton.clicked[bool].connect(self.updateSpotPositions)
 
-		layout.addWidget(commandLabel, 0, 0, 1, 3)
 		layout.addWidget(self.commandStatusLabel, 1, 0, 1, 3)
 		layout.addWidget(comPortButton, 2, 2)
 		layout.addWidget(resizeMapButton, 2, 1)
@@ -336,6 +341,8 @@ class mogsMainWindow(QtGui.QWidget):
 			layout.addWidget(value[1], counter, 2)
 			counter += 2
 
+		widget.setMaximumSize(425, 185)
+		widget.setSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
 		return widget
 
 	"""
@@ -354,6 +361,9 @@ class mogsMainWindow(QtGui.QWidget):
 		layoutLabel = QtGui.QLabel("Network Status")
 		layoutLabel.setAlignment(QtCore.Qt.AlignCenter)
 
+		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
+		self.viewRadioConsoleButton.setText("View Console")
+
 		# Set all to show that there is no connection yet
 		for key, statusLabel in self.statusLabelList.items():
 			statusLabel.setAlignment(QtCore.Qt.AlignCenter)
@@ -361,7 +371,8 @@ class mogsMainWindow(QtGui.QWidget):
 			statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
 
 		layout.addWidget(layoutLabel, 0, 0, 1, 3)
-		layout.addWidget(self.statusLabelList["hab"], 1, 0, 1, 2)
+		layout.addWidget(self.viewRadioConsoleButton, 1, 0)
+		layout.addWidget(self.statusLabelList["hab"], 1, 1)
 		layout.addWidget(self.statusLabelList["nps"], 1, 2)
 		layout.addWidget(self.statusLabelList["chase1"], 2, 0)
 		layout.addWidget(self.statusLabelList["chase2"], 2, 1)
@@ -372,12 +383,49 @@ class mogsMainWindow(QtGui.QWidget):
 		return widget
 
 	"""
+	Populates a "Console" widget.
+	"""
+	def createRadioConsole(self):
+		layout = QtGui.QGridLayout(self.radioConsoleWidget)
+		layout.setSpacing(0)
+
+		# Set up labels
+		radioConsoleCloseButton = QtGui.QPushButton("Close")
+		radioConsoleCloseButton.clicked.connect(self.radioConsoleWidget.close)
+
+		self.radioConsoleListView.setWrapping(True)
+		self.radioConsoleListView.setWordWrap(True)
+		self.radioConsoleListView.setSpacing(0)
+		self.radioConsoleListView.setMinimumSize(600, 400)
+
+		self.radioConsoleListViewModel.setRowCount(self.radioConsoleNumItems)
+
+		layout.addWidget(self.radioConsoleListView, 1, 0, 10, 5)
+		layout.addWidget(radioConsoleCloseButton, 11, 2)
+
+		self.radioConsoleWidget.setLayout(layout)
+		self.radioConsoleWidget.setWindowTitle("Radio Console Viewer")
+
+	"""
+	Populates and displays a "Console" widget.
+	"""
+	def updateRadioConsole(self, message):
+		if (message[-1] == "\n" or message[-1] == "\r"):
+			itemToAdd = QtGui.QStandardItem(datetime.datetime.now().strftime("%H:%M - ") + message[:-1])
+		else:
+			itemToAdd = QtGui.QStandardItem(datetime.datetime.now().strftime("%H:%M - ") + message)
+		self.radioConsoleListViewModel.insertRow(0, itemToAdd)
+		self.radioConsoleListViewModel.setRowCount(self.radioConsoleNumItems)
+		self.radioConsoleListView.setModel(self.radioConsoleListViewModel)
+
+	"""
 	Logs and parses the telemetry string passed from the Radio class, then
 	updates the GUI to display the values. On invalid packet the data is logged
 	but the GUI is not updated.
 	No return value
 	"""
 	def updateBalloonDataTelemetry(self, data):
+		print(data)
 		logTelemetry(data)
 		self.statusLabelList["hab"].setStyleSheet("QFrame { background-color: Green }")
 
@@ -388,7 +436,7 @@ class mogsMainWindow(QtGui.QWidget):
 			splitMessage = data.split(",")
 			timestamp = splitMessage[0]
 			if (len(timestamp) > 0):
-				timestamp = timestamp[:2] + ":" + timestamp[2:4] + ":" + timestamp[4:6]
+				timestamp = timestamp[:2] + ":" + timestamp[2:4] + ":" + timestamp[4:]
 			latitude = splitMessage[1]
 			longitude = splitMessage[2]
 			altitude = splitMessage[3]
@@ -486,6 +534,8 @@ class mogsMainWindow(QtGui.QWidget):
 			self.armBrmButton.setText("Arm/Disarm BRM")
 			self.armBrmButton.clicked.disconnect()
 			self.armBrmButton.clicked.connect(self.armBalloonRelease)
+			self.releaseBalloonButton.setStyleSheet("background-color: Salmon")
+			self.releaseBalloonButton.setDisabled(True)
 		else:
 			self.commandStatusLabel.setText("Unknown command response received")
 			print("Unknown: " + str(message))
@@ -844,11 +894,12 @@ class serialHandlerThread(QtCore.QThread):
 	vehicleDataReceived = QtCore.pyqtSignal(object)
 	invalidSerialPort = QtCore.pyqtSignal(object)
 	chatMessageReceived = QtCore.pyqtSignal(object)
+	radioConsoleUpdateSignal = QtCore.pyqtSignal(object)
 	updateNetworkStatusSignal = QtCore.pyqtSignal()
 
 	def __init__(self):
 		if (TEST_MODE):
-			self.inputTestFile = open("test_telemetry.txt")
+			self.inputTestFile = open("test_telemetry.txt", "r")
 		QtCore.QThread.__init__(self)
 
 		self.HEARTBEAT_INTERVAL = 5
@@ -891,7 +942,6 @@ class serialHandlerThread(QtCore.QThread):
 		counter = self.HEARTBEAT_INTERVAL
 
 		if (TEST_MODE):
-			sleep(1)
 			for line in self.inputTestFile:
 				sleep(1.5)
 				self.handleMessage(line)
@@ -1012,7 +1062,9 @@ class serialHandlerThread(QtCore.QThread):
 
 	def sendCurrentPosition(self):
 		try:
-			self.radioSerialOutput("data," + self.getFormattedGpsData(), True)
+			gpsData = self.getFormattedGpsData()
+			if (gpsData != "INVALID DATA"):
+				self.radioSerialOutput("data," + gpsData, True)
 		except:
 			print("Unable to send current position")
 
@@ -1063,7 +1115,7 @@ class serialHandlerThread(QtCore.QThread):
 			print("Attempt " + str(counter))
 			counter -= 1
 			self.radioSerialOutput("cmd,SSAG_RELEASE_BALLOON")
-			sleep(4)
+			sleep(2)
 
 	def sendResetBrmCommand(self):
 		print("Resetting balloon")
@@ -1073,17 +1125,20 @@ class serialHandlerThread(QtCore.QThread):
 			print("Attempt " + str(counter))
 			counter -= 1
 			self.radioSerialOutput("cmd,RESET_BRM")
-			sleep(4)
+			sleep(2)
 
 	def radioSerialInput(self):
 		serialInput = ""
 
 		try:
 			if not (self.radioSerial.inWaiting()):
-				sleep(1)
+				sleep(0.75)
+
 			while(self.radioSerial.inWaiting()):
 				serialInput += self.radioSerial.readline()
-			logRadio("Serial Input: " + serialInput)
+
+			self.radioConsoleUpdateSignal.emit(serialInput)
+
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -1093,15 +1148,16 @@ class serialHandlerThread(QtCore.QThread):
 			logRadio("Unable to write to serial port on " + self.RADIO_SERIAL_PORT)
 			print("Unable to open serial port for input on " + self.RADIO_SERIAL_PORT)
 
-		print("Input: " + serialInput)
 		return serialInput
 
 	def radioSerialOutput(self, line, processSentMessage = False):
 		try:
+			preparedMessage = self.RADIO_CALLSIGN + "," + line + ",END_TX\n"
 			if (processSentMessage):
-				self.handleMessage(self.RADIO_CALLSIGN + "," + line + ",END_TX\n")
-			print("Output: " + self.RADIO_CALLSIGN + "," + line + ",END_TX\n")
-			self.radioSerial.write(self.RADIO_CALLSIGN + "," + line + ",END_TX\n")
+				self.handleMessage(preparedMessage)
+
+			self.radioConsoleUpdateSignal.emit(preparedMessage)
+			self.radioSerial.write(preparedMessage)
 		except:
 			if (self.settingsWindowOpen):
 				sleep(1)
@@ -1230,6 +1286,8 @@ def logRadio(line):
 
 class dishHandlerThread(QtCore.QThread):
 	def __init__(self):
+		QtCore.QThread.__init__(self)
+
 		self.old_az = -1
 		self.new_az = self.old_az
 
