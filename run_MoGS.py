@@ -1095,7 +1095,7 @@ class serialHandlerThread(QtCore.QThread):
 					if (line[4:8] == "chat"):
 						self.chatMessageReceived.emit("HAB: " + line[9:])
 					if (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[9:-1])
+						self.balloonDataSignalReceived.emit(line[9:])
 					elif(line[4:7] == "ack"):
 						self.balloonAckReceived.emit(line[8:])
 
@@ -1269,11 +1269,11 @@ class serialHandlerThread(QtCore.QThread):
 		serialInput = ""
 		retries = 10
 		iterationsToWait = 100
-		
+
 		self.gpsSerial.flushOutput()
 		self.gpsSerial.flushInput()
 		sleep(1)
-		
+
 		try:
 			while (retries > 0 and iterationsToWait > 0):
 				if (self.gpsSerial.inWaiting() > 0):  # If there's a buffer for us to read
