@@ -47,7 +47,6 @@ PRIORITIES:
 
 TODO: Altitude graph (Speed, Temp too?)
 TODO: Add prediction plotting
-TODO: Additional logging
 """
 
 """
@@ -104,9 +103,9 @@ class mogsMainWindow(QtGui.QWidget):
 								"nps" : 4}
 
 		self.spotToVehicleDictionary = {"SSAGSpot1" : "hab",
-										"SSAGSpot2" : "chase1",
-										"SSAGSpot3" : "chase2",
-										"SSAGSpot4" : "chase3",
+										"SSAGSpot2" : "chase2",
+										"SSAGSpot3" : "chase3",
+										"SSAGSpot4" : "chase1",
 										"SSAGSpot5" : "nps"}
 
 		self.telemetryLabelDictionary = OrderedDict()
@@ -253,11 +252,17 @@ class mogsMainWindow(QtGui.QWidget):
 		self.commandStatusLabel.setAlignment(QtCore.Qt.AlignCenter)
 
 		# Set up buttons for GUI window
-		comPortButton = QtGui.QPushButton('Settings', self)
-		comPortButton.clicked.connect(self.changeSettings)
+		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
+		self.viewRadioConsoleButton.setText("View Console")
 
-		streetMapButton = QtGui.QPushButton('Predictions', self)
-		streetMapButton.clicked[bool].connect(self.openPredictionsDialog)
+		settingsDialogButton = QtGui.QPushButton('Settings', self)
+		settingsDialogButton.clicked.connect(self.changeSettings)
+
+		addMarkerButton = QtGui.QPushButton('Add Marker', self)
+		addMarkerButton.clicked.connect(self.addMarker)
+
+		takeSnapshotButton = QtGui.QPushButton('HAB Snapshot', self)
+		takeSnapshotButton.clicked[bool].connect(self.takeSnapshot)
 
 		resizeMapButton = QtGui.QPushButton('Resize Map', self)
 		resizeMapButton.clicked[bool].connect(self.onResize)
@@ -270,16 +275,19 @@ class mogsMainWindow(QtGui.QWidget):
 		self.releaseBalloonButton.clicked[bool].connect(self.confirmAndReleaseBalloon)
 		self.releaseBalloonButton.setDisabled(True)
 
-		satelliteViewButton = QtGui.QPushButton('Update SPOT', self)
-		satelliteViewButton.clicked[bool].connect(self.updateSpotPositions)
+		updateSpotButton = QtGui.QPushButton('Update SPOT', self)
+		updateSpotButton.clicked[bool].connect(self.updateSpotPositions)
 
-		layout.addWidget(self.commandStatusLabel, 1, 0, 1, 3)
-		layout.addWidget(comPortButton, 2, 2)
-		layout.addWidget(resizeMapButton, 2, 1)
-		layout.addWidget(streetMapButton, 2, 0)
-		layout.addWidget(self.releaseBalloonButton, 3, 1)
+		layout.addWidget(self.commandStatusLabel, 1, 0, 1, 4)
+
+		layout.addWidget(addMarkerButton, 2, 3)
+		layout.addWidget(settingsDialogButton, 2, 2)
+		layout.addWidget(takeSnapshotButton, 2, 1)
+		layout.addWidget(resizeMapButton, 2, 0)
+		layout.addWidget(self.viewRadioConsoleButton, 3, 3)
 		layout.addWidget(self.armBrmButton, 3, 2)
-		layout.addWidget(satelliteViewButton, 3, 0)
+		layout.addWidget(self.releaseBalloonButton, 3, 1)
+		layout.addWidget(updateSpotButton, 3, 0)
 
 		return widget
 
@@ -361,9 +369,6 @@ class mogsMainWindow(QtGui.QWidget):
 		layoutLabel = QtGui.QLabel("Network Status")
 		layoutLabel.setAlignment(QtCore.Qt.AlignCenter)
 
-		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
-		self.viewRadioConsoleButton.setText("View Console")
-
 		# Set all to show that there is no connection yet
 		for key, statusLabel in self.statusLabelList.items():
 			statusLabel.setAlignment(QtCore.Qt.AlignCenter)
@@ -371,8 +376,7 @@ class mogsMainWindow(QtGui.QWidget):
 			statusLabel.setStyleSheet("QFrame { background-color: Salmon }")
 
 		layout.addWidget(layoutLabel, 0, 0, 1, 3)
-		layout.addWidget(self.viewRadioConsoleButton, 1, 0)
-		layout.addWidget(self.statusLabelList["hab"], 1, 1)
+		layout.addWidget(self.statusLabelList["hab"], 1, 0, 1, 2)
 		layout.addWidget(self.statusLabelList["nps"], 1, 2)
 		layout.addWidget(self.statusLabelList["chase1"], 2, 0)
 		layout.addWidget(self.statusLabelList["chase2"], 2, 1)
@@ -434,39 +438,54 @@ class mogsMainWindow(QtGui.QWidget):
 
 		try:
 			splitMessage = data.split(",")
+
 			timestamp = splitMessage[0]
 			if (len(timestamp) > 0):
 				timestamp = timestamp[:2] + ":" + timestamp[2:4] + ":" + timestamp[4:]
+				self.telemetryLabelDictionary["timestamp"].setText(timestamp)
+
 			latitude = splitMessage[1]
 			longitude = splitMessage[2]
-			altitude = splitMessage[3]
-			voltage = splitMessage[4]
-			innerTemp = splitMessage[5]
-			outerTemp = splitMessage[6]
-			batteryTemp = splitMessage[7]
+			if (len(latitude) > 0 and len(longitude) > 0):
+				self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
 
-			groundSpeed, ascentRate = self.calculateRates()
+			altitude = splitMessage[3]
+			if (len(altitude) > 0):
+				self.telemetryLabelDictionary["altitude"].setText(altitude)
+
+			voltage = splitMessage[4]
+			if (len(voltage) > 0):
+				self.telemetryLabelDictionary["voltage"].setText(voltage)
+
+			innerTemp = splitMessage[5]
+			if (len(innerTemp) > 0):
+				self.telemetryLabelDictionary["tempInside"].setText(innerTemp)
+
+			outerTemp = splitMessage[6]
+			if (len(outerTemp) > 0):
+				self.telemetryLabelDictionary["tempOutside"].setText(outerTemp)
+
+			batteryTemp = splitMessage[7]
+			if (len(batteryTemp) > 0):
+				self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp)
+
+			try:
+				groundSpeed, ascentRate = self.calculateRates()
+				self.telemetryLabelDictionary["speed"].setText(groundSpeed)
+				self.telemetryLabelDictionary["ascent"].setText(ascentRate)
+			except:
+				logGui("Could not parse lat and long from HAB telemetry packet")
 
 			# Update for the dish driving/pointing
 			if DISH:
-				if not (self.dishHandler.sleeping):
-					try:
-						(az, el) = self.dishHandler.compute_bearing(float(latitude),
-																	float(longitude),
-																	float(altitude))
-						self.dishHandler.point(az, el)
-					except:
-						print("Error in computing or pointing")
+				try:
+					(az, el) = self.dishHandler.compute_bearing(float(latitude),
+																float(longitude),
+																float(altitude))
+					self.dishHandler.point(az, el)
+				except:
+					print("Error in computing or pointing")
 
-			self.telemetryLabelDictionary["timestamp"].setText(timestamp)
-			self.telemetryLabelDictionary["altitude"].setText(altitude)
-			self.telemetryLabelDictionary["speed"].setText(groundSpeed)
-			self.telemetryLabelDictionary["ascent"].setText(ascentRate)
-			self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
-			self.telemetryLabelDictionary["voltage"].setText(voltage)
-			self.telemetryLabelDictionary["tempInside"].setText(innerTemp)
-			self.telemetryLabelDictionary["tempOutside"].setText(outerTemp)
-			self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp)
 
 			# Update the map to show new waypoint
 			javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
@@ -536,9 +555,59 @@ class mogsMainWindow(QtGui.QWidget):
 			self.armBrmButton.clicked.connect(self.armBalloonRelease)
 			self.releaseBalloonButton.setStyleSheet("background-color: Salmon")
 			self.releaseBalloonButton.setDisabled(True)
+		elif (message[:14] == "SNAPSHOT_TAKEN"):
+			self.commandStatusLabel.setText("Snapshot request received by balloon")
 		else:
 			self.commandStatusLabel.setText("Unknown command response received")
 			print("Unknown: " + str(message))
+
+	def addMarker(self):
+		dialogWindow = QtGui.QDialog()
+		layout = QtGui.QGridLayout()
+		dialogWindow.setLayout(layout)
+
+		dialogWindow.setWindowTitle("Add Map Marker")
+
+		exampleLabel = QtGui.QLabel("e.g. 36.8623, -121.0413")
+
+		latLabel = QtGui.QLabel("Latitude")
+		longLabel = QtGui.QLabel("Longitude")
+
+		latLineEdit = QtGui.QLineEdit()
+		longLineEdit = QtGui.QLineEdit()
+
+		acceptButton = QtGui.QPushButton("Add")
+		acceptButton.clicked.connect(dialogWindow.accept)
+
+		cancelButton = QtGui.QPushButton("Cancel")
+		cancelButton.clicked.connect(dialogWindow.reject)
+
+		layout.addWidget(exampleLabel, 1, 0, 1, 3)
+		layout.addWidget(latLabel, 2, 0)
+		layout.addWidget(latLineEdit, 2, 1, 1, 2)
+		layout.addWidget(longLabel, 3, 0)
+		layout.addWidget(longLineEdit, 3, 1, 1, 2)
+		layout.addWidget(acceptButton, 4, 1)
+		layout.addWidget(cancelButton, 4, 2)
+
+		if (dialogWindow.exec_()):
+			if (len(str(latLineEdit.text())) > 0 and
+				len(str(longLineEdit.text())) > 0):
+				try:
+					lat = float(str(latLineEdit.text()))
+					long = float(str(longLineEdit.text()))
+					note = str(longLineEdit.text())
+
+					jsCommand = "addMarkerManually({}, {});".format(lat, long)
+					logGui(jsCommand)
+					self.theMap.documentElement().evaluateJavaScript(jsCommand)
+
+				except:
+					self.commandStatusLabel.setText("Unable to process GPS coordinates")
+
+	def takeSnapshot(self):
+		self.serialHandler.takeSnapshotFlag = True
+		self.commandStatusLabel.setText("Requesting snapshot from HAB...")
 
 	def armBalloonRelease(self):
 		windowLayout = QtGui.QGridLayout()
@@ -638,8 +707,8 @@ class mogsMainWindow(QtGui.QWidget):
 		winsound.PlaySound("media/chatSound.wav", winsound.SND_ASYNC)
 
 	def serialFailureDisplay(self, message):
-# 		if (self.notifyOnSerialError):
-		if (False):
+		if (self.notifyOnSerialError):
+			self.notifyOnSerialError = False
 			QtGui.QMessageBox.question(self, "Error", message, QtGui.QMessageBox.Ok)
 			self.changeSettings()
 
@@ -815,13 +884,14 @@ class mogsMainWindow(QtGui.QWidget):
 			long = message.find("longitude").text
 			time = message.find("dateTime").text
 
-			# Update the map to show new waypoint
-			javascriptCommand = "addSpotMarker({}, {}, {});".format(
-								self.javaArrayPosition[self.spotToVehicleDictionary[name]],
-								lat,
-								long)
-			logGui(javascriptCommand)
-			self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
+			if (name != "SSAGSpot5"):
+				# Update the map to show new waypoint
+				javascriptCommand = "addSpotMarker({}, {}, {});".format(
+									self.javaArrayPosition[self.spotToVehicleDictionary[name]],
+									lat,
+									long)
+				logGui(javascriptCommand)
+				self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
 	def calculateRates(self):
 		groundSpeed = "NONE"
@@ -927,8 +997,9 @@ class serialHandlerThread(QtCore.QThread):
 		self.resetBalloonReleaseFlag = False
 		self.armBalloonFlag = False
 		self.disarmBalloonFlag = False
+		self.takeSnapshotFlag = False
 
-		self.settingsWindowOpen = False
+		self.settingsWindowOpen = True
 		self.radioSerialPortChanged = False
 		self.gpsSerialPortChanged = False
 		self.serialBaudrateChanged = False
@@ -945,6 +1016,10 @@ class serialHandlerThread(QtCore.QThread):
 			for line in self.inputTestFile:
 				sleep(1.5)
 				self.handleMessage(line)
+
+		self.invalidSerialPort.emit("Please select your serial ports.")
+		while (self.settingsWindowOpen):
+			sleep(1)
 
 		self.openRadioSerialPort()
 		self.openGpsSerialPort()
@@ -974,6 +1049,10 @@ class serialHandlerThread(QtCore.QThread):
 			if (self.disarmBalloonFlag):
 				self.radioSerialOutput("cmd,DISARM_BRM")
 				self.disarmBalloonFlag = False
+
+			if (self.takeSnapshotFlag):
+				self.sendSnapshotRequest()
+				self.takeSnapshotFlag = False
 
 			if (self.imageReadyToSend):
 				self.sendImage()
@@ -1106,6 +1185,9 @@ class serialHandlerThread(QtCore.QThread):
 	# active on the network
 	def sendHeartbeat(self):
 		self.radioSerialOutput("alive")
+
+	def sendSnapshotRequest(self):
+		self.radioSerialOutput("cmd,SNAPSHOT")
 
 	def sendReleaseCommand(self):
 		print("Releasing balloon")
@@ -1296,7 +1378,6 @@ class dishHandlerThread(QtCore.QThread):
 		self.new_el = self.old_el
 
 		self.firstRun = True
-		self.sleeping = False
 
 	def degrees(self, rad):
 		return rad * 180.0 / pi
@@ -1458,12 +1539,20 @@ googleMapsHtml = """
 			
 			spotMarker = new google.maps.Marker({position:spotMarkerPosition,
 												title:"SPOT",
-												icon: iconBase + vehicleIconNames[index],
 												map:map});
 			
 			spotMarker.setMap(map);
 		}
 		
+		function addMarkerManually(lat, lng)
+		{
+			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
+			
+			var spotMarker = new google.maps.Marker({position:spotMarkerPosition,
+												map:map});
+			
+			spotMarker.setMap(map);
+		}
 		
 		google.maps.event.addDomListener(window, 'load', initialize);
 

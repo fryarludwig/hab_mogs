@@ -1,0 +1,848 @@
+2015-07-21 09:24:58: 
+
+Starting GUI log
+
+2015-07-21 09:24:59: GUI created.
+2015-07-21 09:32:46: 
+
+Starting GUI log
+
+2015-07-21 09:32:47: GUI created.
+2015-07-21 09:34:22: 
+
+Starting GUI log
+
+2015-07-21 09:34:23: GUI created.
+2015-07-21 09:34:44: 
+
+Starting GUI log
+
+2015-07-21 09:34:59: 
+
+Starting GUI log
+
+2015-07-21 09:35:00: GUI created.
+2015-07-21 09:37:19: 
+
+Starting GUI log
+
+2015-07-21 09:37:50: 
+
+Starting GUI log
+
+2015-07-21 09:37:51: GUI created.
+2015-07-21 09:38:05: 
+
+Starting GUI log
+
+2015-07-21 09:38:06: GUI created.
+2015-07-21 09:38:19: 
+
+Starting GUI log
+
+2015-07-21 09:38:20: GUI created.
+2015-07-21 09:38:27: 
+
+Starting GUI log
+
+2015-07-21 09:38:28: GUI created.
+2015-07-21 09:38:36: 
+
+Starting GUI log
+
+2015-07-21 09:38:37: GUI created.
+2015-07-21 09:38:47: 
+
+Starting GUI log
+
+2015-07-21 09:38:48: GUI created.
+2015-07-21 09:38:55: 
+
+Starting GUI log
+
+2015-07-21 09:38:57: GUI created.
+2015-07-21 09:39:04: 
+
+Starting GUI log
+
+2015-07-21 09:39:05: GUI created.
+2015-07-21 09:39:47: 
+
+Starting GUI log
+
+2015-07-21 09:39:48: GUI created.
+2015-07-21 09:44:32: 
+
+Starting GUI log
+
+2015-07-21 09:45:22: 
+
+Starting GUI log
+
+2015-07-21 09:45:23: GUI created.
+2015-07-21 09:46:22: 
+
+Starting GUI log
+
+2015-07-21 09:46:23: GUI created.
+2015-07-21 09:46:41: 
+
+Starting GUI log
+
+2015-07-21 09:46:42: GUI created.
+2015-07-21 09:47:11: 
+
+Starting GUI log
+
+2015-07-21 09:47:12: GUI created.
+2015-07-21 09:47:31: 
+
+Starting GUI log
+
+2015-07-21 09:47:32: GUI created.
+2015-07-21 09:48:22: 
+
+Starting GUI log
+
+2015-07-21 09:49:25: 
+
+Starting GUI log
+
+2015-07-21 09:49:26: GUI created.
+2015-07-21 09:50:12: 
+
+Starting GUI log
+
+2015-07-21 09:50:13: GUI created.
+2015-07-21 09:51:07: 
+
+Starting GUI log
+
+2015-07-21 09:51:08: GUI created.
+2015-07-21 09:53:13: 
+
+Starting GUI log
+
+2015-07-21 09:53:14: GUI created.
+2015-07-21 09:57:39: 
+
+Starting GUI log
+
+2015-07-21 09:57:40: GUI created.
+2015-07-21 10:26:03: 
+
+Starting GUI log
+
+2015-07-21 10:26:04: GUI created.
+2015-07-21 10:32:57: 
+
+Starting GUI log
+
+2015-07-21 10:32:58: GUI created.
+2015-07-21 11:14:40: 
+
+Starting GUI log
+
+2015-07-21 11:15:20: 
+
+Starting GUI log
+
+2015-07-21 11:16:08: 
+
+Starting GUI log
+
+2015-07-21 11:16:09: GUI created.
+2015-07-21 11:17:38: 
+
+Starting GUI log
+
+2015-07-21 11:17:39: GUI created.
+2015-07-21 11:17:42: addSpotMarker(4, 36.59515, -121.87616);
+2015-07-21 11:17:42: addSpotMarker(3, 36.5951, -121.87595);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59535, -121.87605);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59522, -121.87608);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87465);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59505, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87483);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59486, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59486, -121.87483);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59489, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59484, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87482);
+2015-07-21 11:36:04: 
+
+Starting GUI log
+
+2015-07-21 11:36:05: GUI created.
+2015-07-21 11:40:19: 
+
+Starting GUI log
+
+2015-07-21 11:40:51: 
+
+Starting GUI log
+
+2015-07-21 11:40:52: GUI created.
+2015-07-21 11:41:19: 
+
+Starting GUI log
+
+2015-07-21 11:41:20: GUI created.
+2015-07-21 11:41:31: 
+
+Starting GUI log
+
+2015-07-21 11:41:32: GUI created.
+2015-07-21 11:43:53: 
+
+Starting GUI log
+
+2015-07-21 11:43:54: GUI created.
+2015-07-21 11:48:09: 
+
+Starting GUI log
+
+2015-07-21 11:48:10: GUI created.
+2015-07-21 11:49:24: 
+
+Starting GUI log
+
+2015-07-21 11:49:25: GUI created.
+2015-07-21 11:52:11: 
+
+Starting GUI log
+
+2015-07-21 11:52:13: GUI created.
+2015-07-21 11:54:47: 
+
+Starting GUI log
+
+2015-07-21 11:54:48: GUI created.
+2015-07-21 11:59:56: 
+
+Starting GUI log
+
+2015-07-21 11:59:58: GUI created.
+2015-07-21 12:00:25: 
+
+Starting GUI log
+
+2015-07-21 12:00:26: GUI created.
+2015-07-21 12:01:14: 
+
+Starting GUI log
+
+2015-07-21 12:01:15: GUI created.
+2015-07-21 12:02:50: 
+
+Starting GUI log
+
+2015-07-21 12:02:51: GUI created.
+2015-07-21 12:03:01: 
+
+Starting GUI log
+
+2015-07-21 12:03:03: GUI created.
+2015-07-21 12:05:02: 
+
+Starting GUI log
+
+2015-07-21 12:05:03: GUI created.
+2015-07-21 12:05:27: 
+
+Starting GUI log
+
+2015-07-21 12:05:28: GUI created.
+2015-07-21 12:05:42: 
+
+Starting GUI log
+
+2015-07-21 12:05:43: GUI created.
+2015-07-21 12:07:24: 
+
+Starting GUI log
+
+2015-07-21 12:07:26: GUI created.
+2015-07-21 12:08:03: 
+
+Starting GUI log
+
+2015-07-21 12:08:04: GUI created.
+2015-07-21 12:09:37: 
+
+Starting GUI log
+
+2015-07-21 12:09:38: GUI created.
+2015-07-21 12:10:55: 
+
+Starting GUI log
+
+2015-07-21 12:10:56: GUI created.
+2015-07-21 12:12:13: 
+
+Starting GUI log
+
+2015-07-21 12:12:14: GUI created.
+2015-07-21 12:12:43: 
+
+Starting GUI log
+
+2015-07-21 12:12:44: GUI created.
+2015-07-21 12:13:43: 
+
+Starting GUI log
+
+2015-07-21 12:13:44: GUI created.
+2015-07-21 13:20:06: 
+
+Starting GUI log
+
+2015-07-21 13:20:07: GUI created.
+2015-07-21 13:47:40: 
+
+Starting GUI log
+
+2015-07-21 13:47:41: GUI created.
+2015-07-21 13:48:09: 
+
+Starting GUI log
+
+2015-07-21 13:48:11: GUI created.
+2015-07-21 13:51:35: 
+
+Starting GUI log
+
+2015-07-21 13:51:36: GUI created.
+2015-07-21 13:52:07: 
+
+Starting GUI log
+
+2015-07-21 13:52:08: GUI created.
+2015-07-21 13:53:02: 
+
+Starting GUI log
+
+2015-07-21 13:53:03: GUI created.
+2015-07-21 13:54:06: 
+
+Starting GUI log
+
+2015-07-21 13:54:07: GUI created.
+2015-07-21 13:54:20: 
+
+Starting GUI log
+
+2015-07-21 13:54:21: GUI created.
+2015-07-21 13:54:58: 
+
+Starting GUI log
+
+2015-07-21 13:55:00: GUI created.
+2015-07-21 13:55:43: 
+
+Starting GUI log
+
+2015-07-21 13:55:44: GUI created.
+2015-07-21 13:57:34: 
+
+Starting GUI log
+
+2015-07-21 13:57:35: GUI created.
+2015-07-21 13:59:06: 
+
+Starting GUI log
+
+2015-07-21 13:59:07: GUI created.
+2015-07-21 13:59:45: 
+
+Starting GUI log
+
+2015-07-21 13:59:47: GUI created.
+2015-07-21 14:38:56: 
+
+Starting GUI log
+
+2015-07-21 14:38:58: GUI created.
+2015-07-21 14:39:13: 
+
+Starting GUI log
+
+2015-07-21 14:39:14: GUI created.
+2015-07-21 14:44:08: 
+
+Starting GUI log
+
+2015-07-21 14:44:09: GUI created.
+2015-07-21 14:55:31: 
+
+Starting GUI log
+
+2015-07-21 14:55:32: GUI created.
+2015-07-21 20:03:55: 
+
+Starting GUI log
+
+2015-07-21 20:03:56: GUI created.
+2015-07-21 21:59:46: 
+
+Starting GUI log
+
+2015-07-21 21:59:47: GUI created.
+2015-07-21 22:21:22: 
+
+Starting GUI log
+
+2015-07-21 22:21:23: GUI created.
+2015-07-21 22:31:18: 
+
+Starting GUI log
+
+2015-07-21 22:31:19: GUI created.
+2015-07-21 22:31:58: 
+
+Starting GUI log
+
+2015-07-21 22:31:59: GUI created.
+2015-07-21 22:34:43: 
+
+Starting GUI log
+
+2015-07-21 22:34:44: GUI created.
+2015-07-21 22:35:38: 
+
+Starting GUI log
+
+2015-07-21 22:35:39: GUI created.
+2015-07-21 22:36:16: 
+
+Starting GUI log
+
+2015-07-21 22:36:16: GUI created.
+2015-07-21 22:37:35: 
+
+Starting GUI log
+
+2015-07-21 22:37:36: GUI created.
+2015-07-21 22:49:27: 
+
+Starting GUI log
+
+2015-07-21 22:49:28: GUI created.
+2015-07-21 22:49:51: 
+
+Starting GUI log
+
+2015-07-21 22:49:52: GUI created.
+2015-07-21 22:51:33: 
+
+Starting GUI log
+
+2015-07-21 22:51:34: GUI created.
+2015-07-21 22:54:39: 
+
+Starting GUI log
+
+2015-07-21 22:54:40: GUI created.
+2015-07-21 22:54:45: 
+
+Starting GUI log
+
+2015-07-21 22:54:46: GUI created.
+2015-07-21 22:55:46: 
+
+Starting GUI log
+
+2015-07-21 22:55:47: GUI created.
+2015-07-21 23:03:02: 
+
+Starting GUI log
+
+2015-07-21 23:03:03: GUI created.
+2015-07-21 23:04:51: 
+
+Starting GUI log
+
+2015-07-21 23:04:52: GUI created.
+2015-07-21 23:08:52: 
+
+Starting GUI log
+
+2015-07-21 23:08:53: GUI created.
+2015-07-21 23:12:11: 
+
+Starting GUI log
+
+2015-07-21 23:12:12: GUI created.
+2015-07-21 23:12:31: addMarkerManually(36.8623, -121.041);
+2015-07-21 23:13:36: 
+
+Starting GUI log
+
+2015-07-21 23:13:37: GUI created.
+2015-07-21 23:14:05: addMarkerManually(36.8623, -121.0413, -121.0413);
+2015-07-21 23:14:53: 
+
+Starting GUI log
+
+2015-07-21 23:14:54: GUI created.
+2015-07-21 23:15:08: addMarkerManually(36.8623, -121.0413);
+2015-07-21 23:15:27: addMarkerManually(36.86, -121.04);
+2015-07-21 23:15:58: 
+
+Starting GUI log
+
+2015-07-21 23:15:59: GUI created.
+2015-07-22 00:45:07: 
+
+Starting GUI log
+
+2015-07-22 00:45:08: GUI created.
+2015-07-22 00:45:19: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:22: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:22: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:24: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:36: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:37: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:38: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:39: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:40: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:41: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:45: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:46: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:53: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:57: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:57: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:45:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:00: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:14: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:19: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:24: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:24: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:26: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:28: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:28: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:34: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:37: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:38: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:38: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:40: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:41: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:45: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:48: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:55: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:46:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:02: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:05: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:08: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:37: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:39: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:41: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:55: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:58: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:47:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:02: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:05: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:08: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:09: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:12: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:15: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:16: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:22: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:26: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:39: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:40: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:40: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:46: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:53: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:48:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:07: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:09: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:14: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:14: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:16: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:17: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:20: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:24: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:28: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:34: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:37: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:38: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:45: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:45: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:48: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:52: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:55: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:49:58: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:08: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:09: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:12: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:15: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:16: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:16: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:19: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:22: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:23: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:26: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:27: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:30: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:34: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:50:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:44: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:46: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:51: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:53: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:57: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:58: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:51:58: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:00: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:05: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:07: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:08: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:08: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:12: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:12: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:14: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:15: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:15: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:17: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:19: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:19: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:22: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:24: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:25: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:26: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:26: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:28: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:29: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:31: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:32: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:33: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:35: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:36: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:36: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:38: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:39: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:40: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:41: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:42: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:43: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:45: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:46: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:47: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:49: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:50: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:53: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:54: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:56: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:57: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:52:59: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:00: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:01: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:03: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:04: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:06: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:07: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:10: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:11: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:13: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:14: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:15: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:16: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:17: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:18: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:20: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:21: Could not parse lat and long from HAB telemetry packet
+2015-07-22 00:53:22: Could not parse lat and long from HAB telemetry packet
