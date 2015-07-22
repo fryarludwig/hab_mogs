@@ -1187,11 +1187,15 @@ class serialHandlerThread(QtCore.QThread):
 		serialInput = ""
 		retries = 10
 		iterationsToWait = 100
-
+		
+		self.gpsSerial.flushOutput()
+		self.gpsSerial.flushInput()
+		sleep(1)
+		
 		try:
 			while (retries > 0 and iterationsToWait > 0):
 				if (self.gpsSerial.inWaiting() > 0):  # If there's a buffer for us to read
-					serialInput = self.gpsSerial.readline()
+					serialInput += self.gpsSerial.readline()
 					if (serialInput[:6] == r"$GPGGA"):  # Makes sure this is the line we want
 						break  # This is our stop
 					else:
