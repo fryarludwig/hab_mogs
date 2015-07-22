@@ -40,7 +40,7 @@ if DISH:
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	sock.connect((DISH_ADDRESS, DISH_PORT))
 
-TEST_MODE = True  # Test mode pulls telemetry from file instead of radios
+TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 """
 PRIORITIES:
@@ -1137,7 +1137,8 @@ class serialHandlerThread(QtCore.QThread):
 			while(self.radioSerial.inWaiting()):
 				serialInput += self.radioSerial.readline()
 
-			self.radioConsoleUpdateSignal.emit(serialInput)
+			if (len(serialInput) > 0):
+				self.radioConsoleUpdateSignal.emit(serialInput)
 
 		except:
 			if (self.settingsWindowOpen):
