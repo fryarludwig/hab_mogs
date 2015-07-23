@@ -43,20 +43,12 @@ if DISH:
 TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 """
-PRIORITIES:
-
-TODO: Altitude graph (Speed, Temp too?)
-TODO: Add prediction plotting
-"""
-
-"""
 Handles GUI operations, as well as all user input. 
 
 TODO: AZ/EL plotting
 TODO: Text messaging GPS, Altitude
-TODO: Add command response updating
-TODO: Audio link mode
-TODO: Image transfer
+TODO: Altitude graph (Speed, Temp too?)
+TODO: Add prediction plotting
 """
 class mogsMainWindow(QtGui.QWidget):
 	"""
@@ -82,7 +74,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.radioConsoleListViewModel = QtGui.QStandardItemModel(self.radioConsoleListView)
 		self.viewRadioConsoleButton = QtGui.QPushButton()
 		self.radioConsoleIsOpen = False
-		self.radioConsoleNumItems = 300
+		self.radioConsoleNumItems = 60
 
 		self.callsignToString = {"hab"   : "Balloon",
 								"chase1" : "Chase 1",
@@ -117,6 +109,8 @@ class mogsMainWindow(QtGui.QWidget):
 		self.telemetryLabelDictionary["tempBattery"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempInside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempOutside"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["humidity"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["magnitude"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["gps"] = QtGui.QLabel("None", self)
 
 		self.chaseVehicleGpsLabel = OrderedDict()
@@ -128,8 +122,6 @@ class mogsMainWindow(QtGui.QWidget):
 		self.releaseBalloonButton = QtGui.QPushButton()
 		self.balloonReleaseArmed = False
 		self.balloonReleaseActivated = False
-
-		self.palette = QtGui.QPalette()
 
 		self.serialHandler = serialHandlerThread()
 		self.serialHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
@@ -153,7 +145,7 @@ class mogsMainWindow(QtGui.QWidget):
 	"""
 	def initUI(self):
 		window_x = 1200
-		window_y = 700
+		window_y = 800
 
 		self.col = QtGui.QColor(0, 0, 0)
 		self.vLayout = QtGui.QVBoxLayout()
@@ -280,14 +272,14 @@ class mogsMainWindow(QtGui.QWidget):
 
 		layout.addWidget(self.commandStatusLabel, 1, 0, 1, 4)
 
-		layout.addWidget(addMarkerButton, 2, 3)
-		layout.addWidget(settingsDialogButton, 2, 2)
-		layout.addWidget(takeSnapshotButton, 2, 1)
 		layout.addWidget(resizeMapButton, 2, 0)
-		layout.addWidget(self.viewRadioConsoleButton, 3, 3)
+		layout.addWidget(updateSpotButton, 2, 1)
+		layout.addWidget(self.viewRadioConsoleButton, 2, 2)
+		layout.addWidget(addMarkerButton, 2, 3)
+		layout.addWidget(settingsDialogButton, 3, 0)
+		layout.addWidget(takeSnapshotButton, 3, 1)
 		layout.addWidget(self.armBrmButton, 3, 2)
-		layout.addWidget(self.releaseBalloonButton, 3, 1)
-		layout.addWidget(updateSpotButton, 3, 0)
+		layout.addWidget(self.releaseBalloonButton, 3, 3)
 
 		return widget
 
@@ -316,9 +308,11 @@ class mogsMainWindow(QtGui.QWidget):
 		staticTelemetryLabels.append(QtGui.QLabel("Battery Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Internal Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("External Temp", self))
+		staticTelemetryLabels.append(QtGui.QLabel("Humidity", self))
+		staticTelemetryLabels.append(QtGui.QLabel("Magnitude", self))
 
 		layout.addWidget(layoutLabel, 0, 0, 1, 2)
-		layout.addWidget(rawGpsLabel, 9, 0, 1, 2)
+		layout.addWidget(rawGpsLabel, 11, 0, 1, 2)
 
 		# Populate the static labels in the GUI
 		counter = 1
@@ -332,12 +326,12 @@ class mogsMainWindow(QtGui.QWidget):
 		for key, value in self.telemetryLabelDictionary.iteritems():
 			value.setAlignment(QtCore.Qt.AlignCenter)
 			if (key == "gps"):
-				layout.addWidget(value, 10, 0, 1, 2)
+				layout.addWidget(value, 12, 0, 1, 2)
 			else:
 				layout.addWidget(value, counter, 1)
 			counter += 1
 
-		counter = 1
+		counter = 2
 		for key, value in self.chaseVehicleGpsLabel.iteritems():
 			value[0].setAlignment(QtCore.Qt.AlignCenter)
 			value[0].setText(self.callsignToString[key] + " - TIME")
@@ -349,7 +343,7 @@ class mogsMainWindow(QtGui.QWidget):
 			layout.addWidget(value[1], counter, 2)
 			counter += 2
 
-		widget.setMaximumSize(425, 185)
+		widget.setMaximumSize(425, 280)
 		widget.setSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
 		return widget
 
@@ -453,21 +447,29 @@ class mogsMainWindow(QtGui.QWidget):
 			if (len(altitude) > 0):
 				self.telemetryLabelDictionary["altitude"].setText(altitude)
 
-			voltage = splitMessage[4]
-			if (len(voltage) > 0):
-				self.telemetryLabelDictionary["voltage"].setText(voltage)
-
-			innerTemp = splitMessage[5]
+			innerTemp = splitMessage[4]
 			if (len(innerTemp) > 0):
 				self.telemetryLabelDictionary["tempInside"].setText(innerTemp)
 
-			outerTemp = splitMessage[6]
+			outerTemp = splitMessage[5]
 			if (len(outerTemp) > 0):
 				self.telemetryLabelDictionary["tempOutside"].setText(outerTemp)
 
-			batteryTemp = splitMessage[7]
+			batteryTemp = splitMessage[6]
 			if (len(batteryTemp) > 0):
 				self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp)
+
+			voltage = splitMessage[7]
+			if (len(voltage) > 0):
+				self.telemetryLabelDictionary["voltage"].setText(voltage)
+
+			humidity = splitMessage[8]
+			if (len(humidity) > 0):
+				self.telemetryLabelDictionary["humidity"].setText(humidity)
+
+			magnitude = splitMessage[9]
+			if (len(magnitude) > 0):
+				self.telemetryLabelDictionary["magnitude"].setText(magnitude)
 
 			try:
 				groundSpeed, ascentRate = self.calculateRates()
@@ -475,6 +477,8 @@ class mogsMainWindow(QtGui.QWidget):
 				self.telemetryLabelDictionary["ascent"].setText(ascentRate)
 			except:
 				logGui("Could not parse lat and long from HAB telemetry packet")
+				self.telemetryLabelDictionary["speed"].setText("None")
+				self.telemetryLabelDictionary["ascent"].setText("None")
 
 			# Update for the dish driving/pointing
 			if DISH:
@@ -973,12 +977,12 @@ class serialHandlerThread(QtCore.QThread):
 		QtCore.QThread.__init__(self)
 
 		self.HEARTBEAT_INTERVAL = 5
-		self.RADIO_SERIAL_PORT = "COM3"
+		self.RADIO_SERIAL_PORT = "COM7"
 		self.RADIO_CALLSIGN = "chase1"
 		self.RADIO_BAUDRATE = 9600
 		self.radioSerial = None
 
-		self.GPS_SERIAL_PORT = "COM8"
+		self.GPS_SERIAL_PORT = "COM4"
 		self.GPS_BAUDRATE = 4800
 		self.gpsSerial = None
 
@@ -1014,7 +1018,7 @@ class serialHandlerThread(QtCore.QThread):
 
 		if (TEST_MODE):
 			for line in self.inputTestFile:
-				sleep(1.5)
+				sleep(.5)
 				self.handleMessage(line)
 
 		self.invalidSerialPort.emit("Please select your serial ports.")
@@ -1074,8 +1078,8 @@ class serialHandlerThread(QtCore.QThread):
 					if (self.activeNodes[key] <= 0):
 						self.updateNetworkStatusSignal.emit()
 
-				self.sendCurrentPosition()
-				self.sendHeartbeat()
+				if not (self.sendCurrentPosition()):
+					self.sendHeartbeat()
 				counter = self.HEARTBEAT_INTERVAL
 			else:
 				counter -= 1
@@ -1137,15 +1141,20 @@ class serialHandlerThread(QtCore.QThread):
 						print("Received image!")
 						self.parsePredictionMessage(message[13:])
 
-			logRadio("Handling message: " + line)
+				logTelemetry(line)
 
 	def sendCurrentPosition(self):
+		success = False
+
 		try:
 			gpsData = self.getFormattedGpsData()
 			if (gpsData != "INVALID DATA"):
 				self.radioSerialOutput("data," + gpsData, True)
+				success = True
 		except:
 			print("Unable to send current position")
+
+		return success
 
 	def sendImage(self):
 		numPackets = len(self.imageToSend) / 1000
@@ -1350,7 +1359,8 @@ class serialHandlerThread(QtCore.QThread):
 def logTelemetry(line):
 	try:
 		telemetryLogFile = open(TELEMETRY_LOG_FILE_LOCATION, "a")
-		telemetryLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + line + "\n")
+		for newLine in line.split("\n"):
+			telemetryLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
 		telemetryLogFile.close
 	except:
 		print("WARNING: Unable to log telemetry data")
@@ -1358,7 +1368,8 @@ def logTelemetry(line):
 def logGui(line):
 	try:
 		guiLogFile = open(GUI_LOG_FILE_LOCATION, "a")
-		guiLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + line + "\n")
+		for newLine in line.split("\n"):
+			guiLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
 		guiLogFile.close
 	except:
 		print("WARNING: Unable to log GUI data")
@@ -1366,7 +1377,9 @@ def logGui(line):
 def logRadio(line):
 	try:
 		radioLogFile = open(RADIO_LOG_FILE_LOCATION, "a")
-		radioLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + line + "\n")
+		for newLine in line.split("\n"):
+			if (len(newLine) > 0):
+				radioLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
 		radioLogFile.close
 	except:
 		print("WARNING: Unable to log radio operations data")
@@ -1488,18 +1501,21 @@ googleMapsHtml = """
 								"#006600",
 								"#FF9933"];
 		
-		var vehicleIconNames = ["balloon.png",
-								"chase1.png",
-								"chase2.png",
-								"chase3.png"];
+		var vehicleIconNames = ["http://fryarludwig.com/wp-content/uploads/2015/07/hotairbaloon.png",
+								"http://maps.google.com/mapfiles/kml/paddle/1-lv.png",
+								"http://maps.google.com/mapfiles/kml/paddle/2-lv.png",
+								"http://maps.google.com/mapfiles/kml/paddle/3-lv.png"];
+		
+		var vehicleSpotIcons = ["http://fryarludwig.com/wp-content/uploads/2015/07/letter_b.png",
+								"http://fryarludwig.com/wp-content/uploads/2015/07/number_1.png",
+								"http://fryarludwig.com/wp-content/uploads/2015/07/number_2.png",
+								"http://fryarludwig.com/wp-content/uploads/2015/07/number_3.png"];
 		
 		for (i = 0; i < VEHICLES_TO_PLOT; i++)
 		{
 			vehicleWaypointArray.push([]);
 			vehicleMarkerArray.push(new google.maps.Marker());
 		}
-		
-		var iconBase = "http://fryarludwig.com/wp-content/uploads/2015/07/"
 		
 		function initialize() 
 		{
@@ -1516,13 +1532,19 @@ googleMapsHtml = """
 		function addVehicleWaypoint(index, lat, lng)
 		{
 			var vehiclePosition = new google.maps.LatLng(lat, lng);
+			
+			if (vehicleWaypointArray[index].length > 1)
+			{
+				vehicleWaypointArray[index].shift();
+			}
+			
 			vehicleWaypointArray[index].push(vehiclePosition);
 			
 			vehicleMarkerArray[index].setMap(null);
 			
 			vehicleMarkerArray[index] = new google.maps.Marker(
 												{position:vehiclePosition,
-												icon: iconBase + vehicleIconNames[index],
+												icon: vehicleIconNames[index],
 												map:map});
 												
 			vehicleMarkerArray[index].setMap(map);
@@ -1542,7 +1564,7 @@ googleMapsHtml = """
 			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
 			
 			spotMarker = new google.maps.Marker({position:spotMarkerPosition,
-												title:"SPOT",
+												title:vehicleSpotIcons[index],
 												map:map});
 			
 			spotMarker.setMap(map);
