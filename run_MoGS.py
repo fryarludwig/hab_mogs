@@ -32,7 +32,7 @@ RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 SPOT_API_URL = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
-DISH = False
+DISH = True
 DISH_ADDRESS = "192.168.101.98"
 DISH_PORT = 5003
 
@@ -1401,8 +1401,8 @@ class dishHandlerThread(QtCore.QThread):
 
 	def compute_bearing(self, blat, blon, balt):
 		# Spanagel's coordinates
-		llat = 36.595156
-		llon = -121.876073
+		llat = 36.594947
+		llon = -121.874647
 		lalt = 25
 
 		Rearth = 3958.76
@@ -1434,6 +1434,7 @@ class dishHandlerThread(QtCore.QThread):
 		sock.send("AS;ES;\n")  # standby
 		sock.close()
 
+			
 	def point(self, az, el):
 
 		# Update positions
@@ -1441,8 +1442,16 @@ class dishHandlerThread(QtCore.QThread):
 		self.new_el = el
 
 		if self.firstRun:
-			self.old_az = self.new_az
-			self.old_el = self.new_el
+			sock.send("SQ\n")
+			data = sock.recv(1024)
+			temp = data.split(",")
+			dish_az = temp[0].split("=")[1]
+			dish_el = temp[1].split("=")[1]
+			dish_az = float(dish_az)
+			dish_el = float(dish_el)
+			print("Current dish position %03d %03d" % (dish_az, dish_el))
+			self.old_az = dish_az
+			self.old_el = dish_el
 			self.firstRun = False
 
 		# Set some hard values for the dish
@@ -1466,7 +1475,7 @@ class dishHandlerThread(QtCore.QThread):
 				print("Pointing to %03d %03d" % (az, el))
 
 				# print("Sleeping %f" % max(az_err,el_err)*4 + 1)
-				sleep(.9)
+				sleep(max(az_err,el_err)/4 + 5)
 				sock.send("AS;ES;\n")  # standby
 				self.old_az = self.new_az
 				self.old_el = self.new_el
