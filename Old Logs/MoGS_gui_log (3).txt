@@ -1,0 +1,445 @@
+2015-07-21 09:24:58: 
+
+Starting GUI log
+
+2015-07-21 09:24:59: GUI created.
+2015-07-21 09:32:46: 
+
+Starting GUI log
+
+2015-07-21 09:32:47: GUI created.
+2015-07-21 09:34:22: 
+
+Starting GUI log
+
+2015-07-21 09:34:23: GUI created.
+2015-07-21 09:34:44: 
+
+Starting GUI log
+
+2015-07-21 09:34:59: 
+
+Starting GUI log
+
+2015-07-21 09:35:00: GUI created.
+2015-07-21 09:37:19: 
+
+Starting GUI log
+
+2015-07-21 09:37:50: 
+
+Starting GUI log
+
+2015-07-21 09:37:51: GUI created.
+2015-07-21 09:38:05: 
+
+Starting GUI log
+
+2015-07-21 09:38:06: GUI created.
+2015-07-21 09:38:19: 
+
+Starting GUI log
+
+2015-07-21 09:38:20: GUI created.
+2015-07-21 09:38:27: 
+
+Starting GUI log
+
+2015-07-21 09:38:28: GUI created.
+2015-07-21 09:38:36: 
+
+Starting GUI log
+
+2015-07-21 09:38:37: GUI created.
+2015-07-21 09:38:47: 
+
+Starting GUI log
+
+2015-07-21 09:38:48: GUI created.
+2015-07-21 09:38:55: 
+
+Starting GUI log
+
+2015-07-21 09:38:57: GUI created.
+2015-07-21 09:39:04: 
+
+Starting GUI log
+
+2015-07-21 09:39:05: GUI created.
+2015-07-21 09:39:47: 
+
+Starting GUI log
+
+2015-07-21 09:39:48: GUI created.
+2015-07-21 09:44:32: 
+
+Starting GUI log
+
+2015-07-21 09:45:22: 
+
+Starting GUI log
+
+2015-07-21 09:45:23: GUI created.
+2015-07-21 09:46:22: 
+
+Starting GUI log
+
+2015-07-21 09:46:23: GUI created.
+2015-07-21 09:46:41: 
+
+Starting GUI log
+
+2015-07-21 09:46:42: GUI created.
+2015-07-21 09:47:11: 
+
+Starting GUI log
+
+2015-07-21 09:47:12: GUI created.
+2015-07-21 09:47:31: 
+
+Starting GUI log
+
+2015-07-21 09:47:32: GUI created.
+2015-07-21 09:48:22: 
+
+Starting GUI log
+
+2015-07-21 09:49:25: 
+
+Starting GUI log
+
+2015-07-21 09:49:26: GUI created.
+2015-07-21 09:50:12: 
+
+Starting GUI log
+
+2015-07-21 09:50:13: GUI created.
+2015-07-21 09:51:07: 
+
+Starting GUI log
+
+2015-07-21 09:51:08: GUI created.
+2015-07-21 09:53:13: 
+
+Starting GUI log
+
+2015-07-21 09:53:14: GUI created.
+2015-07-21 09:57:39: 
+
+Starting GUI log
+
+2015-07-21 09:57:40: GUI created.
+2015-07-21 10:26:03: 
+
+Starting GUI log
+
+2015-07-21 10:26:04: GUI created.
+2015-07-21 10:32:57: 
+
+Starting GUI log
+
+2015-07-21 10:32:58: GUI created.
+2015-07-21 11:14:40: 
+
+Starting GUI log
+
+2015-07-21 11:15:20: 
+
+Starting GUI log
+
+2015-07-21 11:16:08: 
+
+Starting GUI log
+
+2015-07-21 11:16:09: GUI created.
+2015-07-21 11:17:38: 
+
+Starting GUI log
+
+2015-07-21 11:17:39: GUI created.
+2015-07-21 11:17:42: addSpotMarker(4, 36.59515, -121.87616);
+2015-07-21 11:17:42: addSpotMarker(3, 36.5951, -121.87595);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59535, -121.87605);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59522, -121.87608);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87465);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59505, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87468);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87483);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59503, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59502, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59486, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(4, 36.59504, -121.87466);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59486, -121.87483);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59489, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59487, -121.87482);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59484, -121.87479);
+2015-07-21 11:17:42: addSpotMarker(3, 36.59488, -121.87482);
+2015-07-21 11:36:04: 
+
+Starting GUI log
+
+2015-07-21 11:36:05: GUI created.
+2015-07-21 11:40:19: 
+
+Starting GUI log
+
+2015-07-21 11:40:51: 
+
+Starting GUI log
+
+2015-07-21 11:40:52: GUI created.
+2015-07-21 11:41:19: 
+
+Starting GUI log
+
+2015-07-21 11:41:20: GUI created.
+2015-07-21 11:41:31: 
+
+Starting GUI log
+
+2015-07-21 11:41:32: GUI created.
+2015-07-21 11:43:53: 
+
+Starting GUI log
+
+2015-07-21 11:43:54: GUI created.
+2015-07-21 11:48:09: 
+
+Starting GUI log
+
+2015-07-21 11:48:10: GUI created.
+2015-07-21 11:49:24: 
+
+Starting GUI log
+
+2015-07-21 11:49:25: GUI created.
+2015-07-21 11:52:11: 
+
+Starting GUI log
+
+2015-07-21 11:52:13: GUI created.
+2015-07-21 11:54:47: 
+
+Starting GUI log
+
+2015-07-21 11:54:48: GUI created.
+2015-07-21 11:59:56: 
+
+Starting GUI log
+
+2015-07-21 11:59:58: GUI created.
+2015-07-21 12:00:25: 
+
+Starting GUI log
+
+2015-07-21 12:00:26: GUI created.
+2015-07-21 12:01:14: 
+
+Starting GUI log
+
+2015-07-21 12:01:15: GUI created.
+2015-07-21 12:02:50: 
+
+Starting GUI log
+
+2015-07-21 12:02:51: GUI created.
+2015-07-21 12:03:01: 
+
+Starting GUI log
+
+2015-07-21 12:03:03: GUI created.
+2015-07-21 12:05:02: 
+
+Starting GUI log
+
+2015-07-21 12:05:03: GUI created.
+2015-07-21 12:05:27: 
+
+Starting GUI log
+
+2015-07-21 12:05:28: GUI created.
+2015-07-21 12:05:42: 
+
+Starting GUI log
+
+2015-07-21 12:05:43: GUI created.
+2015-07-21 12:07:24: 
+
+Starting GUI log
+
+2015-07-21 12:07:26: GUI created.
+2015-07-21 12:08:03: 
+
+Starting GUI log
+
+2015-07-21 12:08:04: GUI created.
+2015-07-21 12:09:37: 
+
+Starting GUI log
+
+2015-07-21 12:09:38: GUI created.
+2015-07-21 12:10:55: 
+
+Starting GUI log
+
+2015-07-21 12:10:56: GUI created.
+2015-07-21 12:12:13: 
+
+Starting GUI log
+
+2015-07-21 12:12:14: GUI created.
+2015-07-21 12:12:43: 
+
+Starting GUI log
+
+2015-07-21 12:12:44: GUI created.
+2015-07-21 12:13:43: 
+
+Starting GUI log
+
+2015-07-21 12:13:44: GUI created.
+2015-07-21 13:20:06: 
+
+Starting GUI log
+
+2015-07-21 13:20:07: GUI created.
+2015-07-21 13:47:40: 
+
+Starting GUI log
+
+2015-07-21 13:47:41: GUI created.
+2015-07-21 13:48:09: 
+
+Starting GUI log
+
+2015-07-21 13:48:11: GUI created.
+2015-07-21 13:51:35: 
+
+Starting GUI log
+
+2015-07-21 13:51:36: GUI created.
+2015-07-21 13:52:07: 
+
+Starting GUI log
+
+2015-07-21 13:52:08: GUI created.
+2015-07-21 13:53:02: 
+
+Starting GUI log
+
+2015-07-21 13:53:03: GUI created.
+2015-07-21 13:54:06: 
+
+Starting GUI log
+
+2015-07-21 13:54:07: GUI created.
+2015-07-21 13:54:20: 
+
+Starting GUI log
+
+2015-07-21 13:54:21: GUI created.
+2015-07-21 13:54:58: 
+
+Starting GUI log
+
+2015-07-21 13:55:00: GUI created.
+2015-07-21 13:55:43: 
+
+Starting GUI log
+
+2015-07-21 13:55:44: GUI created.
+2015-07-21 13:57:34: 
+
+Starting GUI log
+
+2015-07-21 13:57:35: GUI created.
+2015-07-21 13:59:06: 
+
+Starting GUI log
+
+2015-07-21 13:59:07: GUI created.
+2015-07-21 13:59:45: 
+
+Starting GUI log
+
+2015-07-21 13:59:47: GUI created.
+2015-07-21 14:38:56: 
+
+Starting GUI log
+
+2015-07-21 14:38:58: GUI created.
+2015-07-21 14:39:13: 
+
+Starting GUI log
+
+2015-07-21 14:39:14: GUI created.
+2015-07-21 14:44:08: 
+
+Starting GUI log
+
+2015-07-21 14:44:09: GUI created.
+2015-07-21 14:55:31: 
+
+Starting GUI log
+
+2015-07-21 14:55:32: GUI created.
+2015-07-21 18:46:24: 
+
+Starting GUI log
+
+2015-07-21 18:46:25: GUI created.
+2015-07-21 19:39:25: 
+
+Starting GUI log
+
+2015-07-21 19:39:27: GUI created.
+2015-07-21 19:41:30: 
+
+Starting GUI log
+
+2015-07-21 19:41:31: GUI created.
+2015-07-21 19:43:11: 
+
+Starting GUI log
+
+2015-07-21 19:43:12: GUI created.
+2015-07-21 19:44:45: 
+
+Starting GUI log
+
+2015-07-21 19:44:46: GUI created.
+2015-07-21 19:45:50: 
+
+Starting GUI log
+
+2015-07-21 19:45:51: GUI created.
+2015-07-21 19:47:04: 
+
+Starting GUI log
+
+2015-07-21 19:47:05: GUI created.
+2015-07-21 19:49:32: 
+
+Starting GUI log
+
+2015-07-21 19:49:33: GUI created.
+2015-07-21 19:50:55: 
+
+Starting GUI log
+
+2015-07-21 19:50:57: GUI created.

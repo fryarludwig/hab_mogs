@@ -27,12 +27,16 @@ from PyQt4.QtWebKit import QWebView
 from PyQt4.Qt import QWidget
 from collections import OrderedDict
 
+MOGS_VERSION = "0.9.1"
+VERSION_INFO = "MoGS: Version "
+MOGS_INFO = "Mobile Ground Station"
+
 TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
 RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
 GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 SPOT_API_URL = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
-DISH = True
+DISH = False
 DISH_ADDRESS = "192.168.101.98"
 DISH_PORT = 5003
 
@@ -45,12 +49,17 @@ TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 """
 Handles GUI operations, as well as all user input. 
 
-TODO: AZ/EL plotting
+TODO: Filter out GPS locks that aren't valid
+TODO: Refactor code base
+TODO: Remove list view, add lineedit
+TODO: Change old GPS to grey
+
+TODO: Add title bar
 TODO: Text messaging GPS, Altitude
 TODO: Altitude graph (Speed, Temp too?)
 TODO: Add prediction plotting
 """
-class mogsMainWindow(QtGui.QWidget):
+class mogsMainWindow(QtGui.QMainWindow):
 	"""
 	Creates the class variables and starts the GUI window
 	"""
@@ -94,11 +103,11 @@ class mogsMainWindow(QtGui.QWidget):
 								"chase3" : 3,
 								"nps" : 4}
 
-		self.spotToVehicleDictionary = {"SSAGSpot1" : "hab",
+		self.spotToVehicleDictionary = {"SSAGSpot5" : "hab",
 										"SSAGSpot2" : "chase2",
 										"SSAGSpot3" : "chase3",
 										"SSAGSpot4" : "chase1",
-										"SSAGSpot5" : "nps"}
+										"SSAGSpot1" : "nps"}
 
 		self.telemetryLabelDictionary = OrderedDict()
 		self.telemetryLabelDictionary["timestamp"] = QtGui.QLabel("None", self)
@@ -147,6 +156,11 @@ class mogsMainWindow(QtGui.QWidget):
 		window_x = 1200
 		window_y = 800
 
+		self.createMenuBar()
+		self.interfaceWidget = QtGui.QWidget()
+		self.createRadioConsole()
+		self.aboutMogsWidget = QtGui.QWidget()
+
 		self.col = QtGui.QColor(0, 0, 0)
 		self.vLayout = QtGui.QVBoxLayout()
 		self.hLayout = QtGui.QHBoxLayout()
@@ -164,8 +178,6 @@ class mogsMainWindow(QtGui.QWidget):
 		self.theMap.addToJavaScriptWindowObject('self', self)
 		self.mapView.setHtml(googleMapsHtml)
 
-		self.createRadioConsole()
-
 		telemetryWidget = self.createTelemetryWidget()
 		messagingWidget = self.createMessagingWidget()
 		commandWidget = self.createCommandWidget()
@@ -180,8 +192,10 @@ class mogsMainWindow(QtGui.QWidget):
 		self.hLayout.addLayout(self.vLayout, 0)
 
 		self.setGeometry(150, 150, window_x, window_y)
-		self.setWindowTitle('Mobile Ground Station (MoGS)')
-		self.setLayout(self.hLayout)
+		self.setWindowTitle('Mobile Ground Station (MoGS) ' + MOGS_VERSION)
+		self.interfaceWidget.setLayout(self.hLayout)
+
+		self.setCentralWidget(self.interfaceWidget)
 		self.show()
 
 		logGui("GUI created.")
@@ -197,6 +211,30 @@ class mogsMainWindow(QtGui.QWidget):
 		minY = self.vLayout.geometry().height()
 		self.mapView.setMinimumSize(minX , minY)
 		self.mapView.setMaximumSize(minX, minY)
+
+	def createMenuBar(self):
+		menuBar = self.menuBar()
+
+		exitAction = QtGui.QAction("&Exit", self)
+		exitAction.setShortcut("Ctrl+Q")
+		exitAction.setStatusTip("Exit MoGS")
+		exitAction.triggered.connect(QtGui.qApp.quit)
+
+		aboutAction = QtGui.QAction("&About...", self)
+		aboutAction.setStatusTip("About MoGS")
+		aboutAction.triggered.connect(self.showAboutWindow)
+
+		settingsAction = QtGui.QAction("&Settings", self)
+		settingsAction.setStatusTip("Change MoGS settings")
+		settingsAction.triggered.connect(self.changeSettings)
+
+		fileMenu = menuBar.addMenu("&File")
+		fileMenu.addAction(exitAction)
+
+		toolsMenu = menuBar.addMenu("Tools")
+		toolsMenu.addAction(settingsAction)
+		toolsMenu.addAction(aboutAction)
+
 
 	"""
 	Populates a "Messaging" widget.
@@ -247,8 +285,7 @@ class mogsMainWindow(QtGui.QWidget):
 		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
 		self.viewRadioConsoleButton.setText("View Console")
 
-		settingsDialogButton = QtGui.QPushButton('Settings', self)
-		settingsDialogButton.clicked.connect(self.changeSettings)
+		settingsDialogButton = QtGui.QPushButton('AVAILABLE', self)
 
 		addMarkerButton = QtGui.QPushButton('Add Marker', self)
 		addMarkerButton.clicked.connect(self.addMarker)
@@ -766,6 +803,25 @@ class mogsMainWindow(QtGui.QWidget):
 				QtGui.QMessageBox.information(self, "Error", "No Image Selected",
 											 QtGui.QMessageBox.Ok)
 
+	def showAboutWindow(self):
+		self.aboutMogsWidget = QtGui.QWidget()
+		self.aboutMogsWidget.setMinimumSize(200, 100)
+		self.aboutMogsWidget.setWindowTitle("About")
+		layout = QtGui.QVBoxLayout()
+
+		versionInfoLabel = QtGui.QLabel(VERSION_INFO + MOGS_VERSION)
+		versionInfoLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		mogsAboutLabel = QtGui.QLabel(MOGS_INFO)
+		mogsAboutLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		layout.addWidget(versionInfoLabel)
+		layout.addWidget(mogsAboutLabel)
+
+		self.aboutMogsWidget.setLayout(layout)
+
+		self.aboutMogsWidget.show()
+
 	def displayReceivedImage(self, fileName):
 		windowLayout = QtGui.QGridLayout()
 		popupWidget = QtGui.QDialog()
@@ -888,7 +944,7 @@ class mogsMainWindow(QtGui.QWidget):
 			long = message.find("longitude").text
 			time = message.find("dateTime").text
 
-			if (name != "SSAGSpot5"):
+			if (name != "SSAGSpot1"):
 				# Update the map to show new waypoint
 				javascriptCommand = "addSpotMarker({}, {}, {});".format(
 									self.javaArrayPosition[self.spotToVehicleDictionary[name]],
@@ -1434,7 +1490,7 @@ class dishHandlerThread(QtCore.QThread):
 		sock.send("AS;ES;\n")  # standby
 		sock.close()
 
-			
+
 	def point(self, az, el):
 
 		# Update positions
@@ -1475,7 +1531,7 @@ class dishHandlerThread(QtCore.QThread):
 				print("Pointing to %03d %03d" % (az, el))
 
 				# print("Sleeping %f" % max(az_err,el_err)*4 + 1)
-				sleep(max(az_err,el_err)/4 + 5)
+				sleep(max(az_err, el_err) / 4 + 5)
 				sock.send("AS;ES;\n")  # standby
 				self.old_az = self.new_az
 				self.old_el = self.new_el
@@ -1573,7 +1629,7 @@ googleMapsHtml = """
 			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
 			
 			spotMarker = new google.maps.Marker({position:spotMarkerPosition,
-												title:vehicleSpotIcons[index],
+												icon:vehicleSpotIcons[index],
 												map:map});
 			
 			spotMarker.setMap(map);
