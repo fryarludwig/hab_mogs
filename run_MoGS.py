@@ -19,12 +19,13 @@ import datetime
 import urllib2
 import socket
 import winsound
+import pyqtgraph as pg
 import xml.etree.ElementTree as ET
 from math import *
 from time import sleep
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtWebKit import QWebView
-from PyQt4.Qt import QWidget
+from PyQt4.Qt import QWidget, QTextCursor
 from collections import OrderedDict
 
 MOGS_VERSION = "0.9.1"
@@ -44,17 +45,13 @@ if DISH:
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	sock.connect((DISH_ADDRESS, DISH_PORT))
 
-TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
-
 """
 Handles GUI operations, as well as all user input. 
 
 TODO: Filter out GPS locks that aren't valid
 TODO: Refactor code base
-TODO: Remove list view, add lineedit
 TODO: Change old GPS to grey
 
-TODO: Add title bar
 TODO: Text messaging GPS, Altitude
 TODO: Altitude graph (Speed, Temp too?)
 TODO: Add prediction plotting
@@ -72,18 +69,17 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.selectPrecisionDialogWidget = QtGui.QDialog()
 		self.predictionFileName = ""
 
-		self.messagingListView = QtGui.QListView()
-		self.messagingListViewModel = QtGui.QStandardItemModel(self.messagingListView)
+		self.messagingTextBox = QtGui.QTextEdit()
 		self.sendMessageCallsign = QtGui.QLabel()
 		self.sendMessageEntryBox = QtGui.QLineEdit()
 		self.notifyOnSerialError = True
 
 		self.radioConsoleWidget = QtGui.QWidget()
-		self.radioConsoleListView = QtGui.QListView()
-		self.radioConsoleListViewModel = QtGui.QStandardItemModel(self.radioConsoleListView)
+		self.radioConsoleTextEdit = QtGui.QTextEdit()
 		self.viewRadioConsoleButton = QtGui.QPushButton()
 		self.radioConsoleIsOpen = False
-		self.radioConsoleNumItems = 60
+
+		self.offlineModeEnabled = False
 
 		self.callsignToString = {"hab"   : "Balloon",
 								"chase1" : "Chase 1",
@@ -103,6 +99,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 								"chase3" : 3,
 								"nps" : 4}
 
+		self.updateSpotButton = QtGui.QPushButton('Update SPOT', self)
 		self.spotToVehicleDictionary = {"SSAGSpot5" : "hab",
 										"SSAGSpot2" : "chase2",
 										"SSAGSpot3" : "chase3",
@@ -132,6 +129,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.balloonReleaseArmed = False
 		self.balloonReleaseActivated = False
 
+		# Offline mode variables here
+		self.offlineMapGraphWidget = pg.PlotWidget()
+		self.offlinePlotDataItem = pg.PlotDataItem()
+
 		self.serialHandler = serialHandlerThread()
 		self.serialHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
 		self.serialHandler.balloonAckReceived.connect(self.processBalloonCommandResponse)
@@ -141,11 +142,35 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.serialHandler.radioConsoleUpdateSignal.connect(self.updateRadioConsole)
 		self.serialHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
-		self.serialHandler.start()
 
 		self.dishHandler = dishHandlerThread()
 		# self.dishHandler.start()
 
+		try:
+			settingsFile = open("mogsSettings.db", "r")
+			self.serialHandler.HEARTBEAT_INTERVAL = int(settingsFile.readline()[:-1])
+			self.serialHandler.RADIO_SERIAL_PORT = settingsFile.readline()[:-1]
+			self.serialHandler.RADIO_CALLSIGN = settingsFile.readline()[:-1]
+			self.serialHandler.GPS_SERIAL_PORT = settingsFile.readline()[:-1]
+			self.telemetryValuesToInclude = int(settingsFile.readline()[:-1])
+			if (settingsFile.readline()[:-1] == "True"):
+				self.notifyOnSerialError = True
+			else:
+				self.notifyOnSerialError = False
+			if (settingsFile.readline()[:-1] == "True"):
+				self.offlineModeEnabled = True
+			else:
+				self.offlineModeEnabled = False
+			if (settingsFile.readline()[:-1] == "True"):
+				self.serialHandler.TEST_MODE = True
+			else:
+				self.serialHandler.TEST_MODE = False
+
+		except:
+			print("Parsing error")
+			logGui("No Settings found")
+
+		self.serialHandler.start()
 		self.initUI()
 
 
@@ -158,6 +183,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		self.createMenuBar()
 		self.interfaceWidget = QtGui.QWidget()
+
 		self.createRadioConsole()
 		self.aboutMogsWidget = QtGui.QWidget()
 
@@ -170,13 +196,17 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.hLayout.setSpacing(0)
 		self.hLayout.setMargin(0)
 
-		mapWidget = QWidget()
-		self.mapView = QWebView(mapWidget)
-		self.mapView.setMinimumSize(window_x - 317, window_y)
-		self.mapView.setMaximumSize(window_x, window_y)
-		self.theMap = self.mapView.page().mainFrame()
-		self.theMap.addToJavaScriptWindowObject('self', self)
-		self.mapView.setHtml(googleMapsHtml)
+		if (self.offlineModeEnabled):
+			mapWidget = self.offlineMapGraphWidget
+		else:
+			mapWidget = QWidget()
+			self.mapView = QWebView(mapWidget)
+			self.mapView.setMinimumSize(window_x - 317, window_y)
+			self.mapView.setMaximumSize(window_x, window_y)
+			self.theMap = self.mapView.page().mainFrame()
+			self.theMap.addToJavaScriptWindowObject('self', self)
+			self.mapView.setHtml(googleMapsHtml)
+
 
 		telemetryWidget = self.createTelemetryWidget()
 		messagingWidget = self.createMessagingWidget()
@@ -235,7 +265,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		toolsMenu.addAction(settingsAction)
 		toolsMenu.addAction(aboutAction)
 
-
+	def createOfflineMapWidget(self):
+		mapImage = pg.ImageItem("media/nps_map.png")
+		return None
 	"""
 	Populates a "Messaging" widget.
 	Returns the widget, which is then added to the layout
@@ -249,11 +281,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		sendMessageButton = QtGui.QPushButton("Send", self)
 		sendMessageButton.clicked[bool].connect(self.sendMessage)
 
-		self.messagingListView.setWrapping(True)
-		self.messagingListView.setWordWrap(True)
-		self.messagingListView.setSpacing(0)
-		self.messagingListView.setMinimumSize(400, 300)
-		self.messagingListView.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
+		self.messagingTextBox.setReadOnly(True)
+		self.messagingTextBox.setMinimumSize(400, 300)
+		self.messagingTextBox.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
 
 		self.sendMessageEntryBox.setMaxLength(180)
 		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
@@ -261,7 +291,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.sendMessageCallsign.setText(self.callsignToString[self.serialHandler.RADIO_CALLSIGN])
 		self.sendMessageCallsign.setAlignment(QtCore.Qt.AlignCenter)
 
-		layout.addWidget(self.messagingListView, 1, 0, 5, 9)
+		layout.addWidget(self.messagingTextBox, 1, 0, 5, 9)
 		layout.addWidget(self.sendMessageCallsign, 6, 0)
 		layout.addWidget(self.sendMessageEntryBox, 6, 1, 1, 7)
 		layout.addWidget(sendMessageButton, 6, 8)
@@ -285,7 +315,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
 		self.viewRadioConsoleButton.setText("View Console")
 
-		settingsDialogButton = QtGui.QPushButton('AVAILABLE', self)
+		requestDiskSpaceButton = QtGui.QPushButton('Disk Space Avail', self)
+		requestDiskSpaceButton.clicked.connect(self.requestDiskSpace)
 
 		addMarkerButton = QtGui.QPushButton('Add Marker', self)
 		addMarkerButton.clicked.connect(self.addMarker)
@@ -304,16 +335,17 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.releaseBalloonButton.clicked[bool].connect(self.confirmAndReleaseBalloon)
 		self.releaseBalloonButton.setDisabled(True)
 
-		updateSpotButton = QtGui.QPushButton('Update SPOT', self)
-		updateSpotButton.clicked[bool].connect(self.updateSpotPositions)
+		self.updateSpotButton.clicked[bool].connect(self.updateSpotPositions)
+		if (self.offlineModeEnabled):
+			self.updateSpotButton.setDisabled(True)
 
 		layout.addWidget(self.commandStatusLabel, 1, 0, 1, 4)
 
 		layout.addWidget(resizeMapButton, 2, 0)
-		layout.addWidget(updateSpotButton, 2, 1)
+		layout.addWidget(self.updateSpotButton, 2, 1)
 		layout.addWidget(self.viewRadioConsoleButton, 2, 2)
 		layout.addWidget(addMarkerButton, 2, 3)
-		layout.addWidget(settingsDialogButton, 3, 0)
+		layout.addWidget(requestDiskSpaceButton, 3, 0)
 		layout.addWidget(takeSnapshotButton, 3, 1)
 		layout.addWidget(self.armBrmButton, 3, 2)
 		layout.addWidget(self.releaseBalloonButton, 3, 3)
@@ -428,14 +460,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 		radioConsoleCloseButton = QtGui.QPushButton("Close")
 		radioConsoleCloseButton.clicked.connect(self.radioConsoleWidget.close)
 
-		self.radioConsoleListView.setWrapping(True)
-		self.radioConsoleListView.setWordWrap(True)
-		self.radioConsoleListView.setSpacing(0)
-		self.radioConsoleListView.setMinimumSize(600, 400)
+		self.radioConsoleTextEdit.setMinimumSize(300, 200)
+		self.radioConsoleTextEdit.setReadOnly(True)
 
-		self.radioConsoleListViewModel.setRowCount(self.radioConsoleNumItems)
-
-		layout.addWidget(self.radioConsoleListView, 1, 0, 10, 5)
+		layout.addWidget(self.radioConsoleTextEdit, 1, 0, 10, 5)
 		layout.addWidget(radioConsoleCloseButton, 11, 2)
 
 		self.radioConsoleWidget.setLayout(layout)
@@ -445,13 +473,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 	Populates and displays a "Console" widget.
 	"""
 	def updateRadioConsole(self, message):
-		if (message[-1] == "\n" or message[-1] == "\r"):
-			itemToAdd = QtGui.QStandardItem(datetime.datetime.now().strftime("%H:%M - ") + message[:-1])
-		else:
-			itemToAdd = QtGui.QStandardItem(datetime.datetime.now().strftime("%H:%M - ") + message)
-		self.radioConsoleListViewModel.insertRow(0, itemToAdd)
-		self.radioConsoleListViewModel.setRowCount(self.radioConsoleNumItems)
-		self.radioConsoleListView.setModel(self.radioConsoleListViewModel)
+		timestamp = datetime.datetime.now().strftime("%H:%M - ")
+
+		self.radioConsoleTextEdit.moveCursor(QTextCursor.Start, 0)
+		self.radioConsoleTextEdit.insertPlainText(timestamp + message)
+		self.radioConsoleTextEdit.show()
 
 	"""
 	Logs and parses the telemetry string passed from the Radio class, then
@@ -460,7 +486,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 	No return value
 	"""
 	def updateBalloonDataTelemetry(self, data):
-		print(data)
 		logTelemetry(data)
 		self.statusLabelList["hab"].setStyleSheet("QFrame { background-color: Green }")
 
@@ -479,6 +504,18 @@ class mogsMainWindow(QtGui.QMainWindow):
 			longitude = splitMessage[2]
 			if (len(latitude) > 0 and len(longitude) > 0):
 				self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
+
+				if (self.offlineModeEnabled):
+					self.offlineMapGraphWidget.plot([float()], [float(longitude)])
+
+				else:
+					# Update the map to show new waypoint
+					javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
+										self.javaArrayPosition["hab"],
+										latitude,
+										longitude)
+					print(javascriptCommand)
+					self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
 			altitude = splitMessage[3]
 			if (len(altitude) > 0):
@@ -527,15 +564,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 				except:
 					print("Error in computing or pointing")
 
-
-			# Update the map to show new waypoint
-			javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
-								self.javaArrayPosition["hab"],
-								latitude,
-								longitude)
-			print(javascriptCommand)
-			self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
-
 			self.dataTelemetryList.append([timestamp, altitude, latitude, longitude,
 											voltage, innerTemp, outerTemp, batteryTemp])
 
@@ -543,9 +571,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 			logTelemetry("Invalid data packet - data was not processed.")
 
 	def updateChaseVehicleTelemetry(self, data):
-		logTelemetry(data)
-
-		try:
+# 		logTelemetry(data)
+#
+# 		try:
 			splitMessage = data.split(",")
 			callsign = splitMessage[0]
 			timestamp = splitMessage[1]
@@ -553,23 +581,30 @@ class mogsMainWindow(QtGui.QMainWindow):
 				timestamp = timestamp[:2] + ":" + timestamp[2:4]
 			latitude = splitMessage[2]
 			longitude = splitMessage[3]
+			if (len(latitude) > 0 and len(longitude) > 0):
+				self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
+
+				if (self.offlineModeEnabled):
+					print("Plotting data")
+					print("Plotted")
+
+				else:
+					# Update the map to show new waypoint
+					javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
+										self.javaArrayPosition["hab"],
+										latitude,
+										longitude)
+					print(javascriptCommand)
+					self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
+
+				self.chaseVehicleGpsLabel[callsign][0].setText("{} - {}".format(self.callsignToString[callsign], timestamp))
+				self.chaseVehicleGpsLabel[callsign][1].setText("{}, {}".format(latitude, longitude))
 
 			self.statusLabelList[callsign].setStyleSheet("QFrame { background-color: Green }")
-
-			self.chaseVehicleGpsLabel[callsign][0].setText("{} - {}".format(self.callsignToString[callsign], timestamp))
-			self.chaseVehicleGpsLabel[callsign][1].setText("{}, {}".format(latitude, longitude))
-
-			# Update the map to show new waypoint
-			javascriptCommand = "addVehicleWaypoint({}, {}, {});".format(
-								self.javaArrayPosition[callsign],
-								latitude,
-								longitude)
-
-			self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
-
-		except:
-			print("Failure to parse")
-			logTelemetry("Invalid data packet - data was not processed.")
+#
+# 		except:
+# 			print("Failure to parse chase vehicle telemetry")
+# 			logTelemetry("Invalid data packet - data was not processed.")
 
 	def processBalloonCommandResponse(self, message):
 		if (message == "BRM_ARMED"):
@@ -649,6 +684,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 	def takeSnapshot(self):
 		self.serialHandler.takeSnapshotFlag = True
 		self.commandStatusLabel.setText("Requesting snapshot from HAB...")
+
+	def requestDiskSpace(self):
+		self.serialHandler.requestDiskSpaceFlag = True
+		self.commandStatusLabel.setText("Requesting disk space available...")
 
 	def armBalloonRelease(self):
 		windowLayout = QtGui.QGridLayout()
@@ -741,15 +780,16 @@ class mogsMainWindow(QtGui.QMainWindow):
 	Populates the chat box with the messages we've received
 	"""
 	def updateChat(self, message):
-		itemToAdd = QtGui.QStandardItem(datetime.datetime.now().strftime("%H:%M - ") + message)
-		self.messagingListViewModel.insertRow(0, itemToAdd)
-		self.messagingListView.setModel(self.messagingListViewModel)
-		self.messagingListView.show()
+		chatTimestamp = datetime.datetime.now().strftime("%H:%M - ")
+
+		self.messagingTextBox.moveCursor(QTextCursor.Start, 0)
+		self.messagingTextBox.insertPlainText(chatTimestamp + message + "\n")
+		self.messagingTextBox.show()
+
 		winsound.PlaySound("media/chatSound.wav", winsound.SND_ASYNC)
 
 	def serialFailureDisplay(self, message):
 		if (self.notifyOnSerialError):
-			self.notifyOnSerialError = False
 			QtGui.QMessageBox.question(self, "Error", message, QtGui.QMessageBox.Ok)
 			self.changeSettings()
 
@@ -793,9 +833,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		if (self.selectPrecisionDialogWidget.exec_()):
 			if (len(self.predictionFileName) > 0):
 				try:
-					imageFile = open(self.predictionFileName, "rb")
-					self.serialHandler.imageToSend = (imageFile.read())
-					self.serialHandler.imageReadyToSend = True
+					imageFile = open(self.predictionFileName, "r")
 				except:
 					QtGui.QMessageBox.information(self, "Error", "Could not open image",
 												 QtGui.QMessageBox.Ok)
@@ -874,6 +912,14 @@ class mogsMainWindow(QtGui.QMainWindow):
 		if (self.notifyOnSerialError):
 			openDialogOnFailureCheckBox.setChecked(True)
 
+		offlineModeCheckBox = QtGui.QCheckBox("Do not use an internet connection")
+		if (self.offlineModeEnabled):
+			offlineModeCheckBox.setChecked(True)
+
+		testModeCheckBox = QtGui.QCheckBox("DEV ONLY: Enable test mode")
+		if (self.serialHandler.TEST_MODE):
+			testModeCheckBox.setChecked(True)
+
 		selectButton = QtGui.QPushButton("Save Settings", self)
 		selectButton.setDefault(True)
 		selectButton.clicked.connect(popupWidget.accept)
@@ -891,7 +937,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		windowLayout.addWidget(gpsPortTextBox, 4, 1, 1, 2)
 		windowLayout.addWidget(gpsRatePromptLabel, 5, 0)
 		windowLayout.addWidget(gpsRateLineEdit, 5, 1, 1, 2)
-		windowLayout.addWidget(openDialogOnFailureCheckBox, 6, 1, 1, 2)
+		windowLayout.addWidget(offlineModeCheckBox, 6, 1, 1, 2)
+		windowLayout.addWidget(openDialogOnFailureCheckBox, 7, 1, 1, 2)
+		windowLayout.addWidget(testModeCheckBox, 8, 1, 1, 2)
 
 		windowLayout.addWidget(selectButton, 10, 1)
 		windowLayout.addWidget(cancelButton, 10, 2)
@@ -919,7 +967,38 @@ class mogsMainWindow(QtGui.QMainWindow):
 				self.notifyOnSerialError = True
 			else:
 				self.notifyOnSerialError = False
+			if (offlineModeCheckBox.isChecked()):
+				self.offlineModeEnabled = True
+				self.updateSpotButton.setDisabled(True)
+			else:
+				self.offlineModeEnabled = False
+				self.updateSpotButton.setDisabled(False)
+			if (testModeCheckBox.isChecked()):
+				self.serialHandler.TEST_MODE = True
+			else:
+				self.serialHandler.TEST_MODE = False
+
+
 			self.telemetryValuesToInclude = int(precisionSpinBox.value())
+
+			settingsFile = open("mogsSettings.db", "w")
+			settingsFile.write(str(self.serialHandler.HEARTBEAT_INTERVAL) + "\n")
+			settingsFile.write(self.serialHandler.RADIO_SERIAL_PORT + "\n")
+			settingsFile.write(self.serialHandler.RADIO_CALLSIGN + "\n")
+			settingsFile.write(self.serialHandler.GPS_SERIAL_PORT + "\n")
+			settingsFile.write(str(self.telemetryValuesToInclude) + "\n")
+			if (self.notifyOnSerialError):
+				settingsFile.write("True\n")
+			else:
+				settingsFile.write("False\n")
+			if (self.offlineModeEnabled):
+				settingsFile.write("True\n")
+			else:
+				settingsFile.write("False\n")
+			if (self.serialHandler.TEST_MODE):
+				settingsFile.write("True\n")
+			else:
+				settingsFile.write("False\n")
 
 		self.serialHandler.settingsWindowOpen = False
 
@@ -1028,9 +1107,8 @@ class serialHandlerThread(QtCore.QThread):
 	updateNetworkStatusSignal = QtCore.pyqtSignal()
 
 	def __init__(self):
-		if (TEST_MODE):
-			self.inputTestFile = open("test_telemetry.txt", "r")
 		QtCore.QThread.__init__(self)
+		self.TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
 
 		self.HEARTBEAT_INTERVAL = 5
 		self.RADIO_SERIAL_PORT = "COM7"
@@ -1058,28 +1136,23 @@ class serialHandlerThread(QtCore.QThread):
 		self.armBalloonFlag = False
 		self.disarmBalloonFlag = False
 		self.takeSnapshotFlag = False
+		self.requestDiskSpaceFlag = False
 
-		self.settingsWindowOpen = True
+		self.settingsWindowOpen = False
 		self.radioSerialPortChanged = False
 		self.gpsSerialPortChanged = False
 		self.serialBaudrateChanged = False
 
 		self.userMessagesToSend = []
-		self.imageToSend = ""
-		self.imageReadyToSend = False
-		self.imageOutputCounter = 0
 
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
 
-		if (TEST_MODE):
+		if (self.TEST_MODE):
+			self.inputTestFile = open("test_telemetry.txt", "r")
 			for line in self.inputTestFile:
 				sleep(.5)
 				self.handleMessage(line)
-
-		self.invalidSerialPort.emit("Please select your serial ports.")
-		while (self.settingsWindowOpen):
-			sleep(1)
 
 		self.openRadioSerialPort()
 		self.openGpsSerialPort()
@@ -1114,9 +1187,9 @@ class serialHandlerThread(QtCore.QThread):
 				self.sendSnapshotRequest()
 				self.takeSnapshotFlag = False
 
-			if (self.imageReadyToSend):
-				self.sendImage()
-				self.imageToSend = ""
+			if (self.requestDiskSpaceFlag):
+				self.sendDiskSpaceRequest()
+				self.requestDiskSpaceFlag = False
 
 			while (len(self.userMessagesToSend) > 0):
 				formattedMessage = "chat," + self.userMessagesToSend[0]
@@ -1253,6 +1326,9 @@ class serialHandlerThread(QtCore.QThread):
 
 	def sendSnapshotRequest(self):
 		self.radioSerialOutput("cmd,SNAPSHOT")
+
+	def sendDiskSpaceRequest(self):
+		self.radioSerialOutput("cmd,DISK_SPACE")
 
 	def sendReleaseCommand(self):
 		print("Releasing balloon")
