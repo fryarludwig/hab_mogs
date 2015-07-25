@@ -12658,3 +12658,340 @@ Starting Radio log
 2015-07-24 19:04:16: Unable to write to serial port on COM7
 2015-07-24 19:04:17: Unable to write to serial port on COM7
 2015-07-24 19:04:18: Unable to write to serial port on COM7
+2015-07-24 20:58:51: Starting Radio log
+2015-07-24 20:58:51: Unable to close serial port COM7
+2015-07-24 20:58:51: Unable to close serial port COM4
+2015-07-24 20:58:55: Unable to write to serial port on COM7
+2015-07-24 20:58:56: Unable to write to serial port on COM7
+2015-07-24 20:58:57: Unable to write to serial port on COM7
+2015-07-24 20:58:58: Unable to write to serial port on COM7
+2015-07-24 20:58:59: Unable to write to serial port on COM7
+2015-07-24 20:59:00: Unable to write to serial port on COM7
+2015-07-24 20:59:01: Unable to write to serial port on COM7
+2015-07-24 20:59:02: Unable to write to serial port on COM7
+2015-07-24 20:59:03: Unable to write to serial port on COM7
+2015-07-24 20:59:04: Unable to write to serial port on COM7
+2015-07-24 20:59:05: Unable to write to serial port on COM7
+2015-07-24 20:59:06: Unable to write to serial port on COM7
+2015-07-24 20:59:07: Unable to write to serial port on COM7
+2015-07-24 20:59:08: Unable to write to serial port on COM7
+2015-07-24 20:59:09: Unable to write to serial port on COM7
+2015-07-24 20:59:10: Unable to write to serial port on COM7
+2015-07-24 20:59:10: Unable to write to serial port on COM7
+2015-07-24 20:59:11: Unable to write to serial port on COM7
+2015-07-24 20:59:12: Unable to write to serial port on COM7
+2015-07-24 20:59:13: Unable to write to serial port on COM7
+2015-07-24 20:59:14: Unable to write to serial port on COM7
+2015-07-24 20:59:15: Unable to write to serial port on COM7
+2015-07-24 20:59:23: Starting Radio log
+2015-07-24 20:59:23: Unable to close serial port COM7
+2015-07-24 20:59:23: Unable to close serial port COM4
+2015-07-24 20:59:27: Unable to write to serial port on COM7
+2015-07-24 20:59:28: Unable to write to serial port on COM7
+2015-07-24 20:59:29: Unable to write to serial port on COM7
+2015-07-24 20:59:30: Unable to write to serial port on COM7
+2015-07-24 20:59:31: Unable to write to serial port on COM7
+2015-07-24 20:59:32: Unable to write to serial port on COM7
+2015-07-24 20:59:33: Unable to write to serial port on COM7
+2015-07-24 20:59:35: Unable to write to serial port on COM7
+2015-07-24 20:59:36: Unable to write to serial port on COM7
+2015-07-24 20:59:37: Unable to write to serial port on COM7
+2015-07-24 20:59:38: Unable to write to serial port on COM7
+2015-07-24 20:59:39: Unable to write to serial port on COM7
+2015-07-24 20:59:40: Unable to write to serial port on COM7
+2015-07-24 20:59:41: Unable to write to serial port on COM7
+2015-07-24 20:59:42: Unable to write to serial port on COM7
+2015-07-24 20:59:43: Unable to write to serial port on COM7
+2015-07-24 20:59:44: Unable to write to serial port on COM7
+2015-07-24 20:59:45: Unable to write to serial port on COM7
+2015-07-24 20:59:46: Unable to write to serial port on COM7
+2015-07-24 20:59:47: Unable to write to serial port on COM7
+2015-07-24 20:59:48: Unable to write to serial port on COM7
+2015-07-24 20:59:49: Unable to write to serial port on COM7
+2015-07-24 21:03:11: Starting Radio log
+2015-07-24 21:03:11: Unable to close serial port COM7
+2015-07-24 21:03:11: Unable to close serial port COM4
+2015-07-24 21:03:15: Unable to write to serial port on COM7
+2015-07-24 21:03:16: Unable to write to serial port on COM7
+2015-07-24 21:03:17: Unable to write to serial port on COM7
+2015-07-24 21:03:19: Unable to write to serial port on COM7
+2015-07-24 21:03:20: Unable to write to serial port on COM7
+2015-07-24 21:03:21: Unable to write to serial port on COM7
+2015-07-24 21:03:22: Unable to write to serial port on COM7
+2015-07-24 21:03:23: Unable to write to serial port on COM7
+2015-07-24 21:03:24: Unable to write to serial port on COM7
+2015-07-24 21:05:13: Starting Radio log
+2015-07-24 21:05:13: Unable to close serial port COM7
+2015-07-24 21:05:13: Unable to close serial port COM4
+2015-07-24 21:05:17: Unable to write to serial port on COM7
+2015-07-24 21:05:18: Unable to write to serial port on COM7
+2015-07-24 21:05:19: Unable to write to serial port on COM7
+2015-07-24 21:05:20: Unable to write to serial port on COM7
+2015-07-24 21:05:21: Unable to write to serial port on COM7
+2015-07-24 21:05:22: Unable to write to serial port on COM7
+2015-07-24 21:05:23: Unable to write to serial port on COM7
+2015-07-24 21:05:24: Unable to write to serial port on COM7
+2015-07-24 21:05:25: Unable to write to serial port on COM7
+2015-07-24 21:05:26: Unable to write to serial port on COM7
+2015-07-24 21:06:00: Starting Radio log
+2015-07-24 21:06:00: Unable to close serial port COM7
+2015-07-24 21:06:00: Unable to close serial port COM4
+2015-07-24 21:06:04: Unable to write to serial port on COM7
+2015-07-24 21:06:05: Unable to write to serial port on COM7
+2015-07-24 21:06:06: Unable to write to serial port on COM7
+2015-07-24 21:06:07: Unable to write to serial port on COM7
+2015-07-24 21:06:08: Unable to write to serial port on COM7
+2015-07-24 21:06:09: Unable to write to serial port on COM7
+2015-07-24 21:06:10: Unable to write to serial port on COM7
+2015-07-24 21:06:24: Starting Radio log
+2015-07-24 21:06:25: Unable to close serial port COM7
+2015-07-24 21:06:25: Unable to close serial port COM4
+2015-07-24 21:06:29: Unable to write to serial port on COM7
+2015-07-24 21:06:30: Unable to write to serial port on COM7
+2015-07-24 21:06:31: Unable to write to serial port on COM7
+2015-07-24 21:06:32: Unable to write to serial port on COM7
+2015-07-24 21:06:33: Unable to write to serial port on COM7
+2015-07-24 21:06:34: Unable to write to serial port on COM7
+2015-07-24 21:12:55: Starting Radio log
+2015-07-24 21:12:55: Unable to close serial port COM7
+2015-07-24 21:12:55: Unable to close serial port COM4
+2015-07-24 21:12:59: Unable to write to serial port on COM7
+2015-07-24 21:13:00: Unable to write to serial port on COM7
+2015-07-24 21:13:01: Unable to write to serial port on COM7
+2015-07-24 21:13:02: Unable to write to serial port on COM7
+2015-07-24 21:13:03: Unable to write to serial port on COM7
+2015-07-24 21:13:04: Unable to write to serial port on COM7
+2015-07-24 21:13:05: Unable to write to serial port on COM7
+2015-07-24 21:13:06: Unable to write to serial port on COM7
+2015-07-24 21:16:09: Starting Radio log
+2015-07-24 21:16:10: Unable to close serial port COM7
+2015-07-24 21:16:10: Unable to close serial port COM4
+2015-07-24 21:16:14: Unable to write to serial port on COM7
+2015-07-24 21:16:15: Unable to write to serial port on COM7
+2015-07-24 21:16:16: Unable to write to serial port on COM7
+2015-07-24 21:16:17: Unable to write to serial port on COM7
+2015-07-24 21:16:18: Unable to write to serial port on COM7
+2015-07-24 21:16:19: Unable to write to serial port on COM7
+2015-07-24 21:16:29: Starting Radio log
+2015-07-24 21:16:30: Unable to close serial port COM7
+2015-07-24 21:16:30: Unable to close serial port COM4
+2015-07-24 21:16:34: Unable to write to serial port on COM7
+2015-07-24 21:16:35: Unable to write to serial port on COM7
+2015-07-24 21:16:36: Unable to write to serial port on COM7
+2015-07-24 21:16:37: Unable to write to serial port on COM7
+2015-07-24 21:16:38: Unable to write to serial port on COM7
+2015-07-24 21:16:39: Unable to write to serial port on COM7
+2015-07-24 21:17:54: Starting Radio log
+2015-07-24 21:17:54: Unable to close serial port COM7
+2015-07-24 21:17:54: Unable to close serial port COM4
+2015-07-24 21:17:58: Unable to write to serial port on COM7
+2015-07-24 21:17:59: Unable to write to serial port on COM7
+2015-07-24 21:18:00: Unable to write to serial port on COM7
+2015-07-24 21:18:01: Unable to write to serial port on COM7
+2015-07-24 21:18:02: Unable to write to serial port on COM7
+2015-07-24 21:18:03: Unable to write to serial port on COM7
+2015-07-24 21:18:04: Unable to write to serial port on COM7
+2015-07-24 21:18:05: Unable to write to serial port on COM7
+2015-07-24 21:18:06: Unable to write to serial port on COM7
+2015-07-24 21:18:07: Unable to write to serial port on COM7
+2015-07-24 21:18:08: Unable to write to serial port on COM7
+2015-07-24 21:18:09: Unable to write to serial port on COM7
+2015-07-24 21:18:10: Unable to write to serial port on COM7
+2015-07-24 21:18:12: Unable to write to serial port on COM7
+2015-07-24 21:18:13: Unable to write to serial port on COM7
+2015-07-24 21:18:14: Unable to write to serial port on COM7
+2015-07-24 21:18:15: Unable to write to serial port on COM7
+2015-07-24 21:18:16: Unable to write to serial port on COM7
+2015-07-24 21:18:17: Unable to write to serial port on COM7
+2015-07-24 21:18:18: Unable to write to serial port on COM7
+2015-07-24 21:18:19: Unable to write to serial port on COM7
+2015-07-24 21:18:20: Unable to write to serial port on COM7
+2015-07-24 21:18:21: Unable to write to serial port on COM7
+2015-07-24 21:18:22: Unable to write to serial port on COM7
+2015-07-24 21:18:23: Unable to write to serial port on COM7
+2015-07-24 21:18:24: Unable to write to serial port on COM7
+2015-07-24 21:18:25: Unable to write to serial port on COM7
+2015-07-24 21:18:26: Unable to write to serial port on COM7
+2015-07-24 21:18:27: Unable to write to serial port on COM7
+2015-07-24 21:18:28: Unable to write to serial port on COM7
+2015-07-24 21:18:29: Unable to write to serial port on COM7
+2015-07-24 21:18:30: Unable to write to serial port on COM7
+2015-07-24 21:19:14: Starting Radio log
+2015-07-24 21:19:14: Unable to close serial port COM7
+2015-07-24 21:19:14: Unable to close serial port COM4
+2015-07-24 21:19:18: Unable to write to serial port on COM7
+2015-07-24 21:19:19: Unable to write to serial port on COM7
+2015-07-24 21:19:20: Unable to write to serial port on COM7
+2015-07-24 21:19:21: Unable to write to serial port on COM7
+2015-07-24 21:19:22: Unable to write to serial port on COM7
+2015-07-24 21:19:23: Unable to write to serial port on COM7
+2015-07-24 21:19:24: Unable to write to serial port on COM7
+2015-07-24 21:19:25: Unable to write to serial port on COM7
+2015-07-24 21:19:26: Unable to write to serial port on COM7
+2015-07-24 21:19:27: Unable to write to serial port on COM7
+2015-07-24 21:19:28: Unable to write to serial port on COM7
+2015-07-24 21:19:29: Unable to write to serial port on COM7
+2015-07-24 21:19:30: Unable to write to serial port on COM7
+2015-07-24 21:19:31: Unable to write to serial port on COM7
+2015-07-24 21:19:33: Unable to write to serial port on COM7
+2015-07-24 21:19:34: Unable to write to serial port on COM7
+2015-07-24 21:19:35: Unable to write to serial port on COM7
+2015-07-24 21:19:56: Starting Radio log
+2015-07-24 21:19:56: Unable to close serial port COM7
+2015-07-24 21:19:56: Unable to close serial port COM4
+2015-07-24 21:20:00: Unable to write to serial port on COM7
+2015-07-24 21:20:01: Unable to write to serial port on COM7
+2015-07-24 21:20:02: Unable to write to serial port on COM7
+2015-07-24 21:20:03: Unable to write to serial port on COM7
+2015-07-24 21:20:04: Unable to write to serial port on COM7
+2015-07-24 21:20:05: Unable to write to serial port on COM7
+2015-07-24 21:20:06: Unable to write to serial port on COM7
+2015-07-24 21:20:07: Unable to write to serial port on COM7
+2015-07-24 21:30:47: Starting Radio log
+2015-07-24 21:30:47: Unable to close serial port COM7
+2015-07-24 21:30:47: Unable to close serial port COM4
+2015-07-24 21:30:51: Unable to write to serial port on COM7
+2015-07-24 21:30:52: Unable to write to serial port on COM7
+2015-07-24 21:30:53: Unable to write to serial port on COM7
+2015-07-24 21:30:54: Unable to write to serial port on COM7
+2015-07-24 21:30:55: Unable to write to serial port on COM7
+2015-07-24 21:30:56: Unable to write to serial port on COM7
+2015-07-24 21:30:57: Unable to write to serial port on COM7
+2015-07-24 21:30:58: Unable to write to serial port on COM7
+2015-07-24 21:30:59: Unable to write to serial port on COM7
+2015-07-24 21:31:00: Unable to write to serial port on COM7
+2015-07-24 21:31:01: Unable to write to serial port on COM7
+2015-07-24 21:31:02: Unable to write to serial port on COM7
+2015-07-24 21:31:03: Unable to write to serial port on COM7
+2015-07-24 21:31:04: Unable to write to serial port on COM7
+2015-07-24 21:31:05: Unable to write to serial port on COM7
+2015-07-24 21:31:06: Unable to write to serial port on COM7
+2015-07-24 21:31:07: Unable to write to serial port on COM7
+2015-07-24 21:31:08: Unable to write to serial port on COM7
+2015-07-24 21:31:09: Unable to write to serial port on COM7
+2015-07-24 21:31:10: Unable to write to serial port on COM7
+2015-07-24 21:31:11: Unable to write to serial port on COM7
+2015-07-24 21:31:13: Unable to write to serial port on COM7
+2015-07-24 21:31:14: Unable to write to serial port on COM7
+2015-07-24 21:31:15: Unable to write to serial port on COM7
+2015-07-24 21:31:16: Unable to write to serial port on COM7
+2015-07-24 21:31:17: Unable to write to serial port on COM7
+2015-07-24 21:31:18: Unable to write to serial port on COM7
+2015-07-24 21:31:19: Unable to write to serial port on COM7
+2015-07-24 21:31:20: Unable to write to serial port on COM7
+2015-07-24 21:31:21: Unable to write to serial port on COM7
+2015-07-24 21:31:22: Unable to write to serial port on COM7
+2015-07-24 21:31:23: Unable to write to serial port on COM7
+2015-07-24 21:31:24: Unable to write to serial port on COM7
+2015-07-24 21:31:25: Unable to write to serial port on COM7
+2015-07-24 21:31:26: Unable to write to serial port on COM7
+2015-07-24 21:31:27: Unable to write to serial port on COM7
+2015-07-24 21:31:28: Unable to write to serial port on COM7
+2015-07-24 21:31:29: Unable to write to serial port on COM7
+2015-07-24 21:31:30: Unable to write to serial port on COM7
+2015-07-24 21:31:31: Unable to write to serial port on COM7
+2015-07-24 21:31:32: Unable to write to serial port on COM7
+2015-07-24 21:31:33: Unable to write to serial port on COM7
+2015-07-24 21:31:34: Unable to write to serial port on COM7
+2015-07-24 21:31:35: Unable to write to serial port on COM7
+2015-07-24 21:31:36: Unable to write to serial port on COM7
+2015-07-24 21:31:36: Unable to write to serial port on COM7
+2015-07-24 21:31:37: Unable to write to serial port on COM7
+2015-07-24 21:31:38: Unable to write to serial port on COM7
+2015-07-24 21:31:39: Unable to write to serial port on COM7
+2015-07-24 21:31:40: Unable to write to serial port on COM7
+2015-07-24 21:31:41: Unable to write to serial port on COM7
+2015-07-24 21:31:42: Unable to write to serial port on COM7
+2015-07-24 21:33:20: Starting Radio log
+2015-07-24 21:33:20: Unable to close serial port COM7
+2015-07-24 21:33:20: Unable to close serial port COM4
+2015-07-24 21:33:24: Unable to write to serial port on COM7
+2015-07-24 21:33:25: Unable to write to serial port on COM7
+2015-07-24 21:33:26: Unable to write to serial port on COM7
+2015-07-24 21:33:27: Unable to write to serial port on COM7
+2015-07-24 21:33:28: Unable to write to serial port on COM7
+2015-07-24 21:33:29: Unable to write to serial port on COM7
+2015-07-24 21:33:30: Unable to write to serial port on COM7
+2015-07-24 21:33:31: Unable to write to serial port on COM7
+2015-07-24 21:33:32: Unable to write to serial port on COM7
+2015-07-24 21:33:33: Unable to write to serial port on COM7
+2015-07-24 21:33:34: Unable to write to serial port on COM7
+2015-07-24 21:33:35: Unable to write to serial port on COM7
+2015-07-24 21:33:36: Unable to write to serial port on COM7
+2015-07-24 21:33:37: Unable to write to serial port on COM7
+2015-07-24 21:33:38: Unable to write to serial port on COM7
+2015-07-24 21:33:39: Unable to write to serial port on COM7
+2015-07-24 21:35:28: Starting Radio log
+2015-07-24 21:35:28: Unable to close serial port COM7
+2015-07-24 21:35:28: Unable to close serial port COM4
+2015-07-24 21:35:32: Unable to write to serial port on COM7
+2015-07-24 21:35:33: Unable to write to serial port on COM7
+2015-07-24 21:35:34: Unable to write to serial port on COM7
+2015-07-24 21:36:01: Starting Radio log
+2015-07-24 21:36:01: Unable to close serial port COM7
+2015-07-24 21:36:01: Unable to close serial port COM4
+2015-07-24 21:36:05: Unable to write to serial port on COM7
+2015-07-24 21:36:06: Unable to write to serial port on COM7
+2015-07-24 21:36:07: Unable to write to serial port on COM7
+2015-07-24 21:36:08: Unable to write to serial port on COM7
+2015-07-24 21:36:09: Unable to write to serial port on COM7
+2015-07-24 21:37:41: Starting Radio log
+2015-07-24 21:37:41: Unable to close serial port COM7
+2015-07-24 21:37:41: Unable to close serial port COM4
+2015-07-24 21:38:22: Starting Radio log
+2015-07-24 21:38:22: Unable to close serial port COM7
+2015-07-24 21:38:22: Unable to close serial port COM4
+2015-07-24 21:38:26: Unable to write to serial port on COM7
+2015-07-24 21:38:27: Unable to write to serial port on COM7
+2015-07-24 21:38:28: Unable to write to serial port on COM7
+2015-07-24 21:38:29: Unable to write to serial port on COM7
+2015-07-24 21:38:30: Unable to write to serial port on COM7
+2015-07-24 21:38:31: Unable to write to serial port on COM7
+2015-07-24 21:38:32: Unable to write to serial port on COM7
+2015-07-24 21:38:33: Unable to write to serial port on COM7
+2015-07-24 21:38:34: Unable to write to serial port on COM7
+2015-07-24 21:38:35: Unable to write to serial port on COM7
+2015-07-24 21:38:36: Unable to write to serial port on COM7
+2015-07-24 21:38:37: Unable to write to serial port on COM7
+2015-07-24 21:38:38: Unable to write to serial port on COM7
+2015-07-24 21:38:39: Unable to write to serial port on COM7
+2015-07-24 21:39:43: Starting Radio log
+2015-07-24 21:39:43: Unable to close serial port COM7
+2015-07-24 21:39:43: Unable to close serial port COM4
+2015-07-24 21:39:47: Unable to write to serial port on COM7
+2015-07-24 21:39:48: Unable to write to serial port on COM7
+2015-07-24 21:39:49: Unable to write to serial port on COM7
+2015-07-24 21:39:50: Unable to write to serial port on COM7
+2015-07-24 21:39:51: Unable to write to serial port on COM7
+2015-07-24 21:39:52: Unable to write to serial port on COM7
+2015-07-24 21:39:53: Unable to write to serial port on COM7
+2015-07-24 21:39:54: Unable to write to serial port on COM7
+2015-07-24 21:39:55: Unable to write to serial port on COM7
+2015-07-24 21:39:56: Unable to write to serial port on COM7
+2015-07-24 21:39:57: Unable to write to serial port on COM7
+2015-07-24 21:39:58: Unable to write to serial port on COM7
+2015-07-24 21:39:59: Unable to write to serial port on COM7
+2015-07-24 21:40:00: Unable to write to serial port on COM7
+2015-07-24 21:40:01: Unable to write to serial port on COM7
+2015-07-24 21:40:02: Unable to write to serial port on COM7
+2015-07-24 21:40:03: Unable to write to serial port on COM7
+2015-07-24 21:40:05: Unable to write to serial port on COM7
+2015-07-24 21:40:06: Unable to write to serial port on COM7
+2015-07-24 21:40:07: Unable to write to serial port on COM7
+2015-07-24 21:40:08: Unable to write to serial port on COM7
+2015-07-24 21:40:09: Unable to write to serial port on COM7
+2015-07-24 21:40:10: Unable to write to serial port on COM7
+2015-07-24 21:40:11: Unable to write to serial port on COM7
+2015-07-24 21:40:12: Unable to write to serial port on COM7
+2015-07-24 21:40:13: Unable to write to serial port on COM7
+2015-07-24 21:40:14: Unable to write to serial port on COM7
+2015-07-24 21:40:15: Unable to write to serial port on COM7
+2015-07-24 21:40:16: Unable to write to serial port on COM7
+2015-07-24 21:40:17: Unable to write to serial port on COM7
+2015-07-24 21:40:18: Unable to write to serial port on COM7
+2015-07-24 21:40:19: Unable to write to serial port on COM7
+2015-07-24 21:40:20: Unable to write to serial port on COM7
+2015-07-24 21:40:21: Unable to write to serial port on COM7
+2015-07-24 21:40:22: Unable to write to serial port on COM7
+2015-07-24 21:40:23: Unable to write to serial port on COM7
+2015-07-24 21:40:24: Unable to write to serial port on COM7

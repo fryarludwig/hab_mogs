@@ -258,10 +258,14 @@ class mogsMainWindow(QtGui.QMainWindow):
 		settingsAction.setStatusTip("Change MoGS settings")
 		settingsAction.triggered.connect(self.changeSettings)
 
+		clearYourMarkersAction = QtGui.QAction("&Clear your markers", self)
+		clearYourMarkersAction.triggered.connect(self.clearManualMarkers)
+
 		fileMenu = menuBar.addMenu("&File")
 		fileMenu.addAction(exitAction)
 
 		toolsMenu = menuBar.addMenu("Tools")
+		toolsMenu.addAction(clearYourMarkersAction)
 		toolsMenu.addAction(settingsAction)
 		toolsMenu.addAction(aboutAction)
 
@@ -646,6 +650,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		exampleLabel = QtGui.QLabel("e.g. 36.8623, -121.0413")
 
+		noteLabel = QtGui.QLabel("Label")
+		noteLineEdit = QtGui.QLineEdit()
+
 		latLabel = QtGui.QLabel("Latitude")
 		longLabel = QtGui.QLabel("Longitude")
 
@@ -658,7 +665,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		cancelButton = QtGui.QPushButton("Cancel")
 		cancelButton.clicked.connect(dialogWindow.reject)
 
-		layout.addWidget(exampleLabel, 1, 0, 1, 3)
+		layout.addWidget(exampleLabel, 0, 0, 1, 3)
+		layout.addWidget(noteLabel, 1, 0)
+		layout.addWidget(noteLineEdit, 1, 1, 1, 2)
 		layout.addWidget(latLabel, 2, 0)
 		layout.addWidget(latLineEdit, 2, 1, 1, 2)
 		layout.addWidget(longLabel, 3, 0)
@@ -666,17 +675,21 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(acceptButton, 4, 1)
 		layout.addWidget(cancelButton, 4, 2)
 
+		latLineEdit.setText("36.8623")
+		longLineEdit.setText("-121.0413")
+
 		if (dialogWindow.exec_()):
 			if (len(str(latLineEdit.text())) > 0 and
 				len(str(longLineEdit.text())) > 0):
 				try:
 					lat = float(str(latLineEdit.text()))
 					long = float(str(longLineEdit.text()))
-					note = str(longLineEdit.text())
+					note = str(noteLineEdit.text())
 
-					jsCommand = "addMarkerManually({}, {});".format(lat, long)
+					jsCommand = "addMarkerManually({}, {}, \"{}\");".format(lat, long, note)
 					logGui(jsCommand)
 					self.theMap.documentElement().evaluateJavaScript(jsCommand)
+					print("Send GUI command... Any markers?")
 
 				except:
 					self.commandStatusLabel.setText("Unable to process GPS coordinates")
@@ -792,6 +805,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 		if (self.notifyOnSerialError):
 			QtGui.QMessageBox.question(self, "Error", message, QtGui.QMessageBox.Ok)
 			self.changeSettings()
+
+	def clearManualMarkers(self):
+		javascriptCommand = "clearManualMarkers();"
+		logGui(javascriptCommand)
+		self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
 	def precisionSpinBoxHelp(self):
 		helpString = ("To calculate the ascent rate and ground speed\n" +
@@ -1022,13 +1040,16 @@ class mogsMainWindow(QtGui.QMainWindow):
 			lat = message.find("latitude").text
 			long = message.find("longitude").text
 			time = message.find("dateTime").text
+			time = time.split("T")
+			time = time[1][:8]
 
 			if (name != "SSAGSpot1"):
 				# Update the map to show new waypoint
-				javascriptCommand = "addSpotMarker({}, {}, {});".format(
+				javascriptCommand = "addSpotMarker({}, {}, {}, \"{}\");".format(
 									self.javaArrayPosition[self.spotToVehicleDictionary[name]],
 									lat,
-									long)
+									long,
+									"SPOT: " + time)
 				logGui(javascriptCommand)
 				self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
@@ -1636,6 +1657,7 @@ googleMapsHtml = """
 		var vehicleWaypointArray = [];
 		var vehicleMarkerArray = [];
 		var spotMarkerArray = [];
+		var manualMarkerArray = [];
 		
 		var vehiclePathColors = ["#FF0000",
 								"#007FFF",
@@ -1700,25 +1722,39 @@ googleMapsHtml = """
 			});
 		}		
 					
-		function addSpotMarker(index, lat, lng)
+		function addSpotMarker(index, lat, lng, timestamp)
 		{
 			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
 			
 			spotMarker = new google.maps.Marker({position:spotMarkerPosition,
 												icon:vehicleSpotIcons[index],
+												title:timestamp,
 												map:map});
 			
 			spotMarker.setMap(map);
 		}
 		
-		function addMarkerManually(lat, lng)
+		function addMarkerManually(lat, lng, note)
 		{
-			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
+			var pos = new google.maps.LatLng(lat, lng);
 			
-			var spotMarker = new google.maps.Marker({position:spotMarkerPosition,
+			var currMarker = new google.maps.Marker({position:pos,
+												title:note,
 												map:map});
 			
-			spotMarker.setMap(map);
+			currMarker.setMap(map);
+			
+			manualMarkerArray.push(currMarker);
+		}
+		
+		function clearManualMarkers()
+		{
+			for (i = 0; i < manualMarkerArray.length; i++)
+			{
+				manualMarkerArray[i].setMap(null);
+			}
+			
+			manualMarkerArray = [];
 		}
 		
 		google.maps.event.addDomListener(window, 'load', initialize);
