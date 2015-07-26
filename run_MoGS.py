@@ -28,7 +28,7 @@ from PyQt4.QtWebKit import QWebView
 from PyQt4.Qt import QWidget, QTextCursor
 from collections import OrderedDict
 
-MOGS_VERSION = "0.9.1"
+MOGS_VERSION = "0.9.3"
 VERSION_INFO = "MoGS: Version "
 MOGS_INFO = "Mobile Ground Station"
 
@@ -81,6 +81,25 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		self.offlineModeEnabled = False
 
+		self.exceptionList = {'SNAPSHOT': 'Exception while taking snapshot burst',  # 0
+							 'RADIO_TRANSMIT': 'Exception while transmitting through radio',  # 1
+							 'RADIO_RECEIVE': 'Exception while receiving radio packet',  # 2
+							 'GPS_RECEIVE': 'Exception while receiving GPS packet',  # 3
+							 'GPS_HANDLING': 'Exception while handling GPS packet',  # 16
+							 'TEMP_RPI': 'Exception while reading RPi temperature',  # 4
+							 'TEMP_EXT': 'Exception while reading external temperature',  # 5
+							 'TEMP_BAT': 'Exception while reading battery temperature',  # 6
+							 'VOLT_BAT': 'Exception while reading battery voltage',  # 7
+							 'RH': 'Exception while reading humidity sensor',  # 8
+							 'ACCEL': 'Exception while reading accelerometer',  # 9
+							 'MESSAGE_HANDLING': 'Exception while processing line',  # 10
+							 'VIDEO_RECORD': 'Exception while initiating video',  # 11
+							 'BALLOON_RELEASE': 'Exception while releasing balloon',  # 12
+							 'BRM_RESET': 'Exception while resetting BRM',  # 13
+							 'USB_SWITCH': 'Exception while switching radio and GPS USB ports',  # 14
+							 'MAIN_SCRIPT': 'Exception while running script, restarting',  # 15
+							 'UNKNOWN': 'Unknown exception occurred' }
+
 		self.callsignToString = {"hab"   : "Balloon",
 								"chase1" : "Chase 1",
 								"chase2" : "Chase 2",
@@ -131,6 +150,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.balloonReleaseActivated = False
 
 		self.balloonUptime = "None"
+
+		self.latestErrors = []
 
 		# Offline mode variables here
 		self.offlineMapGraphWidget = pg.PlotWidget()
@@ -571,6 +592,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			magnitude = self.computeMagnitude(accelX, accelY, accelZ)
 
+			self.parseReportedErrors(splitMessage[12])
+
 			if (len(magnitude) > 0):
 				self.telemetryLabelDictionary["magnitude"].setText(magnitude)
 
@@ -634,13 +657,56 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			self.statusLabelList[callsign].setStyleSheet("QFrame { background-color: Green }")
 #
- 		except:
- 			print("Failure to parse chase vehicle telemetry")
- 			logTelemetry("Invalid data packet - data was not processed.")
+		except:
+			print("Failure to parse chase vehicle telemetry")
+			logTelemetry("Invalid data packet - data was not processed.")
 
- 	def processBalloonInitMessage(self, message):
- 		self.balloonUptime = datetime.datetime.now().strftime("%H:%M - ")
- 		self.commandStatusLabel.setText(self.balloonUptime + message)
+	def parseReportedErrors(self, errors):
+		initialErrors = len(self.latestErrors)
+		if (len(errors) > 0):
+			if (errors == 0):
+				print("No errors in this last main loop")
+			if (errors & (1 << 0)):
+				self.latestErrors.append(self.exceptionList["SNAPSHOT"])
+			if (errors & (1 << 1)):
+				self.latestErrors.append(self.exceptionList["RADIO_TRANSMIT"])
+			if (errors & (1 << 2)):
+				self.latestErrors.append(self.exceptionList["RADIO_RECEIVE"])
+			if (errors & (1 << 3)):
+				self.latestErrors.append(self.exceptionList["GPS_RECEIVE"])
+			if (errors & (1 << 4)):
+				self.latestErrors.append(self.exceptionList["TEMP_RPI"])
+			if (errors & (1 << 5)):
+				self.latestErrors.append(self.exceptionList["TEMP_EXT"])
+			if (errors & (1 << 6)):
+				self.latestErrors.append(self.exceptionList["TEMP_BAT"])
+			if (errors & (1 << 7)):
+				self.latestErrors.append(self.exceptionList["VOLT_BAT"])
+			if (errors & (1 << 8)):
+				self.latestErrors.append(self.exceptionList["RH"])
+			if (errors & (1 << 9)):
+				self.latestErrors.append(self.exceptionList["ACCEL"])
+			if (errors & (1 << 10)):
+				self.latestErrors.append(self.exceptionList["MESSAGE_HANDLING"])
+			if (errors & (1 << 11)):
+				self.latestErrors.append(self.exceptionList["VIDEO_RECORD"])
+			if (errors & (1 << 12)):
+				self.latestErrors.append(self.exceptionList["BALLOON_RELEASE"])
+			if (errors & (1 << 13)):
+				self.latestErrors.append(self.exceptionList["BRM_RESET"])
+			if (errors & (1 << 14)):
+				self.latestErrors.append(self.exceptionList["USB_SWITCH"])
+			if (errors & (1 << 15)):
+				self.latestErrors.append(self.exceptionList["MAIN_SCRIPT"])
+			if (errors & (1 << 16)):
+				self.latestErrors.append(self.exceptionList["UNKNOWN"])
+
+		print(str(len(self.latestErrors) - initialErrors) + " errors occurred")
+
+
+	def processBalloonInitMessage(self, message):
+		self.balloonUptime = datetime.datetime.now().strftime("%H:%M - ")
+		self.commandStatusLabel.setText(self.balloonUptime + message)
 
 	def processBalloonCommandResponse(self, message):
 		if (message == "BRM_ARMED"):
