@@ -11,9 +11,10 @@ DISH_PORT = 5003
 class dishHandlerThread(QtCore.QThread):
 	def __init__(self):
 		QtCore.QThread.__init__(self)
-		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.connect(DISH_ADDRESS, DISH_PORT)
 
+		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.sock.connect((DISH_ADDRESS, DISH_PORT))
+		
 		self.old_az = -1
 		self.new_az = self.old_az
 
@@ -47,6 +48,7 @@ class dishHandlerThread(QtCore.QThread):
 		sab = sqrt((a + b))
 
 		dist = Rearth * atan2(sab, c)
+		dist_km = dist * 1.609344
 		el = atan((balt_mi - lalt_mi) / dist) * 180.0 / pi
 
 		dx = cos(llat_rad) * sin(blat_rad) - sin(llat_rad) * cos(blat_rad) * cos(dlon_rad)
@@ -59,13 +61,14 @@ class dishHandlerThread(QtCore.QThread):
 		self.sock.send("AS;ES;\n")  # standby
 		self.sock.close()
 
-
+			
 	def point(self, az, el):
 
 		# Update positions
 		self.new_az = az
 		self.new_el = el
 
+		print("Checking first run")
 		if self.firstRun:
 			self.sock.send("SQ\n")
 			data = self.sock.recv(1024)
@@ -85,6 +88,7 @@ class dishHandlerThread(QtCore.QThread):
 		maxEl = 90
 		maxAz = 359
 
+		print ("Checking max ranges")
 		# Correct out-of-range AZ or ELs
 		el = el if el > minEl else minEl
 		el = el if el < maxEl else maxEl
@@ -94,13 +98,15 @@ class dishHandlerThread(QtCore.QThread):
 		az_err = abs(self.new_az - self.old_az)
 		el_err = abs(self.new_el - self.old_el)
 
+		print ("Done checking ranges, starting socket stuff")
+		
 		if  az_err >= 0.5 or el_err >= 0.5:
 			try:
 				self.sock.send("AM%0.2f;EM%0.2f;\n" % (az, el))
 				print("Pointing to %03d %03d" % (az, el))
 
 				# print("Sleeping %f" % max(az_err,el_err)*4 + 1)
-				sleep(max(az_err, el_err) / 4 + 5)
+				sleep(max(az_err,el_err)/4 + 5)
 				self.sock.send("AS;ES;\n")  # standby
 				self.old_az = self.new_az
 				self.old_el = self.new_el
@@ -108,4 +114,3 @@ class dishHandlerThread(QtCore.QThread):
 			except:
 				print("Can't update position to dish ACU")
 				self.close()
-

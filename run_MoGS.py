@@ -37,8 +37,6 @@ MOGS_INFO = "Mobile Ground Station"
 
 SPOT_API_URL = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
-DISH = False
-
 """
 Handles GUI operations, as well as all user input. 
 
@@ -171,11 +169,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.serialHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
 
-		if self.serialHandler.RADIO_CALLSIGN == "nps":
-			self.dishHandler = dishHandlerThread()
-		else:
-			self.dishHandler = None
-
 		# self.dishHandler.start()
 
 		try:
@@ -207,6 +200,12 @@ class mogsMainWindow(QtGui.QMainWindow):
 			print("Parsing error")
 			logGui("No Settings found")
 
+		
+		if self.serialHandler.RADIO_CALLSIGN == "nps":
+			self.dishHandler = dishHandlerThread()
+		else:
+			self.dishHandler = None
+			
 		self.serialHandler.start()
 		self.initUI()
 
@@ -739,10 +738,13 @@ class mogsMainWindow(QtGui.QMainWindow):
 			# Update for the dish driving/pointing
 			if self.serialHandler.RADIO_CALLSIGN == "nps":
 				try:
+					print("Starting the pointing")
 					(az, el) = self.dishHandler.compute_bearing(float(latitude),
 																float(longitude),
 																float(altitude))
+					print("Computed, starting pointing")
 					self.dishHandler.point(az, el)
+					print("Done pointing")
 				except:
 					print("Error in computing or pointing")
 
