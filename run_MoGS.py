@@ -14,36 +14,30 @@ Changelog:
 from __future__ import print_function
 
 import sys
-import serial
 import datetime
 import urllib2
-import socket
 import winsound
 import pyqtgraph as pg
 import xml.etree.ElementTree as ET
+import time
 from math import *
-from time import sleep
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtWebKit import QWebView
 from PyQt4.Qt import QWidget, QTextCursor
 from collections import OrderedDict
 
+from mogs_map_html import googleMapsHtml
+from serialHandler import serialHandlerThread
+from dishHandler import dishHandlerThread
+from logger import *
+
 MOGS_VERSION = "0.9.3"
 VERSION_INFO = "MoGS: Version "
 MOGS_INFO = "Mobile Ground Station"
 
-TELEMETRY_LOG_FILE_LOCATION = r"MoGS_telemetry_log.txt"
-RADIO_LOG_FILE_LOCATION = r"MoGS_radio_log.txt"
-GUI_LOG_FILE_LOCATION = r"MoGS_gui_log.txt"
 SPOT_API_URL = r"https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/00CFIiymlztJBFEN4cJOjNhlZSofClAxa/message.xml"
 
 DISH = False
-DISH_ADDRESS = "192.168.101.98"
-DISH_PORT = 5003
-
-if DISH:
-	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	sock.connect((DISH_ADDRESS, DISH_PORT))
 
 """
 Handles GUI operations, as well as all user input. 
@@ -77,7 +71,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.radioConsoleWidget = QtGui.QWidget()
 		self.radioConsoleTextEdit = QtGui.QTextEdit()
 		self.viewRadioConsoleButton = QtGui.QPushButton()
-		self.radioConsoleIsOpen = False
 
 		self.offlineModeEnabled = False
 
@@ -119,6 +112,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 								"nps" : 4}
 
 		self.updateSpotButton = QtGui.QPushButton('Update SPOT', self)
+		self.spotButtonDisabledTime = time.time()
+		self.SPOT_UPDATE_INTERVAL = 10
 		self.spotToVehicleDictionary = {"SSAGSpot5" : "hab",
 										"SSAGSpot2" : "chase2",
 										"SSAGSpot3" : "chase3",
@@ -127,17 +122,22 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		self.telemetryLabelDictionary = OrderedDict()
 		self.telemetryLabelDictionary["timestamp"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["gps"] = QtGui.QLabel("None, None", self)
+		self.telemetryLabelDictionary["met"] = QtGui.QLabel("None", self)
+
 		self.telemetryLabelDictionary["altitude"] = QtGui.QLabel("None", self)
-		self.telemetryLabelDictionary["speed"] = QtGui.QLabel("None", self)
-		self.telemetryLabelDictionary["ascent"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["voltage"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempBattery"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempInside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["tempOutside"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["humidity"] = QtGui.QLabel("None", self)
+
+		self.telemetryLabelDictionary["speed"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["ascent"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["magnitude"] = QtGui.QLabel("None", self)
 		self.telemetryLabelDictionary["disk"] = QtGui.QLabel("None", self)
-		self.telemetryLabelDictionary["gps"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["startup"] = QtGui.QLabel("None", self)
+		self.telemetryLabelDictionary["errors"] = QtGui.QLabel("None", self)
 
 		self.chaseVehicleGpsLabel = OrderedDict()
 		self.chaseVehicleGpsLabel["chase1"] = [QtGui.QLabel(), QtGui.QLabel()]
@@ -151,7 +151,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		self.balloonUptime = "None"
 
-		self.latestErrors = []
+		self.latestErrorsWidget = QtGui.QWidget()
+		self.latestErrorsTextEdit = QtGui.QTextEdit()
+		self.totalErrorsReceived = 0
 
 		# Offline mode variables here
 		self.offlineMapGraphWidget = pg.PlotWidget()
@@ -168,7 +170,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.serialHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
 
-		self.dishHandler = dishHandlerThread()
+		if self.serialHandler.RADIO_CALLSIGN == "nps":
+			self.dishHandler = dishHandlerThread()
+		else:
+			self.dishHandler = None
+
 		# self.dishHandler.start()
 
 		try:
@@ -210,6 +216,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.interfaceWidget = QtGui.QWidget()
 
 		self.createRadioConsole()
+		self.createBalloonErrorsWidget()
 		self.aboutMogsWidget = QtGui.QWidget()
 
 		self.col = QtGui.QColor(0, 0, 0)
@@ -279,23 +286,39 @@ class mogsMainWindow(QtGui.QMainWindow):
 		aboutAction.triggered.connect(self.showAboutWindow)
 
 		settingsAction = QtGui.QAction("&Settings", self)
+		exitAction.setShortcut("Ctrl+S")
 		settingsAction.setStatusTip("Change MoGS settings")
 		settingsAction.triggered.connect(self.changeSettings)
 
 		clearYourMarkersAction = QtGui.QAction("&Clear your markers", self)
 		clearYourMarkersAction.triggered.connect(self.clearManualMarkers)
 
+		resetMetAction = QtGui.QAction("&Start Mission Timer", self)
+		resetMetAction.triggered.connect(self.resetMissionElapsedTime)
+
 		fileMenu = menuBar.addMenu("&File")
 		fileMenu.addAction(exitAction)
 
 		toolsMenu = menuBar.addMenu("Tools")
 		toolsMenu.addAction(clearYourMarkersAction)
+		toolsMenu.addAction(resetMetAction)
 		toolsMenu.addAction(settingsAction)
 		toolsMenu.addAction(aboutAction)
 
 	def createOfflineMapWidget(self):
 		mapImage = pg.ImageItem("media/nps_map.png")
 		return None
+
+	def resetMissionElapsedTime(self):
+		self.serialHandler.missionStartTime = datetime.datetime.now()
+		metPersistentFile = open("./time.db", 'w')
+		metPersistentFile.write(str(self.serialHandler.missionStartTime) + '\n')
+		self.updateMissionElapsedTime()
+
+	def updateMissionElapsedTime(self):
+		currMet = (datetime.datetime.now() - self.serialHandler.missionStartTime)
+		self.telemetryLabelDictionary["met"].setText(str(currMet).split('.')[0])
+
 	"""
 	Populates a "Messaging" widget.
 	Returns the widget, which is then added to the layout
@@ -343,8 +366,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
 		self.viewRadioConsoleButton.setText("View Console")
 
-		requestDiskSpaceButton = QtGui.QPushButton('Disk Space Avail', self)
-		requestDiskSpaceButton.clicked.connect(self.requestDiskSpace)
+		requestDiskSpaceButton = QtGui.QPushButton('AVAILABLE', self)
 
 		addMarkerButton = QtGui.QPushButton('Add Marker', self)
 		addMarkerButton.clicked.connect(self.addMarker)
@@ -387,59 +409,104 @@ class mogsMainWindow(QtGui.QMainWindow):
 	def createTelemetryWidget(self):
 		widget = QWidget()
 		layout = QtGui.QGridLayout(widget)
-		layout.setSpacing(3)
+		dataFieldsLayout = QtGui.QGridLayout()
+		layout.setSpacing(5)
 		staticTelemetryLabels = []
 
-		# Set up constant labels
-		layoutLabel = QtGui.QLabel("Balloon")
-		layoutLabel.setAlignment(QtCore.Qt.AlignCenter)
+		spacer = QtGui.QSpacerItem(10, 10)
 
-		rawGpsLabel = QtGui.QLabel("Latest Raw GPS")
+		requestDiskSpaceButton = QtGui.QPushButton('Refresh Disk Space', self)
+		requestDiskSpaceButton.clicked.connect(self.requestDiskSpace)
+
+		viewErrorsButton = QtGui.QPushButton("View Errors", self)
+		viewErrorsButton.clicked.connect(self.latestErrorsWidget.show)
+
+		# Set up constant labels for the balloon
+		balloonLabel = QtGui.QLabel("High Altitude Balloon Telemetry")
+		balloonLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		metLabel = QtGui.QLabel("Misson Elapsed Time", self)
+		metLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		timeUpdateLabel = QtGui.QLabel("Last Update", self)
+		timeUpdateLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		rawGpsLabel = QtGui.QLabel("Raw GPS", self)
 		rawGpsLabel.setAlignment(QtCore.Qt.AlignCenter)
 
-		staticTelemetryLabels.append(QtGui.QLabel("UTC Time", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Altitude", self))
-		staticTelemetryLabels.append(QtGui.QLabel("Speed", self))
-		staticTelemetryLabels.append(QtGui.QLabel("Ascent Rate", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Voltage", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Battery Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Internal Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("External Temp", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Humidity", self))
+
+		staticTelemetryLabels.append(QtGui.QLabel("Speed", self))
+		staticTelemetryLabels.append(QtGui.QLabel("Ascent Rate", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Magnitude", self))
 		staticTelemetryLabels.append(QtGui.QLabel("Storage Avail.", self))
+		staticTelemetryLabels.append(QtGui.QLabel("Startup Count", self))
+		staticTelemetryLabels.append(QtGui.QLabel("Errors", self))
 
-		layout.addWidget(layoutLabel, 0, 0, 1, 2)
-		layout.addWidget(rawGpsLabel, 12, 0, 1, 2)
+		layout.addWidget(balloonLabel, 0, 0, 1, 6)
 
-		# Populate the static labels in the GUI
-		counter = 1
+		layout.addWidget(timeUpdateLabel, 1, 0, 1, 2)
+		layout.addWidget(metLabel, 1, 2, 1, 2)
+		layout.addWidget(rawGpsLabel, 1, 4, 1, 2)
+		layout.addWidget(self.telemetryLabelDictionary["timestamp"], 2, 0, 1, 2)
+		layout.addWidget(self.telemetryLabelDictionary["met"], 2, 2, 1, 2)
+		layout.addWidget(self.telemetryLabelDictionary["gps"], 2, 4, 1, 2)
+
+		layout.addItem(spacer, 3, 0, 1, 6)
+
 		for label in staticTelemetryLabels:
-			layout.addWidget(label, counter, 0)
 			label.setAlignment(QtCore.Qt.AlignCenter)
-			counter += 1
 
-		# Populate the labels that will be updated with telemetry
-		counter = 1
 		for key, value in self.telemetryLabelDictionary.iteritems():
 			value.setAlignment(QtCore.Qt.AlignCenter)
-			if (key == "gps"):
-				layout.addWidget(value, 13, 0, 1, 2)
-			else:
-				layout.addWidget(value, counter, 1)
+
+		counter = 0
+		for i in range(4, 10):
+			dataFieldsLayout.addWidget(staticTelemetryLabels[counter], i, 0)
+			staticTelemetryLabels[counter].setAlignment(QtCore.Qt.AlignCenter)
 			counter += 1
 
-		counter = 2
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["altitude"], 4, 1)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["voltage"], 5, 1)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["tempBattery"], 6, 1)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["tempInside"], 7, 1)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["tempOutside"], 8, 1)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["humidity"], 9, 1)
+
+		for i in range(4, 10):
+			dataFieldsLayout.addWidget(staticTelemetryLabels[counter], i, 2)
+			staticTelemetryLabels[counter].setAlignment(QtCore.Qt.AlignCenter)
+			counter += 1
+
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["speed"], 4, 3)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["ascent"], 5, 3)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["magnitude"], 6, 3)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["disk"], 7, 3)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["startup"], 8, 3)
+		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["errors"], 9, 3)
+
+		dataFieldsLayout.addWidget(requestDiskSpaceButton, 10, 1)
+		dataFieldsLayout.addWidget(viewErrorsButton, 10, 2)
+
+		layout.addItem(spacer, 10, 0, 1, 6)
+		# Chase vehicle labels
+		counter = 0
 		for key, value in self.chaseVehicleGpsLabel.iteritems():
 			value[0].setAlignment(QtCore.Qt.AlignCenter)
 			value[0].setText(self.callsignToString[key] + " - TIME")
-			layout.addWidget(value[0], counter, 2)
-			counter += 1
+			layout.addWidget(value[0], 20, counter, 1, 2)
 
 			value[1].setAlignment(QtCore.Qt.AlignCenter)
 			value[1].setText("No GPS data yet")
-			layout.addWidget(value[1], counter, 2)
+			layout.addWidget(value[1], 21, counter, 1, 2)
 			counter += 2
+
+		layout.addLayout(dataFieldsLayout, 4, 0, 6, 6)
 
 		widget.setMaximumSize(425, 280)
 		widget.setSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
@@ -478,6 +545,32 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		return widget
 
+	def createBalloonErrorsWidget(self):
+		layout = QtGui.QGridLayout(self.latestErrorsWidget)
+		layout.setSpacing(0)
+
+		# Set up labels
+		errorsCloseButton = QtGui.QPushButton("Close")
+		errorsCloseButton.clicked.connect(self.latestErrorsWidget.close)
+
+		self.radioConsoleTextEdit.setMinimumSize(300, 200)
+		self.radioConsoleTextEdit.setReadOnly(True)
+
+		layout.addWidget(self.latestErrorsTextEdit, 1, 0, 10, 5)
+		layout.addWidget(errorsCloseButton, 11, 2)
+
+		self.latestErrorsWidget.setLayout(layout)
+		self.latestErrorsWidget.setWindowTitle("Balloon Error Messages")
+
+	"""
+	Populates a "Balloon Errors" widget.
+	"""
+	def updateBalloonErrors(self, message):
+		timestamp = datetime.datetime.now().strftime("%H:%M - ")
+
+		self.latestErrorsTextEdit.moveCursor(QTextCursor.Start, 0)
+		self.latestErrorsTextEdit.insertPlainText(timestamp + message)
+
 	"""
 	Populates a "Console" widget.
 	"""
@@ -510,7 +603,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 	def utcToLocalTime(self, timestamp):
 		hours = int(timestamp[:2])
-		minutesAndSeconds = ":" + timestamp[2:4] + ":" + timestamp[4:]
+
+		if (len(timestamp) == 6):
+			minutesAndSeconds = ":" + timestamp[2:4] + ":" + timestamp[4:]
+		else:
+			minutesAndSeconds = timestamp[2:]
 
 		pst = -7
 
@@ -592,7 +689,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			magnitude = self.computeMagnitude(accelX, accelY, accelZ)
 
-			self.parseReportedErrors(splitMessage[12])
+			self.parseReportedErrors(int(splitMessage[12]))
+			self.telemetryLabelDictionary["errors"].setText(str(self.totalErrorsReceived))
 
 			if (len(magnitude) > 0):
 				self.telemetryLabelDictionary["magnitude"].setText(magnitude)
@@ -607,7 +705,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 				self.telemetryLabelDictionary["ascent"].setText("None")
 
 			# Update for the dish driving/pointing
-			if DISH:
+			if self.serialHandler.RADIO_CALLSIGN == "nps":
 				try:
 					(az, el) = self.dishHandler.compute_bearing(float(latitude),
 																float(longitude),
@@ -636,7 +734,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 			latitude = splitMessage[2]
 			longitude = splitMessage[3]
 			if (len(latitude) > 0 and len(longitude) > 0):
-				self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
+				self.chaseVehicleGpsLabel[callsign][1].setText(latitude + ", " + longitude)
 
 				if (self.offlineModeEnabled):
 					print("Plotting data")
@@ -645,11 +743,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 				else:
 					# Update the map to show new waypoint
 					javascriptCommand = "addVehicleWaypoint({}, {}, {}, \"{}\");".format(
-										self.javaArrayPosition["hab"],
+										self.javaArrayPosition[callsign],
 										latitude,
 										longitude,
 										timestamp)
-					print(javascriptCommand)
+
 					self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
 
 				self.chaseVehicleGpsLabel[callsign][0].setText("{} - {}".format(self.callsignToString[callsign], timestamp))
@@ -662,51 +760,60 @@ class mogsMainWindow(QtGui.QMainWindow):
 			logTelemetry("Invalid data packet - data was not processed.")
 
 	def parseReportedErrors(self, errors):
-		initialErrors = len(self.latestErrors)
-		if (len(errors) > 0):
+		reportedErrors = []
+
+		try:
 			if (errors == 0):
 				print("No errors in this last main loop")
 			if (errors & (1 << 0)):
-				self.latestErrors.append(self.exceptionList["SNAPSHOT"])
+				reportedErrors.append(self.exceptionList["SNAPSHOT"])
 			if (errors & (1 << 1)):
-				self.latestErrors.append(self.exceptionList["RADIO_TRANSMIT"])
+				reportedErrors.append(self.exceptionList["RADIO_TRANSMIT"])
 			if (errors & (1 << 2)):
-				self.latestErrors.append(self.exceptionList["RADIO_RECEIVE"])
+				reportedErrors.append(self.exceptionList["RADIO_RECEIVE"])
 			if (errors & (1 << 3)):
-				self.latestErrors.append(self.exceptionList["GPS_RECEIVE"])
+				reportedErrors.append(self.exceptionList["GPS_RECEIVE"])
 			if (errors & (1 << 4)):
-				self.latestErrors.append(self.exceptionList["TEMP_RPI"])
+				reportedErrors.append(self.exceptionList["TEMP_RPI"])
 			if (errors & (1 << 5)):
-				self.latestErrors.append(self.exceptionList["TEMP_EXT"])
+				reportedErrors.append(self.exceptionList["TEMP_EXT"])
 			if (errors & (1 << 6)):
-				self.latestErrors.append(self.exceptionList["TEMP_BAT"])
+				reportedErrors.append(self.exceptionList["TEMP_BAT"])
 			if (errors & (1 << 7)):
-				self.latestErrors.append(self.exceptionList["VOLT_BAT"])
+				reportedErrors.append(self.exceptionList["VOLT_BAT"])
 			if (errors & (1 << 8)):
-				self.latestErrors.append(self.exceptionList["RH"])
+				reportedErrors.append(self.exceptionList["RH"])
 			if (errors & (1 << 9)):
-				self.latestErrors.append(self.exceptionList["ACCEL"])
+				reportedErrors.append(self.exceptionList["ACCEL"])
 			if (errors & (1 << 10)):
-				self.latestErrors.append(self.exceptionList["MESSAGE_HANDLING"])
+				reportedErrors.append(self.exceptionList["MESSAGE_HANDLING"])
 			if (errors & (1 << 11)):
-				self.latestErrors.append(self.exceptionList["VIDEO_RECORD"])
+				reportedErrors.append(self.exceptionList["VIDEO_RECORD"])
 			if (errors & (1 << 12)):
-				self.latestErrors.append(self.exceptionList["BALLOON_RELEASE"])
+				reportedErrors.append(self.exceptionList["BALLOON_RELEASE"])
 			if (errors & (1 << 13)):
-				self.latestErrors.append(self.exceptionList["BRM_RESET"])
+				reportedErrors.append(self.exceptionList["BRM_RESET"])
 			if (errors & (1 << 14)):
-				self.latestErrors.append(self.exceptionList["USB_SWITCH"])
+				reportedErrors.append(self.exceptionList["USB_SWITCH"])
 			if (errors & (1 << 15)):
-				self.latestErrors.append(self.exceptionList["MAIN_SCRIPT"])
+				reportedErrors.append(self.exceptionList["MAIN_SCRIPT"])
 			if (errors & (1 << 16)):
-				self.latestErrors.append(self.exceptionList["UNKNOWN"])
+				reportedErrors.append(self.exceptionList["GPS_HANDLING"])
 
-		print(str(len(self.latestErrors) - initialErrors) + " errors occurred")
+		except:
+			print("Failed to parse errors")
 
+		self.totalErrorsReceived += len(reportedErrors)
+
+		for item in reportedErrors:
+			self.updateBalloonErrors(item + "\n")
 
 	def processBalloonInitMessage(self, message):
 		self.balloonUptime = datetime.datetime.now().strftime("%H:%M - ")
-		self.commandStatusLabel.setText(self.balloonUptime + message)
+		try:
+			self.telemetryLabelDictionary["startup"].setText(message.split(",")[1])
+		except:
+			self.telemetryLabelDictionary["startup"].setText("Unknown")
 
 	def processBalloonCommandResponse(self, message):
 		if (message == "BRM_ARMED"):
@@ -714,17 +821,20 @@ class mogsMainWindow(QtGui.QMainWindow):
 			self.releaseBalloonButton.setDisabled(False)
 			self.releaseBalloonButton.setStyleSheet("background-color: Green")
 			self.commandStatusLabel.setText("Balloon release successfully armed")
+
 		elif (message == "BRM_DISARMED"):
 			self.balloonReleaseArmed = False
 			self.releaseBalloonButton.setDisabled(True)
 			self.releaseBalloonButton.setStyleSheet("background-color: Salmon")
 			self.commandStatusLabel.setText("Balloon release is now disarmed")
+
 		elif (message == "BRM_ACTIVATED"):
 			self.balloonReleaseActivated = True
 			self.commandStatusLabel.setText("Balloon release has been activated")
 			self.armBrmButton.setText("Reset BRM")
 			self.armBrmButton.clicked.disconnect()
 			self.armBrmButton.clicked.connect(self.resetBalloonRelease)
+
 		elif (message == "BRM_RESET"):
 			self.balloonReleaseActivated = False
 			self.commandStatusLabel.setText("Balloon release has been reset")
@@ -734,19 +844,27 @@ class mogsMainWindow(QtGui.QMainWindow):
 			self.releaseBalloonButton.setStyleSheet("background-color: Salmon")
 			self.releaseBalloonButton.setDisabled(True)
 		elif (message[:15] == "SNAPSHOT_UPDATE"):
-			print(message.split(','))
+
 			try:
 				burst, interval = message[16:].split(',')
+				messageToPrint = ""
 
-				print(burst)
-				print(interval)
+				if (interval == "-1"):
+					messageToPrint = "Snapshot burst taken"
+				else:
+					self.serialHandler.acknowledgedSnapshotBurst = int(burst)
+					self.serialHandler.acknowledgedSnapshotInterval = int(interval)
+					messageToPrint = ("Snapshot interval confirmed: " +
+												str(self.serialHandler.acknowledgedSnapshotBurst) +
+												" pictures per " +
+												str(self.serialHandler.acknowledgedSnapshotInterval) +
+												" seconds")
 
-				self.serialHandler.acknowledgedSnapshotBurst = int(burst)
-				self.serialHandler.acknowledgedSnapshotInterval = int(interval)
-				self.commandStatusLabel.setText("Snapshot interval confirmed: " + str(self.serialHandler.acknowledgedSnapshotBurst) +
-											" pictures per " + str(self.serialHandler.acknowledgedSnapshotInterval) + " seconds")
+				self.commandStatusLabel.setText(messageToPrint)
+
 			except:
 				self.commandStatusLabel.setText("Unable to confirm interval receipt. Try again.")
+
 		elif (message[:4] == "DISK"):
 			try:
 				self.telemetryLabelDictionary["disk"].setText(message[5:])
@@ -808,7 +926,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 					self.commandStatusLabel.setText("Unable to process GPS coordinates")
 
 	def computeMagnitude(self, aX, aY, aZ):
-		return aZ + aY + aX
+		return ("x: {} y: {} z: {}".format(aX, aY, aZ))
 
 	def updateSnapshotInterval(self):
 		dialogWindow = QtGui.QDialog()
@@ -836,10 +954,18 @@ class mogsMainWindow(QtGui.QMainWindow):
 		intervalLengthSpinBox.setRange(0, 600)
 		intervalLengthSpinBox.setAlignment(QtCore.Qt.AlignCenter)
 
+		burstNowButton = QtGui.QPushButton("Take burst now")
+		burstNowButton.setCheckable(True)
+		burstNowButton.setChecked(False)
+		burstNowButton.setAutoDefault(False)
+		burstNowButton.clicked.connect(dialogWindow.accept)
+
 		acceptButton = QtGui.QPushButton("Accept")
 		acceptButton.clicked.connect(dialogWindow.accept)
 
 		cancelButton = QtGui.QPushButton("Cancel")
+		cancelButton.setAutoDefault(True)
+		cancelButton.setDefault(True)
 		cancelButton.clicked.connect(dialogWindow.reject)
 
 		layout.addWidget(currentSnapshotSettings, 0, 0, 1, 3)
@@ -847,6 +973,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(photosPerBurstSpinBox, 2, 1, 1, 2)
 		layout.addWidget(intervalLengthLabel, 3, 0)
 		layout.addWidget(intervalLengthSpinBox, 3, 1, 1, 2)
+		layout.addWidget(burstNowButton, 4, 0)
 		layout.addWidget(acceptButton, 4, 1)
 		layout.addWidget(cancelButton, 4, 2)
 
@@ -854,10 +981,22 @@ class mogsMainWindow(QtGui.QMainWindow):
 			if (len(str(photosPerBurstSpinBox.text())) > 0 and
 				len(str(intervalLengthSpinBox.text())) > 0):
 				try:
-					self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
-					self.serialHandler.requestedSnapshotInterval = int(str(intervalLengthSpinBox.value()))
+					messageLabelString = "Requesting "
+					if (burstNowButton.isChecked()):
+						self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
+						self.serialHandler.requestedSnapshotInterval = -1
+						messageLabelString += ("single burst of " +
+											str(self.serialHandler.requestedSnapshotBurst) + " images now")
+					else:
+						self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
+						self.serialHandler.requestedSnapshotInterval = int(str(intervalLengthSpinBox.value()))
+
+						messageLabelString += ("updated burst of " + str(self.serialHandler.requestedSnapshotBurst) +
+											" images every " + str(self.serialHandler.requestedSnapshotInterval) +
+											" seconds")
+
+					self.commandStatusLabel.setText(messageLabelString)
 					self.serialHandler.changeSnapshotIntervalFlag = True
-					self.commandStatusLabel.setText("Informing HAB of snapshot interval updates...")
 				except:
 					self.commandStatusLabel.setText("Unable to process supplied information")
 
@@ -1192,6 +1331,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 	def updateActiveNetwork(self):
 		self.serialHandler.activeNodes[self.serialHandler.RADIO_CALLSIGN] = 3
+		self.updateMissionElapsedTime()
+		if ((time.time() - self.spotButtonDisabledTime) >= self.SPOT_UPDATE_INTERVAL):
+			self.updateSpotButton.setEnabled(True)
+
 
 		for callsign, label in self.statusLabelList.items():
 			if (self.serialHandler.activeNodes[callsign] > 0):
@@ -1209,9 +1352,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 			name = message.find("messengerName").text
 			lat = message.find("latitude").text
 			long = message.find("longitude").text
-			time = message.find("dateTime").text
-			time = time.split("T")
-			time = time[1][:8]
+			timestamp = message.find("dateTime").text
+			timestamp = timestamp.split("T")
+			timestamp = timestamp[1][:8]
+
+			timestamp = self.utcToLocalTime(timestamp)
 
 			if (self.spotToVehicleDictionary[name] != "nps"):
 				# Update the map to show new waypoint
@@ -1219,9 +1364,12 @@ class mogsMainWindow(QtGui.QMainWindow):
 									self.javaArrayPosition[self.spotToVehicleDictionary[name]],
 									lat,
 									long,
-									"SPOT: " + time)
+									"SPOT: " + timestamp)
 				logGui(javascriptCommand)
 				self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
+
+		self.updateSpotButton.setDisabled(True)
+		self.spotButtonDisabledTime = time.time()
 
 	def calculateRates(self):
 		groundSpeed = "NONE"
@@ -1282,670 +1430,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 			returnValue = -1
 
 		return returnValue
-
-
-"""
-Below is the radio handler
-TX/RX operations, as well as RaspPi interfacing occurs below
-"""
-class serialHandlerThread(QtCore.QThread):
-	balloonDataSignalReceived = QtCore.pyqtSignal(object)
-	balloonAckReceived = QtCore.pyqtSignal(object)
-	balloonInitReceived = QtCore.pyqtSignal(object)
-	vehicleDataReceived = QtCore.pyqtSignal(object)
-	invalidSerialPort = QtCore.pyqtSignal(object)
-	chatMessageReceived = QtCore.pyqtSignal(object)
-	radioConsoleUpdateSignal = QtCore.pyqtSignal(object)
-	updateNetworkStatusSignal = QtCore.pyqtSignal()
-
-	def __init__(self):
-		QtCore.QThread.__init__(self)
-		self.TEST_MODE = False  # Test mode pulls telemetry from file instead of radios
-
-		self.HEARTBEAT_INTERVAL = 5
-		self.RADIO_SERIAL_PORT = "COM7"
-		self.RADIO_CALLSIGN = "chase1"
-		self.RADIO_BAUDRATE = 38400
-		self.radioSerial = None
-
-		self.GPS_SERIAL_PORT = "COM4"
-		self.GPS_BAUDRATE = 4800
-		self.gpsSerial = None
-
-		# Set up semaphore-like variables
-		self.sendingSerialMessage = False
-		self.validHeartbeatReceived = False
-
-		self.activeNodes = {}
-		self.activeNodes["chase1"] = 0
-		self.activeNodes["chase2"] = 0
-		self.activeNodes["chase3"] = 0
-		self.activeNodes["hab"] = 0
-		self.activeNodes["nps"] = 0
-
-		self.releaseBalloonFlag = False
-		self.resetBalloonReleaseFlag = False
-		self.armBalloonFlag = False
-		self.disarmBalloonFlag = False
-		self.requestDiskSpaceFlag = False
-
-		self.changeSnapshotIntervalFlag = False
-		self.requestedSnapshotInterval = 0
-		self.requestedSnapshotBurst = 0
-		self.acknowledgedSnapshotInterval = 0
-		self.acknowledgedSnapshotBurst = 0
-
-		self.settingsWindowOpen = False
-		self.radioSerialPortChanged = False
-		self.gpsSerialPortChanged = False
-		self.serialBaudrateChanged = False
-
-		self.userMessagesToSend = []
-
-	def run(self):
-		counter = self.HEARTBEAT_INTERVAL
-
-		if (self.TEST_MODE):
-			self.inputTestFile = open("test_telemetry.txt", "r")
-			for line in self.inputTestFile:
-				sleep(2)
-				self.handleMessage(line)
-
-		self.openRadioSerialPort()
-		self.openGpsSerialPort()
-		self.sendHeartbeat()
-
-		while(True):
-			if (self.radioSerialPortChanged):
-				self.openRadioSerialPort()
-				self.radioSerialPortChanged = False
-
-			if (self.gpsSerialPortChanged):
-				self.openGpsSerialPort()
-				self.gpsSerialPortChanged = False
-
-			if (self.releaseBalloonFlag):
-				self.sendReleaseCommand()
-				self.releaseBalloonFlag = False
-
-			if (self.resetBalloonReleaseFlag):
-				self.sendResetBrmCommand()
-				self.resetBalloonReleaseFlag = False
-
-			if (self.armBalloonFlag):
-				self.radioSerialOutput("cmd,ARM_BRM")
-				self.armBalloonFlag = False
-
-			if (self.disarmBalloonFlag):
-				self.radioSerialOutput("cmd,DISARM_BRM")
-				self.disarmBalloonFlag = False
-
-			if (self.changeSnapshotIntervalFlag):
-				self.sendSnapshotRequest()
-				self.changeSnapshotIntervalFlag = False
-
-			if (self.requestDiskSpaceFlag):
-				self.sendDiskSpaceRequest()
-				self.requestDiskSpaceFlag = False
-
-			while (len(self.userMessagesToSend) > 0):
-				formattedMessage = "chat," + self.userMessagesToSend[0]
-				self.radioSerialOutput(formattedMessage, True)
-				self.userMessagesToSend.pop(0)
-
-			messageReceived = self.radioSerialInput()
-
-			if (len(messageReceived) > 0):
-				self.handleMessage(messageReceived)
-
-			if (counter == 0):
-				for key, value in self.activeNodes.items():
-					self.activeNodes[key] -= 1
-					if (self.activeNodes[key] <= 0):
-						self.updateNetworkStatusSignal.emit()
-
-				if not (self.sendCurrentPosition()):
-					self.sendHeartbeat()
-				counter = self.HEARTBEAT_INTERVAL
-			else:
-				counter -= 1
-
-			logRadio(messageReceived + "\n")
-
-	"""
-	TODO: Refactor handleMessage to be more concise and clean
-	"""
-	# Performs an action based on the message sent to it
-	# Returns True or False based on the success of that action
-	def handleMessage(self, message):
-		for line in message.split(',END_TX\n'):
-			if (len(line) > 0):
-				if (line[:3] == "hab"):
-					self.receivedHeartbeat("hab")
-					if(line[4:7] == "ack"):
-						self.balloonAckReceived.emit(line[8:])
-					elif (line[4:8] == "chat"):
-						self.chatMessageReceived.emit("HAB: " + line[9:])
-					elif (line[4:8] == "data"):
-						self.balloonDataSignalReceived.emit(line[9:])
-					elif (line[4:8] == "init"):
-						self.balloonInitReceived.emit(line[9:])
-
-				elif (line[:3] == "nps"):
-					self.receivedHeartbeat("nps")
-					if (line[4:8] == "chat"):
-						self.chatMessageReceived.emit("NPS: " + line[9:])
-					elif(line[4:9] == "image"):
-						self.parsePredictionMessage(line[10:])
-
-				elif (line[:6] == "chase1"):
-					self.receivedHeartbeat("chase1")
-					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 1: " + line[12:])
-						print(line[11:12])
-					elif (line[7:11] == "data"):
-						self.vehicleDataReceived.emit("chase1," + line[12:])
-					elif(line[7:12] == "image"):
-						print("Received image!")
-						self.parsePredictionMessage(message[13:])
-
-				elif (line[:6] == "chase2"):
-					self.receivedHeartbeat("chase2")
-					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 2: " + line[12:])
-					elif (line[7:11] == "data"):
-						self.vehicleDataReceived.emit("chase2," + line[12:])
-					elif(line[7:12] == "image"):
-						print("Received image!")
-						self.parsePredictionMessage(message[13:])
-
-				elif (line[:6] == "chase3"):
-					self.receivedHeartbeat("chase3")
-					if (line[7:11] == "chat"):
-						self.chatMessageReceived.emit("Chase 3: " + line[12:])
-					elif (line[7:11] == "data"):
-						self.vehicleDataReceived.emit("chase3," + line[12:])
-					elif(line[7:12] == "image"):
-						print("Received image!")
-						self.parsePredictionMessage(message[13:])
-
-				logTelemetry(line)
-
-	def sendCurrentPosition(self):
-		success = False
-
-		try:
-			gpsData = self.getFormattedGpsData()
-			if (gpsData != "INVALID DATA"):
-				self.radioSerialOutput("data," + gpsData, True)
-				success = True
-		except:
-			print("Unable to send current position")
-
-		return success
-
-	def sendImage(self):
-		numPackets = len(self.imageToSend) / 1000
-		currIndex = 0
-
-		while(currIndex < numPackets):
-			packet = self.imageToSend[currIndex * 1000 : (currIndex + 1) * 1000]
-			self.radioSerialOutput("image," + packet)
-			currIndex += 1
-
-		self.radioSerialOutput("image,{}".format(self.imageToSend[numPackets * 1000 :-1]))
-
-		self.imageReadyToSend = False
-
-	def parsePredictionMessage(self, rawMessage):
-		print("Decommutating...")
-		parsedMessage = None
-		try:
-			parsedMessage = open("output{}.png".format(self.imageOutputCounter), "ab")
-		except:
-			parsedMessage = open("output{}.png".format(self.imageOutputCounter), "wb")
-
-		parsedMessage.write(rawMessage)
-
-		parsedMessage.close()
-
-	# Takes a heartbeat signal and determines which node sent it out. That node
-	# is set as currently active on the network
-	def receivedHeartbeat(self, heartbeatSignalReceived):
-		for key, value in self.activeNodes.items():
-			if (heartbeatSignalReceived == key):
-				self.activeNodes[key] = 3
-
-		self.updateNetworkStatusSignal.emit()
-
-	# Sends a "heartbeat" signal to other radios to verify radio is currently
-	# active on the network
-	def sendHeartbeat(self):
-		self.radioSerialOutput("alive")
-
-	def sendSnapshotRequest(self):
-		self.radioSerialOutput("cmd,SNAPSHOT," + str(self.requestedSnapshotBurst) +
-							"," + str(self.requestedSnapshotInterval))
-
-	def sendDiskSpaceRequest(self):
-		self.radioSerialOutput("cmd,DISK_SPACE")
-
-	def sendReleaseCommand(self):
-		print("Releasing balloon")
-		counter = 3
-
-		while (counter > 0):
-			print("Attempt " + str(counter))
-			counter -= 1
-			self.radioSerialOutput("cmd,SSAG_RELEASE_BALLOON")
-			sleep(2)
-
-	def sendResetBrmCommand(self):
-		print("Resetting balloon")
-		counter = 3
-
-		while (counter > 0):
-			print("Attempt " + str(counter))
-			counter -= 1
-			self.radioSerialOutput("cmd,RESET_BRM")
-			sleep(2)
-
-	def radioSerialInput(self):
-		serialInput = ""
-
-		try:
-			if not (self.radioSerial.inWaiting()):
-				sleep(0.75)
-
-			while(self.radioSerial.inWaiting()):
-				serialInput += self.radioSerial.readline()
-
-			if (len(serialInput) > 0):
-				self.radioConsoleUpdateSignal.emit(serialInput)
-
-		except:
-			if (self.settingsWindowOpen):
-				sleep(1)
-			else:
-				self.invalidSerialPort.emit("Please enter a valid serial port")
-				self.settingsWindowOpen = True
-			logRadio("Unable to write to serial port on " + self.RADIO_SERIAL_PORT)
-			print("Unable to open serial port for input on " + self.RADIO_SERIAL_PORT)
-
-		return serialInput
-
-	def radioSerialOutput(self, line, processSentMessage = False):
-		try:
-			preparedMessage = self.RADIO_CALLSIGN + "," + line + ",END_TX\n"
-			if (processSentMessage):
-				self.handleMessage(preparedMessage)
-
-			self.radioConsoleUpdateSignal.emit(preparedMessage)
-			self.radioSerial.write(preparedMessage)
-		except:
-			if (self.settingsWindowOpen):
-				sleep(1)
-			else:
-				self.invalidSerialPort.emit("Please enter a valid serial port")
-				self.settingsWindowOpen = True
-			logRadio("Unable to write to serial port on " + self.RADIO_SERIAL_PORT)
-
-	def openRadioSerialPort(self):
-		try:
-			self.radioSerial.close()
-		except:
-			logRadio("Unable to close serial port " + self.RADIO_SERIAL_PORT)
-
-		try:
-			self.radioSerial = serial.Serial(port = self.RADIO_SERIAL_PORT, baudrate = self.RADIO_BAUDRATE, timeout = 2)
-		except:
-			if (self.settingsWindowOpen):
-				sleep(3)
-			else:
-				self.invalidSerialPort.emit("Radio serial port is invalid")
-				self.settingsWindowOpen = True
-
-	def gpsSerialInput(self):
-		messageReceived = "NO_GPS_DATA\n"
-		serialInput = ""
-		retries = 10
-		iterationsToWait = 100
-
-		self.gpsSerial.flushOutput()
-		self.gpsSerial.flushInput()
-		sleep(1)
-
-		try:
-			while (retries > 0 and iterationsToWait > 0):
-				if (self.gpsSerial.inWaiting() > 0):  # If there's a buffer for us to read
-					serialInput += self.gpsSerial.readline()
-					if (serialInput[:6] == r"$GPGGA"):  # Makes sure this is the line we want
-						break  # This is our stop
-					else:
-						# print("Discarding unused data: " + serialInput)
-						serialInput = ""  # This is not the data we're looking for
-						retries -= 1
-				else:
-					iterationsToWait -= 1
-
-		except:
-			print("Unable to read serial input: {0} at baud {1}".format(self.GPS_SERIAL_PORT, self.GPS_BAUDRATE))
-
-		if (retries > 0 and iterationsToWait > 0):  # We found what we wanted
-			messageReceived = serialInput
-
-		return messageReceived
-
-	def getFormattedGpsData(self):
-		finalDataString = "INVALID DATA"
-		rawGpsString = self.gpsSerialInput()
-
-		logTelemetry(self.RADIO_CALLSIGN + rawGpsString)
-
-		if (rawGpsString != "NO_GPS_DATA\n"):
-			try:
-				gpsSplit = rawGpsString.split(",")
-				time = gpsSplit[1][:6]
-
-				latitude = gpsSplit[2]
-				degrees = float(latitude[:2])
-				minutes = float(latitude[2:])
-
-				if (gpsSplit[3] == "S"):
-					latitude = "%4.5f" % (-1 * (degrees + (minutes / 60)))
-				else:
-					latitude = "%4.5f" % (degrees + (minutes / 60))
-
-				longitude = gpsSplit[4]
-				degrees = float(longitude[:3])
-				minutes = float(longitude[3:])
-				if (gpsSplit[5] == "W"):
-					longitude = "%4.5f" % (-1 * (degrees + (minutes / 60)))
-				else:
-					longitude = "%4.5f" % (degrees + (minutes / 60))
-
-				formattedGpsString = "{},{},{}".format(time, latitude, longitude)
-			except:
-				formattedGpsString = "0,0,0"
-
-			if (formattedGpsString != "0,0,0"):
-				finalDataString = formattedGpsString
-
-		return finalDataString
-
-	def openGpsSerialPort(self):
-		try:
-			self.gpsSerial.close()
-		except:
-			logRadio("Unable to close serial port " + self.GPS_SERIAL_PORT)
-
-		try:
-			self.gpsSerial = serial.Serial(port = self.GPS_SERIAL_PORT, baudrate = self.GPS_BAUDRATE, timeout = 2)
-		except:
-			if (self.settingsWindowOpen):
-				sleep(3)
-			else:
-				self.invalidSerialPort.emit("GPS serial port cannot be opened")
-				self.settingsWindowOpen = True
-
-def logTelemetry(line):
-	try:
-		telemetryLogFile = open(TELEMETRY_LOG_FILE_LOCATION, "a")
-		for newLine in line.split("\n"):
-			telemetryLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
-		telemetryLogFile.close
-	except:
-		print("WARNING: Unable to log telemetry data")
-
-def logGui(line):
-	try:
-		guiLogFile = open(GUI_LOG_FILE_LOCATION, "a")
-		for newLine in line.split("\n"):
-			guiLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
-		guiLogFile.close
-	except:
-		print("WARNING: Unable to log GUI data")
-
-def logRadio(line):
-	try:
-		radioLogFile = open(RADIO_LOG_FILE_LOCATION, "a")
-		for newLine in line.split("\n"):
-			if (len(newLine) > 0):
-				radioLogFile.write(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + ": " + newLine + "\n")
-		radioLogFile.close
-	except:
-		print("WARNING: Unable to log radio operations data")
-
-class dishHandlerThread(QtCore.QThread):
-	def __init__(self):
-		QtCore.QThread.__init__(self)
-
-		self.old_az = -1
-		self.new_az = self.old_az
-
-		self.old_el = -1
-		self.new_el = self.old_el
-
-		self.firstRun = True
-
-	def degrees(self, rad):
-		return rad * 180.0 / pi
-
-	def compute_bearing(self, blat, blon, balt):
-		# Spanagel's coordinates
-		llat = 36.594947
-		llon = -121.874647
-		lalt = 25
-
-		Rearth = 3958.76
-
-		llat_rad = llat * pi / 180.0
-		llon_rad = llon * pi / 180.0
-		blat_rad = blat * pi / 180.0
-		blon_rad = blon * pi / 180.0
-		dlon_rad = blon_rad - llon_rad
-		lalt_mi = 0.000621371192 * lalt
-		balt_mi = 0.000621371192 * balt
-
-		a = (cos(blat_rad) * sin(dlon_rad)) ** 2
-		b = (cos(llat_rad) * sin(blat_rad) - sin(llat_rad) * cos(blat_rad) * cos(dlon_rad)) ** 2
-		c = sin(llat_rad) * sin(blat_rad) + cos(llat_rad) * cos(blat_rad) * cos(dlon_rad)
-		sab = sqrt((a + b))
-
-		dist = Rearth * atan2(sab, c)
-		dist_km = dist * 1.609344
-		el = atan((balt_mi - lalt_mi) / dist) * 180.0 / pi
-
-		dx = cos(llat_rad) * sin(blat_rad) - sin(llat_rad) * cos(blat_rad) * cos(dlon_rad)
-		dy = sin(dlon_rad) * cos(blat_rad)
-		az = (self.degrees(atan2(dy, dx)) + 360) % 360
-
-		return (az, el)
-
-	def close(self):
-		sock.send("AS;ES;\n")  # standby
-		sock.close()
-
-
-	def point(self, az, el):
-
-		# Update positions
-		self.new_az = az
-		self.new_el = el
-
-		if self.firstRun:
-			sock.send("SQ\n")
-			data = sock.recv(1024)
-			temp = data.split(",")
-			dish_az = temp[0].split("=")[1]
-			dish_el = temp[1].split("=")[1]
-			dish_az = float(dish_az)
-			dish_el = float(dish_el)
-			print("Current dish position %03d %03d" % (dish_az, dish_el))
-			self.old_az = dish_az
-			self.old_el = dish_el
-			self.firstRun = False
-
-		# Set some hard values for the dish
-		minEl = 0
-		minAz = 1
-		maxEl = 90
-		maxAz = 359
-
-		# Correct out-of-range AZ or ELs
-		el = el if el > minEl else minEl
-		el = el if el < maxEl else maxEl
-		az = az if az > minAz else minAz
-		az = az if az < maxAz else maxAz
-
-		az_err = abs(self.new_az - self.old_az)
-		el_err = abs(self.new_el - self.old_el)
-
-		if  az_err >= 0.5 or el_err >= 0.5:
-			try:
-				sock.send("AM%0.2f;EM%0.2f;\n" % (az, el))
-				print("Pointing to %03d %03d" % (az, el))
-
-				# print("Sleeping %f" % max(az_err,el_err)*4 + 1)
-				sleep(max(az_err, el_err) / 4 + 5)
-				sock.send("AS;ES;\n")  # standby
-				self.old_az = self.new_az
-				self.old_el = self.new_el
-
-			except:
-				print("Can't update position to dish ACU")
-				self.close()
-
-googleMapsHtml = """
-<!DOCTYPE html>
-<html>
-	<head>
-	<style>
-		html, body, #map-canvas {
-		height: 100%;
-		margin: 0px;
-		padding: 0px
-		}
-	</style>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>
-	<script>
-		var map;
-		var VEHICLES_TO_PLOT = 4
-		var myCenter = new google.maps.LatLng(36.8623, -121.0413);
-		
-		var vehicleWaypointArray = [];
-		var vehicleMarkerArray = [];
-		var spotMarkerArray = [];
-		var manualMarkerArray = [];
-		
-		var vehiclePathColors = ["#FF0000",
-								"#007FFF",
-								"#006600",
-								"#FF9933"];
-		
-		var vehicleIconNames = ["http://fryarludwig.com/wp-content/uploads/2015/07/hotairbaloon.png",
-								"http://maps.google.com/mapfiles/kml/paddle/1-lv.png",
-								"http://maps.google.com/mapfiles/kml/paddle/2-lv.png",
-								"http://maps.google.com/mapfiles/kml/paddle/3-lv.png"];
-		
-		var vehicleSpotIcons = ["http://fryarludwig.com/wp-content/uploads/2015/07/letter_b.png",
-								"http://fryarludwig.com/wp-content/uploads/2015/07/number_1.png",
-								"http://fryarludwig.com/wp-content/uploads/2015/07/number_2.png",
-								"http://fryarludwig.com/wp-content/uploads/2015/07/number_3.png"];
-		
-		for (i = 0; i < VEHICLES_TO_PLOT; i++)
-		{
-			vehicleWaypointArray.push([]);
-			vehicleMarkerArray.push(new google.maps.Marker());
-		}
-		
-		function initialize() 
-		{
-			var mapOptions = 
-			{
-				center: myCenter,
-				zoom: 9,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-	
-			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-		}
-				
-		function addVehicleWaypoint(index, lat, lng, time)
-		{
-			var vehiclePosition = new google.maps.LatLng(lat, lng);
-			
-			if (vehicleWaypointArray[index].length > 1)
-			{
-				vehicleWaypointArray[index].shift();
-			}
-			
-			vehicleWaypointArray[index].push(vehiclePosition);
-			
-			vehicleMarkerArray[index].setMap(null);
-			
-			vehicleMarkerArray[index] = new google.maps.Marker(
-												{position:vehiclePosition,
-												icon: vehicleIconNames[index],
-												title: time,
-												map:map});
-												
-			vehicleMarkerArray[index].setMap(map);
-			
-			var line = new google.maps.Polyline
-			({
-				path:vehicleWaypointArray[index],
-				strokeColor:vehiclePathColors[index],
-				strokeOpacity:0.8,
-				strokeWeight:2,
-				map:map
-			});
-		}		
-					
-		function addSpotMarker(index, lat, lng, timestamp)
-		{
-			var spotMarkerPosition = new google.maps.LatLng(lat, lng);
-			
-			spotMarker = new google.maps.Marker({position:spotMarkerPosition,
-												icon:vehicleSpotIcons[index],
-												title:timestamp,
-												map:map});
-			
-			spotMarker.setMap(map);
-		}
-		
-		function addMarkerManually(lat, lng, note)
-		{
-			var pos = new google.maps.LatLng(lat, lng);
-			
-			var currMarker = new google.maps.Marker({position:pos,
-												title:note,
-												map:map});
-			
-			currMarker.setMap(map);
-			
-			manualMarkerArray.push(currMarker);
-		}
-		
-		function clearManualMarkers()
-		{
-			for (i = 0; i < manualMarkerArray.length; i++)
-			{
-				manualMarkerArray[i].setMap(null);
-			}
-			
-			manualMarkerArray = [];
-		}
-		
-		google.maps.event.addDomListener(window, 'load', initialize);
-
-	</script>
-	</head>
-	<body>
-	<div id="map-canvas"></div>
-	</body>
-</html>
-"""
 
 
 if __name__ == '__main__':

@@ -13,3 +13,1811 @@
 2015-07-25 19:46:28: Starting GUI log
 2015-07-25 19:46:28: 
 2015-07-25 19:46:29: GUI created.
+2015-07-25 19:56:28: 
+2015-07-25 19:56:28: 
+2015-07-25 19:56:28: Starting GUI log
+2015-07-25 19:56:28: 
+2015-07-25 19:56:30: GUI created.
+2015-07-25 19:56:43: 
+2015-07-25 19:56:43: 
+2015-07-25 19:56:43: Starting GUI log
+2015-07-25 19:56:43: 
+2015-07-25 19:56:44: GUI created.
+2015-07-25 19:59:31: 
+2015-07-25 19:59:31: 
+2015-07-25 19:59:31: Starting GUI log
+2015-07-25 19:59:31: 
+2015-07-25 19:59:32: GUI created.
+2015-07-25 19:59:40: 
+2015-07-25 19:59:40: 
+2015-07-25 19:59:40: Starting GUI log
+2015-07-25 19:59:40: 
+2015-07-25 19:59:41: GUI created.
+2015-07-25 19:59:59: 
+2015-07-25 19:59:59: 
+2015-07-25 19:59:59: Starting GUI log
+2015-07-25 19:59:59: 
+2015-07-25 20:00:00: GUI created.
+2015-07-26 19:59:25: 
+2015-07-26 19:59:25: 
+2015-07-26 19:59:25: Starting GUI log
+2015-07-26 19:59:25: 
+2015-07-26 19:59:26: GUI created.
+2015-07-26 20:00:44: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 18:24:50");
+2015-07-26 20:00:44: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 18:19:51");
+2015-07-26 20:00:44: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 18:18:55");
+2015-07-26 20:00:44: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 18:14:51");
+2015-07-26 20:00:44: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 18:09:51");
+2015-07-26 20:00:44: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 18:08:55");
+2015-07-26 20:00:44: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 18:04:52");
+2015-07-26 20:00:44: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 18:00:11");
+2015-07-26 20:00:44: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 17:59:52");
+2015-07-26 20:00:44: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 17:50:53");
+2015-07-26 20:00:44: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 17:44:58");
+2015-07-26 20:00:44: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 17:40:00");
+2015-07-26 20:00:44: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 17:35:35");
+2015-07-26 20:00:44: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 17:30:04");
+2015-07-26 20:00:44: addSpotMarker(3, 36.837, -121.39005, "SPOT: 17:25:10");
+2015-07-26 20:00:44: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 17:20:11");
+2015-07-26 20:00:44: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 17:15:13");
+2015-07-26 20:00:44: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 17:10:12");
+2015-07-26 20:00:44: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 17:05:17");
+2015-07-26 20:00:44: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 17:00:16");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:57:42");
+2015-07-26 20:00:44: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 16:55:53");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:52:42");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 16:47:47");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:43:31");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:37:51");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:32:59");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:28:28");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 16:23:07");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 16:18:12");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 16:13:03");
+2015-07-26 20:00:44: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 16:09:44");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 16:08:03");
+2015-07-26 20:00:44: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 16:06:20");
+2015-07-26 20:00:44: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 16:04:47");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 16:03:06");
+2015-07-26 20:00:44: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 16:01:22");
+2015-07-26 20:00:44: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 15:59:58");
+2015-07-26 20:00:44: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 15:59:50");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 15:58:04");
+2015-07-26 20:00:44: addSpotMarker(3, 36.84167, -121.465, "SPOT: 15:56:22");
+2015-07-26 20:00:44: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 15:54:52");
+2015-07-26 20:00:44: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 15:53:09");
+2015-07-26 20:00:44: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 15:51:26");
+2015-07-26 20:00:44: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 15:51:01");
+2015-07-26 20:00:44: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 15:49:54");
+2015-07-26 20:00:44: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 15:48:16");
+2015-07-27 12:19:33: 
+2015-07-27 12:19:33: 
+2015-07-27 12:19:33: Starting GUI log
+2015-07-27 12:19:33: 
+2015-07-27 12:19:34: GUI created.
+2015-07-27 12:19:42: 
+2015-07-27 12:19:42: 
+2015-07-27 12:19:42: Starting GUI log
+2015-07-27 12:19:42: 
+2015-07-27 12:19:43: GUI created.
+2015-07-27 12:20:02: 
+2015-07-27 12:20:02: 
+2015-07-27 12:20:02: Starting GUI log
+2015-07-27 12:20:02: 
+2015-07-27 12:20:03: GUI created.
+2015-07-27 12:20:20: 
+2015-07-27 12:20:20: 
+2015-07-27 12:20:20: Starting GUI log
+2015-07-27 12:20:20: 
+2015-07-27 12:20:21: GUI created.
+2015-07-27 12:25:13: 
+2015-07-27 12:25:13: 
+2015-07-27 12:25:13: Starting GUI log
+2015-07-27 12:25:13: 
+2015-07-27 12:25:14: GUI created.
+2015-07-27 12:26:39: 
+2015-07-27 12:26:39: 
+2015-07-27 12:26:39: Starting GUI log
+2015-07-27 12:26:39: 
+2015-07-27 12:26:40: GUI created.
+2015-07-27 12:26:54: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 18:24:50");
+2015-07-27 12:26:54: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 18:19:51");
+2015-07-27 12:26:54: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 18:18:55");
+2015-07-27 12:26:54: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 18:14:51");
+2015-07-27 12:26:54: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 18:09:51");
+2015-07-27 12:26:54: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 18:08:55");
+2015-07-27 12:26:54: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 18:04:52");
+2015-07-27 12:26:54: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 18:00:11");
+2015-07-27 12:26:54: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 17:59:52");
+2015-07-27 12:26:54: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 17:50:53");
+2015-07-27 12:26:54: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 17:44:58");
+2015-07-27 12:26:54: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 17:40:00");
+2015-07-27 12:26:54: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 17:35:35");
+2015-07-27 12:26:54: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 17:30:04");
+2015-07-27 12:26:54: addSpotMarker(3, 36.837, -121.39005, "SPOT: 17:25:10");
+2015-07-27 12:26:54: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 17:20:11");
+2015-07-27 12:26:54: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 17:15:13");
+2015-07-27 12:26:54: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 17:10:12");
+2015-07-27 12:26:54: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 17:05:17");
+2015-07-27 12:26:54: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 17:00:16");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:57:42");
+2015-07-27 12:26:54: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 16:55:53");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:52:42");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 16:47:47");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:43:31");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:37:51");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:32:59");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:28:28");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 16:23:07");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 16:18:12");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 16:13:03");
+2015-07-27 12:26:54: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 16:09:44");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 16:08:03");
+2015-07-27 12:26:54: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 16:06:20");
+2015-07-27 12:26:54: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 16:04:47");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 16:03:06");
+2015-07-27 12:26:54: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 16:01:22");
+2015-07-27 12:26:54: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 15:59:58");
+2015-07-27 12:26:54: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 15:59:50");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 15:58:04");
+2015-07-27 12:26:54: addSpotMarker(3, 36.84167, -121.465, "SPOT: 15:56:22");
+2015-07-27 12:26:54: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 15:54:52");
+2015-07-27 12:26:54: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 15:53:09");
+2015-07-27 12:26:54: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 15:51:26");
+2015-07-27 12:26:54: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 15:51:01");
+2015-07-27 12:26:54: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 15:49:54");
+2015-07-27 12:26:54: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 15:48:16");
+2015-07-27 12:32:24: 
+2015-07-27 12:32:24: 
+2015-07-27 12:32:24: Starting GUI log
+2015-07-27 12:32:24: 
+2015-07-27 12:32:25: GUI created.
+2015-07-27 12:32:40: 
+2015-07-27 12:32:40: 
+2015-07-27 12:32:40: Starting GUI log
+2015-07-27 12:32:40: 
+2015-07-27 12:32:41: GUI created.
+2015-07-27 12:33:41: 
+2015-07-27 12:33:41: 
+2015-07-27 12:33:41: Starting GUI log
+2015-07-27 12:33:41: 
+2015-07-27 12:33:42: GUI created.
+2015-07-27 12:35:13: 
+2015-07-27 12:35:13: 
+2015-07-27 12:35:13: Starting GUI log
+2015-07-27 12:35:13: 
+2015-07-27 12:35:14: GUI created.
+2015-07-27 12:42:44: 
+2015-07-27 12:42:44: 
+2015-07-27 12:42:44: Starting GUI log
+2015-07-27 12:42:44: 
+2015-07-27 12:42:45: GUI created.
+2015-07-27 12:43:00: 
+2015-07-27 12:43:00: 
+2015-07-27 12:43:00: Starting GUI log
+2015-07-27 12:43:00: 
+2015-07-27 12:43:01: GUI created.
+2015-07-27 12:43:26: 
+2015-07-27 12:43:26: 
+2015-07-27 12:43:26: Starting GUI log
+2015-07-27 12:43:26: 
+2015-07-27 12:43:27: GUI created.
+2015-07-27 12:44:59: 
+2015-07-27 12:44:59: 
+2015-07-27 12:44:59: Starting GUI log
+2015-07-27 12:44:59: 
+2015-07-27 12:45:00: GUI created.
+2015-07-27 12:49:08: 
+2015-07-27 12:49:08: 
+2015-07-27 12:49:08: Starting GUI log
+2015-07-27 12:49:08: 
+2015-07-27 12:49:09: GUI created.
+2015-07-27 12:49:16: 
+2015-07-27 12:49:16: 
+2015-07-27 12:49:16: Starting GUI log
+2015-07-27 12:49:16: 
+2015-07-27 12:49:17: GUI created.
+2015-07-27 12:50:34: 
+2015-07-27 12:50:34: 
+2015-07-27 12:50:34: Starting GUI log
+2015-07-27 12:50:34: 
+2015-07-27 12:50:35: GUI created.
+2015-07-27 12:52:24: 
+2015-07-27 12:52:24: 
+2015-07-27 12:52:24: Starting GUI log
+2015-07-27 12:52:24: 
+2015-07-27 12:52:25: GUI created.
+2015-07-27 13:01:29: 
+2015-07-27 13:01:29: 
+2015-07-27 13:01:29: Starting GUI log
+2015-07-27 13:01:29: 
+2015-07-27 13:01:30: GUI created.
+2015-07-27 13:35:24: 
+2015-07-27 13:35:24: 
+2015-07-27 13:35:24: Starting GUI log
+2015-07-27 13:35:24: 
+2015-07-27 13:35:26: GUI created.
+2015-07-27 13:42:39: 
+2015-07-27 13:42:39: 
+2015-07-27 13:42:39: Starting GUI log
+2015-07-27 13:42:39: 
+2015-07-27 13:42:40: GUI created.
+2015-07-27 13:42:54: 
+2015-07-27 13:42:54: 
+2015-07-27 13:42:54: Starting GUI log
+2015-07-27 13:42:54: 
+2015-07-27 13:42:55: GUI created.
+2015-07-27 13:42:59: 
+2015-07-27 13:42:59: 
+2015-07-27 13:42:59: Starting GUI log
+2015-07-27 13:42:59: 
+2015-07-27 13:43:00: GUI created.
+2015-07-27 13:46:40: 
+2015-07-27 13:46:40: 
+2015-07-27 13:46:40: Starting GUI log
+2015-07-27 13:46:40: 
+2015-07-27 13:46:42: GUI created.
+2015-07-27 13:51:21: 
+2015-07-27 13:51:21: 
+2015-07-27 13:51:21: Starting GUI log
+2015-07-27 13:51:21: 
+2015-07-27 13:51:22: GUI created.
+2015-07-27 13:54:37: 
+2015-07-27 13:54:37: 
+2015-07-27 13:54:37: Starting GUI log
+2015-07-27 13:54:37: 
+2015-07-27 13:54:38: GUI created.
+2015-07-27 13:59:42: 
+2015-07-27 13:59:42: 
+2015-07-27 13:59:42: Starting GUI log
+2015-07-27 13:59:42: 
+2015-07-27 13:59:44: GUI created.
+2015-07-27 14:02:41: 
+2015-07-27 14:02:41: 
+2015-07-27 14:02:41: Starting GUI log
+2015-07-27 14:02:41: 
+2015-07-27 14:02:42: GUI created.
+2015-07-27 14:43:28: 
+2015-07-27 14:43:28: 
+2015-07-27 14:43:28: Starting GUI log
+2015-07-27 14:43:28: 
+2015-07-27 14:43:29: GUI created.
+2015-07-27 14:47:04: 
+2015-07-27 14:47:04: 
+2015-07-27 14:47:04: Starting GUI log
+2015-07-27 14:47:04: 
+2015-07-27 14:47:05: GUI created.
+2015-07-27 14:47:17: 
+2015-07-27 14:47:17: 
+2015-07-27 14:47:17: Starting GUI log
+2015-07-27 14:47:17: 
+2015-07-27 14:47:18: GUI created.
+2015-07-27 14:47:44: 
+2015-07-27 14:47:44: 
+2015-07-27 14:47:44: Starting GUI log
+2015-07-27 14:47:44: 
+2015-07-27 14:47:45: GUI created.
+2015-07-27 14:48:11: 
+2015-07-27 14:48:11: 
+2015-07-27 14:48:11: Starting GUI log
+2015-07-27 14:48:11: 
+2015-07-27 14:48:12: GUI created.
+2015-07-27 14:48:15: 
+2015-07-27 14:48:15: 
+2015-07-27 14:48:15: Starting GUI log
+2015-07-27 14:48:15: 
+2015-07-27 14:48:16: GUI created.
+2015-07-27 14:50:42: 
+2015-07-27 14:50:42: 
+2015-07-27 14:50:42: Starting GUI log
+2015-07-27 14:50:42: 
+2015-07-27 14:50:44: GUI created.
+2015-07-27 15:01:37: 
+2015-07-27 15:01:37: 
+2015-07-27 15:01:37: Starting GUI log
+2015-07-27 15:01:37: 
+2015-07-27 15:01:39: GUI created.
+2015-07-27 15:02:34: 
+2015-07-27 15:02:34: 
+2015-07-27 15:02:34: Starting GUI log
+2015-07-27 15:02:34: 
+2015-07-27 15:02:35: GUI created.
+2015-07-27 15:02:57: 
+2015-07-27 15:02:57: 
+2015-07-27 15:02:57: Starting GUI log
+2015-07-27 15:02:57: 
+2015-07-27 15:02:58: GUI created.
+2015-07-27 15:03:50: 
+2015-07-27 15:03:50: 
+2015-07-27 15:03:50: Starting GUI log
+2015-07-27 15:03:50: 
+2015-07-27 15:03:52: GUI created.
+2015-07-27 15:04:46: 
+2015-07-27 15:04:46: 
+2015-07-27 15:04:46: Starting GUI log
+2015-07-27 15:04:46: 
+2015-07-27 15:04:47: GUI created.
+2015-07-27 15:04:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:05:44: 
+2015-07-27 15:05:44: 
+2015-07-27 15:05:44: Starting GUI log
+2015-07-27 15:05:44: 
+2015-07-27 15:05:45: GUI created.
+2015-07-27 15:06:17: 
+2015-07-27 15:06:17: 
+2015-07-27 15:06:17: Starting GUI log
+2015-07-27 15:06:17: 
+2015-07-27 15:06:19: GUI created.
+2015-07-27 15:06:34: 
+2015-07-27 15:06:34: 
+2015-07-27 15:06:34: Starting GUI log
+2015-07-27 15:06:34: 
+2015-07-27 15:06:35: GUI created.
+2015-07-27 15:07:12: 
+2015-07-27 15:07:12: 
+2015-07-27 15:07:12: Starting GUI log
+2015-07-27 15:07:12: 
+2015-07-27 15:07:13: GUI created.
+2015-07-27 15:08:06: 
+2015-07-27 15:08:06: 
+2015-07-27 15:08:06: Starting GUI log
+2015-07-27 15:08:06: 
+2015-07-27 15:08:08: GUI created.
+2015-07-27 15:08:43: 
+2015-07-27 15:08:43: 
+2015-07-27 15:08:43: Starting GUI log
+2015-07-27 15:08:43: 
+2015-07-27 15:08:44: GUI created.
+2015-07-27 15:09:18: 
+2015-07-27 15:09:18: 
+2015-07-27 15:09:18: Starting GUI log
+2015-07-27 15:09:18: 
+2015-07-27 15:09:19: GUI created.
+2015-07-27 15:09:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:09:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:11:13: 
+2015-07-27 15:11:13: 
+2015-07-27 15:11:13: Starting GUI log
+2015-07-27 15:11:13: 
+2015-07-27 15:11:15: GUI created.
+2015-07-27 15:12:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:12:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:12:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:12:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:12:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:12:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:16: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:35: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:35: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:15:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:01: 
+2015-07-27 15:17:01: 
+2015-07-27 15:17:01: Starting GUI log
+2015-07-27 15:17:01: 
+2015-07-27 15:17:02: GUI created.
+2015-07-27 15:17:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:42: 
+2015-07-27 15:17:42: 
+2015-07-27 15:17:42: Starting GUI log
+2015-07-27 15:17:42: 
+2015-07-27 15:17:43: GUI created.
+2015-07-27 15:17:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:17:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:06: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:27: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:18:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:13: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:33: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:19:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:20:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 15:36:54: 
+2015-07-27 15:36:54: 
+2015-07-27 15:36:54: Starting GUI log
+2015-07-27 15:36:54: 
+2015-07-27 15:36:55: GUI created.
+2015-07-27 15:41:44: 
+2015-07-27 15:41:44: 
+2015-07-27 15:41:44: Starting GUI log
+2015-07-27 15:41:44: 
+2015-07-27 15:41:57: 
+2015-07-27 15:41:57: 
+2015-07-27 15:41:57: Starting GUI log
+2015-07-27 15:41:57: 
+2015-07-27 15:42:20: 
+2015-07-27 15:42:20: 
+2015-07-27 15:42:20: Starting GUI log
+2015-07-27 15:42:20: 
+2015-07-27 15:42:35: 
+2015-07-27 15:42:35: 
+2015-07-27 15:42:35: Starting GUI log
+2015-07-27 15:42:35: 
+2015-07-27 15:42:36: GUI created.
+2015-07-27 15:44:24: 
+2015-07-27 15:44:24: 
+2015-07-27 15:44:24: Starting GUI log
+2015-07-27 15:44:24: 
+2015-07-27 15:44:25: GUI created.
+2015-07-27 15:45:36: 
+2015-07-27 15:45:36: 
+2015-07-27 15:45:36: Starting GUI log
+2015-07-27 15:45:36: 
+2015-07-27 15:45:37: GUI created.
+2015-07-27 15:46:56: 
+2015-07-27 15:46:56: 
+2015-07-27 15:46:56: Starting GUI log
+2015-07-27 15:46:56: 
+2015-07-27 15:46:57: GUI created.
+2015-07-27 15:47:31: 
+2015-07-27 15:47:31: 
+2015-07-27 15:47:31: Starting GUI log
+2015-07-27 15:47:31: 
+2015-07-27 15:47:32: GUI created.
+2015-07-27 15:47:43: 
+2015-07-27 15:47:43: 
+2015-07-27 15:47:43: Starting GUI log
+2015-07-27 15:47:43: 
+2015-07-27 15:47:44: GUI created.
+2015-07-27 15:48:08: 
+2015-07-27 15:48:08: 
+2015-07-27 15:48:08: Starting GUI log
+2015-07-27 15:48:08: 
+2015-07-27 15:48:09: GUI created.
+2015-07-27 15:48:17: 
+2015-07-27 15:48:17: 
+2015-07-27 15:48:17: Starting GUI log
+2015-07-27 15:48:17: 
+2015-07-27 15:48:18: GUI created.
+2015-07-27 15:48:29: 
+2015-07-27 15:48:29: 
+2015-07-27 15:48:29: Starting GUI log
+2015-07-27 15:48:29: 
+2015-07-27 15:48:30: GUI created.
+2015-07-27 15:48:40: 
+2015-07-27 15:48:40: 
+2015-07-27 15:48:40: Starting GUI log
+2015-07-27 15:48:40: 
+2015-07-27 15:48:41: GUI created.
+2015-07-27 15:48:57: 
+2015-07-27 15:48:57: 
+2015-07-27 15:48:57: Starting GUI log
+2015-07-27 15:48:57: 
+2015-07-27 15:48:58: GUI created.
+2015-07-27 15:49:11: 
+2015-07-27 15:49:11: 
+2015-07-27 15:49:11: Starting GUI log
+2015-07-27 15:49:11: 
+2015-07-27 15:49:13: GUI created.
+2015-07-27 15:49:20: 
+2015-07-27 15:49:20: 
+2015-07-27 15:49:20: Starting GUI log
+2015-07-27 15:49:20: 
+2015-07-27 15:49:21: GUI created.
+2015-07-27 15:49:54: 
+2015-07-27 15:49:54: 
+2015-07-27 15:49:54: Starting GUI log
+2015-07-27 15:49:54: 
+2015-07-27 15:49:55: GUI created.
+2015-07-27 15:50:38: 
+2015-07-27 15:50:38: 
+2015-07-27 15:50:38: Starting GUI log
+2015-07-27 15:50:38: 
+2015-07-27 15:50:39: GUI created.
+2015-07-27 15:51:15: 
+2015-07-27 15:51:15: 
+2015-07-27 15:51:15: Starting GUI log
+2015-07-27 15:51:15: 
+2015-07-27 15:51:16: GUI created.
+2015-07-27 15:51:28: 
+2015-07-27 15:51:28: 
+2015-07-27 15:51:28: Starting GUI log
+2015-07-27 15:51:28: 
+2015-07-27 15:51:29: GUI created.
+2015-07-27 15:52:32: 
+2015-07-27 15:52:32: 
+2015-07-27 15:52:32: Starting GUI log
+2015-07-27 15:52:32: 
+2015-07-27 15:52:33: GUI created.
+2015-07-27 15:55:17: 
+2015-07-27 15:55:17: 
+2015-07-27 15:55:17: Starting GUI log
+2015-07-27 15:55:17: 
+2015-07-27 15:55:18: GUI created.
+2015-07-27 15:55:37: 
+2015-07-27 15:55:37: 
+2015-07-27 15:55:37: Starting GUI log
+2015-07-27 15:55:37: 
+2015-07-27 15:55:39: GUI created.
+2015-07-27 15:57:17: 
+2015-07-27 15:57:17: 
+2015-07-27 15:57:17: Starting GUI log
+2015-07-27 15:57:17: 
+2015-07-27 15:57:18: GUI created.
+2015-07-27 15:59:49: 
+2015-07-27 15:59:49: 
+2015-07-27 15:59:49: Starting GUI log
+2015-07-27 15:59:49: 
+2015-07-27 15:59:50: GUI created.
+2015-07-27 16:00:09: 
+2015-07-27 16:00:09: 
+2015-07-27 16:00:09: Starting GUI log
+2015-07-27 16:00:09: 
+2015-07-27 16:00:11: GUI created.
+2015-07-27 16:00:48: 
+2015-07-27 16:00:48: 
+2015-07-27 16:00:48: Starting GUI log
+2015-07-27 16:00:48: 
+2015-07-27 16:00:49: GUI created.
+2015-07-27 16:01:18: 
+2015-07-27 16:01:18: 
+2015-07-27 16:01:18: Starting GUI log
+2015-07-27 16:01:18: 
+2015-07-27 16:01:19: GUI created.
+2015-07-27 16:01:26: 
+2015-07-27 16:01:26: 
+2015-07-27 16:01:26: Starting GUI log
+2015-07-27 16:01:26: 
+2015-07-27 16:01:27: GUI created.
+2015-07-27 16:01:35: 
+2015-07-27 16:01:35: 
+2015-07-27 16:01:35: Starting GUI log
+2015-07-27 16:01:35: 
+2015-07-27 16:01:36: GUI created.
+2015-07-27 16:01:53: 
+2015-07-27 16:01:53: 
+2015-07-27 16:01:53: Starting GUI log
+2015-07-27 16:01:53: 
+2015-07-27 16:01:54: GUI created.
+2015-07-27 16:02:35: 
+2015-07-27 16:02:35: 
+2015-07-27 16:02:35: Starting GUI log
+2015-07-27 16:02:35: 
+2015-07-27 16:02:36: GUI created.
+2015-07-27 16:03:28: 
+2015-07-27 16:03:28: 
+2015-07-27 16:03:28: Starting GUI log
+2015-07-27 16:03:28: 
+2015-07-27 16:03:29: GUI created.
+2015-07-27 16:03:41: 
+2015-07-27 16:03:41: 
+2015-07-27 16:03:41: Starting GUI log
+2015-07-27 16:03:41: 
+2015-07-27 16:03:42: GUI created.
+2015-07-27 16:04:39: 
+2015-07-27 16:04:39: 
+2015-07-27 16:04:39: Starting GUI log
+2015-07-27 16:04:39: 
+2015-07-27 16:04:40: GUI created.
+2015-07-27 16:04:53: 
+2015-07-27 16:04:53: 
+2015-07-27 16:04:53: Starting GUI log
+2015-07-27 16:04:53: 
+2015-07-27 16:04:54: GUI created.
+2015-07-27 16:05:39: 
+2015-07-27 16:05:39: 
+2015-07-27 16:05:39: Starting GUI log
+2015-07-27 16:05:39: 
+2015-07-27 16:05:40: GUI created.
+2015-07-27 16:06:40: 
+2015-07-27 16:06:40: 
+2015-07-27 16:06:40: Starting GUI log
+2015-07-27 16:06:40: 
+2015-07-27 16:06:41: GUI created.
+2015-07-27 16:07:24: 
+2015-07-27 16:07:24: 
+2015-07-27 16:07:24: Starting GUI log
+2015-07-27 16:07:24: 
+2015-07-27 16:07:25: GUI created.
+2015-07-27 16:09:11: 
+2015-07-27 16:09:11: 
+2015-07-27 16:09:11: Starting GUI log
+2015-07-27 16:09:11: 
+2015-07-27 16:09:12: GUI created.
+2015-07-27 16:13:40: 
+2015-07-27 16:13:40: 
+2015-07-27 16:13:40: Starting GUI log
+2015-07-27 16:13:40: 
+2015-07-27 16:13:42: GUI created.
+2015-07-27 16:14:08: 
+2015-07-27 16:14:08: 
+2015-07-27 16:14:08: Starting GUI log
+2015-07-27 16:14:08: 
+2015-07-27 16:14:09: GUI created.
+2015-07-27 16:14:48: 
+2015-07-27 16:14:48: 
+2015-07-27 16:14:48: Starting GUI log
+2015-07-27 16:14:48: 
+2015-07-27 16:14:50: GUI created.
+2015-07-27 16:19:28: 
+2015-07-27 16:19:28: 
+2015-07-27 16:19:28: Starting GUI log
+2015-07-27 16:19:28: 
+2015-07-27 16:19:29: GUI created.
+2015-07-27 16:21:12: 
+2015-07-27 16:21:12: 
+2015-07-27 16:21:12: Starting GUI log
+2015-07-27 16:21:12: 
+2015-07-27 16:21:14: GUI created.
+2015-07-27 16:22:17: 
+2015-07-27 16:22:17: 
+2015-07-27 16:22:17: Starting GUI log
+2015-07-27 16:22:17: 
+2015-07-27 16:22:18: GUI created.
+2015-07-27 16:24:02: 
+2015-07-27 16:24:02: 
+2015-07-27 16:24:02: Starting GUI log
+2015-07-27 16:24:02: 
+2015-07-27 16:24:03: GUI created.
+2015-07-27 16:24:38: 
+2015-07-27 16:24:38: 
+2015-07-27 16:24:38: Starting GUI log
+2015-07-27 16:24:38: 
+2015-07-27 16:24:39: GUI created.
+2015-07-27 16:25:41: 
+2015-07-27 16:25:41: 
+2015-07-27 16:25:41: Starting GUI log
+2015-07-27 16:25:41: 
+2015-07-27 16:25:42: GUI created.
+2015-07-27 16:26:02: 
+2015-07-27 16:26:02: 
+2015-07-27 16:26:02: Starting GUI log
+2015-07-27 16:26:02: 
+2015-07-27 16:26:03: GUI created.
+2015-07-27 16:26:13: 
+2015-07-27 16:26:13: 
+2015-07-27 16:26:13: Starting GUI log
+2015-07-27 16:26:13: 
+2015-07-27 16:26:14: GUI created.
+2015-07-27 16:27:12: 
+2015-07-27 16:27:12: 
+2015-07-27 16:27:12: Starting GUI log
+2015-07-27 16:27:12: 
+2015-07-27 16:27:13: GUI created.
+2015-07-27 16:27:45: 
+2015-07-27 16:27:45: 
+2015-07-27 16:27:45: Starting GUI log
+2015-07-27 16:27:45: 
+2015-07-27 16:27:47: GUI created.
+2015-07-27 16:29:13: 
+2015-07-27 16:29:13: 
+2015-07-27 16:29:13: Starting GUI log
+2015-07-27 16:29:13: 
+2015-07-27 16:29:15: GUI created.
+2015-07-27 16:29:40: 
+2015-07-27 16:29:40: 
+2015-07-27 16:29:40: Starting GUI log
+2015-07-27 16:29:40: 
+2015-07-27 16:29:41: GUI created.
+2015-07-27 16:30:01: 
+2015-07-27 16:30:01: 
+2015-07-27 16:30:01: Starting GUI log
+2015-07-27 16:30:01: 
+2015-07-27 16:30:03: GUI created.
+2015-07-27 16:30:36: 
+2015-07-27 16:30:36: 
+2015-07-27 16:30:36: Starting GUI log
+2015-07-27 16:30:36: 
+2015-07-27 16:30:37: GUI created.
+2015-07-27 16:32:13: 
+2015-07-27 16:32:13: 
+2015-07-27 16:32:13: Starting GUI log
+2015-07-27 16:32:13: 
+2015-07-27 16:32:33: 
+2015-07-27 16:32:33: 
+2015-07-27 16:32:33: Starting GUI log
+2015-07-27 16:32:33: 
+2015-07-27 16:34:02: 
+2015-07-27 16:34:02: 
+2015-07-27 16:34:02: Starting GUI log
+2015-07-27 16:34:02: 
+2015-07-27 16:34:03: GUI created.
+2015-07-27 16:34:20: 
+2015-07-27 16:34:20: 
+2015-07-27 16:34:20: Starting GUI log
+2015-07-27 16:34:20: 
+2015-07-27 16:34:21: GUI created.
+2015-07-27 16:34:38: 
+2015-07-27 16:34:38: 
+2015-07-27 16:34:38: Starting GUI log
+2015-07-27 16:34:38: 
+2015-07-27 16:34:39: GUI created.
+2015-07-27 16:35:35: 
+2015-07-27 16:35:35: 
+2015-07-27 16:35:35: Starting GUI log
+2015-07-27 16:35:35: 
+2015-07-27 16:35:36: GUI created.
+2015-07-27 16:36:27: 
+2015-07-27 16:36:27: 
+2015-07-27 16:36:27: Starting GUI log
+2015-07-27 16:36:27: 
+2015-07-27 16:36:28: GUI created.
+2015-07-27 16:36:46: 
+2015-07-27 16:36:46: 
+2015-07-27 16:36:46: Starting GUI log
+2015-07-27 16:36:46: 
+2015-07-27 16:36:47: GUI created.
+2015-07-27 16:37:15: 
+2015-07-27 16:37:15: 
+2015-07-27 16:37:15: Starting GUI log
+2015-07-27 16:37:15: 
+2015-07-27 16:37:17: GUI created.
+2015-07-27 16:39:06: 
+2015-07-27 16:39:06: 
+2015-07-27 16:39:06: Starting GUI log
+2015-07-27 16:39:06: 
+2015-07-27 16:39:08: GUI created.
+2015-07-27 16:40:49: 
+2015-07-27 16:40:49: 
+2015-07-27 16:40:49: Starting GUI log
+2015-07-27 16:40:49: 
+2015-07-27 16:40:50: GUI created.
+2015-07-27 16:41:14: 
+2015-07-27 16:41:14: 
+2015-07-27 16:41:14: Starting GUI log
+2015-07-27 16:41:14: 
+2015-07-27 16:41:15: GUI created.
+2015-07-27 16:41:23: 
+2015-07-27 16:41:23: 
+2015-07-27 16:41:23: Starting GUI log
+2015-07-27 16:41:23: 
+2015-07-27 16:41:25: GUI created.
+2015-07-27 16:42:08: 
+2015-07-27 16:42:08: 
+2015-07-27 16:42:08: Starting GUI log
+2015-07-27 16:42:08: 
+2015-07-27 16:42:09: GUI created.
+2015-07-27 16:42:28: 
+2015-07-27 16:42:28: 
+2015-07-27 16:42:28: Starting GUI log
+2015-07-27 16:42:28: 
+2015-07-27 16:42:30: GUI created.
+2015-07-27 16:42:54: 
+2015-07-27 16:42:54: 
+2015-07-27 16:42:54: Starting GUI log
+2015-07-27 16:42:54: 
+2015-07-27 16:42:56: GUI created.
+2015-07-27 16:45:19: 
+2015-07-27 16:45:19: 
+2015-07-27 16:45:19: Starting GUI log
+2015-07-27 16:45:19: 
+2015-07-27 16:45:20: GUI created.
+2015-07-27 16:46:05: 
+2015-07-27 16:46:05: 
+2015-07-27 16:46:05: Starting GUI log
+2015-07-27 16:46:05: 
+2015-07-27 16:46:06: GUI created.
+2015-07-27 16:46:35: 
+2015-07-27 16:46:35: 
+2015-07-27 16:46:35: Starting GUI log
+2015-07-27 16:46:35: 
+2015-07-27 16:46:36: GUI created.
+2015-07-27 16:51:05: 
+2015-07-27 16:51:05: 
+2015-07-27 16:51:05: Starting GUI log
+2015-07-27 16:51:05: 
+2015-07-27 16:51:06: GUI created.
+2015-07-27 16:51:27: 
+2015-07-27 16:51:27: 
+2015-07-27 16:51:27: Starting GUI log
+2015-07-27 16:51:27: 
+2015-07-27 16:51:28: GUI created.
+2015-07-27 17:32:00: 
+2015-07-27 17:32:00: 
+2015-07-27 17:32:00: Starting GUI log
+2015-07-27 17:32:00: 
+2015-07-27 17:32:02: GUI created.
+2015-07-27 17:32:04: 
+2015-07-27 17:32:04: 
+2015-07-27 17:32:04: Starting GUI log
+2015-07-27 17:32:04: 
+2015-07-27 17:32:05: GUI created.
+2015-07-27 17:32:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:32:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:32:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:32:45: 
+2015-07-27 17:32:45: 
+2015-07-27 17:32:45: Starting GUI log
+2015-07-27 17:32:45: 
+2015-07-27 17:32:46: GUI created.
+2015-07-27 17:32:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:32:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:32:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:35:15: 
+2015-07-27 17:35:15: 
+2015-07-27 17:35:15: Starting GUI log
+2015-07-27 17:35:15: 
+2015-07-27 17:38:06: 
+2015-07-27 17:38:06: 
+2015-07-27 17:38:06: Starting GUI log
+2015-07-27 17:38:06: 
+2015-07-27 17:38:08: GUI created.
+2015-07-27 17:38:18: 
+2015-07-27 17:38:18: 
+2015-07-27 17:38:18: Starting GUI log
+2015-07-27 17:38:18: 
+2015-07-27 17:38:19: GUI created.
+2015-07-27 17:38:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:36: 
+2015-07-27 17:38:36: 
+2015-07-27 17:38:36: Starting GUI log
+2015-07-27 17:38:36: 
+2015-07-27 17:38:37: GUI created.
+2015-07-27 17:38:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:38:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:35: 
+2015-07-27 17:39:35: 
+2015-07-27 17:39:35: Starting GUI log
+2015-07-27 17:39:35: 
+2015-07-27 17:39:36: GUI created.
+2015-07-27 17:39:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:39:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:23: 
+2015-07-27 17:42:23: 
+2015-07-27 17:42:23: Starting GUI log
+2015-07-27 17:42:23: 
+2015-07-27 17:42:24: GUI created.
+2015-07-27 17:42:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:42:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:20: 
+2015-07-27 17:44:20: 
+2015-07-27 17:44:20: Starting GUI log
+2015-07-27 17:44:20: 
+2015-07-27 17:44:22: GUI created.
+2015-07-27 17:44:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:27: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:33: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:44:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:45:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:27: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:35: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:35: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:45: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:45: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:46:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:06: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:06: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:16: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:32: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:33: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:47:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:13: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:13: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:33: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:45: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:48:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:06: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:16: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:27: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:49: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:49:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:29: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:33: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:36: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:43: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:53: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:50:57: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:06: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:16: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:24: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:26: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:27: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:34: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:45: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:46: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:51:59: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:03: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:10: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:13: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:19: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:23: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:40: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:52:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:53:00: 
+2015-07-27 17:53:00: 
+2015-07-27 17:53:00: Starting GUI log
+2015-07-27 17:53:00: 
+2015-07-27 17:53:01: GUI created.
+2015-07-27 17:53:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:53:04: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:53:05: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:17: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 17:54:21: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:33: 
+2015-07-27 18:15:33: 
+2015-07-27 18:15:33: Starting GUI log
+2015-07-27 18:15:33: 
+2015-07-27 18:15:34: GUI created.
+2015-07-27 18:15:37: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:38: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:48: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:15:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:00: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:01: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:02: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:25: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:28: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:30: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:31: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:39: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:41: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:42: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:44: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:45: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:47: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:50: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:51: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:52: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:54: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:55: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:56: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:16:58: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:07: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:08: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:09: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:11: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:12: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:14: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:15: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:18: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:20: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:17:22: Could not parse lat and long from HAB telemetry packet
+2015-07-27 18:19:40: 
+2015-07-27 18:19:40: 
+2015-07-27 18:19:40: Starting GUI log
+2015-07-27 18:19:40: 
+2015-07-27 18:19:42: GUI created.
+2015-07-27 18:21:52: 
+2015-07-27 18:21:52: 
+2015-07-27 18:21:52: Starting GUI log
+2015-07-27 18:21:52: 
+2015-07-27 18:21:53: GUI created.
+2015-07-27 18:21:56: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 18:24:50");
+2015-07-27 18:21:56: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 18:19:51");
+2015-07-27 18:21:56: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 18:18:55");
+2015-07-27 18:21:56: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 18:14:51");
+2015-07-27 18:21:56: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 18:09:51");
+2015-07-27 18:21:56: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 18:08:55");
+2015-07-27 18:21:56: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 18:04:52");
+2015-07-27 18:21:56: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 18:00:11");
+2015-07-27 18:21:56: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 17:59:52");
+2015-07-27 18:21:56: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 17:50:53");
+2015-07-27 18:21:56: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 17:44:58");
+2015-07-27 18:21:56: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 17:40:00");
+2015-07-27 18:21:56: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 17:35:35");
+2015-07-27 18:21:56: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 17:30:04");
+2015-07-27 18:21:56: addSpotMarker(3, 36.837, -121.39005, "SPOT: 17:25:10");
+2015-07-27 18:21:56: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 17:20:11");
+2015-07-27 18:21:56: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 17:15:13");
+2015-07-27 18:21:56: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 17:10:12");
+2015-07-27 18:21:56: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 17:05:17");
+2015-07-27 18:21:56: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 17:00:16");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:57:42");
+2015-07-27 18:21:56: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 16:55:53");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 16:52:42");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 16:47:47");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:43:31");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:37:51");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 16:32:59");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 16:28:28");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 16:23:07");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 16:18:12");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 16:13:03");
+2015-07-27 18:21:56: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 16:09:44");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 16:08:03");
+2015-07-27 18:21:56: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 16:06:20");
+2015-07-27 18:21:56: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 16:04:47");
+2015-07-27 18:21:56: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 16:03:06");
+2015-07-27 18:21:56: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 16:01:22");
+2015-07-27 18:21:57: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 15:59:58");
+2015-07-27 18:21:57: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 15:59:50");
+2015-07-27 18:21:57: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 15:58:04");
+2015-07-27 18:21:57: addSpotMarker(3, 36.84167, -121.465, "SPOT: 15:56:22");
+2015-07-27 18:21:57: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 15:54:52");
+2015-07-27 18:21:57: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 15:53:09");
+2015-07-27 18:21:57: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 15:51:26");
+2015-07-27 18:21:57: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 15:51:01");
+2015-07-27 18:21:57: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 15:49:54");
+2015-07-27 18:21:57: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 15:48:16");
+2015-07-27 18:24:15: 
+2015-07-27 18:24:15: 
+2015-07-27 18:24:15: Starting GUI log
+2015-07-27 18:24:15: 
+2015-07-27 18:24:16: GUI created.
+2015-07-27 18:24:20: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 11:24:50");
+2015-07-27 18:24:20: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 11:19:51");
+2015-07-27 18:24:20: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 11:18:55");
+2015-07-27 18:24:20: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 11:14:51");
+2015-07-27 18:24:20: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 11:09:51");
+2015-07-27 18:24:20: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 11:08:55");
+2015-07-27 18:24:20: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 11:04:52");
+2015-07-27 18:24:20: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 11:00:11");
+2015-07-27 18:24:20: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 10:59:52");
+2015-07-27 18:24:20: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 10:50:53");
+2015-07-27 18:24:20: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 10:44:58");
+2015-07-27 18:24:20: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 10:40:00");
+2015-07-27 18:24:20: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 10:35:35");
+2015-07-27 18:24:20: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 10:30:04");
+2015-07-27 18:24:20: addSpotMarker(3, 36.837, -121.39005, "SPOT: 10:25:10");
+2015-07-27 18:24:20: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 10:20:11");
+2015-07-27 18:24:20: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 10:15:13");
+2015-07-27 18:24:20: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 10:10:12");
+2015-07-27 18:24:20: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 10:05:17");
+2015-07-27 18:24:20: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 10:00:16");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:57:42");
+2015-07-27 18:24:20: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 9:55:53");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:52:42");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 9:47:47");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:43:31");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:37:51");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:32:59");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:28:28");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 9:23:07");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 9:18:12");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 9:13:03");
+2015-07-27 18:24:20: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 9:09:44");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 9:08:03");
+2015-07-27 18:24:20: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 9:06:20");
+2015-07-27 18:24:20: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 9:04:47");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 9:03:06");
+2015-07-27 18:24:20: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 9:01:22");
+2015-07-27 18:24:20: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 8:59:58");
+2015-07-27 18:24:20: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 8:59:50");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 8:58:04");
+2015-07-27 18:24:20: addSpotMarker(3, 36.84167, -121.465, "SPOT: 8:56:22");
+2015-07-27 18:24:20: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 8:54:52");
+2015-07-27 18:24:20: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 8:53:09");
+2015-07-27 18:24:20: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 8:51:26");
+2015-07-27 18:24:20: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 8:51:01");
+2015-07-27 18:24:20: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 8:49:54");
+2015-07-27 18:24:20: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 8:48:16");
+2015-07-27 18:28:01: 
+2015-07-27 18:28:01: 
+2015-07-27 18:28:01: Starting GUI log
+2015-07-27 18:28:01: 
+2015-07-27 18:28:02: GUI created.
+2015-07-27 18:28:25: 
+2015-07-27 18:28:25: 
+2015-07-27 18:28:25: Starting GUI log
+2015-07-27 18:28:25: 
+2015-07-27 18:28:26: GUI created.
+2015-07-27 18:28:38: 
+2015-07-27 18:28:38: 
+2015-07-27 18:28:38: Starting GUI log
+2015-07-27 18:28:38: 
+2015-07-27 18:28:39: GUI created.
+2015-07-27 18:29:01: 
+2015-07-27 18:29:01: 
+2015-07-27 18:29:01: Starting GUI log
+2015-07-27 18:29:01: 
+2015-07-27 18:29:03: GUI created.
+2015-07-27 18:35:18: 
+2015-07-27 18:35:18: 
+2015-07-27 18:35:18: Starting GUI log
+2015-07-27 18:35:18: 
+2015-07-27 18:37:38: 
+2015-07-27 18:37:38: 
+2015-07-27 18:37:38: Starting GUI log
+2015-07-27 18:37:38: 
+2015-07-27 18:37:39: GUI created.
+2015-07-27 18:39:43: 
+2015-07-27 18:39:43: 
+2015-07-27 18:39:43: Starting GUI log
+2015-07-27 18:39:43: 
+2015-07-27 18:39:45: GUI created.
+2015-07-27 18:39:51: 
+2015-07-27 18:39:51: 
+2015-07-27 18:39:51: Starting GUI log
+2015-07-27 18:39:51: 
+2015-07-27 18:39:52: GUI created.
+2015-07-27 18:41:02: 
+2015-07-27 18:41:02: 
+2015-07-27 18:41:02: Starting GUI log
+2015-07-27 18:41:02: 
+2015-07-27 18:41:03: GUI created.
+2015-07-27 18:41:34: 
+2015-07-27 18:41:34: 
+2015-07-27 18:41:34: Starting GUI log
+2015-07-27 18:41:34: 
+2015-07-27 18:41:35: GUI created.
+2015-07-27 18:42:38: 
+2015-07-27 18:42:38: 
+2015-07-27 18:42:38: Starting GUI log
+2015-07-27 18:42:38: 
+2015-07-27 18:44:46: 
+2015-07-27 18:44:46: 
+2015-07-27 18:44:46: Starting GUI log
+2015-07-27 18:44:46: 
+2015-07-27 18:44:48: GUI created.
+2015-07-27 18:45:25: 
+2015-07-27 18:45:25: 
+2015-07-27 18:45:25: Starting GUI log
+2015-07-27 18:45:25: 
+2015-07-27 18:45:27: GUI created.
+2015-07-27 18:48:38: 
+2015-07-27 18:48:38: 
+2015-07-27 18:48:38: Starting GUI log
+2015-07-27 18:48:38: 
+2015-07-27 18:48:38: No Settings found
+2015-07-27 18:48:39: GUI created.
+2015-07-27 18:49:01: 
+2015-07-27 18:49:01: 
+2015-07-27 18:49:01: Starting GUI log
+2015-07-27 18:49:01: 
+2015-07-27 18:50:04: 
+2015-07-27 18:50:04: 
+2015-07-27 18:50:04: Starting GUI log
+2015-07-27 18:50:04: 
+2015-07-27 18:50:04: No Settings found
+2015-07-27 18:50:05: GUI created.
+2015-07-27 18:50:51: 
+2015-07-27 18:50:51: 
+2015-07-27 18:50:51: Starting GUI log
+2015-07-27 18:50:51: 
+2015-07-27 18:50:51: No Settings found
+2015-07-27 18:50:53: GUI created.
+2015-07-27 18:51:09: 
+2015-07-27 18:51:09: 
+2015-07-27 18:51:09: Starting GUI log
+2015-07-27 18:51:09: 
+2015-07-27 18:51:09: No Settings found
+2015-07-27 18:51:10: GUI created.
+2015-07-27 18:52:27: 
+2015-07-27 18:52:27: 
+2015-07-27 18:52:27: Starting GUI log
+2015-07-27 18:52:27: 
+2015-07-27 18:52:27: No Settings found
+2015-07-27 18:52:29: GUI created.
+2015-07-27 18:54:28: 
+2015-07-27 18:54:28: 
+2015-07-27 18:54:28: Starting GUI log
+2015-07-27 18:54:28: 
+2015-07-27 18:54:28: No Settings found
+2015-07-27 18:54:29: GUI created.
+2015-07-27 18:54:41: 
+2015-07-27 18:54:41: 
+2015-07-27 18:54:41: Starting GUI log
+2015-07-27 18:54:41: 
+2015-07-27 18:54:41: No Settings found
+2015-07-27 18:54:43: GUI created.
+2015-07-27 18:55:08: 
+2015-07-27 18:55:08: 
+2015-07-27 18:55:08: Starting GUI log
+2015-07-27 18:55:08: 
+2015-07-27 18:55:08: No Settings found
+2015-07-27 18:55:09: GUI created.
+2015-07-27 18:55:20: 
+2015-07-27 18:55:20: 
+2015-07-27 18:55:20: Starting GUI log
+2015-07-27 18:55:20: 
+2015-07-27 18:55:20: No Settings found
+2015-07-27 18:55:21: GUI created.
+2015-07-27 18:55:42: 
+2015-07-27 18:55:42: 
+2015-07-27 18:55:42: Starting GUI log
+2015-07-27 18:55:42: 
+2015-07-27 18:55:42: No Settings found
+2015-07-27 18:55:43: GUI created.
+2015-07-27 18:55:52: 
+2015-07-27 18:55:52: 
+2015-07-27 18:55:52: Starting GUI log
+2015-07-27 18:55:52: 
+2015-07-27 18:55:52: No Settings found
+2015-07-27 18:55:53: GUI created.
+2015-07-27 18:59:07: 
+2015-07-27 18:59:07: 
+2015-07-27 18:59:07: Starting GUI log
+2015-07-27 18:59:07: 
+2015-07-27 18:59:07: No Settings found
+2015-07-27 18:59:08: GUI created.
+2015-07-27 18:59:35: 
+2015-07-27 18:59:35: 
+2015-07-27 18:59:35: Starting GUI log
+2015-07-27 18:59:35: 
+2015-07-27 18:59:36: No Settings found
+2015-07-27 18:59:37: GUI created.
+2015-07-27 19:00:17: 
+2015-07-27 19:00:17: 
+2015-07-27 19:00:17: Starting GUI log
+2015-07-27 19:00:17: 
+2015-07-27 19:00:18: GUI created.
+2015-07-27 19:11:33: 
+2015-07-27 19:11:33: 
+2015-07-27 19:11:33: Starting GUI log
+2015-07-27 19:11:33: 
+2015-07-27 19:11:34: GUI created.
+2015-07-27 19:18:28: 
+2015-07-27 19:18:28: 
+2015-07-27 19:18:28: Starting GUI log
+2015-07-27 19:18:28: 
+2015-07-27 19:20:30: 
+2015-07-27 19:20:30: 
+2015-07-27 19:20:30: Starting GUI log
+2015-07-27 19:20:30: 
+2015-07-27 19:20:31: GUI created.
+2015-07-27 19:20:47: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 11:24:50");
+2015-07-27 19:20:47: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 11:19:51");
+2015-07-27 19:20:47: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 11:18:55");
+2015-07-27 19:20:47: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 11:14:51");
+2015-07-27 19:20:47: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 11:09:51");
+2015-07-27 19:20:47: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 11:08:55");
+2015-07-27 19:20:47: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 11:04:52");
+2015-07-27 19:20:47: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 11:00:11");
+2015-07-27 19:20:47: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 10:59:52");
+2015-07-27 19:20:47: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 10:50:53");
+2015-07-27 19:20:47: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 10:44:58");
+2015-07-27 19:20:47: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 10:40:00");
+2015-07-27 19:20:47: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 10:35:35");
+2015-07-27 19:20:47: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 10:30:04");
+2015-07-27 19:20:47: addSpotMarker(3, 36.837, -121.39005, "SPOT: 10:25:10");
+2015-07-27 19:20:47: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 10:20:11");
+2015-07-27 19:20:47: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 10:15:13");
+2015-07-27 19:20:47: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 10:10:12");
+2015-07-27 19:20:47: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 10:05:17");
+2015-07-27 19:20:47: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 10:00:16");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:57:42");
+2015-07-27 19:20:47: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 9:55:53");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:52:42");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 9:47:47");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:43:31");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:37:51");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:32:59");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:28:28");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 9:23:07");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 9:18:12");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 9:13:03");
+2015-07-27 19:20:47: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 9:09:44");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 9:08:03");
+2015-07-27 19:20:47: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 9:06:20");
+2015-07-27 19:20:47: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 9:04:47");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 9:03:06");
+2015-07-27 19:20:47: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 9:01:22");
+2015-07-27 19:20:47: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 8:59:58");
+2015-07-27 19:20:47: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 8:59:50");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 8:58:04");
+2015-07-27 19:20:47: addSpotMarker(3, 36.84167, -121.465, "SPOT: 8:56:22");
+2015-07-27 19:20:47: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 8:54:52");
+2015-07-27 19:20:47: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 8:53:09");
+2015-07-27 19:20:47: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 8:51:26");
+2015-07-27 19:20:47: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 8:51:01");
+2015-07-27 19:20:47: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 8:49:54");
+2015-07-27 19:20:47: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 8:48:16");
+2015-07-27 19:22:46: 
+2015-07-27 19:22:46: 
+2015-07-27 19:22:46: Starting GUI log
+2015-07-27 19:22:46: 
+2015-07-27 19:22:47: GUI created.
+2015-07-27 19:22:50: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 11:24:50");
+2015-07-27 19:22:50: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 11:19:51");
+2015-07-27 19:22:50: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 11:18:55");
+2015-07-27 19:22:50: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 11:14:51");
+2015-07-27 19:22:50: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 11:09:51");
+2015-07-27 19:22:50: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 11:08:55");
+2015-07-27 19:22:50: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 11:04:52");
+2015-07-27 19:22:50: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 11:00:11");
+2015-07-27 19:22:50: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 10:59:52");
+2015-07-27 19:22:50: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 10:50:53");
+2015-07-27 19:22:50: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 10:44:58");
+2015-07-27 19:22:50: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 10:40:00");
+2015-07-27 19:22:50: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 10:35:35");
+2015-07-27 19:22:50: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 10:30:04");
+2015-07-27 19:22:50: addSpotMarker(3, 36.837, -121.39005, "SPOT: 10:25:10");
+2015-07-27 19:22:50: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 10:20:11");
+2015-07-27 19:22:50: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 10:15:13");
+2015-07-27 19:22:50: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 10:10:12");
+2015-07-27 19:22:50: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 10:05:17");
+2015-07-27 19:22:50: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 10:00:16");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:57:42");
+2015-07-27 19:22:50: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 9:55:53");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:52:42");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 9:47:47");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:43:31");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:37:51");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:32:59");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:28:28");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 9:23:07");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 9:18:12");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 9:13:03");
+2015-07-27 19:22:50: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 9:09:44");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 9:08:03");
+2015-07-27 19:22:50: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 9:06:20");
+2015-07-27 19:22:50: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 9:04:47");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 9:03:06");
+2015-07-27 19:22:50: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 9:01:22");
+2015-07-27 19:22:50: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 8:59:58");
+2015-07-27 19:22:50: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 8:59:50");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 8:58:04");
+2015-07-27 19:22:50: addSpotMarker(3, 36.84167, -121.465, "SPOT: 8:56:22");
+2015-07-27 19:22:50: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 8:54:52");
+2015-07-27 19:22:50: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 8:53:09");
+2015-07-27 19:22:50: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 8:51:26");
+2015-07-27 19:22:50: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 8:51:01");
+2015-07-27 19:22:50: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 8:49:54");
+2015-07-27 19:22:50: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 8:48:16");
+2015-07-27 19:25:44: 
+2015-07-27 19:25:44: 
+2015-07-27 19:25:44: Starting GUI log
+2015-07-27 19:25:44: 
+2015-07-27 19:25:45: GUI created.
+2015-07-27 19:26:01: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 11:24:50");
+2015-07-27 19:26:01: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 11:19:51");
+2015-07-27 19:26:01: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 11:18:55");
+2015-07-27 19:26:01: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 11:14:51");
+2015-07-27 19:26:01: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 11:09:51");
+2015-07-27 19:26:01: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 11:08:55");
+2015-07-27 19:26:01: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 11:04:52");
+2015-07-27 19:26:01: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 11:00:11");
+2015-07-27 19:26:01: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 10:59:52");
+2015-07-27 19:26:01: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 10:50:53");
+2015-07-27 19:26:01: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 10:44:58");
+2015-07-27 19:26:01: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 10:40:00");
+2015-07-27 19:26:01: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 10:35:35");
+2015-07-27 19:26:01: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 10:30:04");
+2015-07-27 19:26:01: addSpotMarker(3, 36.837, -121.39005, "SPOT: 10:25:10");
+2015-07-27 19:26:01: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 10:20:11");
+2015-07-27 19:26:01: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 10:15:13");
+2015-07-27 19:26:01: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 10:10:12");
+2015-07-27 19:26:01: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 10:05:17");
+2015-07-27 19:26:01: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 10:00:16");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:57:42");
+2015-07-27 19:26:01: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 9:55:53");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:52:42");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 9:47:47");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:43:31");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:37:51");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:32:59");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:28:28");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 9:23:07");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 9:18:12");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 9:13:03");
+2015-07-27 19:26:01: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 9:09:44");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 9:08:03");
+2015-07-27 19:26:01: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 9:06:20");
+2015-07-27 19:26:01: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 9:04:47");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 9:03:06");
+2015-07-27 19:26:01: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 9:01:22");
+2015-07-27 19:26:01: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 8:59:58");
+2015-07-27 19:26:01: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 8:59:50");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 8:58:04");
+2015-07-27 19:26:01: addSpotMarker(3, 36.84167, -121.465, "SPOT: 8:56:22");
+2015-07-27 19:26:01: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 8:54:52");
+2015-07-27 19:26:01: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 8:53:09");
+2015-07-27 19:26:01: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 8:51:26");
+2015-07-27 19:26:01: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 8:51:01");
+2015-07-27 19:26:01: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 8:49:54");
+2015-07-27 19:26:01: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 8:48:16");
+2015-07-27 19:28:23: 
+2015-07-27 19:28:23: 
+2015-07-27 19:28:23: Starting GUI log
+2015-07-27 19:28:23: 
+2015-07-27 19:28:24: GUI created.
+2015-07-27 19:28:40: addSpotMarker(3, 36.59538, -121.87677, "SPOT: 11:24:50");
+2015-07-27 19:28:40: addSpotMarker(3, 36.5944, -121.8772, "SPOT: 11:19:51");
+2015-07-27 19:28:40: addSpotMarker(2, 36.70474, -121.80057, "SPOT: 11:18:55");
+2015-07-27 19:28:40: addSpotMarker(3, 36.59509, -121.87729, "SPOT: 11:14:51");
+2015-07-27 19:28:40: addSpotMarker(3, 36.60827, -121.86046, "SPOT: 11:09:51");
+2015-07-27 19:28:40: addSpotMarker(2, 36.78847, -121.67646, "SPOT: 11:08:55");
+2015-07-27 19:28:40: addSpotMarker(3, 36.66774, -121.81413, "SPOT: 11:04:52");
+2015-07-27 19:28:40: addSpotMarker(2, 36.86026, -121.59135, "SPOT: 11:00:11");
+2015-07-27 19:28:40: addSpotMarker(3, 36.74117, -121.77493, "SPOT: 10:59:52");
+2015-07-27 19:28:40: addSpotMarker(3, 36.80571, -121.6497, "SPOT: 10:50:53");
+2015-07-27 19:28:40: addSpotMarker(3, 36.8594, -121.59537, "SPOT: 10:44:58");
+2015-07-27 19:28:40: addSpotMarker(3, 36.84117, -121.51492, "SPOT: 10:40:00");
+2015-07-27 19:28:40: addSpotMarker(3, 36.83799, -121.45102, "SPOT: 10:35:35");
+2015-07-27 19:28:40: addSpotMarker(3, 36.83214, -121.38611, "SPOT: 10:30:04");
+2015-07-27 19:28:40: addSpotMarker(3, 36.837, -121.39005, "SPOT: 10:25:10");
+2015-07-27 19:28:40: addSpotMarker(3, 36.83694, -121.39006, "SPOT: 10:20:11");
+2015-07-27 19:28:40: addSpotMarker(3, 36.8372, -121.38962, "SPOT: 10:15:13");
+2015-07-27 19:28:40: addSpotMarker(3, 36.81602, -121.36201, "SPOT: 10:10:12");
+2015-07-27 19:28:40: addSpotMarker(3, 36.80498, -121.34137, "SPOT: 10:05:17");
+2015-07-27 19:28:40: addSpotMarker(3, 36.76864, -121.30269, "SPOT: 10:00:16");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:57:42");
+2015-07-27 19:28:40: addSpotMarker(3, 36.72461, -121.26624, "SPOT: 9:55:53");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72316, -121.2632, "SPOT: 9:52:42");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72315, -121.2632, "SPOT: 9:47:47");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:43:31");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:37:51");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72314, -121.26323, "SPOT: 9:32:59");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72315, -121.26323, "SPOT: 9:28:28");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72314, -121.2632, "SPOT: 9:23:07");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72316, -121.26299, "SPOT: 9:18:12");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72318, -121.26302, "SPOT: 9:13:03");
+2015-07-27 19:28:40: addSpotMarker(1, 36.72319, -121.26314, "SPOT: 9:09:44");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72318, -121.26311, "SPOT: 9:08:03");
+2015-07-27 19:28:40: addSpotMarker(3, 36.79974, -121.33563, "SPOT: 9:06:20");
+2015-07-27 19:28:40: addSpotMarker(1, 36.72599, -121.2682, "SPOT: 9:04:47");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72363, -121.26483, "SPOT: 9:03:06");
+2015-07-27 19:28:40: addSpotMarker(3, 36.82716, -121.40071, "SPOT: 9:01:22");
+2015-07-27 19:28:40: addSpotMarker(2, 36.72401, -121.2654, "SPOT: 8:59:58");
+2015-07-27 19:28:40: addSpotMarker(1, 36.72637, -121.2688, "SPOT: 8:59:50");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72818, -121.27507, "SPOT: 8:58:04");
+2015-07-27 19:28:40: addSpotMarker(3, 36.84167, -121.465, "SPOT: 8:56:22");
+2015-07-27 19:28:40: addSpotMarker(1, 36.72755, -121.27281, "SPOT: 8:54:52");
+2015-07-27 19:28:40: addSpotMarker(0, 36.72767, -121.27336, "SPOT: 8:53:09");
+2015-07-27 19:28:40: addSpotMarker(3, 36.84719, -121.55077, "SPOT: 8:51:26");
+2015-07-27 19:28:40: addSpotMarker(2, 36.72766, -121.27242, "SPOT: 8:51:01");
+2015-07-27 19:28:40: addSpotMarker(1, 36.72687, -121.2699, "SPOT: 8:49:54");
+2015-07-27 19:28:40: addSpotMarker(0, 36.7396, -121.28174, "SPOT: 8:48:16");
