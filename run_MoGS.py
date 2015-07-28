@@ -17,7 +17,7 @@ import sys
 import datetime
 import urllib2
 import winsound
-import pyqtgraph as pg
+# import pyqtgraph as pg
 import xml.etree.ElementTree as ET
 import time
 from math import *
@@ -73,6 +73,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.viewRadioConsoleButton = QtGui.QPushButton()
 
 		self.offlineModeEnabled = False
+		self.mogsHelpWidget = QtGui.QWidget()
 
 		self.exceptionList = {'SNAPSHOT': 'Exception while taking snapshot burst',  # 0
 							 'RADIO_TRANSMIT': 'Exception while transmitting through radio',  # 1
@@ -156,8 +157,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.totalErrorsReceived = 0
 
 		# Offline mode variables here
-		self.offlineMapGraphWidget = pg.PlotWidget()
-		self.offlinePlotDataItem = pg.PlotDataItem()
+# 		self.offlineMapGraphWidget = pg.PlotWidget()
+# 		self.offlinePlotDataItem = pg.PlotDataItem()
 
 		self.serialHandler = serialHandlerThread()
 		self.serialHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
@@ -229,7 +230,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.hLayout.setMargin(0)
 
 		if (self.offlineModeEnabled):
-			mapWidget = self.offlineMapGraphWidget
+			print("OfflineMode!")
+# 			mapWidget = self.offlineMapGraphWidget
 		else:
 			mapWidget = QWidget()
 			self.mapView = QWebView(mapWidget)
@@ -285,6 +287,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		aboutAction.setStatusTip("About MoGS")
 		aboutAction.triggered.connect(self.showAboutWindow)
 
+		helpAction = QtGui.QAction("&HELP", self)
+		helpAction.triggered.connect(self.showHelpWindow)
+
 		settingsAction = QtGui.QAction("&Settings", self)
 		exitAction.setShortcut("Ctrl+S")
 		settingsAction.setStatusTip("Change MoGS settings")
@@ -303,11 +308,31 @@ class mogsMainWindow(QtGui.QMainWindow):
 		toolsMenu.addAction(clearYourMarkersAction)
 		toolsMenu.addAction(resetMetAction)
 		toolsMenu.addAction(settingsAction)
+		toolsMenu.addAction(helpAction)
 		toolsMenu.addAction(aboutAction)
 
 	def createOfflineMapWidget(self):
-		mapImage = pg.ImageItem("media/nps_map.png")
+# 		mapImage = pg.ImageItem("media/nps_map.png")
 		return None
+
+	def showHelpWindow(self):
+		self.mogsHelpWidget = QtGui.QWidget()
+		self.mogsHelpWidget.setMinimumSize(200, 100)
+		self.mogsHelpWidget.setWindowTitle("Help")
+		layout = QtGui.QVBoxLayout()
+
+		versionInfoLabel = QtGui.QLabel(VERSION_INFO + MOGS_VERSION)
+		versionInfoLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		mogsAboutLabel = QtGui.QLabel(MOGS_INFO)
+		mogsAboutLabel.setAlignment(QtCore.Qt.AlignCenter)
+
+		layout.addWidget(versionInfoLabel)
+		layout.addWidget(mogsAboutLabel)
+
+		self.mogsHelpWidget.setLayout(layout)
+
+		self.mogsHelpWidget.show()
 
 	def resetMissionElapsedTime(self):
 		self.serialHandler.missionStartTime = datetime.datetime.now()
@@ -642,7 +667,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 				self.telemetryLabelDictionary["gps"].setStyleSheet("QLabel { color: black }")
 
 				if (self.offlineModeEnabled):
-					self.offlineMapGraphWidget.plot([float()], [float(longitude)])
+					print("Offline mode enabled!")
+# 					self.offlineMapGraphWidget.plot([float()], [float(longitude)])
 
 				else:
 					# Update the map to show new waypoint
