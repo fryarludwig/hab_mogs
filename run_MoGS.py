@@ -198,6 +198,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 			else:
 				self.serialHandler.TEST_MODE = False
 
+			metPersistentFile = open("./time.db", 'r')
+			timeString = metPersistentFile.readline()[:-1]
+			self.serialHandler.missionStartTime = datetime.datetime.strptime(timeString, "%Y-%m-%d %H:%M:%S.%f")
+
+
 		except:
 			print("Parsing error")
 			logGui("No Settings found")
@@ -391,7 +396,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.viewRadioConsoleButton.clicked.connect(self.radioConsoleWidget.show)
 		self.viewRadioConsoleButton.setText("View Console")
 
-		requestDiskSpaceButton = QtGui.QPushButton('AVAILABLE', self)
+		requestDiskSpaceButton = QtGui.QPushButton('Load Prediction', self)
+		requestDiskSpaceButton.clicked.connect(self.openPredictionsDialog)
 
 		addMarkerButton = QtGui.QPushButton('Add Marker', self)
 		addMarkerButton.clicked.connect(self.addMarker)
@@ -1164,15 +1170,15 @@ class mogsMainWindow(QtGui.QMainWindow):
 		windowLayout = QtGui.QGridLayout()
 		self.selectPrecisionDialogWidget = QtGui.QDialog()
 
-		selectButton = QtGui.QPushButton("Send Image", self)
+		selectButton = QtGui.QPushButton("Load", self)
 		selectButton.setDefault(True)
 		selectButton.clicked.connect(self.selectPrecisionDialogWidget.accept)
 		cancelButton = QtGui.QPushButton("Cancel", self)
 		cancelButton.clicked.connect(self.selectPrecisionDialogWidget.reject)
 
-		imageNameLabel = QtGui.QLabel("Image Name")
-		imageSelectButton = QtGui.QPushButton("Select")
+		imageNameLabel = QtGui.QLabel("Prediction File")
 
+		imageSelectButton = QtGui.QPushButton("Open File...")
 		imageSelectButton.clicked.connect(self.selectPredictionFileBrowser)
 
 		windowLayout.addWidget(imageNameLabel, 2, 0)
@@ -1181,12 +1187,27 @@ class mogsMainWindow(QtGui.QMainWindow):
 		windowLayout.addWidget(cancelButton, 10, 2)
 
 		self.selectPrecisionDialogWidget.setLayout(windowLayout)
-		self.selectPrecisionDialogWidget.setWindowTitle("Send Image")
+		self.selectPrecisionDialogWidget.setWindowTitle("Load Prediction")
 
 		if (self.selectPrecisionDialogWidget.exec_()):
 			if (len(self.predictionFileName) > 0):
 				try:
-					imageFile = open(self.predictionFileName, "r")
+					predictionKmlFile = ET.parse(self.predictionFileName)
+					predictionData = predictionKmlFile.read()
+					predictionKmlFile.close()
+
+					parsedData = ET.fromstring(predictionData)
+
+					for message in parsedData.iter("Placemark"):
+						print (str(message))
+						name = message.find("Balloon Launch").text
+						lat = message.find("coordinates").text
+						descript = message.find("description").text
+
+						print (name)
+						print (descript)
+						print (lat)
+
 				except:
 					QtGui.QMessageBox.information(self, "Error", "Could not open image",
 												 QtGui.QMessageBox.Ok)

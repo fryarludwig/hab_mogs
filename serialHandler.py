@@ -281,7 +281,6 @@ class serialHandlerThread(QtCore.QThread):
 				self.invalidSerialPort.emit("Please enter a valid serial port")
 				self.settingsWindowOpen = True
 			logRadio("Unable to write to serial port on " + str(self.RADIO_SERIAL_PORT))
-			print("Unable to open serial port for input on " + str(self.RADIO_SERIAL_PORT))
 
 		return serialInput
 
