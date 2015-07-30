@@ -1002,9 +1002,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 					self.commandStatusLabel.setText("Unable to process GPS coordinates")
 
 	def computeMagnitude(self, rawX, rawY, rawZ):
-		magnitudeX = (rawX - 127) / 29
-		magnitudeY = (rawY - 127) / 29
-		magnitudeZ = (rawZ - 127) / 29
+		magnitudeX = "%2.1f" % ((int(rawX) - 127) / float(29))
+		magnitudeY = "%2.1f" % ((int(rawY) - 127) / float(29))
+		magnitudeZ = "%2.1f" % ((int(rawZ) - 127) / float(29))
 
 		return ("x: {} y: {} z: {}".format(magnitudeX, magnitudeY, magnitudeZ))
 
