@@ -12,9 +12,12 @@ class dishHandlerThread(QtCore.QThread):
 	def __init__(self):
 		QtCore.QThread.__init__(self)
 
-		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.connect((DISH_ADDRESS, DISH_PORT))
-		
+		try:
+			self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.sock.connect((DISH_ADDRESS, DISH_PORT))
+		except:
+			return 0
+
 		self.old_az = -1
 		self.new_az = self.old_az
 
@@ -61,7 +64,7 @@ class dishHandlerThread(QtCore.QThread):
 		self.sock.send("AS;ES;\n")  # standby
 		self.sock.close()
 
-			
+
 	def point(self, az, el):
 
 		# Update positions
@@ -99,14 +102,14 @@ class dishHandlerThread(QtCore.QThread):
 		el_err = abs(self.new_el - self.old_el)
 
 		print ("Done checking ranges, starting socket stuff")
-		
+
 		if  az_err >= 0.5 or el_err >= 0.5:
 			try:
 				self.sock.send("AM%0.2f;EM%0.2f;\n" % (az, el))
 				print("Pointing to %03d %03d" % (az, el))
 
 				# print("Sleeping %f" % max(az_err,el_err)*4 + 1)
-				sleep(max(az_err,el_err)/4 + 5)
+				sleep(max(az_err, el_err) / 4 + 5)
 				self.sock.send("AS;ES;\n")  # standby
 				self.old_az = self.new_az
 				self.old_el = self.new_el

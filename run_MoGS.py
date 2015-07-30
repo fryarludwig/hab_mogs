@@ -17,7 +17,7 @@ import sys
 import datetime
 import urllib2
 import winsound
-# import pyqtgraph as pg
+import pyqtgraph as pg
 import xml.etree.ElementTree as ET
 import time
 from math import *
@@ -31,7 +31,7 @@ from serialHandler import serialHandlerThread
 from dishHandler import dishHandlerThread
 from logger import *
 
-MOGS_VERSION = "0.9.3"
+MOGS_VERSION = "0.9.7"
 VERSION_INFO = "MoGS: Version "
 MOGS_INFO = "Mobile Ground Station"
 
@@ -55,6 +55,17 @@ class mogsMainWindow(QtGui.QMainWindow):
 	def __init__(self):
 		super(mogsMainWindow, self).__init__()
 		self.commandStatusLabel = QtGui.QLabel()
+
+		self.MAX_LOCATIONS = 300
+		self.vehicleLocationList = {"hab"    : [[], []],
+									"chase1" : [[], []],
+									"chase2" : [[], []],
+									"chase3" : [[], []]}
+
+		self.vehiclePlotColor = {"hab"   : pg.mkPen("#FF0000"),
+								"chase1" : pg.mkPen("#007FFF"),
+								"chase2" : pg.mkPen("#006600"),
+								"chase3" : pg.mkPen("#FF9933")}
 
 		self.dataTelemetryList = []
 		self.telemetryValuesToInclude = 5
@@ -155,8 +166,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.totalErrorsReceived = 0
 
 		# Offline mode variables here
-# 		self.offlineMapGraphWidget = pg.PlotWidget()
-# 		self.offlinePlotDataItem = pg.PlotDataItem()
+		self.offlineMapGraphWidget = pg.PlotWidget()
+		self.offlinePlotDataItem = pg.PlotDataItem()
 
 		self.serialHandler = serialHandlerThread()
 		self.serialHandler.balloonDataSignalReceived.connect(self.updateBalloonDataTelemetry)
@@ -168,8 +179,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 		self.serialHandler.radioConsoleUpdateSignal.connect(self.updateRadioConsole)
 		self.serialHandler.updateNetworkStatusSignal.connect(self.updateActiveNetwork)
 		# add the other handlers here
-
-		# self.dishHandler.start()
 
 		try:
 			settingsFile = open("mogsSettings.db", "r")
@@ -200,12 +209,12 @@ class mogsMainWindow(QtGui.QMainWindow):
 			print("Parsing error")
 			logGui("No Settings found")
 
-		
+
 		if self.serialHandler.RADIO_CALLSIGN == "nps":
 			self.dishHandler = dishHandlerThread()
 		else:
 			self.dishHandler = None
-			
+
 		self.serialHandler.start()
 		self.initUI()
 
@@ -235,7 +244,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		if (self.offlineModeEnabled):
 			print("OfflineMode!")
-# 			mapWidget = self.offlineMapGraphWidget
+			mapWidget = self.offlineMapGraphWidget
 		else:
 			mapWidget = QWidget()
 			self.mapView = QWebView(mapWidget)
@@ -316,7 +325,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		toolsMenu.addAction(aboutAction)
 
 	def createOfflineMapWidget(self):
-# 		mapImage = pg.ImageItem("media/nps_map.png")
+		mapImage = pg.ImageItem("media/nps_map.png")
 		return None
 
 	def showHelpWindow(self):
@@ -362,8 +371,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		sendMessageButton.clicked[bool].connect(self.sendMessage)
 
 		self.messagingTextBox.setReadOnly(True)
-		self.messagingTextBox.setMinimumSize(400, 300)
-		self.messagingTextBox.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
+		self.messagingTextBox.setSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
 
 		self.sendMessageEntryBox.setMaxLength(180)
 		self.sendMessageEntryBox.returnPressed.connect(self.sendMessage)
@@ -375,6 +383,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(self.sendMessageCallsign, 6, 0)
 		layout.addWidget(self.sendMessageEntryBox, 6, 1, 1, 7)
 		layout.addWidget(sendMessageButton, 6, 8)
+
+		widget.setSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
 
 		return widget
 
@@ -430,6 +440,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(self.armBrmButton, 3, 2)
 		layout.addWidget(self.releaseBalloonButton, 3, 3)
 
+		widget.setMaximumSize(425, 100)
+		widget.setSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+
 		return widget
 
 	"""
@@ -444,6 +457,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 		staticTelemetryLabels = []
 
 		spacer = QtGui.QSpacerItem(10, 10)
+
+		burstNowButton = QtGui.QPushButton("10 Photo Burst")
+		burstNowButton.setAutoDefault(False)
+		burstNowButton.clicked.connect(self.takeBurstNow)
 
 		requestDiskSpaceButton = QtGui.QPushButton('Refresh Disk Space', self)
 		requestDiskSpaceButton.clicked.connect(self.requestDiskSpace)
@@ -520,6 +537,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["startup"], 8, 3)
 		dataFieldsLayout.addWidget(self.telemetryLabelDictionary["errors"], 9, 3)
 
+		dataFieldsLayout.addWidget(burstNowButton, 10, 0)
 		dataFieldsLayout.addWidget(requestDiskSpaceButton, 10, 1)
 		dataFieldsLayout.addWidget(viewErrorsButton, 10, 2)
 
@@ -572,6 +590,9 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(self.statusLabelList["chase3"], 2, 2)
 
 		self.updateActiveNetwork()
+
+		widget.setMaximumSize(425, 80)
+		widget.setSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
 
 		return widget
 
@@ -634,10 +655,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 	def utcToLocalTime(self, timestamp):
 		hours = int(timestamp[:2])
 
-		if (len(timestamp) == 6):
-			minutesAndSeconds = ":" + timestamp[2:4] + ":" + timestamp[4:]
-		else:
+		if (":" in timestamp):
 			minutesAndSeconds = timestamp[2:]
+		else:
+			minutesAndSeconds = ":" + timestamp[2:4] + ":" + timestamp[4:]
 
 		pst = -7
 
@@ -663,7 +684,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			timestamp = splitMessage[0]
 			if (len(timestamp) > 0):
-				self.telemetryLabelDictionary["timestamp"].setText(self.utcToLocalTime(timestamp))
+				timestamp = self.utcToLocalTime(timestamp)
+				self.telemetryLabelDictionary["timestamp"].setText(timestamp)
 
 			latitude = splitMessage[1]
 			longitude = splitMessage[2]
@@ -671,9 +693,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 				self.telemetryLabelDictionary["gps"].setText(latitude + ", " + longitude)
 				self.telemetryLabelDictionary["gps"].setStyleSheet("QLabel { color: black }")
 
+				self.vehicleLocationList["hab"][0].append(float(latitude))
+				self.vehicleLocationList["hab"][1].append(float(longitude))
+
 				if (self.offlineModeEnabled):
-					print("Offline mode enabled!")
-# 					self.offlineMapGraphWidget.plot([float()], [float(longitude)])
+					self.updatePlot()
 
 				else:
 					# Update the map to show new waypoint
@@ -688,7 +712,7 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			altitude = splitMessage[3]
 			if (len(altitude) > 0):
-				self.telemetryLabelDictionary["altitude"].setText(altitude)
+				self.telemetryLabelDictionary["altitude"].setText(altitude + " m")
 				self.telemetryLabelDictionary["altitude"].setStyleSheet("QLabel { color: black }")
 			else:
 				self.telemetryLabelDictionary["altitude"].setStyleSheet("QLabel { color: grey }")
@@ -696,23 +720,23 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			innerTemp = splitMessage[4]
 			if (len(innerTemp) > 0):
-				self.telemetryLabelDictionary["tempInside"].setText(innerTemp)
+				self.telemetryLabelDictionary["tempInside"].setText(innerTemp + " C")
 
 			outerTemp = splitMessage[5]
 			if (len(outerTemp) > 0):
-				self.telemetryLabelDictionary["tempOutside"].setText(outerTemp)
+				self.telemetryLabelDictionary["tempOutside"].setText(outerTemp + " C")
 
 			batteryTemp = splitMessage[6]
 			if (len(batteryTemp) > 0):
-				self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp)
+				self.telemetryLabelDictionary["tempBattery"].setText(batteryTemp + " C")
 
 			voltage = splitMessage[7]
 			if (len(voltage) > 0):
-				self.telemetryLabelDictionary["voltage"].setText(voltage)
+				self.telemetryLabelDictionary["voltage"].setText(voltage + " V")
 
 			humidity = splitMessage[8]
 			if (len(humidity) > 0):
-				self.telemetryLabelDictionary["humidity"].setText(humidity)
+				self.telemetryLabelDictionary["humidity"].setText(humidity + " %")
 
 			accelX = splitMessage[9]
 			accelY = splitMessage[10]
@@ -728,8 +752,8 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 			try:
 				groundSpeed, ascentRate = self.calculateRates()
-				self.telemetryLabelDictionary["speed"].setText(groundSpeed)
-				self.telemetryLabelDictionary["ascent"].setText(ascentRate)
+				self.telemetryLabelDictionary["speed"].setText(groundSpeed + " m/s")
+				self.telemetryLabelDictionary["ascent"].setText(ascentRate + " m/s")
 			except:
 				logGui("Could not parse lat and long from HAB telemetry packet")
 				self.telemetryLabelDictionary["speed"].setText("None")
@@ -770,9 +794,11 @@ class mogsMainWindow(QtGui.QMainWindow):
 			if (len(latitude) > 0 and len(longitude) > 0):
 				self.chaseVehicleGpsLabel[callsign][1].setText(latitude + ", " + longitude)
 
+				self.vehicleLocationList[callsign][0].append(float(latitude))
+				self.vehicleLocationList[callsign][1].append(float(longitude))
+
 				if (self.offlineModeEnabled):
-					print("Plotting data")
-					print("Plotted")
+					self.updatePlot()
 
 				else:
 					# Update the map to show new waypoint
@@ -792,6 +818,22 @@ class mogsMainWindow(QtGui.QMainWindow):
 		except:
 			print("Failure to parse chase vehicle telemetry")
 			logTelemetry("Invalid data packet - data was not processed.")
+
+	def updatePlot(self):
+		try:
+			self.offlineMapGraphWidget.clear()
+
+			for key, value in self.vehicleLocationList.items():
+				print("Key: " + key)
+				print("Value " + str(value))
+				itemsToGraph = pg.PlotDataItem(value[0], value[1])
+				print("Created plotdataitem")
+				itemsToGraph.setPen(self.vehiclePlotColor[key])
+				print("Set pen color")
+				self.offlineMapGraphWidget.addItem(itemsToGraph)
+				print("Added plot to widget")
+		except:
+			print("Unable to plot data due to exception")
 
 	def parseReportedErrors(self, errors):
 		reportedErrors = []
@@ -959,8 +1001,12 @@ class mogsMainWindow(QtGui.QMainWindow):
 				except:
 					self.commandStatusLabel.setText("Unable to process GPS coordinates")
 
-	def computeMagnitude(self, aX, aY, aZ):
-		return ("x: {} y: {} z: {}".format(aX, aY, aZ))
+	def computeMagnitude(self, rawX, rawY, rawZ):
+		magnitudeX = (rawX - 127) / 29
+		magnitudeY = (rawY - 127) / 29
+		magnitudeZ = (rawZ - 127) / 29
+
+		return ("x: {} y: {} z: {}".format(magnitudeX, magnitudeY, magnitudeZ))
 
 	def updateSnapshotInterval(self):
 		dialogWindow = QtGui.QDialog()
@@ -985,16 +1031,10 @@ class mogsMainWindow(QtGui.QMainWindow):
 
 		intervalLengthSpinBox = QtGui.QSpinBox()
 		intervalLengthSpinBox.setValue(self.serialHandler.requestedSnapshotInterval)
-		intervalLengthSpinBox.setRange(0, 600)
+		intervalLengthSpinBox.setRange(1, 600)
 		intervalLengthSpinBox.setAlignment(QtCore.Qt.AlignCenter)
 
-		burstNowButton = QtGui.QPushButton("Take burst now")
-		burstNowButton.setCheckable(True)
-		burstNowButton.setChecked(False)
-		burstNowButton.setAutoDefault(False)
-		burstNowButton.clicked.connect(dialogWindow.accept)
-
-		acceptButton = QtGui.QPushButton("Accept")
+		acceptButton = QtGui.QPushButton("Set and go")
 		acceptButton.clicked.connect(dialogWindow.accept)
 
 		cancelButton = QtGui.QPushButton("Cancel")
@@ -1007,7 +1047,6 @@ class mogsMainWindow(QtGui.QMainWindow):
 		layout.addWidget(photosPerBurstSpinBox, 2, 1, 1, 2)
 		layout.addWidget(intervalLengthLabel, 3, 0)
 		layout.addWidget(intervalLengthSpinBox, 3, 1, 1, 2)
-		layout.addWidget(burstNowButton, 4, 0)
 		layout.addWidget(acceptButton, 4, 1)
 		layout.addWidget(cancelButton, 4, 2)
 
@@ -1016,23 +1055,31 @@ class mogsMainWindow(QtGui.QMainWindow):
 				len(str(intervalLengthSpinBox.text())) > 0):
 				try:
 					messageLabelString = "Requesting "
-					if (burstNowButton.isChecked()):
-						self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
-						self.serialHandler.requestedSnapshotInterval = -1
-						messageLabelString += ("single burst of " +
-											str(self.serialHandler.requestedSnapshotBurst) + " images now")
-					else:
-						self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
-						self.serialHandler.requestedSnapshotInterval = int(str(intervalLengthSpinBox.value()))
 
-						messageLabelString += ("updated burst of " + str(self.serialHandler.requestedSnapshotBurst) +
-											" images every " + str(self.serialHandler.requestedSnapshotInterval) +
-											" seconds")
+					self.serialHandler.requestedSnapshotBurst = int(str(photosPerBurstSpinBox.value()))
+					self.serialHandler.requestedSnapshotInterval = int(str(intervalLengthSpinBox.value()))
+
+					messageLabelString += ("updated burst of " + str(self.serialHandler.requestedSnapshotBurst) +
+										" images every " + str(self.serialHandler.requestedSnapshotInterval) +
+										" seconds")
 
 					self.commandStatusLabel.setText(messageLabelString)
 					self.serialHandler.changeSnapshotIntervalFlag = True
 				except:
 					self.commandStatusLabel.setText("Unable to process supplied information")
+
+	def takeBurstNow(self):
+		messageLabelString = "Requesting "
+
+		self.serialHandler.requestedSnapshotBurst = 10
+		self.serialHandler.requestedSnapshotInterval = -1
+
+		messageLabelString += ("single burst of " +
+							str(self.serialHandler.requestedSnapshotBurst) + " images now")
+
+		self.commandStatusLabel.setText(messageLabelString)
+		self.serialHandler.changeSnapshotIntervalFlag = True
+
 
 	def requestDiskSpace(self):
 		self.serialHandler.requestDiskSpaceFlag = True
@@ -1194,21 +1241,54 @@ class mogsMainWindow(QtGui.QMainWindow):
 		if (self.selectPrecisionDialogWidget.exec_()):
 			if (len(self.predictionFileName) > 0):
 				try:
-					predictionKmlFile = ET.parse(self.predictionFileName)
-					predictionData = predictionKmlFile.read()
+					predictionKmlFile = open(self.predictionFileName, "r")
+
+					launchPointFound = False
+					burstPointFound = False
+					landingPointFound = False
+
+					launchLine = "None"
+					burstLine = "None"
+					landingLine = "None"
+
+					while not (launchPointFound and
+								burstPointFound and
+								landingPointFound):
+
+						line = predictionKmlFile.readline()
+
+						description = "Not valid"
+
+						if ("Balloon Launch" in line):
+							launchPointFound = True
+							description = predictionKmlFile.readline()
+							launchLine = predictionKmlFile.readline()
+
+						elif ("Balloon Burst" in line):
+							burstPointFound = True
+							description = predictionKmlFile.readline()
+							burstLine = predictionKmlFile.readline()
+
+						elif ("Balloon Landing" in line):
+							landingPointFound = True
+							description = predictionKmlFile.readline()
+							landingLine = predictionKmlFile.readline()
+
 					predictionKmlFile.close()
 
-					parsedData = ET.fromstring(predictionData)
+					launchLat, launchLong, unused = launchLine[20:-23].split(",")
+					burstLat, burstLong, unused = burstLine[20:-23].split(",")
+					landingLat, landingLong, unused = landingLine[20:-23].split(",")
 
-					for message in parsedData.iter("Placemark"):
-						print (str(message))
-						name = message.find("Balloon Launch").text
-						lat = message.find("coordinates").text
-						descript = message.find("description").text
-
-						print (name)
-						print (descript)
-						print (lat)
+					# Update the map to show new waypoint
+					javascriptCommand = "plotPredictionLine({}, {}, \"Cheese\");".format(
+										float(launchLat), float(launchLong))
+# 					javascriptCommand = "plotPredictionLine({}, {}, {}, {}, {}, {});".format(
+# 										launchLat, launchLong,
+# 										burstLat, burstLong,
+# 										landingLat, landingLong)
+					self.theMap.documentElement().evaluateJavaScript(javascriptCommand)
+					print(javascriptCommand)
 
 				except:
 					QtGui.QMessageBox.information(self, "Error", "Could not open image",

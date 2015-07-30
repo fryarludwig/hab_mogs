@@ -21,9 +21,9 @@ googleMapsHtml = """
 		var manualMarkerArray = [];
 		
 		var vehiclePathColors = ["#FF0000",
-								"#007FFF",
-								"#006600",
-								"#FF9933"];
+								 "#007FFF",
+								 "#006600",
+								 "#FF9933"];
 		
 		var vehicleIconNames = ["http://fryarludwig.com/wp-content/uploads/2015/07/hotairbaloon.png",
 								"http://maps.google.com/mapfiles/kml/paddle/1-lv.png",
@@ -94,6 +94,19 @@ googleMapsHtml = """
 												map:map});
 			
 			spotMarker.setMap(map);
+		}
+		
+		function plotPredictionLine(lat, lng, note)
+		{
+			var pos = new google.maps.LatLng(lat, lng);
+			
+			var currMarker = new google.maps.Marker({position:pos,
+												title:note,
+												map:map});
+			
+			currMarker.setMap(map);
+			
+			manualMarkerArray.push(currMarker);
 		}
 		
 		function addMarkerManually(lat, lng, note)

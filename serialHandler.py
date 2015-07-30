@@ -1,6 +1,5 @@
 
 import serial
-import datetime
 import time
 from logger import *
 from PyQt4 import QtGui, QtCore
@@ -51,8 +50,8 @@ class serialHandlerThread(QtCore.QThread):
 		self.requestDiskSpaceFlag = False
 
 		self.changeSnapshotIntervalFlag = False
-		self.requestedSnapshotInterval = 0
-		self.requestedSnapshotBurst = 0
+		self.requestedSnapshotInterval = 30
+		self.requestedSnapshotBurst = 5
 		self.acknowledgedSnapshotInterval = 0
 		self.acknowledgedSnapshotBurst = 0
 
@@ -63,8 +62,8 @@ class serialHandlerThread(QtCore.QThread):
 
 		self.userMessagesToSend = []
 
-		self.missionStartTime = datetime.datetime.now()
-		self.nextHeartbeatTime = time.mktime(datetime.datetime.now().timetuple()) + self.HEARTBEAT_INTERVAL
+		self.missionStartTime = time.time()
+		self.lastHeartbeatTime = time.time()
 
 	def run(self):
 		counter = self.HEARTBEAT_INTERVAL
@@ -124,7 +123,9 @@ class serialHandlerThread(QtCore.QThread):
 				self.handleMessage(messageReceived)
 
 
-			if ((self.nextHeartbeatTime - time.mktime(datetime.datetime.now().timetuple())) <= 0):
+			if ((time.time() - self.lastHeartbeatTime) > self.HEARTBEAT_INTERVAL):
+				self.lastHeartbeatTime = time.time()
+
 				for key, value in self.activeNodes.items():
 					self.activeNodes[key] -= 1
 					if (self.activeNodes[key] <= 0):
@@ -132,8 +133,6 @@ class serialHandlerThread(QtCore.QThread):
 
 				if not (self.sendCurrentPosition()):
 					self.sendHeartbeat()
-
-				self.nextHeartbeatTime = time.mktime(datetime.datetime.now().timetuple()) + self.HEARTBEAT_INTERVAL
 
 			logRadio(messageReceived + "\n")
 
@@ -255,13 +254,7 @@ class serialHandlerThread(QtCore.QThread):
 
 	def sendResetBrmCommand(self):
 		print("Resetting balloon")
-		counter = 3
-
-		while (counter > 0):
-			print("Attempt " + str(counter))
-			counter -= 1
-			self.radioSerialOutput("cmd,RESET_BRM")
-			time.sleep(2)
+		self.radioSerialOutput("cmd,RESET_BRM")
 
 	def radioSerialInput(self):
 		serialInput = ""
@@ -305,7 +298,7 @@ class serialHandlerThread(QtCore.QThread):
 			logRadio("Unable to close serial port " + self.RADIO_SERIAL_PORT)
 
 		try:
-			self.radioSerial = serial.Serial(port = self.RADIO_SERIAL_PORT, baudrate = self.RADIO_BAUDRATE, timeout = 2)
+			self.radioSerial = serial.Serial(port = self.RADIO_SERIAL_PORT, baudrate = self.RADIO_BAUDRATE, timeout = 1)
 		except:
 			if not (self.settingsWindowOpen):
 				self.invalidSerialPort.emit("Radio serial port is invalid")
@@ -353,7 +346,7 @@ class serialHandlerThread(QtCore.QThread):
 		if (rawGpsString != "NO_GPS_DATA\n"):
 			try:
 				gpsSplit = rawGpsString.split(",")
-				time = gpsSplit[1][:6]
+				timestamp = gpsSplit[1][:6]
 
 				latitude = gpsSplit[2]
 				degrees = float(latitude[:2])
@@ -372,7 +365,7 @@ class serialHandlerThread(QtCore.QThread):
 				else:
 					longitude = "%4.5f" % (degrees + (minutes / 60))
 
-				formattedGpsString = "{},{},{}".format(time, latitude, longitude)
+				formattedGpsString = "{},{},{}".format(timestamp, latitude, longitude)
 			except:
 				formattedGpsString = "0,0,0"
 
@@ -388,7 +381,7 @@ class serialHandlerThread(QtCore.QThread):
 			logRadio("Unable to close serial port " + self.GPS_SERIAL_PORT)
 
 		try:
-			self.gpsSerial = serial.Serial(port = self.GPS_SERIAL_PORT, baudrate = self.GPS_BAUDRATE, timeout = 2)
+			self.gpsSerial = serial.Serial(port = self.GPS_SERIAL_PORT, baudrate = self.GPS_BAUDRATE, timeout = 1)
 		except:
 			if not (self.settingsWindowOpen):
 				self.invalidSerialPort.emit("GPS serial port cannot be opened")
